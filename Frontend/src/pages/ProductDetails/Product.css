@@ -1,0 +1,40 @@
+.review-tabs {
+  padding-left: 9.5vh;
+  padding-top: 5px;
+  gap: 30px;
+}
+
+.tab {
+  font-size: 14px;
+  border: 1px solid #86a1eb;
+  width: 18vh;
+  height: 3.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.tab:hover {
+  background: #eef2ff;
+}
+
+.tab.active {
+  background: #86a1eb;
+  color: #fff;
+  font-weight: 500;
+}
+
+.tab-content {
+  padding: 20px 9.5vh;
+}
+
+.description,
+.reviews {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}

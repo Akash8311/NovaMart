@@ -1,0 +1,60 @@
+.sidebar {
+  width: 100%;
+}
+
+.sidebar-box {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Section */
+.sidebar-section {
+  margin-top: 18px;
+}
+
+.sidebar-section h3 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Range slider */
+.range-wrapper {
+  width: 100%;
+}
+
+.range-wrapper .range-slider {
+  height: 6px;
+}
+
+.range-wrapper .range-slider__thumb {
+  width: 14px;
+  height: 14px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Rating */
+.rating-box {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
