@@ -12,13 +12,15 @@ import { useState } from "react";
 import Qtybox from "../../components/QtyBox/Qtybox";
 import "./Product.css";
 import ProductReview from "./ProductReview";
-import { Swiper, SwiperSlide } from "swiper/react";
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-import ProductItems from "../../components/ProductItems/ProductItems";
-import ProductItems2 from "../../components/ProductItems/ProductItems2";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+
+import { Pagination } from 'swiper/modules';
+import MenProduct1 from "./Men/MenProduct1";
+import MenProduct2 from "./Men/MenProduct2";
 
 
 const ProductDetails = (props) => {
@@ -456,30 +458,35 @@ const ProductDetails = (props) => {
           >
             Related Products
           </h2>
-           <div className="Products">
-                <Swiper
-                  slidesPerView={props.items}
-                  spaceBetween={30}
-                  pagination={{
-                    clickable: true,
-                  }}
-                  modules={[Pagination]}
-                  className="mySwiper"
-                >
-                  
-                  <SwiperSlide>
-                    <ProductItems />
-                  </SwiperSlide>
-          
-          
-                  <SwiperSlide>
-                    <ProductItems2 />
-                  </SwiperSlide>
-          
-          
-             
-                </Swiper>
-              </div>
+          <div className="men-products">
+              <Swiper
+        slidesPerView={6}
+        spaceBetween={0}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+          <MenProduct1/>
+        </SwiperSlide>
+
+
+        <SwiperSlide>
+          <MenProduct2/>
+        </SwiperSlide>
+
+
+        <SwiperSlide>Slide 3</SwiperSlide>
+        <SwiperSlide>Slide 4</SwiperSlide>
+        <SwiperSlide>Slide 5</SwiperSlide>
+        <SwiperSlide>Slide 6</SwiperSlide>
+        <SwiperSlide>Slide 7</SwiperSlide>
+        <SwiperSlide>Slide 8</SwiperSlide>
+        <SwiperSlide>Slide 9</SwiperSlide>
+      </Swiper>
+          </div>
         </div>
       </section>
     </>

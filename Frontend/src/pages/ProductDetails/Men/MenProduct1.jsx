@@ -1,15 +1,11 @@
 import React, { useState } from "react";
-import Product1 from "../../assets/Product1.png";
-import Duplicate1 from "../../assets/Duplicate1.png";
-
 import { Link } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
-import "./Product.css";
 
-const ProductItems = () => {
+const MenProduct1 = () =>{
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -178,7 +174,7 @@ const ProductItems = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? Duplicate1 : Product1}
+              src={isHovered ? "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg" : "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"}
               alt="product"
               style={{
                 width: "70%",
@@ -199,7 +195,7 @@ const ProductItems = () => {
               marginTop: "10px",
             }}
           >
-            Bodycon lavender dress
+           VX Men Sweatshirts
           </h4>
 
           {/* Description */}
@@ -207,13 +203,12 @@ const ProductItems = () => {
             style={{
               fontSize: "13px",
               color: "#777",
-              height: "38px",
+              height: "34px",
               overflow: "hidden",
               margin: "0",
             }}
           >
-            New stylish party wear bodycon dress for women's || knee length ||
-            birthday special
+            Actual Products color may vary with product due to monitor|Available in Plus Size
           </p>
 
           {/* Price Section */}
@@ -228,7 +223,7 @@ const ProductItems = () => {
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹599
+              ₹459
             </span>
             <span
               style={{
@@ -237,12 +232,12 @@ const ProductItems = () => {
                 fontSize: "13px",
               }}
             >
-              ₹1199
+              ₹2999
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              50% OFF
+              85% OFF
             </span>
           </div>
 
@@ -256,8 +251,8 @@ const ProductItems = () => {
               marginTop: "6px",
             }}
           >
-            ⭐⭐⭐⭐☆
-            <span style={{ fontSize: "13px", color: "#555" }}>(2092)</span>
+            ⭐⭐⭐⭐⭐
+            <span style={{ fontSize: "13px", color: "#555" }}>(202)</span>
           </div>
 
           {/* Delivery */}
@@ -276,5 +271,4 @@ const ProductItems = () => {
     </>
   );
 };
-
-export default ProductItems;
+export default MenProduct1
