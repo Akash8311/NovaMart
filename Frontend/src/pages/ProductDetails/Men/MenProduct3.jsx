@@ -158,7 +158,7 @@ const MenProduct3 = () => {
               )}
             </div>
     
-            <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
+            <Link to="/MenProductDetails3" style={{ textDecoration: "none", color: "#777" }}>
               <div
                 style={{
                   width: "100%",

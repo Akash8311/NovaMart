@@ -5,6 +5,9 @@ import Home from "./pages/home/Home";
 import Footer from "./components/Footer/Footer";
 import Productlisting from "./pages/Productlisting/Productlisting";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
+import MenProductDetails1 from "./pages/ProductDetails/Men/MenProductDetails1";
+import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
+import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
 
 const App = () => {
   return (
@@ -19,6 +22,9 @@ const App = () => {
             element={<Productlisting />}
           />
           <Route path="/Product/:id" element={<ProductDetails />} />
+         <Route path="/MenproductDetails1"element={<MenProductDetails1/>}/>
+         <Route path="/menproductDetails2"element={<MenProductDetails2/>}/>
+         <Route path="/menproductDetails3"element={<MenProductDetails3/>}/>
           {/* <Route path="/help-center" element={<HelpCenter />} /> */}
         </Routes>
         <Footer />

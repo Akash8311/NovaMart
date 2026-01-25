@@ -161,7 +161,7 @@ const Home = () => {
                     scrollButtons
                     allowScrollButtonsMobile
                   >
-                    <Tab label="Fashion" style={{ fontWeight: "bold" }} />
+                    <Tab label="Fashon" style={{ fontWeight: "bold" }} />
                     <Tab label="Electronics" style={{ fontWeight: "bold" }} />
                     <Tab label="Mobile" style={{ fontWeight: "bold" }} />
                     <Tab label="Grocery" style={{ fontWeight: "bold" }} />

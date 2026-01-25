@@ -10,6 +10,8 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { IoGrid } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
+import ProductItems2 from "../../components/ProductItems/ProductItems2";
+import ProductItems3 from "../../components/ProductItems/ProductItems3";
 
 const Productlisting = () => {
   // sort dropdown
@@ -156,8 +158,8 @@ const Productlisting = () => {
             }}
           >
             <ProductItems view={viewType} />
-            <ProductItems view={viewType} />
-            <ProductItems view={viewType} />
+            <ProductItems2 view={viewType} />
+            <ProductItems3 view={viewType} />
             <ProductItems view={viewType} />
             <ProductItems view={viewType} />
             <ProductItems view={viewType} />

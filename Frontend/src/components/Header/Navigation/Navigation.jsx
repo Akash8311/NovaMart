@@ -51,7 +51,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="list-none relative">
-              <Link to="/" className="text-[16px] Link no-underline transition ">
+              <Link to="/productlisting" className="text-[16px] Link no-underline transition ">
               <Button style={{color:"black"}}>
 
                 Fahion

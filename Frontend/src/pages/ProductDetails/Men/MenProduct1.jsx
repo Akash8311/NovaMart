@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-const MenProduct1 = () =>{
+const MenProduct1 = () => {
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -159,7 +159,10 @@ const MenProduct1 = () =>{
           )}
         </div>
 
-        <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
+        <Link
+          to="/MenProductDetails1"
+          style={{ textDecoration: "none", color: "#777" }}
+        >
           <div
             style={{
               width: "100%",
@@ -174,7 +177,11 @@ const MenProduct1 = () =>{
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg" : "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"}
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg"
+                  : "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"
+              }
               alt="product"
               style={{
                 width: "70%",
@@ -195,7 +202,7 @@ const MenProduct1 = () =>{
               marginTop: "10px",
             }}
           >
-           VX Men Sweatshirts
+            VX Men Sweatshirts
           </h4>
 
           {/* Description */}
@@ -208,7 +215,8 @@ const MenProduct1 = () =>{
               margin: "0",
             }}
           >
-            Actual Products color may vary with product due to monitor|Available in Plus Size
+            Actual Products color may vary with product due to monitor|Available
+            in Plus Size
           </p>
 
           {/* Price Section */}
@@ -271,4 +279,4 @@ const MenProduct1 = () =>{
     </>
   );
 };
-export default MenProduct1
+export default MenProduct1;

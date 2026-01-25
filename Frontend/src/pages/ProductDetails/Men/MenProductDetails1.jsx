@@ -4,33 +4,31 @@ import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
-import ProductZoom from "../../components/ProductZoom/ProductZoom";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { useState } from "react";
-import Qtybox from "../../components/QtyBox/Qtybox";
-import "./Product.css";
-import ProductReview from "./ProductReview";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import Qtybox from "../../../components/QtyBox/Qtybox";
+import "../Product.css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
+import { Pagination } from "swiper/modules";
+import MenProduct1 from "../Men/MenProduct1";
+import MenProduct2 from "../Men/MenProduct2";
+import MenProduct3 from "../Men/MenProduct3";
+import MenProduct4 from "../Men/MenProduct4";
+import MenProduct5 from "../Men/MenProduct5";
+import MenProduct6 from "../Men/MenProduct6";
+import MenProduct7 from "../Men/MenProduct7";
+import MenProduct8 from "../Men/MenProduct8";
+import MenProduct9 from "../Men/MenProduct9";
+import ProductZoomMen1 from "../../../components/ProductZoom/ProductZoomMen1";
+import MenProductReview1 from "../ProductReaview/MenReview/MenProductReview1";
 
-import { Pagination } from 'swiper/modules';
-import MenProduct1 from "./Men/MenProduct1";
-import MenProduct2 from "./Men/MenProduct2";
-import MenProduct3 from "./Men/MenProduct3";
-import MenProduct4 from "./Men/MenProduct4";
-import MenProduct5 from "./Men/MenProduct5";
-import MenProduct6 from "./Men/MenProduct6";
-import MenProduct7 from "./Men/MenProduct7";
-import MenProduct8 from "./Men/MenProduct8";
-import MenProduct9 from "./Men/MenProduct9";
-
-
-const ProductDetails = (props) => {
+const MenProductDetails1 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
@@ -81,7 +79,7 @@ const ProductDetails = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom />
+            <ProductZoomMen1 />
           </div>
 
           <div
@@ -102,13 +100,14 @@ const ProductDetails = (props) => {
                 marginBottom: "6px",
               }}
             >
-              Nova Band – Symbol Men's Solid Cotton Formal Shirt
+              JVX Men Sweatshirts || Sweatshirts for Men
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                | Plain | Full Sleeve – Regular Fit
+                || Unisex Hoodie ||Hoodie ||Available in Plus Size
+                (SWEATSHIRT-11)
                 <p
                   style={{
-                    fontSize: "19px",
+                    fontSize: "14px",
                     color: "blue",
                   }}
                 >
@@ -119,7 +118,9 @@ const ProductDetails = (props) => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Premium cotton fabric • Comfortable for daily formal wear
+              Men sweatshirts || sweatshirts for Men || Unisex sweatshirts
+              ||Hoodie for men || unisex hoodie || hoodie || Available in Plus
+              Size
             </p>
 
             {/* RATING */}
@@ -133,9 +134,9 @@ const ProductDetails = (props) => {
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐⭐☆
+              ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (581 reviews)
+                (251 reviews)
               </span>
             </div>
 
@@ -167,7 +168,7 @@ const ProductDetails = (props) => {
                   color: "#B12704",
                 }}
               >
-                ₹1,299
+                ₹599
               </span>
 
               <span
@@ -177,7 +178,7 @@ const ProductDetails = (props) => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹2,499
+                ₹2,999
               </span>
 
               <span
@@ -187,7 +188,7 @@ const ProductDetails = (props) => {
                   color: "#007185",
                 }}
               >
-                48% off
+                80% off
               </span>
             </div>
 
@@ -308,17 +309,7 @@ const ProductDetails = (props) => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>100% Cotton</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Pattern
-                </span>
-                <span>Solid</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular Fit</span>
+                <span>Wool Blend</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
@@ -326,12 +317,22 @@ const ProductDetails = (props) => {
                 <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Collar style
+                  Material type
                 </span>
-                <span>Classic Collar</span>
+                <span>Wool Blend</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Regular</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Standard Length</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Neck style
+                </span>
+                <span>Collared Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -453,7 +454,7 @@ const ProductDetails = (props) => {
           </div>
         </div>
 
-        <ProductReview />
+        <MenProductReview1 />
 
         <div className="Related-Product">
           <h2
@@ -466,53 +467,50 @@ const ProductDetails = (props) => {
             Related Products
           </h2>
           <div className="men-products">
-              <Swiper
-        slidesPerView={6}
-        spaceBetween={0}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <MenProduct1/>
-        </SwiperSlide>
+            <Swiper
+              slidesPerView={6}
+              spaceBetween={0}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <MenProduct1 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <MenProduct2 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <MenProduct2/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <MenProduct3 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <MenProduct4 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <MenProduct3/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <MenProduct5 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-        <MenProduct4/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <MenProduct6 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <MenProduct5/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <MenProduct7 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <MenProduct6/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <MenProduct7/>
-          </SwiperSlide>
-
-
-        <SwiperSlide>
-          <MenProduct8/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <MenProduct9/>
-        </SwiperSlide>
-      </Swiper>
+              <SwiperSlide>
+                <MenProduct8 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <MenProduct9 />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
@@ -520,4 +518,4 @@ const ProductDetails = (props) => {
   );
 };
 
-export default ProductDetails;
+export default MenProductDetails1;
