@@ -8,7 +8,7 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-const ProductItems2 = () => {
+const ProductItems11 = () =>{
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -185,7 +185,7 @@ const ProductItems2 = () => {
            onMouseLeave={() => setIsHovered(false)}
          >
            <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/61rsMLsARBL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51gEvHoz4vL._SY741_.jpg"}
+             src={isHovered ? "https://m.media-amazon.com/images/I/61Gs-lCCBiL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71fq4c-JbQL._SY741_.jpg"}
              alt="product"
              style={{
                width: "70%",
@@ -212,7 +212,7 @@ const ProductItems2 = () => {
                 width: "100%",
               }}
             >
-              GRECIILOOKS Women Dress
+              Astral Bloom Women 
             </h4>
 
             <p
@@ -224,7 +224,7 @@ const ProductItems2 = () => {
                 margin: "0",
               }}
             >
-              GRECIILOOKS Women Dress | Summer Dress
+             The Souled Store Textured Dress: Astral Bloom Women and Girls Long Sleeves V-Neck Graphic Printed
             </p>
 
             {/* Price Section */}
@@ -243,7 +243,7 @@ const ProductItems2 = () => {
                   color: "#ff4b4b",
                 }}
               >
-                ₹549
+                ₹1,699
               </span>
               <span
                 style={{
@@ -252,12 +252,12 @@ const ProductItems2 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2,299
+                ₹1,999
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                76% OFF
+                15% OFF
               </span>
             </div>
 
@@ -293,4 +293,5 @@ const ProductItems2 = () => {
   );
 };
 
-export default ProductItems2;
+
+export default ProductItems11

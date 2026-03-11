@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-const MenProduct4 = () => {
+const MenProduct12 = () =>{
      const [wishlist, setWishlist] = useState(false);
       const [hover, setHover] = useState(false);
       const [isHovered, setIsHovered] = useState(false);
@@ -158,7 +158,7 @@ const MenProduct4 = () => {
               )}
             </div>
     
-            <Link to="/MenProductDetails4" style={{ textDecoration: "none", color: "#777" }}>
+            <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
               <div
                 style={{
                   width: "100%",
@@ -173,7 +173,7 @@ const MenProduct4 = () => {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <img
-                  src={isHovered ? "https://m.media-amazon.com/images/I/41uKa5xYPyL.jpg" : "https://m.media-amazon.com/images/I/71dF+pDGxIL._SY741_.jpg"}
+                  src={isHovered ? "https://m.media-amazon.com/images/I/71xHhtS0UkL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71Bkeh1bDbL._SY741_.jpg"}
                   alt="product"
                   style={{
                     width: "70%",
@@ -194,7 +194,7 @@ const MenProduct4 = () => {
                   marginTop: "10px",
                 }}
               >
-             Casual Button Down Shirts
+            Crochet Formal Shirt for Men
               </h4>
     
               {/* Description */}
@@ -207,7 +207,7 @@ const MenProduct4 = () => {
                   margin: "0",
                 }}
               >
-               CB-COLEBROOK Men's Casual Button Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts
+              GRECIILOOKS Men's Polycotton Regular Fit | Casual Stylish
               </p>
     
               {/* Price Section */}
@@ -222,7 +222,7 @@ const MenProduct4 = () => {
                 <span
                   style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
                 >
-                  ₹399
+                  ₹549
                 </span>
                 <span
                   style={{
@@ -231,12 +231,12 @@ const MenProduct4 = () => {
                     fontSize: "13px",
                   }}
                 >
-                  ₹2195
+                  ₹1,999
                 </span>
                 <span
                   style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
                 >
-                  82% OFF
+                  73% OFF
                 </span>
               </div>
     
@@ -251,7 +251,7 @@ const MenProduct4 = () => {
                 }}
               >
                 ⭐⭐⭐⭐⭐
-                <span style={{ fontSize: "13px", color: "#555" }}>(3021)</span>
+                <span style={{ fontSize: "13px", color: "#555" }}>(358)</span>
               </div>
     
               {/* Delivery */}
@@ -263,7 +263,7 @@ const MenProduct4 = () => {
                   color: "blue",
                 }}
               >
-                🚚 Free Delivery
+                🚚Free Delivery
               </p>
             </Link>
           </div>
@@ -271,4 +271,5 @@ const MenProduct4 = () => {
   )
 }
 
-export default MenProduct4
+
+export default MenProduct12

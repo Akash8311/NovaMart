@@ -4,25 +4,25 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
-import ProductItems from "../../components/ProductItems/ProductItems";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { IoGrid } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
-import ProductItems2 from "../../components/ProductItems/ProductItems2";
-import ProductItems3 from "../../components/ProductItems/ProductItems3";
-import ProductItems4 from "../../components/ProductItems/ProductItems4";
-import ProductItems5 from "../../components/ProductItems/ProductItems5";
-import ProductItems6 from "../../components/ProductItems/ProductItems6";
-import ProductItems7 from "../../components/ProductItems/ProductItems7";
-import ProductItems8 from "../../components/ProductItems/ProductItems8";
-import ProductItems9 from "../../components/ProductItems/ProductItems9";
-import ProductItems10 from "../../components/ProductItems/ProductItems10";
-import ProductItems11 from "../../components/ProductItems/ProductItems11";
-import ProductItems12 from "../../components/ProductItems/ProductItems12";
+import MenProduct1 from "../ProductDetails/Men/MenProduct1";
+import MenProduct2 from "../ProductDetails/Men/MenProduct2";
+import MenProduct3 from "../ProductDetails/Men/MenProduct3";
+import MenProduct4 from "../ProductDetails/Men/MenProduct4";
+import MenProduct5 from "../ProductDetails/Men/MenProduct5";
+import MenProduct6 from "../ProductDetails/Men/MenProduct6";
+import MenProduct7 from "../ProductDetails/Men/MenProduct7";
+import MenProduct8 from "../ProductDetails/Men/MenProduct8";
+import MenProduct9 from "../ProductDetails/Men/MenProduct9";
+import MenProduct10 from "../ProductDetails/Men/MenProduct10";
+import MenProduct11 from "../ProductDetails/Men/MenProduct11";
+import MenProduct12 from "../ProductDetails/Men/MenProduct12";
 
-const Productlisting = () => {
+const Men_productListing = () => {
   // sort dropdown
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [sortValue, setSortValue] = React.useState("Name, A To Z");
@@ -166,18 +166,18 @@ const Productlisting = () => {
               borderRadius: "8px",
             }}
           >
-            <ProductItems view={viewType} />
-            <ProductItems2 view={viewType} />
-            <ProductItems3 view={viewType} />
-            <ProductItems4 view={viewType} />
-            <ProductItems5 view={viewType} />
-            <ProductItems6 view={viewType} />
-            <ProductItems7 view={viewType} />
-            <ProductItems8 view={viewType} />
-            <ProductItems9 view={viewType} />
-            <ProductItems10 view={viewType} />
-            <ProductItems11 view={viewType} />
-            <ProductItems12 view={viewType} />
+            <MenProduct1 view={viewType} />
+            <MenProduct2 view={viewType} />
+            <MenProduct3 view={viewType} />
+            <MenProduct4 view={viewType} />
+            <MenProduct5 view={viewType} />
+            <MenProduct6 view={viewType} />
+            <MenProduct7 view={viewType} />
+            <MenProduct8 view={viewType} />
+            <MenProduct9 view={viewType} />
+            <MenProduct10 view={viewType} />
+            <MenProduct11 view={viewType} />
+            <MenProduct12 view={viewType} />
           </div>
         </div>
       </div>
@@ -185,4 +185,5 @@ const Productlisting = () => {
   );
 };
 
-export default Productlisting;
+
+export default Men_productListing

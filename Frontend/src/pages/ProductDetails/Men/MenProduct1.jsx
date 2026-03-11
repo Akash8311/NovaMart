@@ -179,8 +179,8 @@ const MenProduct1 = () => {
             <img
               src={
                 isHovered
-                  ? "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg"
-                  : "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"
+                  ? "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg"
               }
               alt="product"
               style={{

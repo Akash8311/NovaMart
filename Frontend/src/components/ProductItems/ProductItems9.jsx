@@ -8,7 +8,8 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-const ProductItems2 = () => {
+
+const ProductItems9 =  () =>{
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -185,7 +186,7 @@ const ProductItems2 = () => {
            onMouseLeave={() => setIsHovered(false)}
          >
            <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/61rsMLsARBL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51gEvHoz4vL._SY741_.jpg"}
+             src={isHovered ? "https://m.media-amazon.com/images/I/51GKJyiJfHL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51NgQWs-VyL._SY741_.jpg"}
              alt="product"
              style={{
                width: "70%",
@@ -212,7 +213,7 @@ const ProductItems2 = () => {
                 width: "100%",
               }}
             >
-              GRECIILOOKS Women Dress
+              Chiffon Ombre Saree
             </h4>
 
             <p
@@ -224,7 +225,7 @@ const ProductItems2 = () => {
                 margin: "0",
               }}
             >
-              GRECIILOOKS Women Dress | Summer Dress
+              HELLA FASHIONS Ready to Wear Chiffon Ombre Saree for Women with Blouse Piece
             </p>
 
             {/* Price Section */}
@@ -243,7 +244,7 @@ const ProductItems2 = () => {
                   color: "#ff4b4b",
                 }}
               >
-                ₹549
+                ₹949
               </span>
               <span
                 style={{
@@ -252,12 +253,12 @@ const ProductItems2 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2,299
+                ₹3199
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                76% OFF
+                70% OFF
               </span>
             </div>
 
@@ -293,4 +294,5 @@ const ProductItems2 = () => {
   );
 };
 
-export default ProductItems2;
+
+export default ProductItems9

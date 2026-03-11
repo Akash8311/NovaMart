@@ -4,10 +4,12 @@ import Header from "./components/Header/Header";
 import Home from "./pages/home/Home";
 import Footer from "./components/Footer/Footer";
 import Productlisting from "./pages/Productlisting/Productlisting";
+import Men_productListing from "./pages/Productlisting/Men_productListing";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import MenProductDetails1 from "./pages/ProductDetails/Men/MenProductDetails1";
 import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
 import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
+import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4.JSX";
 
 const App = () => {
   return (
@@ -21,10 +23,12 @@ const App = () => {
             exact={true}
             element={<Productlisting />}
           />
+          <Route path={"/Men_productListing"} exact={true} element={<Men_productListing/>}/>
           <Route path="/Product/:id" element={<ProductDetails />} />
          <Route path="/MenproductDetails1"element={<MenProductDetails1/>}/>
          <Route path="/menproductDetails2"element={<MenProductDetails2/>}/>
          <Route path="/menproductDetails3"element={<MenProductDetails3/>}/>
+         <Route path="/menproductDetails4"element={<MenProductDetails4/>}/>
           {/* <Route path="/help-center" element={<HelpCenter />} /> */}
         </Routes>
         <Footer />

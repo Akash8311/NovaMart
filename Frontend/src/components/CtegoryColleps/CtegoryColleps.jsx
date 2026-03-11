@@ -1,22 +1,68 @@
-import React from "react";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import Checkbox from "@mui/material/Checkbox";
-import FormGroup from "@mui/material/FormGroup";
+import React, { useState } from "react";
+
+const categories = [
+  "Fashion",
+  "Electronics",
+  "Bags",
+  "Footwear",
+  "Groceries",
+  "Beauty",
+  "Wellness",
+  "Jewellery",
+];
 
 const CtegoryColleps = () => {
+  const [selected, setSelected] = useState("");
+
   return (
-    <div style={{ width: "100%", padding: "0px" }}>
-      <div className="scroll">
-        <FormGroup>
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Fashion" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Electronics" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Bags" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Footwear" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Groceries" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Beauty" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Wellness" />
-          <FormControlLabel control={<Checkbox defaultChecked />} label="Jewellery" />
-        </FormGroup>
+    <div
+      style={{
+        background: "#fff",
+        padding: "15px",
+        borderRadius: "12px",
+        border: "1px solid #eee",
+      }}
+    >
+      <h3
+        style={{
+          fontSize: "16px",
+          fontWeight: "600",
+          marginBottom: "12px",
+        }}
+      >
+        Categories
+      </h3>
+
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "10px",
+        }}
+      >
+        {categories.map((cat, i) => (
+          <div
+            key={i}
+            onClick={() => setSelected(cat)}
+            style={{
+              padding: "8px 14px",
+              borderRadius: "20px",
+              cursor: "pointer",
+              fontSize: "13px",
+              fontWeight: "500",
+              transition: "0.3s",
+              border:
+                selected === cat
+                  ? "1px solid #1976d2"
+                  : "1px solid #ddd",
+              background:
+                selected === cat ? "#1976d2" : "#f7f7f7",
+              color: selected === cat ? "#fff" : "#333",
+            }}
+          >
+            {cat}
+          </div>
+        ))}
       </div>
     </div>
   );

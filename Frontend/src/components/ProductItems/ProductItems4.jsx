@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Product4 from "../../assets/Product4.png";
-import Duplicate4 from "../../assets/Duplicate4.png";
+
 
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
@@ -50,6 +49,7 @@ const ProductItems2 = () => {
         zIndex: 1000,
       }}
     >
+      
       {/* ❤️ Wishlist Button */}
       {hover && (
         <button
@@ -189,10 +189,10 @@ const ProductItems2 = () => {
              onMouseLeave={() => setIsHovered(false)}
            >
              <img
-               src={isHovered ? Duplicate4 : Product4}
+               src={isHovered ? "https://m.media-amazon.com/images/I/81Qh+UciWIL._SY741_.jpg" : "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"}
                alt="product"
                style={{
-                 width: "70%",
+                 width: "65%",
                  height: "100%",
                  objectFit: "cover",
                  transition: "0.4s",
@@ -216,7 +216,7 @@ const ProductItems2 = () => {
                overflow: "hidden",
                width: "100%"
              }}>
-              Trendy Modern Men Shirts
+             Janasya 
              </h4>
          
              <p style={{
@@ -227,7 +227,7 @@ const ProductItems2 = () => {
            margin: "0"
          }}>
           
-             NCOMFY & STYLISH MEN SHIRTS
+             Janasya Women Green Georgette Kurta with Palazzo & Dupatta with Floral Print Outfit for Women
            
          </p>
          
@@ -235,13 +235,13 @@ const ProductItems2 = () => {
              {/* Price Section */}
              <div style={{ marginTop: "6px", display: "flex", justifyContent: "center", gap: "7px" }}>
                <span style={{ fontWeight: "700", fontSize: "16px", color:"#ff4b4b" }}>
-                 ₹263
+                 ₹1,449
                </span>
                <span style={{ textDecoration: "line-through", color:"#999", fontSize:"13px" }}>
-                 ₹291
+                 ₹4998
                </span>
                <span style={{ color:"blue", fontSize:"14px", fontWeight:"600" }}>
-                 10% OFF
+                 71% OFF
                </span>
              </div>
          

@@ -51,7 +51,7 @@ const Navigation = () => {
               </Link>
             </li>
             <li className="list-none relative">
-              <Link to="/productlisting" className="text-[16px] Link no-underline transition ">
+              <Link to="/" className="text-[16px] Link no-underline transition ">
               <Button style={{color:"black"}}>
 
                 Fahion
@@ -61,14 +61,14 @@ const Navigation = () => {
                   <div className="submenu absolute top-[120%] left-[0%] min-w-300px bg-white shadow-md opacity-0 transition">
                     <ul>
                       <li className="list-none w-full">
-                        <Link to="/" className='w-full'>
+                        <Link to="/Men_productListing" className='w-full'>
                         <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' >
                                 Men
                         </Button>
                         </Link>
                       </li>
                       <li className="list-none w-full">
-                                                <Link to="/" className='w-full'>
+                                                <Link to="/productlisting" className='w-full'>
 
                         <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
                                 Women

@@ -8,7 +8,7 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-const ProductItems2 = () => {
+const ProductItems10 = () =>{
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -185,7 +185,7 @@ const ProductItems2 = () => {
            onMouseLeave={() => setIsHovered(false)}
          >
            <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/61rsMLsARBL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51gEvHoz4vL._SY741_.jpg"}
+             src={isHovered ? "https://m.media-amazon.com/images/I/81HVYcjvXjL._SY741_.jpg" : "https://m.media-amazon.com/images/I/61xtN+BjS2L._SY741_.jpg"}
              alt="product"
              style={{
                width: "70%",
@@ -212,7 +212,7 @@ const ProductItems2 = () => {
                 width: "100%",
               }}
             >
-              GRECIILOOKS Women Dress
+              Kurta Pant Set
             </h4>
 
             <p
@@ -224,7 +224,7 @@ const ProductItems2 = () => {
                 margin: "0",
               }}
             >
-              GRECIILOOKS Women Dress | Summer Dress
+              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round Neck Half Sleeeve Standard Length
             </p>
 
             {/* Price Section */}
@@ -243,7 +243,7 @@ const ProductItems2 = () => {
                   color: "#ff4b4b",
                 }}
               >
-                ₹549
+                ₹799
               </span>
               <span
                 style={{
@@ -252,12 +252,12 @@ const ProductItems2 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2,299
+                ₹1999
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                76% OFF
+                60% OFF
               </span>
             </div>
 
@@ -293,4 +293,5 @@ const ProductItems2 = () => {
   );
 };
 
-export default ProductItems2;
+
+export default ProductItems10
