@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import OnlyReviewSection from "../../OnlyReviewSection";'
+import OnlyReviewSection from "../../OnlyReviewSection";
 
 const MenProductReview4 = () => {
   const [activeTab, setActiveTab] = useState("description");
