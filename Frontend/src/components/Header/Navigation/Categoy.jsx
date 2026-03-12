@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import { IoClose } from "react-icons/io5";
 import { RiMenuAddFill, RiSubtractFill } from "react-icons/ri";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";  
 
 const Category = (props) => {
   const [openFashion, setOpenFashion] = useState(false);
@@ -97,6 +98,7 @@ const [opneFootWear,setOpenFootWear] = useState (false);
           {openFashion && (
             <ul className="ml-5 mt-1 space-y-1 transition-all duration-300 ease-in-out">
               <li className="list-none">
+                <Link to="/Men_productListing" className='w-full'>
                 <Button
                   className="w-full !justify-start !text-left !text-black"
                   sx={{
@@ -108,11 +110,15 @@ const [opneFootWear,setOpenFootWear] = useState (false);
                     "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
                   }}
                 >
+                 
                   Men
+                 
                 </Button>
+                </Link>
               </li>
 
               <li className="list-none">
+                 <Link to="/productlisting" className='w-full'>
                 <Button
                   className="w-full !justify-start !text-left !text-black"
                   sx={{
@@ -124,8 +130,11 @@ const [opneFootWear,setOpenFootWear] = useState (false);
                     "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
                   }}
                 >
+                 
                   Women
+                  
                 </Button>
+                </Link>
               </li>
 
               <li className="list-none">

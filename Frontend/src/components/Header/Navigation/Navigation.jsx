@@ -84,31 +84,9 @@ const Navigation = () => {
                         </Button>
                         </Link>
                       </li>
-                      <li className="list-none">
-                                                <Link to="/" className='w-full'>
-
-                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
-                                Girls
-                        </Button>
-                                                </Link>
-
-                      </li>
+                      
                       <li className="list-none w-full">
-                                                <Link to="/" className='w-full'>
-
-                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
-                                Men
-                        </Button>
-                                                </Link>
-
-                      </li>
-                      <li className="list-none w-full">
-                                                <Link to="/" className='w-full'>
-
-                        <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
-                                  Boys
-                        </Button>
-                                                </Link>
+                                               
 
                       </li>
                     </ul>

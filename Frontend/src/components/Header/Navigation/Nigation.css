@@ -62,7 +62,7 @@
 
 .nav li .submenu li button:hover,
 .nav li .submenu li a:hover {
-  color: #ff5252 !important;
+  color: #092d88 !important;
   background: rgb(255, 255, 255) !important;
   text-decoration: none !important;
   transform: translateX(3px);
@@ -107,7 +107,7 @@
 
 .nav li .submenu li .submenu button:hover,
 .nav li .submenu li .submenu a:hover {
-  color: #ff5252 !important;
+  color: #6192f2 !important;
   background: transparent !important;
   text-decoration: none !important;
   transform: translateX(3px);
