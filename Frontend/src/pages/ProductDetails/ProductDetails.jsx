@@ -19,22 +19,24 @@ import 'swiper/css/pagination';
 
 
 import { Pagination } from 'swiper/modules';
-import MenProduct1 from "./Men/MenProduct1";
-import MenProduct2 from "./Men/MenProduct2";
-import MenProduct3 from "./Men/MenProduct3";
-import MenProduct4 from "./Men/MenProduct4";
-import MenProduct5 from "./Men/MenProduct5";
-import MenProduct6 from "./Men/MenProduct6";
-import MenProduct7 from "./Men/MenProduct7";
-import MenProduct8 from "./Men/MenProduct8";
-import MenProduct9 from "./Men/MenProduct9";
+import ProductItems2 from "../../components/ProductItems/ProductItems2";
+import ProductItems3 from "../../components/ProductItems/ProductItems3";
+import ProductItems4 from "../../components/ProductItems/ProductItems4";
+import ProductItems5 from "../../components/ProductItems/ProductItems5";
+import ProductItems6 from "../../components/ProductItems/ProductItems6";
+import ProductItems7 from "../../components/ProductItems/ProductItems7";
+import ProductItems8 from "../../components/ProductItems/ProductItems8";
+import ProductItems9 from "../../components/ProductItems/ProductItems9";
+import ProductItems10 from "../../components/ProductItems/ProductItems10";
+import ProductItems11 from "../../components/ProductItems/ProductItems11";
+import ProductItems12 from "../../components/ProductItems/ProductItems12";
 
 
 const ProductDetails = (props) => {
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["38", "40", "42", "44", "46", "48", "50", "52"];
+  const sizes = ["S", "M", "L", "XL", "XXL"];
   return (
     <>
       {" "}
@@ -102,7 +104,7 @@ const ProductDetails = (props) => {
                 marginBottom: "6px",
               }}
             >
-              Nova Band – Symbol Men's Solid Cotton Formal Shirt
+             Miss Chase Women's Solid Sleeveless Collared Bodycon Above Knee Polyester Dress with Pockets
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 | Plain | Full Sleeve – Regular Fit
@@ -476,41 +478,50 @@ const ProductDetails = (props) => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <MenProduct1/>
+          <ProductItems2/>
         </SwiperSlide>
 
 
         <SwiperSlide>
-          <MenProduct2/>
+          <ProductItems3/>
         </SwiperSlide>
 
 
         <SwiperSlide>
-          <MenProduct3/>
+          <ProductItems4/>
         </SwiperSlide>
 
         <SwiperSlide>
-        <MenProduct4/>
+        <ProductItems5/>
         </SwiperSlide>
 
         <SwiperSlide>
-          <MenProduct5/>
+          <ProductItems6/>
         </SwiperSlide>
 
         <SwiperSlide>
-          <MenProduct6/>
+          <ProductItems7/>
         </SwiperSlide>
 
         <SwiperSlide>
-          <MenProduct7/>
+          <ProductItems8/>
           </SwiperSlide>
 
 
         <SwiperSlide>
-          <MenProduct8/>
+          <ProductItems9/>
         </SwiperSlide>
+
         <SwiperSlide>
-          <MenProduct9/>
+          <ProductItems10/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <ProductItems12/>
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <ProductItems11/>
         </SwiperSlide>
       </Swiper>
           </div>

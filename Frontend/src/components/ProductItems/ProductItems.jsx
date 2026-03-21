@@ -164,7 +164,7 @@ const ProductItems = () => {
           )}
         </div>
 
-        <Link to="ProductItems1" style={{ textDecoration: "none", color: "#777" }}>
+        <Link to="/product/847" style={{ textDecoration: "none", color: "#777" }}>
           <div
             style={{
               width: "100%",

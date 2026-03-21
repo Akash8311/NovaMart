@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 import "./ProductZoom.css";
 
 const images = [
-  "https://m.media-amazon.com/images/I/71pzB-Rhc9L._SX569_.jpg",
-  "https://m.media-amazon.com/images/I/71RfHvqcLlL._SX569_.jpg",
-  "https://m.media-amazon.com/images/I/71wJjHSED9L._SX569_.jpg",
-  "https://m.media-amazon.com/images/I/812moQIIO7L._SX569_.jpg",
-  "https://m.media-amazon.com/images/I/912P8BQhsPL._SX569_.jpg",
+  "https://m.media-amazon.com/images/I/71YnZ4mL9ZL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/710b1ogdGfL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/71YQ0q865aL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/71TCYMeejBL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/91gdB6SnWML._SY741_.jpg",
 ];
-
+// this is girls pruct1 zoom section
 const ProductZoom = () => {
   const imgRef = useRef(null);
   const lensRef = useRef(null);

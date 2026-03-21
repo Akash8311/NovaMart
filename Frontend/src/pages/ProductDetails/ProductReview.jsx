@@ -2,6 +2,9 @@ import React from "react";
 import { useState } from "react";
 import OnlyReviewSection from "./OnlyReviewSection";
 
+
+// this is girls produc review section;
+
 const ProductReview = () => {
   const [activeTab, setActiveTab] = useState("description");
   return (
@@ -51,7 +54,7 @@ const ProductReview = () => {
                   {" "}
                   Date First Available:
                 </span>{" "}
-                2 April 2025
+                2 April 2026
                 <br />
                 <span style={{ fontWeight: "bold" }}> Manufacturer:</span>{" "}
                 NovaMART Brand - Symbol
@@ -81,18 +84,16 @@ const ProductReview = () => {
                 B-1, Mohan Cooperative Industrial Area, Mathura Road, New
                 Delhi-110044
                 <br />
-                <span style={{ fontWeight: "bold" }}> Item Weight:</span> 420g
+                <span style={{ fontWeight: "bold" }}> Item Weight:</span> 350g
                 <br />
                 <span style={{ fontWeight: "bold" }}>
                   {" "}
-                  tem Dimensions LxWxH:
+                  item Dimensions LxWxH:
                 </span>{" "}
                 Net Quantity
                 <br />
                 <span style={{ fontWeight: "bold" }}> Generic Name:</span>{" "}
-                Cotton Rich Polo T Shirt | Classic Collar Tshirts | Half Sleeves
-                | Plain - Regular Fit (Available in Plus Size and Combo Pack of
-                2)
+                Dress
               </p>
             </div>
           )}
