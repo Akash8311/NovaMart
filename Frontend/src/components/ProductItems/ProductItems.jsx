@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Product1 from "../../assets/Product1.png";
-import Duplicate1 from "../../assets/Duplicate1.png";
+
 
 import { Link } from "react-router-dom";
 import { CiHeart } from "react-icons/ci";
@@ -129,6 +128,7 @@ const ProductItems = () => {
 
           {/*  Zoom Button */}
           {hover && (
+            
             <button
               style={{
                 width: "42px",
@@ -157,13 +157,14 @@ const ProductItems = () => {
                 e.target.style.color = "#444";
                 e.target.style.transform = "scale(1)";
               }}
+            
             >
               <MdZoomOutMap />
             </button>
           )}
         </div>
 
-        <Link to="/product/847" style={{ textDecoration: "none", color: "#777" }}>
+        <Link to="ProductItems1" style={{ textDecoration: "none", color: "#777" }}>
           <div
             style={{
               width: "100%",
@@ -178,7 +179,7 @@ const ProductItems = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? Duplicate1 : Product1}
+              src={isHovered ? "https://m.media-amazon.com/images/I/71YQ0q865aL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71YnZ4mL9ZL._SY741_.jpg"}
               alt="product"
               style={{
                 width: "70%",
@@ -212,8 +213,7 @@ const ProductItems = () => {
               margin: "0",
             }}
           >
-            New stylish party wear bodycon dress for women's || knee length ||
-            birthday special
+           Miss Chase Women's Solid Sleeveless Collared Bodycon Above Knee Polyester Dress with Pockets
           </p>
 
           {/* Price Section */}
