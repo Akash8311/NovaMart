@@ -166,7 +166,7 @@ const ProductItems2 = () => {
     </div>
     
         <Link 
-              to="/" 
+              to="/productDetails3" 
               style={{
                 textDecoration: "none",
                 color: "#777"
@@ -188,7 +188,7 @@ const ProductItems2 = () => {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <img
-                  src={isHovered ? Duplicate3 : Product3}
+                  src={isHovered ? "https://m.media-amazon.com/images/I/61Z4rq7mlBL._SX569_.jpg" : "https://m.media-amazon.com/images/I/61nK2fhO9oL._SX569_.jpg"}
                   alt="product"
                   style={{
                     width: "70%",
@@ -233,13 +233,13 @@ const ProductItems2 = () => {
               {/* Price Section */}
               <div style={{ marginTop: "6px", display: "flex", justifyContent: "center", gap: "7px" }}>
                 <span style={{ fontWeight: "700", fontSize: "16px", color:"#ff4b4b" }}>
-                  ₹490
+                  ₹799
                 </span>
                 <span style={{ textDecoration: "line-through", color:"#999", fontSize:"13px" }}>
-                  ₹493
+                  ₹1,799
                 </span>
                 <span style={{ color:"blue", fontSize:"14px", fontWeight:"600" }}>
-                  1% OFF
+                  56% OFF
                 </span>
               </div>
           

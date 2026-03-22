@@ -5,14 +5,14 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom2 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom2";
+import ProductZoom4 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom4";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import { useState } from "react";
 import Qtybox from "../../../../components/QtyBox/Qtybox";
 import "../../Product.css";
-import GirlsProducReview2 from "../girlsProductReview/girlsProducReview2";
+import GirlsProducReview4 from "../girlsProductReview/girlsProducReview4";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -21,8 +21,8 @@ import 'swiper/css/pagination';
 
 import { Pagination } from 'swiper/modules';
 import ProductItems from "../../../../components/ProductItems/ProductItems";
+import ProductItems2 from "../../../../components/ProductItems/ProductItems2";
 import ProductItems3 from "../../../../components/ProductItems/ProductItems3";
-import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
 import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
 import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
@@ -33,11 +33,11 @@ import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 
 
-const productDrtails2 = (props) => {
+const productDetails4 =(props) => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL", "XXL"];
+  const sizes = [];
   return (
     <>
       {" "}
@@ -84,7 +84,7 @@ const productDrtails2 = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom2 />
+            <ProductZoom4 />
           </div>
 
           <div
@@ -105,10 +105,10 @@ const productDrtails2 = (props) => {
                 marginBottom: "6px",
               }}
             >
-            GRECIILOOKS Women's V-Neck Slit Maxi || Dress Printed Boho Style, Short Sleeve, Tie Waist, Summer Casual Outfit
+             Janasya Women Green Georgette Kurta with Palazzo & Dupatta with Floral Print Outfit for Women
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                | Plain | Full Sleeve – Regular Fit
+                | 
                 <p
                   style={{
                     fontSize: "19px",
@@ -136,9 +136,9 @@ const productDrtails2 = (props) => {
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+            ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (51 reviews)
+                (125 reviews)
               </span>
             </div>
 
@@ -170,7 +170,7 @@ const productDrtails2 = (props) => {
                   color: "#B12704",
                 }}
               >
-                ₹529
+                ₹1,449
               </span>
 
               <span
@@ -180,7 +180,7 @@ const productDrtails2 = (props) => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹1,999
+                ₹4,998
               </span>
 
               <span
@@ -190,7 +190,7 @@ const productDrtails2 = (props) => {
                   color: "#007185",
                 }}
               >
-                74% off
+                71% off
               </span>
             </div>
 
@@ -311,27 +311,31 @@ const productDrtails2 = (props) => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>100% Cotton</span>
+                <span>Georgette</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  colour
+               Sleeve type
                 </span>
-                <span>Blue</span>
+                <span>Sleeveless</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Waist Style
+                  Length
                 </span>
-                <span>Fitted</span>
+                <span>Ankle Length
+
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Sleeve type
+                  Neck style
                 </span>
-                <span>Long Sleeve</span>
+                <span>V-Neck
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Collar style
+                 Care instructions
                 </span>
-                <span>Classic Collar</span>
+                <span>Hand Wash Only
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Standard Length</span>
@@ -371,31 +375,29 @@ const productDrtails2 = (props) => {
                 }}
               >
                 <li>
-                  <strong>Polly Rayon Blend:</strong> This one-piece dress for women is crafted from a polly rayon blend material, featuring a stylish floral print that makes it an ideal beach dress for women.
+                  <strong> </strong> Made with high-quality Georgette fabric for breathable comfort.
                 </li>
 
                 <li>
-                  <strong>Style & Length:</strong> This birthday dress for women in a western wear style has a chic midi length with a front open collar and button-down design, making it a sophisticated dress for women stylish enough for any occasion.
+                  <strong></strong> Beautiful Floral design in Green color adds elegance.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Versatile Occasions:</strong> Whether you're looking for a party wear dress for women , an office-ready outfit, or a relaxed look for beach wear, this one piece dress for women is perfect for western wear , summer outings, picnics, vacations, and more. It’s a must-have midi dress for women summer adventures or a standout birthday dress for women .
+                      <strong></strong>Complete Kurta with Palazzo & Dupatta included for coordinated look.
                     </li>
 
                     <li>
-                      <strong>Summer Beach Wear:</strong>Stay cool and fashionable in our summer collection with this beach party wear one piece dress —the perfect long dress for women to embrace the season in style.
+                      <strong></strong>FGreat for Festive or Party wear.
                     </li>
 
                     <li>
-                      <strong>COLLAR STYLE:</strong> Classic collar that
-                      enhances the formal appeal and maintains its shape even
-                      after multiple washes.
+                      <strong>COLLAR STYLE:</strong> Green
                     </li>
 
                     <li>
-                      <strong>Size recommendation:</strong> please use the infographic size chart guidance to determine your perfect size; a size large is recommended stylish dress for women.
+                      <strong></strong> Comfortable Gathered fit flatters all body types.
                     </li>
 
                     <li>
@@ -405,9 +407,8 @@ const productDrtails2 = (props) => {
                     </li>
 
                     <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
+                      <strong>Disclaimer :</strong> Colour Of The Actual Product May Slightly Vary Due To Different Photographic Lighting Sources Or Your Display Color Settings Or Screen Type.
+
                     </li>
 
                     <li>
@@ -445,7 +446,7 @@ const productDrtails2 = (props) => {
           </div>
         </div>
 
-               <GirlsProducReview2/>
+               <GirlsProducReview4/>
         <div className="Related-Product">
           <h2
             style={{
@@ -472,12 +473,12 @@ const productDrtails2 = (props) => {
 
 
         <SwiperSlide>
-          <ProductItems3/>
+          <ProductItems2/>
         </SwiperSlide>
 
 
         <SwiperSlide>
-          <ProductItems4/>
+          <ProductItems3/>
         </SwiperSlide>
 
         <SwiperSlide>
@@ -519,4 +520,5 @@ const productDrtails2 = (props) => {
     </>
   );
 };
-export default productDrtails2
+
+export default productDetails4

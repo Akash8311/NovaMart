@@ -1,110 +1,188 @@
 .product-image-card {
-  width: 440px;
-  padding: 14px;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  width: 470px;
+  padding: 18px;
+  border-radius: 22px;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.15),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+.product-image-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 1px;
+
+  background: linear-gradient(
+    120deg,
+    #4852dc,
+    #00c6ff,
+    #ff00cc,
+    #4852dc
+  );
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.product-image-card:hover::before {
+  opacity: 1;
 }
 
 .product-image-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.18);
-}
-.zoom-wrapper {
-  position: relative;
-  border-radius: 14px;
-  overflow: hidden;
-  background: #f6f6f6;
-  cursor: crosshair;
+  transform: translateY(-8px) scale(1.01);
+  box-shadow:
+    0 35px 80px rgba(0,0,0,0.25),
+    0 0 25px rgba(72,82,220,0.25);
 }
 
-.zoom-wrapper img {
-  width: 100%;
-  display: block;
-  border-radius: 14px;
-}
-
-.zoom-lens {
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  background-repeat: no-repeat;
-  pointer-events: none;
-  opacity: 0;
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
-  background-color: #fff;
-}
-
-/* small helper text */
-.zoom-hint {
-  margin-top: 10px;
-  font-size: 13px;
-  text-align: center;
-  letter-spacing: 0.3px;
-}
 .zoom-container {
   display: flex;
-  gap: 15px;
+  gap: 14px;
   align-items: flex-start;
 }
 
 .thumbnail-column {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding-top: 20px;
+  gap: 12px;
 }
-
 .thumb {
-  width: 45px;
-  
-  height: 60px;
+  width: 60px;
+  height: 78px;
   object-fit: cover;
-  border: 1px solid #ddd;
+
+  border-radius: 14px;
   cursor: pointer;
-  border-radius: 10px;
-  transition: 0.2s;
+
+  border: 2px solid transparent;
+
+  background: #f2f2f2;
+
+  transition: all 0.3s ease;
+
+  filter: grayscale(40%);
+}
+.thumb:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+
+  border-color: #4852dc;
+
+  box-shadow:
+    0 10px 20px rgba(72,82,220,0.35),
+    0 0 10px rgba(72,82,220,0.4);
 }
 
-.thumb:hover,
 .thumb.active {
-  border: 2px solid #4852dc;
-}
+  filter: grayscale(0%);
+  border-color: #6f8cf3;
 
+  box-shadow:
+    0 12px 25px rgba(127, 175, 210, 0.4);
+}
 .zoom-wrapper {
   position: relative;
-  width: 400px;
+  width: 420px;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: #fafafa;
+
+  cursor: crosshair;
+
+  box-shadow:
+    inset 0 0 15px rgba(0,0,0,0.1),
+    0 12px 25px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
 }
 
 .zoom-wrapper img {
   width: 100%;
   display: block;
+  border-radius: 18px;
+
+  transition: transform 0.35s ease;
+}
+
+.zoom-wrapper:hover img {
+  transform: scale(1.07);
 }
 
 .zoom-lens {
   position: absolute;
-  width: 160px;
-  height: 160px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  border: 3px solid white;
+
   background-repeat: no-repeat;
+
   pointer-events: none;
+
   opacity: 0;
+
+  backdrop-filter: blur(4px);
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.4),
+    0 0 15px rgba(72,82,220,0.4);
 }
-.thumb {
-  width: 54px;
-  height: 72px;
-  object-fit: cover;
-  border: 2px solid transparent;
-  background: #f1f1f1;
-  cursor: pointer;
-  border-radius: 12px;
-  transition: all 0.3s ease;
-  filter: grayscale(40%); /* Subtle desaturation until hovered */
+
+
+.zoom-hint {
+  margin-top: 12px;
+
+  font-size: 15px;
+
+  text-align: center;
+
+  font-weight: 500;
+
+  letter-spacing: 0.5px;
+
+  color: #444;
 }
-.thumb:hover,
-.thumb.active {
-  filter: grayscale(0%);
-  border-color: #4852dc;
-  transform: scale(1.05);
-  box-shadow: 0 8px 15px rgba(72, 82, 220, 0.2);
+
+@media (max-width: 900px) {
+
+  .product-image-card {
+    width: 100%;
+  }
+
+  .zoom-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .zoom-wrapper {
+    width: 100%;
+  }
+
+  .thumbnail-column {
+    flex-direction: row;
+  }
+
 }
