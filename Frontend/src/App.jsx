@@ -15,7 +15,10 @@ import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
 import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
 import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 
-import ProductZoom from "./components/ProductZoom/ProductZoom"; // ✅ add this
+import ProductZoom from "./components/ProductZoom/ProductZoom"; 
+
+
+import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
 
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -53,6 +56,9 @@ const App = () => {
           <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
           <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
           <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
+
+
+        <Route path="/productDrtails2" element={<ProductDrtails2 />} />
         </Routes>
 
         <Footer />

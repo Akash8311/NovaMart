@@ -1,11 +1,8 @@
 import React from "react";
 import { useState } from "react";
-import OnlyReviewSection from "./OnlyReviewSection";
+import OnlyReviewSection from "../../OnlyReviewSection";
 
-
-// this is girls product review section;
-
-const ProductReview = () => {
+const girlsProducReview2 = () => {
   const [activeTab, setActiveTab] = useState("description");
   return (
     <>
@@ -107,4 +104,4 @@ const ProductReview = () => {
   );
 };
 
-export default ProductReview;
+export default girlsProducReview2;
