@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import OnlyReviewSection from "../../OnlyReviewSection";
 
@@ -7,7 +6,7 @@ const GirlsProducReview3 = () => {
   return (
     <>
       <div className="review w-full">
-        {/* Tabs */}
+        
         <div
           className="flex items-center review-tabs"
           style={{ paddingBlock: "10px" }}
@@ -45,13 +44,13 @@ const GirlsProducReview3 = () => {
               </h3>
               <p style={{ fontSize: "16px" }}>
                 <span style={{ fontWeight: "bold" }}> Product Dimension:</span>{" "}
-                30.48 x 24 x 10 cm; 450 g
+                30.48 x 24 x 10 cm; 356 g
                 <br />
                 <span style={{ fontWeight: "bold" }}>
                   {" "}
                   Date First Available:
                 </span>{" "}
-                2 April 2026
+                21 may 2026
                 <br />
                 <span style={{ fontWeight: "bold" }}> Manufacturer:</span>{" "}
                 NovaMART Brand - Symbol
