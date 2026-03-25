@@ -16,7 +16,7 @@ const ProductZoom4 = () => {
   const lensRef = useRef(null);
   const [activeImg, setActiveImg] = useState(images[0]);
 
-  const lensSize = 160;
+  const lensSize = 160
 
   const moveLens = (e) => {
     const img = imgRef.current;
