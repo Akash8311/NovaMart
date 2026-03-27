@@ -22,7 +22,7 @@ const GirlsProducReview3 = () => {
             className={`wishButton tab ${activeTab === "review" ? "active" : ""}`}
             onClick={() => setActiveTab("review")}
           >
-            Review (27)
+            Review (19)
           </span>
         </div>
 
