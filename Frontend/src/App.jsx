@@ -10,16 +10,19 @@ import Men_productListing from "./pages/Productlisting/Men_productListing";
 
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
+// Men Products
 import MenProductDetails1 from "./pages/ProductDetails/Men/MenProductDetails1";
 import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
 import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
 import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 
 
-
+// Girls Product
 import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
 import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails3";
 import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails4";
+
+
 
 
 
