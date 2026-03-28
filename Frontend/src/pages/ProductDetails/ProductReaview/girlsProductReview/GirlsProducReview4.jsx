@@ -24,7 +24,7 @@ const GirlsProducReview4 = () => {
             className={`wishButton tab ${activeTab === "review" ? "active" : ""}`}
             onClick={() => setActiveTab("review")}
           >
-            Review (125)
+            Review (59)
           </span>
         </div>
 
@@ -46,13 +46,13 @@ const GirlsProducReview4 = () => {
               </h3>
               <p style={{ fontSize: "16px" }}>
                 <span style={{ fontWeight: "bold" }}> Product Dimension:</span>{" "}
-                30.48 x 24 x 10 cm; 450 g
+                26 x 24 x 36 cm; 360 g
                 <br />
                 <span style={{ fontWeight: "bold" }}>
                   {" "}
                   Date First Available:
                 </span>{" "}
-                2 April 2026
+                15 May 2026
                 <br />
                 <span style={{ fontWeight: "bold" }}> Manufacturer:</span>{" "}
                 NovaMART Brand - Symbol
