@@ -23,7 +23,7 @@ const BlogItems4 = () => {
                 >
                   {/* IMAGE */}
                   <img
-                    src= "https://serviceapi.spicezgold.com/download/1742439558879_4-4.jpg"
+                    src= "https://thumbs.dreamstime.com/b/family-shopping-happy-people-child-carrying-bags-walking-modern-mall-high-resolution-family-shopping-happy-people-mall-116208869.jpg"
                     alt=""
                     style={{
                       width: "100%",

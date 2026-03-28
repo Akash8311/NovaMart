@@ -69,7 +69,6 @@ const App = () => {
         <Footer />
 
 
-        {/* ✅ Dialog MUST be inside Provider */}
         <Dialog
           open={openProductDetailsModel}
           onClose={handleCloseProductDetailsModel}

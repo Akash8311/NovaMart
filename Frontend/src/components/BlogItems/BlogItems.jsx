@@ -20,7 +20,7 @@ const BlogItems = () => {
     >
       {/* IMAGE */}
       <img
-        src="https://serviceapi.spicezgold.com/download/1760239113701_NewProject(4).jpg"
+        src="https://www.shutterstock.com/image-photo/beautiful-sme-woman-describe-selling-600nw-2500079709.jpg"
         alt=""
         style={{
           width: "100%",
@@ -45,7 +45,7 @@ const BlogItems = () => {
           backdropFilter: "blur(4px)"
         }}
       >
-        22 Nov 2025
+        22 Nov 2026
       </div>
 
       {/* ICON WRAPPER */}

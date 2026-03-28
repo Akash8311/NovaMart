@@ -21,7 +21,7 @@ const BlogItems2 = () => {
         >
           {/* IMAGE */}
           <img
-            src="https://serviceapi.spicezgold.com/download/1741758993155_6-4.jpg"
+            src="https://img.freepik.com/free-photo/female-friends-out-shopping-together_53876-25041.jpg?semt=ais_hybrid&w=740&q=80"
             alt=""
             style={{
               width: "100%",
