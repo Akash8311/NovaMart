@@ -85,6 +85,7 @@ const App = () => {
             <div className="flex items-center w-full productDetailsModelContainer">
 
               <div className="col1">
+                
                 <ProductZoom />
               </div>
 
