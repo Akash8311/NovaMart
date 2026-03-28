@@ -15,7 +15,6 @@ import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
 import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
 import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 
-import ProductZoom from "./components/ProductZoom/ProductZoom"; 
 
 
 import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
@@ -23,29 +22,16 @@ import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductD
 import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails4";
 
 
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
 
 export const MyContext = createContext();
 
 const App = () => {
 
-  const [openProductDetailsModel, setOpenProductDetailsModel] = useState(false);
 
-  const handleCloseProductDetailsModel = () => {
-    setOpenProductDetailsModel(false);
-  };
-
-  const values = {
-    openProductDetailsModel,
-    setOpenProductDetailsModel,
-  };
 
   return (
     <BrowserRouter>
 
-      <MyContext.Provider value={values}>
 
         <Header />
 
@@ -69,34 +55,7 @@ const App = () => {
         <Footer />
 
 
-        <Dialog
-          open={openProductDetailsModel}
-          onClose={handleCloseProductDetailsModel}
-          fullWidth
-          maxWidth="md"
-          className="productDetailsModel"
-        >
-          <DialogTitle>
-            Product Details
-          </DialogTitle>
-
-          <DialogContent>
-
-            <div className="flex items-center w-full productDetailsModelContainer">
-
-              <div className="col1">
-                
-                <ProductZoom />
-              </div>
-
-            </div>
-
-          </DialogContent>
-
-        </Dialog>
-
-
-      </MyContext.Provider>
+       
 
     </BrowserRouter>
   );
