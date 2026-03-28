@@ -63,7 +63,7 @@ const GirlsProducReview4 = () => {
                   {" "}
                   Item model number:
                 </span>{" "}
-                AW17MFS229
+                AW17YE1482
                 <br />
                 <span style={{ fontWeight: "bold" }}>
                   {" "}
