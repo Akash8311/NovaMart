@@ -20,7 +20,7 @@ body{
 }
 header .top-strip{border-top: 1px solid rgb(9, 9, 9); border-bottom: 1px solid black;}
 .Link{
-  color: rgb(56, 55, 55);
+  color: rgb(56, 55, 56);
 }
 .Link:hover{
 color: #ff5252;
