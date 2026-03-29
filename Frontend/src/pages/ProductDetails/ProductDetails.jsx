@@ -41,7 +41,6 @@ const ProductDetails = (props) => {
     <>
       {" "}
       <section style={{ padding: "10px", background: "#fafafa" }}>
-        {/* Breadcrumb */}
         <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 2 }}>
           <Link
             component={RouterLink}
