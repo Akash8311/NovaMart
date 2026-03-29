@@ -143,7 +143,7 @@ const productDrtails2 = (props) => {
             </div>
 
             {/* PRICE SECTION */}
-            <button
+            {/* <button
               style={{
                 background: "blue",
                 color: "#fff",
@@ -153,8 +153,8 @@ const productDrtails2 = (props) => {
                 borderRadius: "5px",
               }}
             >
-              {/* Limited time deal */}
-            </button>
+              
+            </button> */}
 
             <div
               style={{
