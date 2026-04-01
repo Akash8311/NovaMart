@@ -22,7 +22,8 @@ import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductD
 import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails3";
 import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails4";
 
-
+import LogIn from "./pages/auth/logIn";
+import Register from "./pages/auth/Register";
 
 
 
@@ -43,6 +44,8 @@ const App = () => {
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />
           <Route path="/Product/:id" element={<ProductDetails />} />
+          <Route path="/logIn" element={<LogIn />} />
+          <Route path="/Register" element={<Register />} />
 
           <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
           <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
