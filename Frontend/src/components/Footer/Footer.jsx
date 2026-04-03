@@ -52,7 +52,7 @@ const [email, setEmail] = useState("");
               alignItems: "center",
               justifyContent: "center",
               textAlign: "center",
-              gap: "4px", // gap kom
+              gap: "4px", 
             }}
           >
             <FaShippingFast style={{ fontSize: "6vh" }} className="icone" />

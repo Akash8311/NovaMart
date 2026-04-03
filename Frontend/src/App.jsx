@@ -80,7 +80,6 @@ const values = {
       fontFamily: "sans-serif",
     }}
   >
-    {/* Header */}
     <div
       style={{
         padding: "18px 20px",
