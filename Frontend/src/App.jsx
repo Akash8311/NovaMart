@@ -29,40 +29,119 @@ import Drawer from "@mui/material/Drawer";
 export const MyContext = createContext();
 
 const App = () => {
-  const [openCartPanel, setOpenCartPanel] = React.useState(false);
+  const [openCartPanel, setOpenCartPanel] = useState(false);
 
-  const toggleDrawer = (newOpen) => () => {
-    setOpenCartPanel(newOpen);
+  const values = {
+    openCartPanel,
+    setOpenCartPanel,
   };
 
   return (
-    <BrowserRouter>
-      <Header />
+    <MyContext.Provider value={values}>
+      <BrowserRouter>
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Productlisting" element={<Productlisting />} />
-        <Route path="/Men_productListing" element={<Men_productListing />} />
-        <Route path="/Product/:id" element={<ProductDetails />} />
-        <Route path="/logIn" element={<LogIn />} />
-        <Route path="/Register" element={<Register />} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Productlisting" element={<Productlisting />} />
+          <Route path="/Men_productListing" element={<Men_productListing />} />
+          <Route path="/Product/:id" element={<ProductDetails />} />
+          <Route path="/logIn" element={<LogIn />} />
+          <Route path="/Register" element={<Register />} />
 
-        <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
-        <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
-        <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
-        <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
+          <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
+          <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
+          <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
+          <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
 
-        <Route path="/productDrtails2" element={<ProductDrtails2 />} />
-        <Route path="/ProductDetails3" element={<ProductDetails3 />} />
-        <Route path="/ProductDetails4" element={<ProductDetails4 />} />
-      </Routes>
+          <Route path="/productDrtails2" element={<ProductDrtails2 />} />
+          <Route path="/ProductDetails3" element={<ProductDetails3 />} />
+          <Route path="/ProductDetails4" element={<ProductDetails4 />} />
+        </Routes>
 
-      <Footer />
+        <Footer />
 
-      <Drawer open={openCartPanel} onClose={toggleDrawer(false)}>
-        <div> </div>
-      </Drawer>
-    </BrowserRouter>
+       <Drawer
+  anchor="right"
+  open={openCartPanel}
+  onClose={() => setOpenCartPanel(false)}
+>
+  <div
+    style={{
+      width: 320,
+      height: "100%",
+      display: "flex",
+      flexDirection: "column",
+      background: "#f9f9f9",
+      fontFamily: "sans-serif",
+    }}
+  >
+    {/* Header */}
+    <div
+      style={{
+        padding: "18px 20px",
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        borderBottom: "1px solid #ddd",
+        background: "#fff",
+      }}
+    >
+      <h3 style={{ margin: 0, fontSize: "18px" }}>🛒 Shopping Cart</h3>
+
+      <button
+        onClick={() => setOpenCartPanel(false)}
+        style={{
+          border: "none",
+          background: "transparent",
+          fontSize: "18px",
+          cursor: "pointer",
+        }}
+      >
+        ✖
+      </button>
+    </div>
+
+    {/* Body */}
+    <div
+      style={{
+        flex: 1,
+        padding: "15px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "#777",
+      }}
+    >
+      Your cart is empty
+    </div>
+
+    {/* Footer */}
+    <div
+      style={{
+        padding: "15px",
+        borderTop: "1px solid #ddd",
+        background: "#fff",
+      }}
+    >
+      <button
+        style={{
+          width: "100%",
+          padding: "12px",
+          background: "#000",
+          color: "#fff",
+          border: "none",
+          borderRadius: "6px",
+          cursor: "pointer",
+        }}
+      >
+        Checkout
+      </button>
+    </div>
+  </div>
+</Drawer>
+      </BrowserRouter>
+    </MyContext.Provider>
   );
 };
 
