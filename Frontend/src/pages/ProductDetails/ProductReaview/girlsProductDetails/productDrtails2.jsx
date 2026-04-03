@@ -37,7 +37,16 @@ const productDrtails2 = (props) => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL", "XXL"];
+  const sizes = ["S", "M", "L"];
+
+
+  
+  const product = {
+  id: 1,
+  name: "Miss dddfd Women's Dress",
+  price: 129
+};
+
   return (
     <>
       {" "}
@@ -207,7 +216,7 @@ const productDrtails2 = (props) => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+               <Qtybox product={product} />
               </div>
             </div>
 
