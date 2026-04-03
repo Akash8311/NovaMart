@@ -31,10 +31,14 @@ export const MyContext = createContext();
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
 
-  const values = {
-    openCartPanel,
-    setOpenCartPanel,
-  };
+const [cartItems, setCartItems] = useState([]);
+
+const values = {
+  openCartPanel,
+  setOpenCartPanel,
+  cartItems,
+  setCartItems
+};
 
   return (
     <MyContext.Provider value={values}>
@@ -102,21 +106,41 @@ const App = () => {
       </button>
     </div>
 
-    {/* Body */}
-    <div
-      style={{
-        flex: 1,
-        padding: "15px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "#777",
-      }}
-    >
-      Your cart is empty
-    </div>
 
-    {/* Footer */}
+<div
+  style={{
+    flex: 1,
+    padding: "20px",
+    overflowY: "auto"
+  }}
+>
+  {cartItems.length === 0 ? (
+    <p style={{ textAlign: "center", color: "#777" }}>
+      Cart is empty
+    </p>
+  ) : (
+    cartItems.map((item) => (
+      <div
+        key={item.id}
+        style={{
+          marginBottom: "12px",
+          padding: "10px",
+          background: "#fff",
+          borderRadius: "6px",
+          border: "1px solid #eee"
+        }}
+      >
+        <p style={{ margin: 0, fontWeight: "500" }}>
+          {item.name}
+        </p>
+        <p style={{ margin: 0, fontSize: "13px", color: "#555" }}>
+          Qty: {item.qty}
+        </p>
+      </div>
+    ))
+  )}
+</div>
+
     <div
       style={{
         padding: "15px",

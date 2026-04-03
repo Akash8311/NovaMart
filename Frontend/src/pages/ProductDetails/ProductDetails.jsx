@@ -136,7 +136,7 @@ const ProductDetails = (props) => {
             >
               ⭐⭐⭐⭐☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (581 reviews)
+                (56 reviews)
               </span>
             </div>
 
