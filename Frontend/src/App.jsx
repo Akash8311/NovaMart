@@ -16,7 +16,6 @@ import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
 import MenProductDetails3 from "./pages/ProductDetails/Men/MenProductDetails3";
 import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 
-
 // Girls Product
 import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
 import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails3";
@@ -25,44 +24,44 @@ import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductD
 import LogIn from "./pages/auth/logIn";
 import Register from "./pages/auth/Register";
 
-
+import Drawer from "@mui/material/Drawer";
 
 export const MyContext = createContext();
 
 const App = () => {
+  const [openCartPanel, setOpenCartPanel] = React.useState(false);
 
-
+  const toggleDrawer = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
+  };
 
   return (
     <BrowserRouter>
+      <Header />
 
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Productlisting" element={<Productlisting />} />
+        <Route path="/Men_productListing" element={<Men_productListing />} />
+        <Route path="/Product/:id" element={<ProductDetails />} />
+        <Route path="/logIn" element={<LogIn />} />
+        <Route path="/Register" element={<Register />} />
 
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Productlisting" element={<Productlisting />} />
-          <Route path="/Men_productListing" element={<Men_productListing />} />
-          <Route path="/Product/:id" element={<ProductDetails />} />
-          <Route path="/logIn" element={<LogIn />} />
-          <Route path="/Register" element={<Register />} />
-
-          <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
-          <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
-          <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
-          <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
-
+        <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
+        <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
+        <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
+        <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
 
         <Route path="/productDrtails2" element={<ProductDrtails2 />} />
         <Route path="/ProductDetails3" element={<ProductDetails3 />} />
         <Route path="/ProductDetails4" element={<ProductDetails4 />} />
-        </Routes>
+      </Routes>
 
-        <Footer />
+      <Footer />
 
-
-       
-
+      <Drawer open={openCartPanel} onClose={toggleDrawer(false)}>
+        <div> </div>
+      </Drawer>
     </BrowserRouter>
   );
 };
