@@ -23,7 +23,7 @@ import MenProduct6 from "../Men/MenProduct6";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen3 from "../../../components/ProductZoom/ProductZoomMen3";
+import ProductZoomMen3 from "../../../components/ProductZoom/ProductZoomMen4";
 import MenProductReview3 from "../ProductReaview/MenReview/MenProductReview3.JSX";
 
 
@@ -31,8 +31,14 @@ const MenProductDetails4 = () =>  {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["28", "30", "32", "34"];
-  return (
+ const sizes = ["S", "M", "L", "XLL"];
+
+    const product = {
+  id: 2,
+  name: "Casual Button Down Shirts",
+  price: 495
+
+};  return (
     <>
       {" "}
       <section style={{ padding: "10px", background: "#fafafa" }}>
@@ -99,11 +105,11 @@ const MenProductDetails4 = () =>  {
                 marginBottom: "6px",
               }}
             >
-              KOTTY Mens Regular Fit
+             Casual Button Down Shirts
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                |Classic Design with Stylish Look |Day Comfort|Mide Rise
-                Strachable Jeans
+               
+|Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts| Men Stylish Shirt | Men Fancy (Available in Plus Size)
                 <p
                   style={{
                     fontSize: "14px",
@@ -133,7 +139,7 @@ const MenProductDetails4 = () =>  {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (10 reviews)
+                (62 reviews)
               </span>
             </div>
 
@@ -165,7 +171,7 @@ const MenProductDetails4 = () =>  {
                   color: "#B12704",
                 }}
               >
-                ₹420
+                ₹495
               </span>
 
               <span
@@ -175,7 +181,7 @@ const MenProductDetails4 = () =>  {
                   textDecoration: "line-through",
                 }}
               >
-                ₹1,999
+                ₹2,195
               </span>
 
               <span
@@ -185,7 +191,7 @@ const MenProductDetails4 = () =>  {
                   color: "#007185",
                 }}
               >
-                79% off
+                77% off
               </span>
             </div>
 
@@ -202,7 +208,7 @@ const MenProductDetails4 = () =>  {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                 <Qtybox product={product} />
               </div>
             </div>
 

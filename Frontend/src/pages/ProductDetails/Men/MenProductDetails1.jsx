@@ -32,7 +32,16 @@ const MenProductDetails1 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["38", "40", "42", "44", "46", "48", "50", "52"];
+  const sizes = ["S", "M", "L", "XL"];
+
+
+    const product = {
+  id: 2,
+  name: "JVX Men Sweatshirts",
+  price: 599
+
+};
+
   return (
     <>
       {" "}
@@ -205,7 +214,7 @@ const MenProductDetails1 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                 <Qtybox product={product} />
               </div>
             </div>
 

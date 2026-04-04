@@ -30,7 +30,13 @@ const MenProductDetails3 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["28", "30", "32", "34"];
+  const sizes = ["28", "30", "32", "34","36"];
+    const product = {
+  id: 2,
+  name: "Mide Rise Strachable Jeans",
+  price: 420
+
+};
   return (
     <>
       {" "}
@@ -201,7 +207,8 @@ const MenProductDetails3 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                                <Qtybox product={product} />
+
               </div>
             </div>
 

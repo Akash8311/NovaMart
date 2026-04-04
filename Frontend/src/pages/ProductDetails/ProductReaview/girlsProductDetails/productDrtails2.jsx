@@ -134,7 +134,6 @@ const productDrtails2 = (props) => {
               Premium cotton fabric • Comfortable for party wear
             </p>
 
-            {/* RATING */}
             <div
               style={{
                 display: "flex",

@@ -30,7 +30,15 @@ const MenProductDetails2 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["38", "40", "42", "44", "46", "48", "50", "52"];
+  const sizes = ["S", "M", "L", "XL"];
+
+
+    const product = {
+  id: 2,
+  name: "Fit Casual Shirt",
+  price: 649
+
+};
   return (
     <>
       {" "}
@@ -98,7 +106,7 @@ const MenProductDetails2 = () => {
                 marginBottom: "6px",
               }}
             >
-              Highlander Men HLSH015266
+              Highlander Men's Striped Slim Fit Casual Shirt
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 <p
@@ -200,7 +208,7 @@ const MenProductDetails2 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                 <Qtybox product={product} />
               </div>
             </div>
 
