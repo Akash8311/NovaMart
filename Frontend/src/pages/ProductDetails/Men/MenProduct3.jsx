@@ -185,7 +185,6 @@ const MenProduct3 = () => {
                 />
               </div>
     
-              {/* Product Name */}
               <h4
                 style={{
                   fontSize: "15px",
@@ -196,9 +195,7 @@ const MenProduct3 = () => {
               >
              KOTTY Mens Regular Fit
               </h4>
-    
-              {/* Description */}
-              <p
+                  <p
                 style={{
                   fontSize: "13px",
                   color: "#777",
@@ -210,7 +207,6 @@ const MenProduct3 = () => {
                 KOTTY Mens Regular Fit|Classic Design with Stylish Look |Day Comfort|Mide Rise Strachable Jeans
               </p>
     
-              {/* Price Section */}
               <div
                 style={{
                   marginTop: "6px",
@@ -239,9 +235,7 @@ const MenProduct3 = () => {
                   79% OFF
                 </span>
               </div>
-    
-              {/* Rating */}
-              <div
+                  <div
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -254,7 +248,6 @@ const MenProduct3 = () => {
                 <span style={{ fontSize: "13px", color: "#555" }}>(3021)</span>
               </div>
     
-              {/* Delivery */}
               <p
                 style={{
                   marginTop: "6px",
