@@ -186,7 +186,6 @@ const MenProduct2 = () => {
             />
           </div>
 
-          {/* Product Name */}
           <h4
             style={{
               fontSize: "15px",
@@ -198,7 +197,6 @@ const MenProduct2 = () => {
           Highlander Men HLSH015266
           </h4>
 
-          {/* Description */}
           <p
             style={{
               fontSize: "13px",
