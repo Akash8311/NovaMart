@@ -13,13 +13,12 @@ import { useState } from "react";
 import Qtybox from "../../../../components/QtyBox/Qtybox";
 import "../../Product.css";
 import GirlsProducReview4 from "../girlsProductReview/girlsProducReview4";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 import ProductItems from "../../../../components/ProductItems/ProductItems";
 import ProductItems2 from "../../../../components/ProductItems/ProductItems2";
 import ProductItems3 from "../../../../components/ProductItems/ProductItems3";
@@ -32,12 +31,17 @@ import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 
-
-const productDetails4 =(props) => {
+const productDetails4 = (props) => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = [];
+  const sizes = ["S","M","L","XL"];
+
+  const product = {
+  id: 3,
+  name: "Janasya Women Green Georgette Kurta ",
+  price: 1499
+};
   return (
     <>
       {" "}
@@ -105,10 +109,11 @@ const productDetails4 =(props) => {
                 marginBottom: "6px",
               }}
             >
-             Janasya Women Green Georgette Kurta with Palazzo & Dupatta with Floral Print Outfit for Women
+              Janasya Women Green Georgette Kurta with Palazzo & Dupatta with
+              Floral Print Outfit for Women
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                | 
+                |
                 <p
                   style={{
                     fontSize: "19px",
@@ -136,7 +141,7 @@ const productDetails4 =(props) => {
                 marginBottom: "10px",
               }}
             >
-            ⭐⭐⭐⭐⭐
+              ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
                 (125 reviews)
               </span>
@@ -207,7 +212,7 @@ const productDetails4 =(props) => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -314,28 +319,22 @@ const productDetails4 =(props) => {
                 <span>Georgette</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-               Sleeve type
+                  Sleeve type
                 </span>
                 <span>Sleeveless</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Ankle Length
-
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
+                <span>Ankle Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
                 </span>
-                <span>V-Neck
-</span>
+                <span>V-Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Care instructions
+                  Care instructions
                 </span>
-                <span>Hand Wash Only
-</span>
+                <span>Hand Wash Only</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Standard Length</span>
@@ -375,17 +374,20 @@ const productDetails4 =(props) => {
                 }}
               >
                 <li>
-                  <strong> </strong> Made with high-quality Georgette fabric for breathable comfort.
+                  <strong> </strong> Made with high-quality Georgette fabric for
+                  breathable comfort.
                 </li>
 
                 <li>
-                  <strong></strong> Beautiful Floral design in Green color adds elegance.
+                  <strong></strong> Beautiful Floral design in Green color adds
+                  elegance.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong>Complete Kurta with Palazzo & Dupatta included for coordinated look.
+                      <strong></strong>Complete Kurta with Palazzo & Dupatta
+                      included for coordinated look.
                     </li>
 
                     <li>
@@ -397,7 +399,8 @@ const productDetails4 =(props) => {
                     </li>
 
                     <li>
-                      <strong></strong> Comfortable Gathered fit flatters all body types.
+                      <strong></strong> Comfortable Gathered fit flatters all
+                      body types.
                     </li>
 
                     <li>
@@ -407,8 +410,9 @@ const productDetails4 =(props) => {
                     </li>
 
                     <li>
-                      <strong>Disclaimer :</strong> Colour Of The Actual Product May Slightly Vary Due To Different Photographic Lighting Sources Or Your Display Color Settings Or Screen Type.
-
+                      <strong>Disclaimer :</strong> Colour Of The Actual Product
+                      May Slightly Vary Due To Different Photographic Lighting
+                      Sources Or Your Display Color Settings Or Screen Type.
                     </li>
 
                     <li>
@@ -446,7 +450,7 @@ const productDetails4 =(props) => {
           </div>
         </div>
 
-               <GirlsProducReview4/>
+        <GirlsProducReview4 />
         <div className="Related-Product">
           <h2
             style={{
@@ -458,62 +462,59 @@ const productDetails4 =(props) => {
             Related Products
           </h2>
           <div className="men-products">
-              <Swiper
-        slidesPerView={6}
-        spaceBetween={0}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <ProductItems/>
-        </SwiperSlide>
+            <Swiper
+              slidesPerView={6}
+              spaceBetween={0}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <ProductItems />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems2 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems2/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems3 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems5 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems3/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems6 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-        <ProductItems5/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems7 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems6/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems8 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems7/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems9 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems8/>
-          </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems10 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems12 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems9/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems10/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems12/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems11/>
-        </SwiperSlide>
-      </Swiper>
+              <SwiperSlide>
+                <ProductItems11 />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
@@ -521,4 +522,4 @@ const productDetails4 =(props) => {
   );
 };
 
-export default productDetails4
+export default productDetails4;

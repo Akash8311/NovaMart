@@ -1,4 +1,3 @@
-import React from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
@@ -38,6 +37,14 @@ const productDetails3 =(props) => {
   const [expanded, setExpanded] = useState(false);
 
   const sizes = [];
+
+
+    const product = {
+  id: 3,
+  name: "Maroon Pure Silk Saree",
+  price: 799
+};
+
   return (
     <>
       {" "}
@@ -136,25 +143,13 @@ const productDetails3 =(props) => {
                 marginBottom: "10px",
               }}
             >
-            ⭐⭐⭐⭐⭐
+            ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (86 reviews)
+                (19 reviews)
               </span>
             </div>
 
-            {/* PRICE SECTION */}
-            <button
-              style={{
-                background: "blue",
-                color: "#fff",
-                border: "none,",
-                width: "20vh",
-                height: "4vh",
-                borderRadius: "5px",
-              }}
-            >
-              {/* Limited time deal */}
-            </button>
+           
 
             <div
               style={{
@@ -207,7 +202,7 @@ const productDetails3 =(props) => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                <Qtybox />
+                 <Qtybox product={product} />
               </div>
             </div>
 

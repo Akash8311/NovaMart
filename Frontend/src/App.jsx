@@ -30,15 +30,19 @@ export const MyContext = createContext();
 
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
 
-const [cartItems, setCartItems] = useState([]);
+  const values = {
+    openCartPanel,
+    setOpenCartPanel,
+    cartItems,
+    setCartItems
+  };
 
-const values = {
-  openCartPanel,
-  setOpenCartPanel,
-  cartItems,
-  setCartItems
-};
+  // ✅ TOTAL PRICE CALCULATION
+  const totalPrice = cartItems.reduce((total, item) => {
+    return total + item.price * item.qty;
+  }, 0);
 
   return (
     <MyContext.Provider value={values}>
@@ -65,104 +69,164 @@ const values = {
 
         <Footer />
 
-       <Drawer
-  anchor="right"
-  open={openCartPanel}
-  onClose={() => setOpenCartPanel(false)}
->
-  <div
-    style={{
-      width: 320,
-      height: "100%",
-      display: "flex",
-      flexDirection: "column",
-      background: "#f9f9f9",
-      fontFamily: "sans-serif",
-    }}
-  >
-    <div
-      style={{
-        padding: "18px 20px",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        borderBottom: "1px solid #ddd",
-        background: "#fff",
-      }}
-    >
-      <h3 style={{ margin: 0, fontSize: "18px" }}>🛒 Shopping Cart</h3>
+        {/* 🛒 CART DRAWER */}
+        <Drawer
+          anchor="right"
+          open={openCartPanel}
+          onClose={() => setOpenCartPanel(false)}
+        >
+          <div
+            style={{
+              width: 320,
+              height: "100%",
+              display: "flex",
+              flexDirection: "column",
+              background: "#f9f9f9",
+              fontFamily: "sans-serif",
+            }}
+          >
+            {/* Header */}
+            <div
+              style={{
+                padding: "18px 20px",
+                display: "flex",
+                justifyContent: "space-between",
+                alignItems: "center",
+                borderBottom: "1px solid #ddd",
+                background: "#fff",
+              }}
+            >
+              <h3 style={{ margin: 0, fontSize: "18px" }}>
+                🛒 Shopping Cart
+              </h3>
 
-      <button
-        onClick={() => setOpenCartPanel(false)}
-        style={{
-          border: "none",
-          background: "transparent",
-          fontSize: "18px",
-          cursor: "pointer",
-        }}
-      >
-        ✖
-      </button>
-    </div>
+              <button
+                onClick={() => setOpenCartPanel(false)}
+                style={{
+                  border: "none",
+                  background: "transparent",
+                  fontSize: "18px",
+                  cursor: "pointer",
+                }}
+              >
+                ✖
+              </button>
+            </div>
 
+            {/* Cart Items */}
+            <div
+              style={{
+                flex: 1,
+                padding: "20px",
+                overflowY: "auto",
+              }}
+            >
+              {cartItems.length === 0 ? (
+                <p style={{ textAlign: "center", color: "#777" }}>
+                  Cart is empty
+                </p>
+              ) : (
+                cartItems.map((item) => (
+                  <div
+                    key={item.id}
+                    style={{
+                      marginBottom: "12px",
+                      padding: "10px",
+                      background: "#fff",
+                      borderRadius: "6px",
+                      border: "1px solid #eee",
+                    }}
+                  >
+                    <p style={{ margin: 0, fontWeight: "500" }}>
+                      {item.name}
+                    </p>
+                    <p
+                      style={{
+                        margin: 0,
+                        fontSize: "13px",
+                        color: "#555",
+                      }}
+                    >
+                      Qty: {item.qty}
+                    </p>
+                    <p
+                      style={{
+                        margin: 0,
+                        fontSize: "14px",
+                        color: "#da1b1b",
+                      }}
+                    >
+                      Price: ₹{item.price}
+                    </p>
+                  </div>
+                ))
+              )}
+            </div>
 
-<div
-  style={{
-    flex: 1,
-    padding: "20px",
-    overflowY: "auto"
-  }}
->
-  {cartItems.length === 0 ? (
-    <p style={{ textAlign: "center", color: "#777" }}>
-      Cart is empty
-    </p>
-  ) : (
-    cartItems.map((item) => (
-      <div
-        key={item.id}
-        style={{
-          marginBottom: "12px",
-          padding: "10px",
-          background: "#fff",
-          borderRadius: "6px",
-          border: "1px solid #eee"
-        }}
-      >
-        <p style={{ margin: 0, fontWeight: "500" }}>
-          {item.name}
-        </p>
-        <p style={{ margin: 0, fontSize: "13px", color: "#555" }}>
-          Qty: {item.qty}
-        </p>
-      </div>
-    ))
-  )}
-</div>
+            {/* Bottom Section */}
+            <div
+              style={{
+                padding: "15px",
+                borderTop: "1px solid #ddd",
+                background: "#fff",
+              }}
+            >
+              {/* Total */}
+              <div
+                style={{
+                  marginBottom: "8px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  fontWeight: "500",
+                }}
+              >
+                <span>Total Price:</span>
+                <span>₹{totalPrice}</span>
+              </div>
 
-    <div
-      style={{
-        padding: "15px",
-        borderTop: "1px solid #ddd",
-        background: "#fff",
-      }}
-    >
-      <button
-        style={{
-          width: "100%",
-          padding: "12px",
-          background: "#000",
-          color: "#fff",
-          border: "none",
-          borderRadius: "6px",
-          cursor: "pointer",
-        }}
-      >
-        Checkout
-      </button>
-    </div>
-  </div>
-</Drawer>
+              {/* Delivery */}
+              <div
+                style={{
+                  marginBottom: "10px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  color: "green",
+                  fontSize: "14px",
+                }}
+              >
+                <span> Delivery:</span>
+                <span>FREE</span>
+              </div>
+
+              {/* Grand Total */}
+              <div
+                style={{
+                  marginBottom: "12px",
+                  display: "flex",
+                  justifyContent: "space-between",
+                  fontWeight: "600",
+                }}
+              >
+                <span>Grand Total:</span>
+                <span>₹{totalPrice}</span>
+              </div>
+
+              <button
+                style={{
+                  width: "100%",
+                  padding: "12px",
+                  background: "#000",
+                  color: "#fff",
+                  border: "none",
+                  borderRadius: "6px",
+                  cursor: "pointer",
+                }}
+              >
+                Checkout
+              </button>
+            </div>
+          </div>
+        </Drawer>
       </BrowserRouter>
     </MyContext.Provider>
   );

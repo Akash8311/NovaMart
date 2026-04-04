@@ -42,9 +42,9 @@ const productDrtails2 = (props) => {
 
   
   const product = {
-  id: 1,
-  name: "Miss dddfd Women's Dress",
-  price: 129
+  id: 2,
+  name: "GRECIILOOKS Women's V-Neck Slit Maxi",
+  price: 529
 };
 
   return (

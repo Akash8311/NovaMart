@@ -120,7 +120,7 @@ const Qtybox = ({ product }) => {
         Add to Cart
       </button>
 
-      {/* Wishlist */}
+     
       <button
         style={{
           display: "inline-flex",
