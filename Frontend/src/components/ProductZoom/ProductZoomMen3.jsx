@@ -48,7 +48,6 @@ const ProductZoomMen3 = () =>{
 
   return (
     <div className="zoom-container">
-      {/* LEFT THUMBNAILS */}
       <div className="thumbnail-column">
         {images.map((img, index) => (
           <img
@@ -61,7 +60,6 @@ const ProductZoomMen3 = () =>{
         ))}
       </div>
 
-      {/* MAIN IMAGE */}
       <div
         className="zoom-wrapper"
         onMouseMove={moveLens}
