@@ -32,7 +32,6 @@ const MenProduct1 = () => {
         onMouseEnter={() => setHover(true)}
         onMouseLeave={() => setHover(false)}
       >
-        {/* Button Container */}
         <div
           style={{
             position: "absolute",
@@ -44,7 +43,6 @@ const MenProduct1 = () => {
             zIndex: 1000,
           }}
         >
-          {/* Wishlist Button */}
           {hover && (
             <button
               onClick={() => setWishlist(!wishlist)}
@@ -88,7 +86,6 @@ const MenProduct1 = () => {
             </button>
           )}
 
-          {/*  Compare Button */}
           {hover && (
             <button
               style={{
@@ -123,7 +120,6 @@ const MenProduct1 = () => {
             </button>
           )}
 
-          {/*  Zoom Button */}
           {hover && (
             <button
               style={{
@@ -193,7 +189,6 @@ const MenProduct1 = () => {
             />
           </div>
 
-          {/* Product Name */}
           <h4
             style={{
               fontSize: "15px",
@@ -204,8 +199,6 @@ const MenProduct1 = () => {
           >
             VX Men Sweatshirts
           </h4>
-
-          {/* Description */}
           <p
             style={{
               fontSize: "13px",
@@ -218,8 +211,6 @@ const MenProduct1 = () => {
             Actual Products color may vary with product due to monitor|Available
             in Plus Size
           </p>
-
-          {/* Price Section */}
           <div
             style={{
               marginTop: "6px",
@@ -248,8 +239,6 @@ const MenProduct1 = () => {
               85% OFF
             </span>
           </div>
-
-          {/* Rating */}
           <div
             style={{
               display: "flex",
