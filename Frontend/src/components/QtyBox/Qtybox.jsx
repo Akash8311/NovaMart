@@ -31,6 +31,36 @@ const Qtybox = ({ product }) => {
   const press = (e) => (e.currentTarget.style.transform = "scale(0.97)");
   const release = (e) => (e.currentTarget.style.transform = "scale(1)");
 
+  // ✅ ADD TO CART FUNCTION
+  const addToCart = () => {
+    setCartItems((prev) => {
+      const exist = prev.find((item) => item.id === product.id);
+
+      if (exist) {
+        // যদি already থাকে → qty বাড়বে
+        return prev.map((item) =>
+          item.id === product.id
+            ? { ...item, qty: item.qty + qty }
+            : item
+        );
+      }
+
+      // নতুন item add
+      return [
+        ...prev,
+        {
+          id: product.id,
+          name: product.name,
+          price: product.price,
+          image: product.image, // 🔥 IMPORTANT
+          qty: qty,
+        },
+      ];
+    });
+
+    setOpenCartPanel(true);
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
 
@@ -38,14 +68,16 @@ const Qtybox = ({ product }) => {
       <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
 
         {/* Qty Box */}
-        <div style={{
-          display: "inline-flex",
-          alignItems: "center",
-          border: "1.5px solid #1565C0",
-          borderRadius: "10px",
-          overflow: "hidden",
-          height: "46px",
-        }}>
+        <div
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            border: "1.5px solid #1565C0",
+            borderRadius: "10px",
+            overflow: "hidden",
+            height: "46px",
+          }}
+        >
           <button
             onClick={decrease}
             disabled={qty === 1}
@@ -58,13 +90,17 @@ const Qtybox = ({ product }) => {
               color: qty === 1 ? "#9ab4e0" : "#1565C0",
               cursor: qty === 1 ? "not-allowed" : "pointer",
             }}
-          >−</button>
+          >
+            −
+          </button>
 
-          <div style={{
-            width: "46px",
-            textAlign: "center",
-            fontWeight: "500"
-          }}>
+          <div
+            style={{
+              width: "46px",
+              textAlign: "center",
+              fontWeight: "500",
+            }}
+          >
             {qty}
           </div>
 
@@ -80,7 +116,9 @@ const Qtybox = ({ product }) => {
               color: qty === 10 ? "#9ab4e0" : "#1565C0",
               cursor: qty === 10 ? "not-allowed" : "pointer",
             }}
-          >+</button>
+          >
+            +
+          </button>
         </div>
 
         {/* Buy Now */}
@@ -99,18 +137,7 @@ const Qtybox = ({ product }) => {
       {/* ✅ ADD TO CART */}
       <button
         style={{ ...btnBase, width: "100%", padding: "0 20px" }}
-        onClick={() => {
-          setCartItems((prev) => [
-            ...prev,
-            {
-              id: product.id,
-              name: product.name,
-              price: product.price,
-              qty: qty
-            }
-          ]);
-          setOpenCartPanel(true);
-        }}
+        onClick={addToCart}
         onMouseEnter={hoverIn}
         onMouseLeave={hoverOut}
         onMouseDown={press}
@@ -120,7 +147,7 @@ const Qtybox = ({ product }) => {
         Add to Cart
       </button>
 
-     
+      {/* Wishlist */}
       <button
         style={{
           display: "inline-flex",
@@ -139,7 +166,7 @@ const Qtybox = ({ product }) => {
         <FaRegHeart />
         Add to Wishlist
       </button>
-
+      
     </div>
   );
 };

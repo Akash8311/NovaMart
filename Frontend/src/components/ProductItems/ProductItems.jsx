@@ -203,7 +203,6 @@ const ProductItems = () => {
             Bodycon lavender dress
           </h4>
 
-          {/* Description */}
           <p
             style={{
               fontSize: "13px",
@@ -216,7 +215,6 @@ const ProductItems = () => {
            Miss Chase Women's Solid Sleeveless Collared Bodycon Above Knee Polyester Dress with Pockets
           </p>
 
-          {/* Price Section */}
           <div
             style={{
               marginTop: "6px",

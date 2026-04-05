@@ -40,10 +40,11 @@ const ProductDetails = (props) => {
 
 
 
-  const product = {
+const product = {
   id: 1,
   name: "Miss Chase Women's Dress",
-  price: 1299
+  price: 1299,
+  image: "https://m.media-amazon.com/images/I/71YnZ4mL9ZL._SY741_.jpg",
 };
   return (
     <>
@@ -90,7 +91,7 @@ const ProductDetails = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom />
+            <ProductZoom product={product} />
           </div>
 
           <div
