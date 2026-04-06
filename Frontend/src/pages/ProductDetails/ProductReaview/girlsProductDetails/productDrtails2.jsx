@@ -44,7 +44,8 @@ const productDrtails2 = (props) => {
   const product = {
   id: 2,
   name: "GRECIILOOKS Women's V-Neck Slit Maxi",
-  price: 529
+  price: 529,
+    image: "https://m.media-amazon.com/images/I/81YpN1V3L8L._SY741_.jpg",
 };
 
   return (

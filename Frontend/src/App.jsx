@@ -159,7 +159,6 @@ const App = () => {
           }}
         >
 
-          {/* ── TOP ACCENT BAR ── */}
           <div
             style={{
               height: 4,
@@ -167,7 +166,6 @@ const App = () => {
             }}
           />
 
-          {/* ── HEADER ── */}
           <div
             style={{
               padding: "22px 24px 18px",
@@ -236,7 +234,6 @@ const App = () => {
             </button>
           </div>
 
-          {/* ── FREE SHIPPING BANNER ── */}
           {totalPrice > 0 && totalPrice < 999 && (
             <div
               style={{
@@ -276,7 +273,6 @@ const App = () => {
             </div>
           )}
 
-          {/* ── CART ITEMS SCROLL AREA ── */}
           <div
             style={{
               flex: 1,
@@ -382,7 +378,7 @@ const App = () => {
                       />
                     </div>
 
-                    {/* Details */}
+                  
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <p
                         style={{
@@ -415,7 +411,7 @@ const App = () => {
                         </span>
                       )}
 
-                      {/* Qty Controls */}
+                 
                       <div
                         style={{
                           display: "flex",

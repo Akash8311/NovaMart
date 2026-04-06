@@ -40,7 +40,8 @@ const productDetails4 = (props) => {
   const product = {
   id: 3,
   name: "Janasya Women Green Georgette Kurta ",
-  price: 1499
+  price: 1499,
+  image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"
 };
   return (
     <>
@@ -100,7 +101,6 @@ const productDetails4 = (props) => {
               marginLeft: "25px",
             }}
           >
-            {/* TITLE */}
             <h1
               style={{
                 fontSize: "29px",
@@ -147,7 +147,6 @@ const productDetails4 = (props) => {
               </span>
             </div>
 
-            {/* PRICE SECTION */}
             <button
               style={{
                 background: "blue",
@@ -158,7 +157,7 @@ const productDetails4 = (props) => {
                 borderRadius: "5px",
               }}
             >
-              {/* Limited time deal */}
+                Limited time deal
             </button>
 
             <div

@@ -34,9 +34,10 @@ const MenProductDetails4 = () =>  {
  const sizes = ["S", "M", "L", "XLL"];
 
     const product = {
-  id: 2,
+  id: 8,
   name: "Casual Button Down Shirts",
-  price: 495
+  price: 495,
+  image: "https://m.media-amazon.com/images/I/41uKa5xYPyL.jpg"
 
 };  return (
     <>

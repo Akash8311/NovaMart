@@ -36,9 +36,10 @@ const MenProductDetails1 = () => {
 
 
     const product = {
-  id: 2,
+  id: 5,
   name: "JVX Men Sweatshirts",
-  price: 599
+  price: 599,
+  image: "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg"
 
 };
 

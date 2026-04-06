@@ -34,9 +34,10 @@ const MenProductDetails2 = () => {
 
 
     const product = {
-  id: 2,
+  id: 6,
   name: "Fit Casual Shirt",
-  price: 649
+  price: 649,
+  image: "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg"
 
 };
   return (

@@ -32,9 +32,10 @@ const MenProductDetails3 = () => {
 
   const sizes = ["28", "30", "32", "34","36"];
     const product = {
-  id: 2,
+  id: 7,
   name: "Mide Rise Strachable Jeans",
-  price: 420
+  price: 420,
+  image: "https://m.media-amazon.com/images/I/81+cFoDdC2L._SY741_.jpg"
 
 };
   return (
