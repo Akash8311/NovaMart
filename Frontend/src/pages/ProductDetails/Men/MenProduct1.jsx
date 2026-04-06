@@ -197,7 +197,7 @@ const MenProduct1 = () => {
               marginTop: "10px",
             }}
           >
-            VX Men Sweatshirts
+            JVX Men Sweatshirts
           </h4>
           <p
             style={{
