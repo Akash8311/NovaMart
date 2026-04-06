@@ -96,7 +96,6 @@ const MenProductDetails3 = () => {
               marginLeft: "25px",
             }}
           >
-            {/* TITLE */}
             <h1
               style={{
                 fontSize: "29px",
@@ -121,7 +120,6 @@ const MenProductDetails3 = () => {
               </span>
             </h1>
 
-            {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
               30 is your recommended size based on millions of customer orders.
             </p>
@@ -139,11 +137,10 @@ const MenProductDetails3 = () => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (10 reviews)
+                (69 reviews)
               </span>
             </div>
 
-            {/* PRICE SECTION */}
             <button
               style={{
                 background: "blue",
