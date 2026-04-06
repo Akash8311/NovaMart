@@ -44,7 +44,6 @@ const MenProductDetails2 = () => {
     <>
       {" "}
       <section style={{ padding: "10px", background: "#fafafa" }}>
-        {/* Breadcrumb */}
         <Breadcrumbs aria-label="breadcrumb" sx={{ mb: 2 }}>
           <Link
             component={RouterLink}
@@ -98,7 +97,6 @@ const MenProductDetails2 = () => {
               marginLeft: "25px",
             }}
           >
-            {/* TITLE */}
             <h1
               style={{
                 fontSize: "29px",
@@ -121,13 +119,10 @@ const MenProductDetails2 = () => {
               </span>
             </h1>
 
-            {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
               Men shirt || shirt for Men || Unisex shirt ||formal shirt for men
               || unisex shirt || shirt || Available in Plus Size
             </p>
-
-            {/* RATING */}
             <div
               style={{
                 display: "flex",
@@ -143,8 +138,6 @@ const MenProductDetails2 = () => {
                 (13 reviews)
               </span>
             </div>
-
-            {/* PRICE SECTION */}
             <button
               style={{
                 background: "blue",
@@ -157,7 +150,6 @@ const MenProductDetails2 = () => {
             >
               Limited time deal
             </button>
-
             <div
               style={{
                 display: "flex",
@@ -174,7 +166,6 @@ const MenProductDetails2 = () => {
               >
                 ₹649
               </span>
-
               <span
                 style={{
                   fontSize: "16px",
