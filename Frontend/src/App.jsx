@@ -1,5 +1,5 @@
-import React, { createContext, useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { createContext, useState, link } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -25,6 +25,7 @@ import LogIn from "./pages/auth/logIn";
 import Register from "./pages/auth/Register";
 
 import Drawer from "@mui/material/Drawer";
+import CartPage from "./pages/cart/CartPage";
 
 export const MyContext = createContext();
 
@@ -95,16 +96,16 @@ const App = () => {
 
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.qty,
-    0
+    0,
   );
 
   const updateQty = (id, delta) => {
     setCartItems((prev) =>
       prev
         .map((item) =>
-          item.id === id ? { ...item, qty: item.qty + delta } : item
+          item.id === id ? { ...item, qty: item.qty + delta } : item,
         )
-        .filter((item) => item.qty > 0)
+        .filter((item) => item.qty > 0),
     );
   };
 
@@ -128,6 +129,7 @@ const App = () => {
           <Route path="/Product/:id" element={<ProductDetails />} />
           <Route path="/logIn" element={<LogIn />} />
           <Route path="/Register" element={<Register />} />
+          <Route path="/CartPage" element={<CartPage />} />
 
           <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
           <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
@@ -141,7 +143,6 @@ const App = () => {
 
         <Footer />
 
-      
         <Drawer
           anchor="right"
           open={openCartPanel}
@@ -158,7 +159,6 @@ const App = () => {
             },
           }}
         >
-
           <div
             style={{
               height: 4,
@@ -339,7 +339,9 @@ const App = () => {
                 </button>
               </div>
             ) : (
-              <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+              <div
+                style={{ display: "flex", flexDirection: "column", gap: 12 }}
+              >
                 {cartItems.map((item, index) => (
                   <div
                     key={item.id}
@@ -378,7 +380,6 @@ const App = () => {
                       />
                     </div>
 
-                  
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <p
                         style={{
@@ -411,7 +412,6 @@ const App = () => {
                         </span>
                       )}
 
-                 
                       <div
                         style={{
                           display: "flex",
@@ -613,9 +613,9 @@ const App = () => {
                     }}
                   >
                     ₹
-                    {(
-                      totalPrice + (totalPrice >= 999 ? 0 : 99)
-                    ).toLocaleString("en-IN")}
+                    {(totalPrice + (totalPrice >= 999 ? 0 : 99)).toLocaleString(
+                      "en-IN",
+                    )}
                   </span>
                 </div>
 
@@ -633,29 +633,25 @@ const App = () => {
                 )}
               </div>
 
-              {/* Checkout Button */}
               <div style={{ padding: "0 20px 20px" }}>
-                <button
+                <Link
+                  to="/CartPage"
                   className="checkout-btn"
                   style={{
+                    display: "block",
+                    textAlign: "center",
                     width: "100%",
                     padding: "15px",
                     background: "#111",
                     color: "#fff",
-                    border: "none",
-                    borderRadius: 10,
-                    cursor: "pointer",
-                    fontSize: 12,
-                    fontFamily: "'DM Sans', sans-serif",
-                    fontWeight: 600,
+                    borderRadius: "10px",
+                    textDecoration: "none",
+                    fontSize: "12px",
                     letterSpacing: "2px",
-                    textTransform: "uppercase",
-                    transition: "all 0.3s ease",
-                    boxShadow: "0 4px 20px rgba(0,0,0,0.18)",
                   }}
                 >
-                  Proceed to Checkout →
-                </button>
+                  VIEW TO CART →
+                </Link>
 
                 <button
                   onClick={() => setOpenCartPanel(false)}
@@ -709,7 +705,7 @@ const App = () => {
                     >
                       {badge}
                     </span>
-                  )
+                  ),
                 )}
               </div>
             </div>
