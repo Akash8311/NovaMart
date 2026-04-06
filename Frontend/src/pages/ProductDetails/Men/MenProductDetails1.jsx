@@ -101,7 +101,6 @@ const MenProductDetails1 = () => {
               marginLeft: "25px",
             }}
           >
-            {/* TITLE */}
             <h1
               style={{
                 fontSize: "29px",
@@ -126,7 +125,7 @@ const MenProductDetails1 = () => {
               </span>
             </h1>
 
-            {/* SUBTITLE */}
+          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Men sweatshirts || sweatshirts for Men || Unisex sweatshirts
               ||Hoodie for men || unisex hoodie || hoodie || Available in Plus
@@ -146,7 +145,7 @@ const MenProductDetails1 = () => {
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (251 reviews)
+                (152 reviews)
               </span>
             </div>
 
