@@ -8,6 +8,8 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
+
+
 const ProductItems = () => {
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);

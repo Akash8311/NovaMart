@@ -31,11 +31,14 @@ import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
+import { useContext } from "react";
+import { MyContext } from "../../../../App";
 
 
 const productDrtails2 = (props) => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
+  const { cartItems, setCartItems } = useContext(MyContext);
 
   const sizes = ["S", "M", "L"];
 
@@ -46,6 +49,29 @@ const productDrtails2 = (props) => {
   name: "GRECIILOOKS Women's V-Neck Slit Maxi",
   price: 529,
     image: "https://m.media-amazon.com/images/I/81YpN1V3L8L._SY741_.jpg",
+};
+
+const addToCart = () => {
+  const exist = cartItems.find((item) => item.id === product.id);
+
+  if (exist) {
+    setCartItems(
+      cartItems.map((item) =>
+        item.id === product.id
+          ? { ...item, qty: item.qty + 1 }
+          : item
+      )
+    );
+  } else {
+    setCartItems([
+      ...cartItems,
+      {
+        ...product,
+        qty: 1,
+        size: selectedSize,
+      },
+    ]);
+  }
 };
 
   return (

@@ -30,18 +30,44 @@ import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
+import { useContext } from "react";
+import { MyContext } from "../../../../App";
 
 const productDetails4 = (props) => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
+  const { cartItems, setCartItems } = useContext(MyContext);
 
   const sizes = ["S","M","L","XL"];
 
   const product = {
-  id: 3,
+  id: "kurta-4",
   name: "Janasya Women Green Georgette Kurta ",
   price: 1499,
   image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"
+};
+
+const addToCart = () => {
+  const exist = cartItems.find((item) => item.id === product.id);
+
+  if (exist) {
+    setCartItems(
+      cartItems.map((item) =>
+        item.id === product.id
+          ? { ...item, qty: item.qty + 1 }
+          : item
+      )
+    );
+  } else {
+    setCartItems([
+      ...cartItems,
+      {
+        ...product,
+        qty: 1,
+        size: selectedSize,
+      },
+    ]);
+  }
 };
   return (
     <>
