@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../../firebase";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -541,9 +542,9 @@ const Login = () => {
               <label className="remember-label">
                 <input type="checkbox" /> Remember me
               </label>
-              <a href="#" className="forgot-link">
-                Forgot password?
-              </a>
+           <Link to="/Forgot" className="forgot-link">
+  Forgot password?
+</Link>
             </div>
 
             <button
