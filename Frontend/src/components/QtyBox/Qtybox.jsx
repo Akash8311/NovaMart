@@ -1,4 +1,5 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, } from "react";
+// import { Link } from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { MyContext } from "../../App";
@@ -31,13 +32,11 @@ const Qtybox = ({ product }) => {
   const press = (e) => (e.currentTarget.style.transform = "scale(0.97)");
   const release = (e) => (e.currentTarget.style.transform = "scale(1)");
 
-  // ✅ ADD TO CART FUNCTION
   const addToCart = () => {
     setCartItems((prev) => {
       const exist = prev.find((item) => item.id === product.id);
 
       if (exist) {
-        // যদি already থাকে → qty বাড়বে
         return prev.map((item) =>
           item.id === product.id
             ? { ...item, qty: item.qty + qty }
@@ -45,14 +44,13 @@ const Qtybox = ({ product }) => {
         );
       }
 
-      // নতুন item add
       return [
         ...prev,
         {
           id: product.id,
           name: product.name,
           price: product.price,
-          image: product.image, // 🔥 IMPORTANT
+          image: product.image, 
           qty: qty,
         },
       ];
@@ -64,10 +62,8 @@ const Qtybox = ({ product }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
 
-      {/* Qty + Buy Now */}
       <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
 
-        {/* Qty Box */}
         <div
           style={{
             display: "inline-flex",
@@ -121,20 +117,20 @@ const Qtybox = ({ product }) => {
           </button>
         </div>
 
-        {/* Buy Now */}
         <button
           style={{ ...btnBase, flex: 1, padding: "0 18px" }}
           onMouseEnter={hoverIn}
+          onClick={addToCart}
           onMouseLeave={hoverOut}
           onMouseDown={press}
           onMouseUp={release}
+          to="/CartPage"
         >
           <MdOutlineShoppingCart />
           Buy Now
-        </button>
+        </button> 
       </div>
 
-      {/* ✅ ADD TO CART */}
       <button
         style={{ ...btnBase, width: "100%", padding: "0 20px" }}
         onClick={addToCart}

@@ -650,7 +650,7 @@ const App = () => {
                     letterSpacing: "2px",
                   }}
                 >
-                  VIEW TO CART →
+                  Proceed to Pay→
                 </Link>
 
                 <button

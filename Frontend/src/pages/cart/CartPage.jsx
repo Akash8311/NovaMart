@@ -446,7 +446,7 @@ const CartPage = () => {
                     </button>
                   </div>
                 <button className="checkout-btn" disabled={cartItems.length === 0}>
-                  Proceed to checkout
+                  Proceed to Payment
                 </button>
                 <p style={{ fontSize: "12px", color: "#aaa", textAlign: "center", margin: "14px 0 0" }}>
                   Secure payment via Razorpay
