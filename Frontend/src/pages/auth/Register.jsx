@@ -1,10 +1,6 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../../firebase";
-
-/* ─────────────────────────────────────────
-   VALIDATION
-───────────────────────────────────────── */
 const rules = {
   name:    v => v.trim().length >= 2 ? "" : "Full name must be at least 2 characters",
   email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? "" : "Enter a valid email address",
@@ -26,10 +22,6 @@ const pwStrength = pw => {
   if (/[^A-Za-z0-9]/.test(pw))   s++;
   return s;
 };
-
-/* ─────────────────────────────────────────
-   CANVAS CONSTELLATION
-───────────────────────────────────────── */
 const StarCanvas = () => {
   const ref = useRef(null);
   useEffect(() => {
@@ -69,9 +61,6 @@ const StarCanvas = () => {
   return <canvas ref={ref} style={{position:"absolute",inset:0,width:"100%",height:"100%",pointerEvents:"none",zIndex:0}}/>;
 };
 
-/* ─────────────────────────────────────────
-   CURSOR
-───────────────────────────────────────── */
 const Cursor = () => {
   const dot=useRef(null), ring=useRef(null);
   const pos=useRef({x:0,y:0}), lag=useRef({x:0,y:0});
@@ -95,9 +84,6 @@ const Cursor = () => {
   </>);
 };
 
-/* ─────────────────────────────────────────
-   TOAST
-───────────────────────────────────────── */
 const Toast = ({ msg, type, onClose }) => (
   <div style={{
     position:"fixed",top:24,right:24,zIndex:10000,
@@ -117,9 +103,6 @@ const Toast = ({ msg, type, onClose }) => (
   </div>
 );
 
-/* ─────────────────────────────────────────
-   FLOATING LABEL INPUT
-───────────────────────────────────────── */
 const FloatInput = ({ label, name, type="text", value, onChange, onBlur, error, rightEl }) => {
   const [focused, setFocused] = useState(false);
   const floated = focused || value.length > 0;
@@ -164,7 +147,6 @@ const FloatInput = ({ label, name, type="text", value, onChange, onBlur, error, 
             transition:"all .25s",borderRadius:0,WebkitAppearance:"none",
           }}
         />
-        {/* Animated underline */}
         <div style={{
           position:"absolute",bottom:0,
           left:focused?0:"50%",right:focused?0:"50%",
@@ -179,7 +161,6 @@ const FloatInput = ({ label, name, type="text", value, onChange, onBlur, error, 
   );
 };
 
-/* ─── Password strength bar ─── */
 const StrengthBar = ({ pw }) => {
   const s = pwStrength(pw);
   const labels = ["","Weak","Fair","Good","Strong"];
@@ -197,10 +178,6 @@ const StrengthBar = ({ pw }) => {
   );
 };
 
-/* ═════════════════════════════════════════
-   MAIN REGISTER COMPONENT
-   ⚠️  Firebase logic is 100% unchanged
-═════════════════════════════════════════ */
 const Register = () => {
 
   /* ── original state ── */
@@ -233,9 +210,6 @@ const Register = () => {
 
   const showToast = (msg,type)=>{ setToast({msg,type}); setTimeout(()=>setToast(null),4000); };
 
-  /* ──────────────────────────────────────
-     🔥 ORIGINAL GOOGLE LOGIN — UNCHANGED
-  ────────────────────────────────────── */
   const handleGoogle = async () => {
     try {
       setGLoading(true);
@@ -260,9 +234,6 @@ const Register = () => {
     }
   };
 
-  /* ──────────────────────────────────────
-     🔥 ORIGINAL handleChange — UNCHANGED
-  ────────────────────────────────────── */
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     // Also keep live validation for UI
@@ -275,11 +246,6 @@ const Register = () => {
       setErrors(prev=>({...prev,[field]:err}));
     }
   };
-
-  /* ──────────────────────────────────────
-     🔥 ORIGINAL handleSubmit — UNCHANGED
-     (alert logic kept, loading UI added)
-  ────────────────────────────────────── */
   const handleSubmit = (e) => {
     // Mark all as touched to show errors
     setTouched({name:true,email:true,password:true,confirm:true});
@@ -373,7 +339,6 @@ const Register = () => {
         background:"#0A0705",overflow:"hidden",cursor:"none",
       }}>
 
-        {/* ══════════ LEFT PANEL ══════════ */}
         <div className="nm-left" style={{
           position:"relative",overflow:"hidden",
           display:"flex",flexDirection:"column",justifyContent:"space-between",
@@ -383,7 +348,6 @@ const Register = () => {
         }}>
           <StarCanvas/>
 
-          {/* Ambient orbs */}
           {[
             {w:520,h:520,top:-180,left:-180,c:"rgba(200,133,106,.2)",d:"10s"},
             {w:360,h:360,bottom:-120,right:-80,c:"rgba(212,172,94,.12)",d:"14s",rev:true},
@@ -398,10 +362,8 @@ const Register = () => {
             }}/>
           ))}
 
-          {/* Diagonal hatch */}
           <div style={{position:"absolute",inset:0,background:"repeating-linear-gradient(-55deg,transparent,transparent 2px,rgba(200,133,106,.02) 2px,rgba(200,133,106,.02) 4px)",pointerEvents:"none",zIndex:1}}/>
 
-          {/* Corner brackets */}
           {[
             {top:32,left:32,borderTop:"1px solid rgba(200,133,106,.4)",borderLeft:"1px solid rgba(200,133,106,.4)"},
             {bottom:32,right:32,borderBottom:"1px solid rgba(200,133,106,.4)",borderRight:"1px solid rgba(200,133,106,.4)"},
@@ -412,14 +374,11 @@ const Register = () => {
             }}/>
           ))}
 
-          {/* Vertical strip */}
           <div style={{position:"absolute",right:0,top:0,bottom:0,width:38,borderLeft:"1px solid rgba(200,133,106,.18)",display:"flex",alignItems:"center",justifyContent:"center",zIndex:3}}>
             <span style={{writingMode:"vertical-rl",fontSize:9,letterSpacing:4,color:"rgba(200,133,106,.28)",textTransform:"uppercase",animation:"vert-in .8s ease 1.1s both"}}>
               NovaMart · Est. 2026
             </span>
           </div>
-
-          {/* Brand */}
           <div style={{position:"relative",zIndex:4,opacity:mounted?1:0,transform:mounted?"translateY(0)":"translateY(-24px)",transition:"opacity .9s cubic-bezier(.16,1,.3,1) .2s,transform .9s cubic-bezier(.16,1,.3,1) .2s"}}>
             <div style={{display:"flex",alignItems:"center",gap:14}}>
               <div style={{width:44,height:44,position:"relative",flexShrink:0}}>
@@ -458,8 +417,6 @@ const Register = () => {
               Gain exclusive access to curated collections, early drops,
               and member-only privileges — crafted for those with impeccable taste.
             </p>
-
-            {/* Perks */}
             <div style={{display:"flex",flexDirection:"column",gap:15,marginTop:42}}>
               {perks.map(([icon,text],i)=>(
                 <div key={i} style={{display:"flex",alignItems:"center",gap:16,opacity:0,animation:mounted?`fade-up .6s ease ${1.1+i*.15}s forwards`:"none"}}>
@@ -472,8 +429,6 @@ const Register = () => {
               ))}
             </div>
           </div>
-
-          {/* Footer */}
           <div style={{position:"relative",zIndex:4,opacity:mounted?1:0,transition:"opacity .6s ease 1.9s",display:"flex",gap:18,fontSize:10,letterSpacing:2,color:"rgba(200,133,106,.2)",textTransform:"uppercase",alignItems:"center"}}>
             <span>© 2026 NovaMart</span>
             <span style={{width:3,height:3,borderRadius:"50%",background:"rgba(200,133,106,.25)",display:"inline-block"}}/>
@@ -482,8 +437,6 @@ const Register = () => {
             <span>Terms</span>
           </div>
         </div>
-
-        {/* ══════════ RIGHT PANEL ══════════ */}
         <div className="nm-right" style={{
           background:"#EDE4D8",position:"relative",overflowY:"auto",
           display:"flex",flexDirection:"column",justifyContent:"center",
@@ -491,8 +444,6 @@ const Register = () => {
           opacity:mounted?1:0,transform:mounted?"translateX(0)":"translateX(50px)",
           transition:"opacity .9s cubic-bezier(.16,1,.3,1) .25s,transform .9s cubic-bezier(.16,1,.3,1) .25s",
         }}>
-
-          {/* Shimmer top accent */}
           <div style={{position:"absolute",top:0,left:0,right:0,height:3,background:"linear-gradient(90deg,transparent,#D4AC5E,#C8956C,#D4AC5E,transparent)",backgroundSize:"300% 100%",animation:"shimmer-bar 4s ease-in-out infinite"}}/>
           {/* Left accent */}
           <div style={{position:"absolute",left:0,top:0,bottom:0,width:3,background:"linear-gradient(to bottom,transparent,#D4AC5E,#C8956C,#D4AC5E,transparent)",opacity:.38}}/>
@@ -500,8 +451,6 @@ const Register = () => {
           <div style={{position:"absolute",inset:0,backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.025'/%3E%3C/svg%3E")`,pointerEvents:"none",opacity:.5}}/>
 
           <div style={{position:"relative",zIndex:1}}>
-
-            {/* Heading */}
             <div style={{marginBottom:28,opacity:mounted?1:0,transform:mounted?"translateY(0)":"translateY(20px)",transition:"opacity .7s ease .6s,transform .7s ease .6s"}}>
               <div style={{fontSize:9,letterSpacing:4,textTransform:"uppercase",color:"#D4AC5E",fontWeight:600,marginBottom:10,display:"flex",alignItems:"center",gap:10}}>
                 New Account
@@ -548,15 +497,11 @@ const Register = () => {
               )}
               {gLoading ? "Connecting..." : "Continue with Google"}
             </button>
-
-            {/* Divider */}
             <div style={{display:"flex",alignItems:"center",gap:12,marginBottom:22}}>
               <span style={{flex:1,height:1,background:"rgba(180,165,148,.3)"}}/>
               <span style={{fontSize:9,color:"#9A8E84",letterSpacing:2,textTransform:"uppercase"}}>or sign up with email</span>
               <span style={{flex:1,height:1,background:"rgba(180,165,148,.3)"}}/>
             </div>
-
-            {/* ─── Form fields ─── */}
             <FloatInput label="Full Name"     name="name"     value={form.name}     onChange={handleChange} onBlur={onBlur("name")}     error={touched.name&&errors.name}/>
             <FloatInput label="Email Address" name="email"    value={form.email}    onChange={handleChange} onBlur={onBlur("email")}    error={touched.email&&errors.email}   type="email"/>
             <FloatInput
@@ -587,7 +532,6 @@ const Register = () => {
               }
             />
 
-            {/* Terms checkbox */}
             <div style={{display:"flex",alignItems:"flex-start",gap:10,marginBottom:24,marginTop:-4}}>
               <div onClick={()=>setAgreed(v=>!v)} style={{
                 width:16,height:16,
@@ -607,7 +551,6 @@ const Register = () => {
               </span>
             </div>
 
-            {/* ─── 🔥 Submit button — original handleSubmit, premium UI ─── */}
             <button
               type="button"
               onClick={handleSubmit}
