@@ -124,7 +124,7 @@ const Qtybox = ({ product }) => {
           onMouseLeave={hoverOut}
           onMouseDown={press}
           onMouseUp={release}
-          to="/CartPage"
+          to="/Payment"
         >
           <MdOutlineShoppingCart />
           Buy Now

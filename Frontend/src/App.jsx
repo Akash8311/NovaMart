@@ -27,6 +27,7 @@ import Register from "./pages/auth/Register";
 import Drawer from "@mui/material/Drawer";
 import CartPage from "./pages/cart/CartPage";
 import Forgot from "./pages/auth/Forgot";
+import Payment from "./pages/cart/Payment";
 
 export const MyContext = createContext();
 
@@ -132,6 +133,7 @@ const App = () => {
           <Route path="/Register" element={<Register />} />
           <Route path="/Forgot" element={<Forgot/>}/>
           <Route path="/CartPage" element={<CartPage />} />
+          <Route path="/Payment" element={<Payment/>}/>
 
           <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
           <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
