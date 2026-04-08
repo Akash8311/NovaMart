@@ -256,7 +256,6 @@ const CartPage = () => {
       e.currentTarget.style.boxShadow = "0 4px 15px rgba(0,0,0,0.06)";
     }}
   >
-    {/* Icon */}
     <div
       style={{
         fontSize: "26px",
@@ -266,8 +265,6 @@ const CartPage = () => {
     >
       <RiCoupon2Fill />
     </div>
-
-    {/* Text */}
     <p
       style={{
         margin: 0,
@@ -297,9 +294,6 @@ const CartPage = () => {
           e.target.style.transform = "scale(1.05)";
         }}
         onMouseLeave={(e) => {
-          
-         
-          
         }}
       >
         AKASH2004
@@ -308,10 +302,7 @@ const CartPage = () => {
     </p>
   </div>
 )}
-                 
-
-                  {/* Status messages */}
-                  {couponStatus === "err" && couponMsg && (
+                                   {couponStatus === "err" && couponMsg && (
                     <p style={{ fontSize: "12px", color: "#A32D2D", margin: "6px 0 0", animation: "slideIn 0.3s ease" }}>
                       {couponMsg}
                     </p>
@@ -360,8 +351,6 @@ const CartPage = () => {
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <p style={{ fontSize: "15px", fontWeight: 500, color: "#111", margin: "0 0 4px" }}>{item.name}</p>
                       <p style={{ fontSize: "16px", fontWeight: 500, color: "#111", margin: "0 0 12px" }}>{fmt(item.price)}</p>
-
-                      {/* QTY CONTROLS */}
                       <div style={{ display: "flex", alignItems: "center" }}>
                         <button className="qty-btn" onClick={() => updateQty(item.id, -1)}>−</button>
                         <span
@@ -376,8 +365,6 @@ const CartPage = () => {
                         <button className="qty-btn" onClick={() => updateQty(item.id, 1)}>+</button>
                       </div>
                     </div>
-
-                    {/* PRICE + DELETE */}
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "8px", flexShrink: 0 }}>
                       <p style={{ fontSize: "15px", fontWeight: 500, color: "#111", margin: 0 }}>
                         {fmt(item.price * item.qty)}
@@ -388,8 +375,6 @@ const CartPage = () => {
                 ))
               )}
             </div>
-
-            {/* RIGHT: SUMMARY */}
             <div style={{ width: "300px", flexShrink: 0, display: "flex", flexDirection: "column", gap: "14px" }}>
               <div style={{ background: "#fff", border: "0.5px solid #e5e5e5", borderRadius: "12px", padding: "24px", animation: "fadeUp 0.5s ease 0.1s both" }}>
                 <h2 style={{ fontSize: "18px", fontWeight: 500, color: "#111", margin: "0 0 20px" }}>Order summary</h2>
