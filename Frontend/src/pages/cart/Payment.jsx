@@ -564,7 +564,6 @@ export default function Payment() {
                 ))}
               </div>
 
-              {/* Card fields */}
               {payMethod === "card" && (
                 <>
                   {/* live card preview */}
@@ -695,7 +694,6 @@ export default function Payment() {
                     <div className="pay-order-price">{fmt(item.price * item.qty)}</div>
                   </div>
                 ))}
-
                 <div className="pay-totals">
                   <div className="pay-total-row">
                     <span>Subtotal ({ORDER_ITEMS.reduce((a,i)=>a+i.qty,0)} items)</span>
@@ -718,8 +716,6 @@ export default function Payment() {
                 </div>
               </div>
             </div>
-
-            {/* trust badges */}
             <div className="pay-trust">
               {[
                 {icon:"🔒", label:"Secure payment"},
