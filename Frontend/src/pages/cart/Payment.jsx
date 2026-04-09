@@ -1,136 +1,742 @@
-import React from "react";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
+import React, { useState, useEffect } from "react";
 
-const Payment = () => {
+const STYLES = `
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --cream: #F7F3EE;
+    --espresso: #1C1310;
+    --caramel: #bed2f3;
+    --gold: #bac9e1;
+    --warm-gray: #8A7E78;
+    --light-border: #E8DDD5;
+    --input-bg: #FDFAF7;
+    --success: #0F6E56;
+    --success-bg: #E1F5EE;
+    --success-border: #9FE1CB;
+  }
+
+  .pay-root {
+    min-height: 100vh;
+    background: #f4f0eb;
+    font-family: 'DM Sans', sans-serif;
+    padding: 48px 24px 80px;
+  }
+
+  /* ── page header ── */
+  .pay-header {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    opacity: 0;
+    transform: translateY(-14px);
+    animation: fadeDown .5s ease .05s forwards;
+  }
+  @keyframes fadeDown {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .pay-brand-icon {
+    width: 36px; height: 36px;
+    border: 1.5px solid var(--caramel);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px; color: var(--caramel);
+    animation: spin-slow 12s linear infinite;
+    flex-shrink: 0;
+  }
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+  .pay-brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; color: var(--espresso);
+    letter-spacing: 4px; text-transform: uppercase;
+  }
+
+  /* ── breadcrumb steps ── */
+  .pay-steps {
+    max-width: 1100px; margin: 0 auto 36px;
+    display: flex; align-items: center; gap: 0;
+    opacity: 0; animation: fadeUp .5s ease .15s forwards;
+  }
+  @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
+  .pay-step-item {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 12px; letter-spacing: 1px; text-transform: uppercase; font-weight: 500;
+  }
+  .pay-step-dot {
+    width: 24px; height: 24px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; flex-shrink: 0;
+    border: 1.5px solid var(--light-border);
+    color: var(--warm-gray); background: #fff;
+    transition: all .3s;
+  }
+  .pay-step-dot.done  { background: var(--success-bg); border-color: var(--success-border); color: var(--success); }
+  .pay-step-dot.active{ background: var(--espresso); border-color: var(--espresso); color: #fff; }
+  .pay-step-label { color: var(--warm-gray); }
+  .pay-step-label.active { color: var(--espresso); font-weight: 500; }
+  .pay-step-label.done   { color: var(--success); }
+  .pay-step-line {
+    flex: 1; height: 1px; background: var(--light-border);
+    margin: 0 12px; min-width: 32px;
+  }
+
+  /* ── layout ── */
+  .pay-layout {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; gap: 28px; align-items: flex-start;
+  }
+
+  /* ── left col ── */
+  .pay-left {
+    flex: 1; min-width: 0;
+    display: flex; flex-direction: column; gap: 20px;
+  }
+
+  /* ── card ── */
+  .pay-card {
+    background: #fff;
+    border: 0.5px solid var(--light-border);
+    border-radius: 16px;
+    padding: 32px;
+    opacity: 0; transform: translateY(16px);
+    animation: fadeUp .5s ease forwards;
+  }
+  .pay-card:nth-child(1) { animation-delay: .2s; }
+  .pay-card:nth-child(2) { animation-delay: .3s; }
+  .pay-card:nth-child(3) { animation-delay: .4s; }
+
+  .pay-card-header {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 28px;
+  }
+  .pay-card-num {
+    width: 28px; height: 28px;
+    border: 1px solid var(--caramel);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px; font-weight: 600; color: var(--espresso);
+    flex-shrink: 0;
+  }
+  .pay-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; font-weight: 600; color: var(--espresso);
+  }
+
+  /* ── shimmer top bar ── */
+  .pay-card::before {
+    content: '';
+    display: block; height: 3px;
+    background: linear-gradient(90deg, var(--caramel), var(--gold), var(--caramel));
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+    border-radius: 16px 16px 0 0;
+    margin: -32px -32px 32px;
+  }
+  @keyframes shimmer { from { background-position: 0% center; } to { background-position: 200% center; } }
+
+  /* ── form grid ── */
+  .pay-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .pay-grid-1 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+  .pay-form-rows { display: flex; flex-direction: column; gap: 16px; }
+
+  /* ── field ── */
+  .pay-field { display: flex; flex-direction: column; gap: 6px; }
+  .pay-label {
+    font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase;
+    color: var(--espresso); font-weight: 500;
+    transition: color .2s;
+  }
+  .pay-field.focused .pay-label { color: var(--caramel); }
+
+  .pay-input-wrap { position: relative; }
+  .pay-input-icon {
+    position: absolute; left: 13px; top: 50%; transform: translateY(-50%);
+    width: 15px; height: 15px; color: var(--warm-gray);
+    pointer-events: none; transition: color .2s; z-index: 2;
+  }
+  .pay-field.focused .pay-input-icon { color: var(--caramel); }
+  .pay-field.has-icon .pay-input { padding-left: 40px; }
+
+  .pay-input, .pay-select, .pay-textarea {
+    width: 100%;
+    border: 1.5px solid var(--light-border);
+    background: var(--input-bg);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px; color: var(--espresso);
+    outline: none; border-radius: 0;
+    transition: border-color .25s, box-shadow .25s, background .25s;
+    -webkit-appearance: none;
+  }
+  .pay-input        { height: 46px; padding: 0 14px; }
+  .pay-select       { height: 46px; padding: 0 14px; cursor: pointer; }
+  .pay-textarea     { padding: 12px 14px; resize: none; line-height: 1.6; }
+  .pay-input::placeholder, .pay-textarea::placeholder { color: #C4B9B2; }
+  .pay-input:focus, .pay-select:focus, .pay-textarea:focus {
+    border-color: var(--caramel);
+    box-shadow: 0 0 0 3px rgba(190,210,243,.18);
+    background: #fff;
+  }
+  .pay-input.err  { border-color: #A32D2D !important; animation: shake .4s ease; }
+  .pay-input.ok   { border-color: var(--success) !important; }
+  @keyframes shake {
+    0%,100%{transform:translateX(0)} 20%{transform:translateX(-5px)}
+    40%{transform:translateX(5px)}   60%{transform:translateX(-3px)}
+    80%{transform:translateX(3px)}
+  }
+
+  /* ── payment method tabs ── */
+  .pay-method-tabs {
+    display: flex; gap: 12px; margin-bottom: 24px;
+  }
+  .pay-method-tab {
+    flex: 1; padding: 14px 12px;
+    border: 1.5px solid var(--light-border);
+    background: var(--input-bg);
+    cursor: pointer; font-family: 'DM Sans', sans-serif;
+    font-size: 13px; font-weight: 500; color: var(--warm-gray);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    transition: border-color .2s, color .2s, background .2s, transform .15s;
+    border-radius: 0;
+  }
+  .pay-method-tab:hover { border-color: var(--caramel); color: var(--espresso); transform: translateY(-2px); }
+  .pay-method-tab.active {
+    border-color: var(--espresso); background: var(--espresso);
+    color: var(--cream);
+  }
+  .pay-method-tab-icon { font-size: 20px; }
+
+  /* card number formatting */
+  .pay-card-preview {
+    background: linear-gradient(135deg, var(--espresso) 0%, #2e2118 100%);
+    border-radius: 12px; padding: 24px;
+    margin-bottom: 20px; position: relative; overflow: hidden;
+    animation: fadeUp .4s ease both;
+  }
+  .pay-card-preview::before {
+    content: '';
+    position: absolute; width: 200px; height: 200px; border-radius: 50%;
+    background: rgba(190,210,243,.08);
+    top: -60px; right: -60px; pointer-events: none;
+  }
+  .pay-card-preview-row {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;
+  }
+  .pay-card-chip { font-size: 20px; }
+  .pay-card-brand { font-size: 13px; color: rgba(247,243,238,.5); letter-spacing: 2px; text-transform: uppercase; }
+  .pay-card-num-display {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px; color: var(--cream); letter-spacing: 3px; margin-bottom: 16px;
+  }
+  .pay-card-bottom { display: flex; justify-content: space-between; }
+  .pay-card-meta { font-size: 10px; color: rgba(247,243,238,.5); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
+  .pay-card-meta-val { font-size: 13px; color: var(--cream); letter-spacing: 1px; }
+
+  /* ── submit button ── */
+  .pay-submit {
+    width: 100%; padding: 16px;
+    background: var(--espresso); color: var(--cream);
+    border: none; font-family: 'DM Sans', sans-serif;
+    font-size: 12px; letter-spacing: 3px; text-transform: uppercase;
+    font-weight: 500; cursor: pointer;
+    position: relative; overflow: hidden; border-radius: 0;
+    transition: background .3s, transform .15s, box-shadow .3s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    margin-top: 8px;
+  }
+  .pay-submit:hover:not(:disabled) {
+    background: #251a2e;
+    box-shadow: 0 6px 24px rgba(28,19,16,.25);
+    transform: translateY(-1px);
+  }
+  .pay-submit:active:not(:disabled) { transform: scale(.99); }
+  .pay-submit:disabled { opacity: .6; cursor: not-allowed; }
+  .pay-submit-shine {
+    position: absolute; left: -100%; top: 0; width: 50%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,.1), transparent);
+  }
+  .pay-submit.loading .pay-submit-shine { animation: shimmer-btn 1.2s infinite; }
+  @keyframes shimmer-btn { to { left: 200%; } }
+  .pay-loader {
+    width: 14px; height: 14px;
+    border: 2px solid rgba(247,243,238,.35);
+    border-top: 2px solid var(--cream);
+    border-radius: 50%; animation: spin .7s linear infinite; flex-shrink: 0;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── right col ── */
+  .pay-right {
+    width: 320px; flex-shrink: 0;
+    display: flex; flex-direction: column; gap: 16px;
+    opacity: 0; transform: translateY(16px);
+    animation: fadeUp .5s ease .35s forwards;
+  }
+
+  .pay-summary-card {
+    background: #fff;
+    border: 0.5px solid var(--light-border);
+    border-radius: 16px; overflow: hidden;
+  }
+  .pay-summary-top {
+    background: linear-gradient(135deg, var(--espresso) 0%, #2e2118 100%);
+    padding: 24px;
+  }
+  .pay-summary-top-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; color: var(--cream); margin-bottom: 4px;
+  }
+  .pay-summary-top-sub { font-size: 12px; color: rgba(247,243,238,.5); }
+  .pay-summary-body { padding: 20px 24px; }
+
+  /* order items */
+  .pay-order-item {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 14px;
+    padding-bottom: 14px; border-bottom: 0.5px solid var(--light-border);
+  }
+  .pay-order-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+  .pay-order-thumb {
+    width: 48px; height: 48px; border-radius: 6px;
+    flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .pay-order-name { font-size: 13px; font-weight: 500; color: var(--espresso); margin-bottom: 2px; }
+  .pay-order-qty  { font-size: 12px; color: var(--warm-gray); }
+  .pay-order-price{ font-size: 14px; font-weight: 500; color: var(--espresso); margin-left: auto; flex-shrink: 0; }
+
+  .pay-totals { margin-top: 16px; }
+  .pay-total-row {
+    display: flex; justify-content: space-between;
+    font-size: 13px; color: var(--warm-gray); margin-bottom: 10px;
+  }
+  .pay-total-row span:last-child { color: var(--espresso); font-weight: 500; }
+  .pay-total-row.free span:last-child { color: var(--success); }
+  .pay-total-row.disc span:last-child { color: #A32D2D; }
+  .pay-total-divider { height: 0.5px; background: var(--light-border); margin: 14px 0; }
+  .pay-grand-row {
+    display: flex; justify-content: space-between; align-items: baseline;
+  }
+  .pay-grand-label {
+    font-size: 15px; font-weight: 500; color: var(--espresso);
+    font-family: 'Playfair Display', serif;
+  }
+  .pay-grand-val {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px; font-weight: 600; color: var(--espresso);
+  }
+  .pay-incl-tax { font-size: 11px; color: var(--warm-gray); text-align: right; margin-top: 2px; }
+
+  /* trust badges */
+  .pay-trust {
+    background: #fff;
+    border: 0.5px solid var(--light-border);
+    border-radius: 16px; padding: 16px 20px;
+    display: flex; justify-content: space-around;
+  }
+  .pay-badge { text-align: center; }
+  .pay-badge-icon { font-size: 18px; margin-bottom: 4px; }
+  .pay-badge-label { font-size: 11px; color: var(--warm-gray); }
+
+  /* secure notice */
+  .pay-secure {
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    font-size: 12px; color: var(--warm-gray);
+  }
+
+  @media (max-width: 900px) {
+    .pay-layout { flex-direction: column; }
+    .pay-right { width: 100%; }
+    .pay-grid-2 { grid-template-columns: 1fr; }
+  }
+`;
+
+const STATES = [
+  "Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh",
+  "Goa","Gujarat","Haryana","Himachal Pradesh","Jharkhand","Karnataka",
+  "Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya","Mizoram",
+  "Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana",
+  "Tripura","Uttar Pradesh","Uttarakhand","West Bengal","Delhi",
+];
+
+const ORDER_ITEMS = [
+  { id:1, name:"Wireless Headphones", qty:1, price:2499, bg:"#e8e8f4", icon:"🎧" },
+  { id:2, name:"Leather Wallet",       qty:1, price:999,  bg:"#f4ede8", icon:"👜" },
+  { id:3, name:"Steel Water Bottle",   qty:2, price:999,  bg:"#e8f4ee", icon:"💧" },
+];
+
+const fmt = n => "₹" + n.toLocaleString("en-IN");
+const subtotal  = ORDER_ITEMS.reduce((t,i) => t + i.price * i.qty, 0);
+const discount  = 500;
+const shipping  = 0;
+const grandTotal = subtotal - discount + shipping;
+
+const EyeOpen = () => (
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/>
+  </svg>
+);
+
+/* ── simple field component ── */
+const Field = ({ label, icon, children, focused }) => (
+  <div className={`pay-field${focused?" focused":""}${icon?" has-icon":""}`}>
+    <label className="pay-label">{label}</label>
+    <div className="pay-input-wrap">
+      {icon && <span className="pay-input-icon">{icon}</span>}
+      {children}
+    </div>
+  </div>
+);
+
+export default function Payment() {
+  const [mounted, setMounted]   = useState(false);
+  const [focus, setFocus]       = useState({});
+  const [payMethod, setPayMethod] = useState("card");
+  const [loading, setLoading]   = useState(false);
+  const [cardNum, setCardNum]   = useState("");
+  const [expiry, setExpiry]     = useState("");
+  const [cvv, setCvv]           = useState("");
+  const [showCvv, setShowCvv]   = useState(false);
+  const [form, setForm]         = useState({
+    firstName:"", lastName:"", email:"", phone:"",
+    address:"", city:"", state:"", zip:"", company:""
+  });
+
+  useEffect(() => { setTimeout(() => setMounted(true), 50); }, []);
+
+  const setF = k => val => setForm(p => ({ ...p, [k]: val }));
+  const foc  = k => setFocus(p => ({ ...p, [k]: true  }));
+  const blur = k => setFocus(p => ({ ...p, [k]: false }));
+
+  const formatCard = v => v.replace(/\D/g,"").slice(0,16).replace(/(.{4})/g,"$1 ").trim();
+  const formatExp  = v => {
+    const d = v.replace(/\D/g,"").slice(0,4);
+    return d.length > 2 ? d.slice(0,2) + "/" + d.slice(2) : d;
+  };
+
+  const cardDisplay = cardNum.padEnd(16," ").replace(/(.{4})/g,"$1 ").trim();
+
+  const handleSubmit = async () => {
+    setLoading(true);
+    await new Promise(r => setTimeout(r, 2000)); // ← hook Razorpay / payment API
+    setLoading(false);
+    alert("Payment successful! 🎉");
+  };
+
+  const STEP_LABELS = ["Cart", "Details", "Payment", "Confirm"];
+
   return (
-    <section className="py-10 bg-gray-50">
-      <div className="container mx-auto flex gap-5 px-5">
-        
-        {/* LEFT COLUMN */}
-        <div className="leftcol w-[70%]">
-          <div className="card bg-white shadow-lg p-6 rounded-xl w-full">
+    <>
+      <style>{STYLES}</style>
+      <div className="pay-root">
 
-            <h1 className="text-2xl font-semibold mb-5">
-              Billing Details
-            </h1>
+        {/* brand header */}
+        <div className="pay-header">
+          <div className="pay-brand-icon">✦</div>
+          <span className="pay-brand-name">NovaMart</span>
+        </div>
 
-            <form className="w-full flex flex-col gap-4">
+        {/* breadcrumb */}
+        <div className="pay-steps">
+          {STEP_LABELS.map((label, i) => {
+            const done   = i < 2;
+            const active = i === 2;
+            return (
+              <React.Fragment key={label}>
+                {i > 0 && <div className="pay-step-line"/>}
+                <div className="pay-step-item">
+                  <div className={`pay-step-dot${done?" done":active?" active":""}`}>
+                    {done ? "✓" : i + 1}
+                  </div>
+                  <span className={`pay-step-label${done?" done":active?" active":""}`}>{label}</span>
+                </div>
+              </React.Fragment>
+            );
+          })}
+        </div>
 
-              {/* Name */}
-              <div className="flex gap-4">
-                <TextField
-                  label="First Name"
-                  variant="outlined"
-                  fullWidth
-                />
-                <TextField
-                  label="Last Name"
-                  variant="outlined"
-                  fullWidth
-                />
+        <div className="pay-layout">
+
+          {/* ── LEFT COLUMN ── */}
+          <div className="pay-left">
+
+            {/* ── BILLING DETAILS ── */}
+            <div className="pay-card">
+              <div className="pay-card-header">
+                <div className="pay-card-num">01</div>
+                <h2 className="pay-card-title">Billing Details</h2>
+              </div>
+              <div className="pay-form-rows">
+                <div className="pay-grid-2">
+                  <Field label="First Name" focused={focus.firstName} icon={
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+                  }>
+                    <input className="pay-input" placeholder="Akash" value={form.firstName}
+                      onChange={e=>setF("firstName")(e.target.value)}
+                      onFocus={()=>foc("firstName")} onBlur={()=>blur("firstName")}/>
+                  </Field>
+                  <Field label="Last Name" focused={focus.lastName}>
+                    <input className="pay-input" placeholder="Das" value={form.lastName}
+                      onChange={e=>setF("lastName")(e.target.value)}
+                      onFocus={()=>foc("lastName")} onBlur={()=>blur("lastName")}/>
+                  </Field>
+                </div>
+
+                <div className="pay-grid-2">
+                  <Field label="Email Address" focused={focus.email} icon={
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+                  }>
+                    <input className="pay-input" type="email" placeholder="you@example.com" value={form.email}
+                      onChange={e=>setF("email")(e.target.value)}
+                      onFocus={()=>foc("email")} onBlur={()=>blur("email")}/>
+                  </Field>
+                  <Field label="Phone Number" focused={focus.phone} icon={
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 4.17 2 2 0 0 1 5.09 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.11L9 10.09a16 16 0 0 0 6.92 6.92l1.36-1.36a2 2 0 0 1 2.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0 1 22 17.92z"/></svg>
+                  }>
+                    <input className="pay-input" type="tel" placeholder="+91 98765 43210" value={form.phone}
+                      onChange={e=>setF("phone")(e.target.value)}
+                      onFocus={()=>foc("phone")} onBlur={()=>blur("phone")}/>
+                  </Field>
+                </div>
+
+                <Field label="Street Address" focused={focus.address} icon={
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                }>
+                  <textarea className="pay-textarea" rows={2} placeholder="House no., Street, Area..." value={form.address}
+                    onChange={e=>setF("address")(e.target.value)}
+                    onFocus={()=>foc("address")} onBlur={()=>blur("address")}/>
+                </Field>
+
+                <div className="pay-grid-2">
+                  <Field label="City" focused={focus.city}>
+                    <input className="pay-input" placeholder="Kolkata" value={form.city}
+                      onChange={e=>setF("city")(e.target.value)}
+                      onFocus={()=>foc("city")} onBlur={()=>blur("city")}/>
+                  </Field>
+                  <Field label="State" focused={focus.state}>
+                    <select className="pay-select" value={form.state}
+                      onChange={e=>setF("state")(e.target.value)}
+                      onFocus={()=>foc("state")} onBlur={()=>blur("state")}>
+                      <option value="">Select state</option>
+                      {STATES.map(s => <option key={s} value={s}>{s}</option>)}
+                    </select>
+                  </Field>
+                </div>
+
+                <div className="pay-grid-2">
+                  <Field label="Zip Code" focused={focus.zip}>
+                    <input className="pay-input" type="text" inputMode="numeric" placeholder="700001" maxLength={6} value={form.zip}
+                      onChange={e=>setF("zip")(e.target.value.replace(/\D/g,""))}
+                      onFocus={()=>foc("zip")} onBlur={()=>blur("zip")}/>
+                  </Field>
+                  <Field label="Country" focused={focus.country}>
+                    <input className="pay-input" defaultValue="India" readOnly
+                      style={{color:"var(--warm-gray)",cursor:"default"}}/>
+                  </Field>
+                </div>
+
+                <Field label="Company (Optional)" focused={focus.company}>
+                  <input className="pay-input" placeholder="Your company name" value={form.company}
+                    onChange={e=>setF("company")(e.target.value)}
+                    onFocus={()=>foc("company")} onBlur={()=>blur("company")}/>
+                </Field>
+              </div>
+            </div>
+
+            {/* ── PAYMENT METHOD ── */}
+            <div className="pay-card">
+              <div className="pay-card-header">
+                <div className="pay-card-num">02</div>
+                <h2 className="pay-card-title">Payment Method</h2>
               </div>
 
-              {/* Email & Phone */}
-              <div className="flex gap-4">
-                <TextField
-                  label="Email Address"
-                  type="email"
-                  fullWidth
-                />
-                <TextField
-                  label="Phone Number"
-                  type="tel"
-                  fullWidth
-                />
+              <div className="pay-method-tabs">
+                {[
+                  { id:"card",  icon:"💳", label:"Card"   },
+                  { id:"upi",   icon:"📱", label:"UPI"    },
+                  { id:"netbanking", icon:"🏦", label:"Net Banking" },
+                  { id:"cod",   icon:"💵", label:"Cash on Delivery" },
+                ].map(m => (
+                  <button key={m.id} className={`pay-method-tab${payMethod===m.id?" active":""}`}
+                    onClick={() => setPayMethod(m.id)}>
+                    <span className="pay-method-tab-icon">{m.icon}</span>
+                    {m.label}
+                  </button>
+                ))}
               </div>
 
-              {/* Address */}
-              <TextField
-                label="Street Address"
-                fullWidth
-                multiline
-                rows={2}
-              />
+              {/* Card fields */}
+              {payMethod === "card" && (
+                <>
+                  {/* live card preview */}
+                  <div className="pay-card-preview">
+                    <div className="pay-card-preview-row">
+                      <span className="pay-card-chip">💳</span>
+                      <span className="pay-card-brand">NovaMart</span>
+                    </div>
+                    <div className="pay-card-num-display">
+                      {cardDisplay || "•••• •••• •••• ••••"}
+                    </div>
+                    <div className="pay-card-bottom">
+                      <div>
+                        <div className="pay-card-meta">Card Holder</div>
+                        <div className="pay-card-meta-val">
+                          {(form.firstName||"FIRST") + " " + (form.lastName||"LAST")}
+                        </div>
+                      </div>
+                      <div style={{textAlign:"right"}}>
+                        <div className="pay-card-meta">Expires</div>
+                        <div className="pay-card-meta-val">{expiry||"MM/YY"}</div>
+                      </div>
+                    </div>
+                  </div>
 
-              {/* City + State */}
-              <div className="flex gap-4">
-                <TextField label="City" fullWidth />
+                  <div className="pay-form-rows">
+                    <Field label="Card Number" focused={focus.cardNum}>
+                      <input className="pay-input" placeholder="1234 5678 9012 3456"
+                        value={cardNum}
+                        onChange={e => setCardNum(formatCard(e.target.value))}
+                        onFocus={()=>foc("cardNum")} onBlur={()=>blur("cardNum")}
+                        maxLength={19} inputMode="numeric"/>
+                    </Field>
+                    <div className="pay-grid-2">
+                      <Field label="Expiry" focused={focus.expiry}>
+                        <input className="pay-input" placeholder="MM/YY"
+                          value={expiry}
+                          onChange={e => setExpiry(formatExp(e.target.value))}
+                          onFocus={()=>foc("expiry")} onBlur={()=>blur("expiry")}
+                          maxLength={5} inputMode="numeric"/>
+                      </Field>
+                      <Field label="CVV" focused={focus.cvv}>
+                        <div style={{position:"relative"}}>
+                          <input className="pay-input" placeholder="•••"
+                            type={showCvv?"text":"password"}
+                            value={cvv}
+                            onChange={e => setCvv(e.target.value.replace(/\D/g,"").slice(0,4))}
+                            onFocus={()=>foc("cvv")} onBlur={()=>blur("cvv")}
+                            inputMode="numeric"/>
+                          <button type="button"
+                            style={{position:"absolute",right:12,top:"50%",transform:"translateY(-50%)",background:"none",border:"none",cursor:"pointer",color:"var(--warm-gray)",display:"flex",padding:"4px"}}
+                            onMouseDown={e=>{e.preventDefault();setShowCvv(v=>!v)}}>
+                            <EyeOpen/>
+                          </button>
+                        </div>
+                      </Field>
+                    </div>
+                    <Field label="Name on Card" focused={focus.cardName}>
+                      <input className="pay-input" placeholder="As printed on card"
+                        onFocus={()=>foc("cardName")} onBlur={()=>blur("cardName")}/>
+                    </Field>
+                  </div>
+                </>
+              )}
 
-                <TextField
-                  select
-                  label="State"
-                  fullWidth
-                >
-                  <MenuItem value="WB">West Bengal</MenuItem>
-                  <MenuItem value="MH">Maharashtra</MenuItem>
-                  <MenuItem value="DL">Delhi</MenuItem>
-                  <MenuItem value="KA">Karnataka</MenuItem>
-                </TextField>
-              </div>
+              {payMethod === "upi" && (
+                <Field label="UPI ID" focused={focus.upi} icon={
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                }>
+                  <input className="pay-input" placeholder="yourname@upi"
+                    onFocus={()=>foc("upi")} onBlur={()=>blur("upi")}/>
+                </Field>
+              )}
 
-              {/* Zip + Country */}
-              <div className="flex gap-4">
-                <TextField
-                  label="Zip Code"
-                  type="number"
-                  fullWidth
-                />
+              {payMethod === "netbanking" && (
+                <Field label="Select Bank" focused={focus.bank}>
+                  <select className="pay-select" onFocus={()=>foc("bank")} onBlur={()=>blur("bank")}>
+                    <option value="">Choose your bank</option>
+                    {["SBI","HDFC Bank","ICICI Bank","Axis Bank","Kotak Mahindra","Bank of Baroda","Canara Bank","Punjab National Bank"].map(b=>(
+                      <option key={b}>{b}</option>
+                    ))}
+                  </select>
+                </Field>
+              )}
 
-                <TextField
-                  label="Country"
-                  defaultValue="India"
-                  fullWidth
-                />
-              </div>
+              {payMethod === "cod" && (
+                <div style={{background:"#f9f6f0",border:"0.5px solid var(--light-border)",padding:"16px 18px",borderLeft:"3px solid var(--caramel)"}}>
+                  <p style={{fontSize:13,color:"var(--espresso)",fontWeight:500,marginBottom:4}}>Cash on Delivery available</p>
+                  <p style={{fontSize:12,color:"var(--warm-gray)",lineHeight:1.6}}>Pay at your doorstep when your order arrives. Extra ₹49 COD fee applies.</p>
+                </div>
+              )}
 
-              {/* Company (optional) */}
-              <TextField
-                label="Company (Optional)"
-                fullWidth
-              />
-
-              {/* Button */}
               <button
-                type="submit"
-                className="bg-black text-white py-3 rounded-md mt-3 hover:bg-gray-800 transition"
+                className={`pay-submit${loading?" loading":""}`}
+                onClick={handleSubmit}
+                disabled={loading}
               >
-                Proceed to Payment →
+                <span className="pay-submit-shine"/>
+                {loading
+                  ? <><span className="pay-loader"/>Processing payment...</>
+                  : <>Place Order · {fmt(grandTotal)} →</>
+                }
               </button>
 
-            </form>
+              <div className="pay-secure" style={{marginTop:12}}>
+                🔒 <span>Secured by Razorpay · 256-bit SSL</span>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* RIGHT COLUMN (Optional Summary) */}
-        <div className="rightcol w-[30%]">
-          <div className="card bg-white shadow-lg p-6 rounded-xl">
-            <h2 className="text-xl font-semibold mb-4">
-              Order Summary
-            </h2>
+          {/* ── RIGHT COLUMN ── */}
+          <div className="pay-right">
 
-            <p className="flex justify-between mb-2">
-              <span>Subtotal</span>
-              <span>₹999</span>
-            </p>
+            {/* order summary */}
+            <div className="pay-summary-card">
+              <div className="pay-summary-top">
+                <div className="pay-summary-top-title">Order Summary</div>
+                <div className="pay-summary-top-sub">{ORDER_ITEMS.length} items · Delivery by Thu, Apr 11</div>
+              </div>
+              <div className="pay-summary-body">
+                {ORDER_ITEMS.map(item => (
+                  <div key={item.id} className="pay-order-item">
+                    <div className="pay-order-thumb" style={{background:item.bg}}>{item.icon}</div>
+                    <div>
+                      <div className="pay-order-name">{item.name}</div>
+                      <div className="pay-order-qty">Qty: {item.qty}</div>
+                    </div>
+                    <div className="pay-order-price">{fmt(item.price * item.qty)}</div>
+                  </div>
+                ))}
 
-            <p className="flex justify-between mb-2">
-              <span>Shipping</span>
-              <span>Free</span>
-            </p>
+                <div className="pay-totals">
+                  <div className="pay-total-row">
+                    <span>Subtotal ({ORDER_ITEMS.reduce((a,i)=>a+i.qty,0)} items)</span>
+                    <span>{fmt(subtotal)}</span>
+                  </div>
+                  <div className="pay-total-row free">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                  </div>
+                  <div className="pay-total-row disc">
+                    <span>Discount (AKASH2004)</span>
+                    <span>− {fmt(discount)}</span>
+                  </div>
+                  <div className="pay-total-divider"/>
+                  <div className="pay-grand-row">
+                    <span className="pay-grand-label">Total</span>
+                    <span className="pay-grand-val">{fmt(grandTotal)}</span>
+                  </div>
+                  <div className="pay-incl-tax">Incl. all taxes</div>
+                </div>
+              </div>
+            </div>
 
-            <hr className="my-3" />
+            {/* trust badges */}
+            <div className="pay-trust">
+              {[
+                {icon:"🔒", label:"Secure payment"},
+                {icon:"🚚", label:"Free delivery"},
+                {icon:"↩",  label:"Easy returns"},
+              ].map(b => (
+                <div key={b.label} className="pay-badge">
+                  <div className="pay-badge-icon">{b.icon}</div>
+                  <div className="pay-badge-label">{b.label}</div>
+                </div>
+              ))}
+            </div>
 
-            <p className="flex justify-between font-bold text-lg">
-              <span>Total</span>
-              <span>₹999</span>
-            </p>
           </div>
-        </div>
 
+        </div>
       </div>
-    </section>
+    </>
   );
-};
-
-export default Payment;
+}
