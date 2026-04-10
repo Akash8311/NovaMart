@@ -24,7 +24,18 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 
 const Header = () => {
 
-  const { setOpenCartPanel } = useContext(MyContext); // ✅ add
+const { setOpenCartPanel, isLogin } = useContext(MyContext);
+{
+  isLogin === false ? (
+    <li className="list-none">
+      <Link to="/login" className="text-[17px] Link no-underline transition font-[400]">
+        Login
+      </Link>
+    </li>
+  ) : (
+    'user login'
+  )
+}
 
   return (
     <header>
@@ -64,12 +75,21 @@ const Header = () => {
 
           <div className="cal3 w-[30%] flex items-center">
             <ul className="flex items-center gap-3 justify-end w-full" style={{ gap: "8px", marginRight: "20px" }}>
-              
-              <li className="list-none">
+              <div>
+                {
+                  isLogin === false ?
+                        <li className="list-none">
                 <Link to="/login" className="text-[17px] Link no-underline transition font-[400]">
                   Login
                 </Link>
               </li>
+
+              :
+
+              'user login'
+                }
+          
+              </div>
 
               <span>|</span>
 

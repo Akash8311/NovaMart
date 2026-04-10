@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { MyContext } from "../../App";
 import { RiCoupon2Fill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 
 
@@ -430,8 +431,11 @@ const CartPage = () => {
                       {couponApplied ? "Applied" : "Apply"}
                     </button>
                   </div>
-                <button className="checkout-btn" disabled={cartItems.length === 0}>
+                <button className="checkout-btn" disabled={cartItems.length === 0}
+               >
+                  <Link to="/Payment" style={{textDecoration:"none"}}>
                   Proceed to Payment
+                  </Link>
                 </button>
                 <p style={{ fontSize: "12px", color: "#aaa", textAlign: "center", margin: "14px 0 0" }}>
                   Secure payment via Razorpay

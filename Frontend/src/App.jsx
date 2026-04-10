@@ -1,4 +1,5 @@
-import React, { createContext, useState, link } from "react";
+import React, { createContext, useState } from "react";
+
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Header from "./components/Header/Header";
@@ -88,12 +89,16 @@ const styleTag = `
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
   const [cartItems, setCartItems] = useState([]);
+  const [isLogin,setIsLogin] =useState(false);
+
 
   const values = {
     openCartPanel,
     setOpenCartPanel,
     cartItems,
     setCartItems,
+    isLogin,
+    setIsLogin,
   };
 
   const totalPrice = cartItems.reduce(
