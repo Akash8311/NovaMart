@@ -433,7 +433,7 @@ const CartPage = () => {
                   </div>
                 <button className="checkout-btn" disabled={cartItems.length === 0}
                >
-                  <Link to="/Payment" style={{textDecoration:"none"}}>
+                  <Link to="/Payment" style={{textDecoration:"none",color:"#ffff"}}>
                   Proceed to Payment
                   </Link>
                 </button>
