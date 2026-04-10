@@ -17,18 +17,17 @@ import BlogItems from "../../components/BlogItems/BlogItems";
 import BlogItems2 from "../../components/BlogItems/BlogItems2";
 import BlogItems4 from "../../components/BlogItems/BlogItems4";
 
+
+
 const Home = () => {
   const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
-
-
-
   return (
     <div>
+      
       <div style={{ backgroundColor: "#e0e0e0", overflow: "hidden" }}>
         <HomeSlider />
         <CatSlider />
@@ -52,7 +51,6 @@ const Home = () => {
             className="my-container"
             style={{ paddingTop: "25px", paddingBottom: "25px" }}
           >
-            {/* Free Shipping Section */}
             <div
               style={{
                 border: "2px solid #bfbfbf",
@@ -115,7 +113,6 @@ const Home = () => {
                 - ONLY $200
               </span>
             </div>
-            {/* 🔥 Popular Products Section */}
             <section style={{ padding: "10px 0" }}>
               <div
                 style={{
