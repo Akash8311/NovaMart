@@ -193,10 +193,6 @@ const Home = () => {
        </div>
                   </div>
         </section>
-
-
-
-{/* footer section */}
       <section style={{background:"#fff"}}>
         <div>
         </div>
