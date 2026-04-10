@@ -143,8 +143,6 @@ const Home = () => {
                     Do not miss the current offers until the end of the Year....
                   </p>
                 </div>
-
-                {/* RIGHT TAB FILTER */}
                 <Box
                   sx={{
                     maxWidth: { xs: 200, sm: 480 },
@@ -177,10 +175,6 @@ const Home = () => {
             <AdsBanner items={4} />
           </div>
         </section>
-
-
-
-        {/* from vlog section */}
         <section className="blogsection" style={{padding:"5px",background:"#fff",paddingBottom:"10px",paddingLeft:"75px"}}>
                   <div style={{padding:"5"}}> 
                     <h2 style={{fontSize:"3vh",paddingBottom:"0px",fontWeight:"400",}}>From The Blog</h2>
