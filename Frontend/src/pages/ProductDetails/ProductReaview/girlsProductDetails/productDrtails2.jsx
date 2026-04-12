@@ -156,7 +156,6 @@ const addToCart = () => {
               </span>
             </h1>
 
-            {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
               Premium cotton fabric • Comfortable for party wear
             </p>
@@ -274,7 +273,6 @@ const addToCart = () => {
               </div>
             </div>
 
-            {/* SIZE SECTION */}
             <div style={{ marginTop: "20px" }}>
               <p
                 style={{
