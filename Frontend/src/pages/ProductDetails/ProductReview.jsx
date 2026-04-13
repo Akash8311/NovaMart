@@ -10,7 +10,6 @@ const ProductReview = () => {
   return (
     <>
       <div className="review w-full">
-        {/* Tabs */}
         <div
           className="flex items-center review-tabs"
           style={{ paddingBlock: "10px" }}
@@ -29,8 +28,6 @@ const ProductReview = () => {
             Review (27)
           </span>
         </div>
-
-        {/* Content of the product */}
         <div
           className="tab-content"
           style={{ border: "2px solid gray", borderRadius: "8px" }}
