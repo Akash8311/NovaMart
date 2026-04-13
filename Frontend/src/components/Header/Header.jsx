@@ -11,7 +11,7 @@ import { BiGitCompare } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
 import Tooltip from '@mui/material/Tooltip';
 import Navigation from "./Navigation/Navigation";
-import { MyContext } from "../../App"; // ✅ add
+import { MyContext } from "../../App"; 
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
