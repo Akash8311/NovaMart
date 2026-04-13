@@ -242,7 +242,6 @@ const addToCart = () => {
               </div>
             </div>
 
-            {/* BADGES */}
             <div style={{ marginTop: "12px" }}>
               <div
                 style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -270,7 +269,6 @@ const addToCart = () => {
               </div>
             </div>
 
-            {/* SIZE SECTION */}
             <div style={{ marginTop: "20px" }}>
               <p
                 style={{
