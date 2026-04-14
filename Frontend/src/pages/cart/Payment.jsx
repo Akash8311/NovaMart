@@ -241,7 +241,7 @@ const STYLES = `
   .pay-summary-top-sub { font-size: 12px; color: rgba(247,243,238,.5); }
   .pay-summary-body { padding: 20px 24px; }
 
-  /* order items */
+
   .pay-order-item {
     display: flex; align-items: center; gap: 12px;
     margin-bottom: 14px; padding-bottom: 14px;
@@ -268,7 +268,7 @@ const STYLES = `
   .pay-grand-val { font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 600; color: var(--espresso); }
   .pay-incl-tax { font-size: 11px; color: var(--warm-gray); text-align: right; margin-top: 2px; }
 
-  /* empty cart notice */
+
   .pay-empty-notice {
     background: #fff9f0; border: 0.5px solid var(--light-border);
     border-left: 3px solid #f0a500; padding: 14px 18px;
@@ -289,7 +289,6 @@ const STYLES = `
   .cod-notice p:first-child { font-size: 13px; color: var(--espresso); font-weight: 500; margin-bottom: 4px; }
   .cod-notice p:last-child  { font-size: 12px; color: var(--warm-gray); line-height: 1.6; }
 
-  /* success overlay */
   .pay-success-overlay {
     position: fixed; inset: 0; background: rgba(0,0,0,.45);
     display: flex; align-items: center; justify-content: center; z-index: 999;
