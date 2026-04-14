@@ -398,7 +398,7 @@ export default function Payment() {
 
   const handleSubmit = async () => {
     setLoading(true);
-    await new Promise(r => setTimeout(r, 2000)); // ← hook Razorpay here
+    await new Promise(r => setTimeout(r, 2000)); 
     setLoading(false);
     setSuccess(true);
   };
@@ -521,8 +521,6 @@ export default function Payment() {
                     onChange={e => setF("company")(e.target.value)}
                     onFocus={() => foc("company")} onBlur={() => blur("company")} />
                 </Field>
-
-                {/* save address */}
                 <button
                   className={`pay-save-addr${addrSaved ? " saved" : ""}`}
                   onClick={handleSaveAddress}
@@ -533,8 +531,6 @@ export default function Payment() {
                 {addrMsg && <div className="pay-addr-saved-msg">✓ Address saved successfully</div>}
               </div>
             </div>
-
-            {/* ── PAYMENT METHOD ── */}
             <div className="pay-card">
               <div className="pay-card-header">
                 <div className="pay-card-num">02</div>
