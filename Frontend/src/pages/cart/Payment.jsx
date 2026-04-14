@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { MyContext } from "../../App";
 
-// ── same coupon constants as CartPage ──
+
 const COUPON_CODE     = "AKASH2004";
 const COUPON_DISCOUNT = 499;
 const MIN_ORDER       = 1199;
@@ -175,8 +175,6 @@ const STYLES = `
     font-size: 12px; color: var(--success); text-align: center; padding: 8px;
     background: var(--success-bg); border: 0.5px solid var(--success-border); margin-top: 8px;
   }
-
-  /* payment method tabs */
   .pay-method-tabs { display: flex; gap: 12px; margin-bottom: 24px; }
   .pay-method-tab {
     flex: 1; padding: 14px 12px;
@@ -206,8 +204,6 @@ const STYLES = `
   .pay-card-bottom { display: flex; justify-content: space-between; }
   .pay-card-meta { font-size: 10px; color: rgba(247,243,238,.5); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 2px; }
   .pay-card-meta-val { font-size: 13px; color: var(--cream); letter-spacing: 1px; }
-
-  /* submit */
   .pay-submit {
     width: 100%; padding: 16px;
     background: var(--espresso); color: var(--cream);
