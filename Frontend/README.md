@@ -50,9 +50,6 @@ NovaMart
     ├── db.js
     └── server.js
 ```
-
----
-
 ## ⚙️ Installation
 
 Clone the repository
