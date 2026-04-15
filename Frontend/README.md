@@ -15,7 +15,6 @@ It allows users to browse products, view product details, and manage shopping fe
 * Backend authentication system
 * MongoDB database integration
 
----
 
 ## 🛠️ Tech Stack
 

@@ -531,7 +531,7 @@ export default function Payment() {
                 {addrMsg && <div className="pay-addr-saved-msg">✓ Address saved successfully</div>}
               </div>
             </div>
-            <div className="pay-card">
+f            <div className="pay-card">
               <div className="pay-card-header">
                 <div className="pay-card-num">02</div>
                 <h2 className="pay-card-title">Payment Method</h2>
