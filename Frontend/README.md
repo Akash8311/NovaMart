@@ -33,11 +33,6 @@ It allows users to browse products, view product details, and manage shopping fe
 * JWT Authentication
 * Bcrypt
 
----
-
-## 📂 Project Structure
-
-```
 NovaMart
 │
 ├── Frontend
