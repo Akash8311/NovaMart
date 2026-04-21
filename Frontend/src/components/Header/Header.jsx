@@ -79,7 +79,6 @@ const Header = () => {
 
               {/* ── AUTH SECTION ── */}
               {isLogin ? (
-                // ✅ Logged in → show profile icon with dropdown
                 <li className="list-none relative">
                   <Tooltip title="My Account">
                     <IconButton onClick={() => setShowDropdown((prev) => !prev)}>
@@ -87,7 +86,6 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
 
-                  {/* Dropdown Menu */}
                   {showDropdown && (
                     <div
                       style={{
