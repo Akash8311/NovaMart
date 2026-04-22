@@ -691,8 +691,6 @@ const App = () => {
                   Continue Shopping
                 </button>
               </div>
-
-              {/* Trust badges */}
               <div
                 style={{
                   padding: "12px 20px 16px",
