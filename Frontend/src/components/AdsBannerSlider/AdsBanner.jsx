@@ -9,7 +9,6 @@ import banner3 from "../../assets/banner3.png";
 import banner4 from "../../assets/banner4.png";
 import banner5 from "../../assets/banner5.png";
 import banner6 from "../../assets/banner6.png";
-
 import { FreeMode, Pagination } from "swiper/modules";
 import BannerBox from "../BannerBox/BannerBox";
 const AdsBanner = (props) => {
