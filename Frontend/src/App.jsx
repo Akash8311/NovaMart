@@ -141,6 +141,8 @@ const App = () => {
           <Route path="/CartPage" element={<CartPage />} />
           <Route path="/Payment" element={<Payment/>}/>
 
+
+          {/* Men product details */}
           <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
           <Route path="/menproductDetails2" element={<MenProductDetails2 />} />
           <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
