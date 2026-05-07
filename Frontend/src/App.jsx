@@ -21,6 +21,7 @@ import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
 import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails3";
 import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails4";
+import ProductDetails5 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails5";
 
 import LogIn from "./pages/auth/logIn";
 import Register from "./pages/auth/Register";
@@ -145,9 +146,12 @@ const App = () => {
           <Route path="/menproductDetails3" element={<MenProductDetails3 />} />
           <Route path="/menproductDetails4" element={<MenProductDetails4 />} />
 
+
+          {/* girks product */}
           <Route path="/productDrtails2" element={<ProductDrtails2 />} />
           <Route path="/ProductDetails3" element={<ProductDetails3 />} />
           <Route path="/ProductDetails4" element={<ProductDetails4 />} />
+          <Route path="/ProductDetails5" element={<ProductDetails5 />} />
         </Routes>
 
         <Footer />
