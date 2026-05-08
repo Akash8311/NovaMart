@@ -49,7 +49,7 @@ const ProductZoom5 = () => {
   return (
     <div className="zoom-container">
       
-      {/* LEFT THUMBNAILS */}
+      
       <div className="thumbnail-column">
         {images.map((img, index) => (
           <img
