@@ -340,20 +340,21 @@ const addToCart = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Cotton Blend</span>
+                <span>Georgette</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Sleeve type
+                  WWeave typ
                 </span>
-                <span>3-4 Sleeve</span>
+                <span>Plain</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
-                <span>Ankle Length</span>
-
+                <span style={{ fontWeight: "500", color: "#555" }}>Occasion type</span>
+                <span>Festival, Party, Wedding</span>
+ <span style={{ fontWeight: "500", color: "#555" }}>Pattern</span>
+                <span>Embroidered</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                  Care instructions
                 </span>
-                <span>Round Neck
+                <span>Hand Wash Only
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -399,11 +400,11 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong> </strong>Premium Cotton Blend Fabric: Soft, breathable, and lightweight cotton blend fabric ensures comfort and durability for all-day wear.
+                  <strong>Fabric :: </strong> Saree - Net | Blouse - Satin Banglori/Art Silk | CareInstructions:-(Do Not Bleach & Don't Use Hard Brush On Clothes)
                 </li>
 
                 <li>
-                  <strong></strong> Beautiful Floral design in Green color adds
+                  <strong>Color :: </strong>  Saree - Black | Blouse - Black
                   elegance.
                 </li>
 

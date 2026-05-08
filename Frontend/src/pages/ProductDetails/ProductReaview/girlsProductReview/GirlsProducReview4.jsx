@@ -71,7 +71,8 @@ const GirlsProducReview4 = () => {
                 </span>{" "}
                 India
                 <br />
-                <span style={{ fontWeight: "bold" }}> Departmen:</span> Wome
+                <span style={{ fontWeight: "bold" }}> Department:</span> Wome
+                <br/>
                 <span style={{ fontWeight: "bold" }}> Manufacturer:</span>{" "}
                 NovaMart Brand - Symbol, CLOUDTAIL INDIA PRIVATE LIMITED, Ground
                 Floor, Rear Portion, H-9, Block B-1, Mohan Cooperative
