@@ -190,7 +190,7 @@ const ProductItems2 = () => {
           onMouseLeave={() => setIsHovered(false)}
         >
           <img
-            src={isHovered ? Duplicate5 : Product5}
+            src={isHovered ? "https://m.media-amazon.com/images/I/7186fbENcgL._SY741_.jpg" : "https://m.media-amazon.com/images/I/61I548CayQL._SX679_.jpg"}
             alt="product"
             style={{
               width: "70%",
@@ -217,7 +217,7 @@ const ProductItems2 = () => {
                overflow: "hidden",
                width: "100%"
              }}>
-               Cotton Blend Women Kurti
+               Suwira Enterprises
              </h4>
          
              <p style={{
@@ -228,7 +228,7 @@ const ProductItems2 = () => {
            margin: "0"
          }}>
           
-        new woman anarkalikurtis |new trending anarkali kurtis || Cotton Blend Women Kurti
+        Women's Cotton Anarkali Embroidery Designer Long Anarkali Kurti
            
          </p>
          
@@ -236,13 +236,13 @@ const ProductItems2 = () => {
              {/* Price Section */}
              <div style={{ marginTop: "6px", display: "flex", justifyContent: "center", gap: "7px" }}>
                <span style={{ fontWeight: "700", fontSize: "16px", color:"#ff4b4b" }}>
-                 ₹461
+                 ₹1549
                </span>
                <span style={{ textDecoration: "line-through", color:"#999", fontSize:"13px" }}>
-                 ₹505
+                 ₹1999
                </span>
                <span style={{ color:"blue", fontSize:"14px", fontWeight:"600" }}>
-                 9% OFF
+                 23% OFF
                </span>
              </div>
          

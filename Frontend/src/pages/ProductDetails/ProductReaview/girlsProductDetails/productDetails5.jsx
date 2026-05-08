@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom4 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom4";
+import ProductZoom5 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom5";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -22,7 +22,7 @@ import { Pagination } from "swiper/modules";
 import ProductItems from "../../../../components/ProductItems/ProductItems";
 import ProductItems2 from "../../../../components/ProductItems/ProductItems2";
 import ProductItems3 from "../../../../components/ProductItems/ProductItems3";
-import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
+import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
 import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
 import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
@@ -115,7 +115,7 @@ const addToCart = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoom4 />
+            <ProductZoom5 />
           </div>
 
           <div
@@ -135,8 +135,7 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-              Janasya Women Green Georgette Kurta with Palazzo & Dupatta with
-              Floral Print Outfit for Women
+              Women's Cotton Anarkali Embroidery Designer Long Anarkali Kurti With Pant and Dupatta Set (Red)
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -167,7 +166,7 @@ const addToCart = () => {
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐⭐
+              ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
                 (2056 reviews)
               </span>
@@ -200,7 +199,7 @@ const addToCart = () => {
                   color: "#B12704",
                 }}
               >
-                ₹1,449
+                ₹1,549
               </span>
 
               <span
@@ -210,7 +209,7 @@ const addToCart = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹4,998
+                ₹1,999
               </span>
 
               <span
@@ -220,7 +219,7 @@ const addToCart = () => {
                   color: "#007185",
                 }}
               >
-                71% off
+                23% off
               </span>
             </div>
 
@@ -341,12 +340,12 @@ const addToCart = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Georgette</span>
+                <span>Cotton Blend</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
                 </span>
-                <span>Sleeveless</span>
+                <span>3-4 Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Ankle Length</span>
@@ -354,7 +353,8 @@ const addToCart = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
                 </span>
-                <span>V-Neck</span>
+                <span>Round Neck
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -362,7 +362,7 @@ const addToCart = () => {
                 <span>Hand Wash Only</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
-                <span>Standard Length</span>
+                <span>Long</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -399,8 +399,7 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong> </strong> Made with high-quality Georgette fabric for
-                  breathable comfort.
+                  <strong> </strong>Premium Cotton Blend Fabric: Soft, breathable, and lightweight cotton blend fabric ensures comfort and durability for all-day wear.
                 </li>
 
                 <li>
@@ -411,16 +410,15 @@ const addToCart = () => {
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong>Complete Kurta with Palazzo & Dupatta
-                      included for coordinated look.
+                      <strong>Stylish Printed Design:</strong>Features a beautiful, eye-catching print that combines traditional and modern elements for a chic and elegant look.
                     </li>
 
                     <li>
-                      <strong></strong>FGreat for Festive or Party wear.
+                      <strong>Comfortable & Relaxed Fit:</strong>Designed with a flattering straight-cut kurta and relaxed-fit palazzo pants for ultimate comfort and ease of movement.
                     </li>
 
                     <li>
-                      <strong>COLLAR STYLE:</strong> Green
+                      <strong>Easy Care:</strong> Machine washable for effortless maintenance; retains its shape and color even after multiple washes.
                     </li>
 
                     <li>
@@ -509,7 +507,7 @@ const addToCart = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems5 />
+                <ProductItems4 />
               </SwiperSlide>
 
               <SwiperSlide>
