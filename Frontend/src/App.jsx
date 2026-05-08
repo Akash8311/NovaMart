@@ -22,6 +22,7 @@ import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductD
 import ProductDetails3 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails3";
 import ProductDetails4 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails4";
 import ProductDetails5 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails5";
+import ProductDetails6 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails6";
 
 import LogIn from "./pages/auth/logIn";
 import Register from "./pages/auth/Register";
@@ -154,6 +155,7 @@ const App = () => {
           <Route path="/ProductDetails3" element={<ProductDetails3 />} />
           <Route path="/ProductDetails4" element={<ProductDetails4 />} />
           <Route path="/ProductDetails5" element={<ProductDetails5 />} />
+          <Route path="/ProductDetails6" element={<ProductDetails6 />} />
         </Routes>
 
         <Footer />
