@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom5 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom5";
+import ProductZoom6 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom6";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -115,7 +115,7 @@ const addToCart = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoom5 />
+            <ProductZoom6 />
           </div>
 
           <div
@@ -135,7 +135,7 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-              Women's Cotton Anarkali Embroidery Designer Long Anarkali Kurti With Pant and Dupatta Set (Red)
+              StyleScope Women's Net Sequence Embroidered Work Saree With Art Silk Unstitched Blouse Piece (Diamond Sequence Black_Black_Free Size)
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -166,9 +166,9 @@ const addToCart = () => {
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+              ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (2056 reviews)
+                (2126 reviews)
               </span>
             </div>
 
@@ -199,7 +199,7 @@ const addToCart = () => {
                   color: "#B12704",
                 }}
               >
-                ₹1,549
+                ₹819
               </span>
 
               <span
@@ -209,7 +209,7 @@ const addToCart = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹1,999
+                ₹2,999
               </span>
 
               <span
@@ -219,7 +219,7 @@ const addToCart = () => {
                   color: "#007185",
                 }}
               >
-                23% off
+                73% off
               </span>
             </div>
 
