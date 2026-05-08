@@ -167,9 +167,9 @@ const addToCart = () => {
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐⭐⭐
+              ⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (125 reviews)
+                (2056 reviews)
               </span>
             </div>
 
