@@ -34,11 +34,11 @@ import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
 const productDetails6 = (props) =>  {
-  const [selectedSize, setSelectedSize] = useState("L");
+  const [selectedSize, setSelectedSize] = useState("Normal");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
-  const sizes = ["S","M","L","XL"];
+  const sizes = ["Normal"];
 
   const product = {
   id: "kurta-4",
@@ -63,7 +63,7 @@ const addToCart = () => {
       ...cartItems,
       {
         ...product,
-        qty: 1,
+        qty: 6,
         size: selectedSize,
       },
     ]);
