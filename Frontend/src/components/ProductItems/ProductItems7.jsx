@@ -185,7 +185,7 @@ const ProductItems2 = () => {
            onMouseLeave={() => setIsHovered(false)}
          >
            <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/61rsMLsARBL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51gEvHoz4vL._SY741_.jpg"}
+             src={isHovered ? "https://m.media-amazon.com/images/I/81P8nElYHFL._SY741_.jpg" : "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY879_.jpg"}
              alt="product"
              style={{
                width: "70%",
@@ -224,7 +224,7 @@ const ProductItems2 = () => {
                 margin: "0",
               }}
             >
-              GRECIILOOKS Women Dress | Summer Dress
+              GRECIILOOKS Women Dress | Summer Dress | Women's Puff Sleeve Floral Printed A Line Maxi |
             </p>
 
             {/* Price Section */}
@@ -243,7 +243,7 @@ const ProductItems2 = () => {
                   color: "#ff4b4b",
                 }}
               >
-                ₹549
+                ₹479
               </span>
               <span
                 style={{
@@ -252,7 +252,7 @@ const ProductItems2 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2,299
+                ₹1,999
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
