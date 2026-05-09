@@ -4,7 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import { IoClose } from "react-icons/io5";
 import { RiMenuAddFill, RiSubtractFill } from "react-icons/ri";
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png"
 import { Link } from "react-router-dom";  
 
 const Category = (props) => {

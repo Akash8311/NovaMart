@@ -8,7 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import { BsCart3 } from "react-icons/bs";
 import { BiGitCompare } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg"; // 👤 profile icon
+import { CgProfile } from "react-icons/cg"; 
 import Tooltip from "@mui/material/Tooltip";
 import Navigation from "./Navigation/Navigation";
 import { MyContext } from "../../App";
