@@ -98,7 +98,7 @@ const productDetails6 = (props) => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Shirts
+            Saree
           </Link>
         </Breadcrumbs>
 
