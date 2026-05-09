@@ -33,7 +33,7 @@ import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
-const productDetails6 = (props) =>  {
+const productDetails6 = (props) => {
   const [selectedSize, setSelectedSize] = useState("Normal");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
@@ -41,34 +41,32 @@ const productDetails6 = (props) =>  {
   const sizes = ["Normal"];
 
   const product = {
-  id: "kurta-4",
-  name: "Janasya Women Green Georgette Kurta ",
-  price: 1499,
-  image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"
-};
+    id: "kurta-4",
+    name: "Janasya Women Green Georgette Kurta ",
+    price: 1499,
+    image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg",
+  };
 
-const addToCart = () => {
-  const exist = cartItems.find((item) => item.id === product.id);
+  const addToCart = () => {
+    const exist = cartItems.find((item) => item.id === product.id);
 
-  if (exist) {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === product.id
-          ? { ...item, qty: item.qty + 1 }
-          : item
-      )
-    );
-  } else {
-    setCartItems([
-      ...cartItems,
-      {
-        ...product,
-        qty: 6,
-        size: selectedSize,
-      },
-    ]);
-  }
-};
+    if (exist) {
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id ? { ...item, qty: item.qty + 1 } : item,
+        ),
+      );
+    } else {
+      setCartItems([
+        ...cartItems,
+        {
+          ...product,
+          qty: 6,
+          size: selectedSize,
+        },
+      ]);
+    }
+  };
   return (
     <>
       {" "}
@@ -135,7 +133,9 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-              StyleScope Women's Net Sequence Embroidered Work Saree With Art Silk Unstitched Blouse Piece (Diamond Sequence Black_Black_Free Size)
+              StyleScope Women's Net Sequence Embroidered Work Saree With Art
+              Silk Unstitched Blouse Piece (Diamond Sequence Black_Black_Free
+              Size)
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -182,7 +182,7 @@ const addToCart = () => {
                 borderRadius: "5px",
               }}
             >
-                Limited time deal
+              Limited time deal
             </button>
 
             <div
@@ -343,24 +343,23 @@ const addToCart = () => {
                 <span>Georgette</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  WWeave typ
+                  Weave type
                 </span>
                 <span>Plain</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Occasion type</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Occasion type
+                </span>
                 <span>Festival, Party, Wedding</span>
- <span style={{ fontWeight: "500", color: "#555" }}>Pattern</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Pattern
+                </span>
                 <span>Embroidered</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Hand Wash Only
-</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
                 <span>Hand Wash Only</span>
+
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Long</span>
@@ -400,26 +399,34 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong>Fabric :: </strong> Saree - Net | Blouse - Satin Banglori/Art Silk | CareInstructions:-(Do Not Bleach & Don't Use Hard Brush On Clothes)
+                  <strong>Fabric :: </strong> Saree - Net | Blouse - Satin
+                  Banglori/Art Silk | CareInstructions:-(Do Not Bleach & Don't
+                  Use Hard Brush On Clothes)
                 </li>
 
                 <li>
-                  <strong>Color :: </strong>  Saree - Black | Blouse - Black
+                  <strong>Color :: </strong> Saree - Black | Blouse - Black
                   elegance.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Stylish Printed Design:</strong>Features a beautiful, eye-catching print that combines traditional and modern elements for a chic and elegant look.
+                      <strong>Stylish Printed Design:</strong>Features a
+                      beautiful, eye-catching print that combines traditional
+                      and modern elements for a chic and elegant look.
                     </li>
 
                     <li>
-                      <strong>Comfortable & Relaxed Fit:</strong>Designed with a flattering straight-cut kurta and relaxed-fit palazzo pants for ultimate comfort and ease of movement.
+                      <strong>Comfortable & Relaxed Fit:</strong>Designed with a
+                      flattering straight-cut kurta and relaxed-fit palazzo
+                      pants for ultimate comfort and ease of movement.
                     </li>
 
                     <li>
-                      <strong>Easy Care:</strong> Machine washable for effortless maintenance; retains its shape and color even after multiple washes.
+                      <strong>Easy Care:</strong> Machine washable for
+                      effortless maintenance; retains its shape and color even
+                      after multiple washes.
                     </li>
 
                     <li>
@@ -545,6 +552,5 @@ const addToCart = () => {
     </>
   );
 };
-
 
 export default productDetails6;
