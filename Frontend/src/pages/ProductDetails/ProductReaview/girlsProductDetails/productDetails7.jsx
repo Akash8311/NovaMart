@@ -44,7 +44,7 @@ const productDetails7 = (props) =>  {
   id: "Summer Dress-7",
   name: "GRECIILOOKS Summer Dress for Woman",
   price: 479,
-  image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"
+  image: "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY741_.jpg"
 };
 
 const addToCart = () => {
