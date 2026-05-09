@@ -4,12 +4,8 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
+
 import ProductItems from "../../components/ProductItems/ProductItems";
-import Button from "@mui/material/Button";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { IoGrid } from "react-icons/io5";
-import { IoMdMenu } from "react-icons/io";
 import ProductItems2 from "../../components/ProductItems/ProductItems2";
 import ProductItems3 from "../../components/ProductItems/ProductItems3";
 import ProductItems4 from "../../components/ProductItems/ProductItems4";
@@ -22,92 +18,219 @@ import ProductItems10 from "../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../components/ProductItems/ProductItems12";
 
-const Productlisting = () => {
-  // sort dropdown
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [sortValue, setSortValue] = React.useState("Name, A To Z");
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import CircularProgress from "@mui/material/CircularProgress";
 
-  // grid / list toggle
-  const [viewType, setViewType] = React.useState("grid"); // grid | list
+import { IoGrid } from "react-icons/io5";
+import { IoMdMenu } from "react-icons/io";
+
+const Productlisting = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [sortValue, setSortValue] = React.useState("Featured");
+  const [viewType, setViewType] = React.useState("grid");
+  const [loading, setLoading] = React.useState(false);
 
   const open = Boolean(anchorEl);
-  const handleClick = (e) => setAnchorEl(e.currentTarget);
-  const handleClose = () => setAnchorEl(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  // Scroll Loading Animation
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const fullHeight = document.documentElement.scrollHeight;
+
+      if (scrollTop + windowHeight >= fullHeight - 100) {
+        setLoading(true);
+
+        setTimeout(() => {
+          setLoading(false);
+        }, 1500);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section style={{ padding: "10px", background: "#fafafa" }}>
+    <section
+      style={{
+        padding: "25px",
+        minHeight: "100vh",
+      }}
+    >
       {/* Breadcrumb */}
-      <Breadcrumbs style={{ marginBottom: "10px" }}>
-        <Link underline="hover" color="inherit" href="/">
-          <HomeIcon fontSize="small" /> Home
+      <Breadcrumbs
+        style={{
+          marginBottom: "25px",
+          fontSize: "15px",
+          fontWeight: "600",
+        }}
+      >
+        <Link
+          underline="hover"
+          color="inherit"
+          href="/"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+          }}
+        >
+          <HomeIcon fontSize="small" />
+          Home
         </Link>
-        <Link underline="hover" color="inherit">
-          <WhatshotIcon fontSize="small" /> Fashion
+
+        <Link
+          underline="hover"
+          color="inherit"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "5px",
+          }}
+        >
+          <WhatshotIcon fontSize="small" />
+          Fashion
         </Link>
       </Breadcrumbs>
 
       {/* Main Layout */}
-      <div style={{ display: "flex", gap: "12px" }}>
+      <div
+        style={{
+          display: "flex",
+          gap: "25px",
+          flexWrap: "wrap",
+        }}
+      >
         {/* Sidebar */}
-        <div style={{ width: "20%" }}>
+        <div
+          style={{
+            flex: "1 1 250px",
+            borderRadius: "20px",
+            padding: "20px",
+            boxShadow: "0 5px 20px rgba(0,0,0,0.06)",
+            height: "fit-content",
+            background: "#fff",
+          }}
+        >
           <Sidebar />
         </div>
 
-        <div style={{ width: "80%" }}>
+        {/* Products Section */}
+        <div style={{ flex: "4 1 900px" }}>
+          {/* Top Bar */}
           <div
             style={{
-              background: "#fff",
-              borderRadius: "8px",
-              padding: "10px 14px",
-              marginBottom: "12px",
+              borderRadius: "20px",
+              padding: "18px 25px",
+              marginBottom: "25px",
               display: "flex",
-              alignItems: "center",
               justifyContent: "space-between",
-              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              alignItems: "center",
+              flexWrap: "wrap",
+              gap: "15px",
+              background: "#fff",
+              boxShadow: "0 5px 20px rgba(0,0,0,0.06)",
             }}
           >
-            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+            {/* Left */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "15px",
+              }}
+            >
               <Button
                 onClick={() => setViewType("list")}
                 style={{
-                  minWidth: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: viewType === "list" ? "#e0e0e0" : "#f5f5f5",
+                  minWidth: "48px",
+                  height: "48px",
+                  borderRadius: "14px",
+                  background:
+                    viewType === "list"
+                      ? "#111"
+                      : "#f5f5f5",
+                  color:
+                    viewType === "list"
+                      ? "#fff"
+                      : "#333",
+                  transition: "0.3s",
                 }}
               >
-                <IoMdMenu />
+                <IoMdMenu size={22} />
               </Button>
+
               <Button
                 onClick={() => setViewType("grid")}
                 style={{
-                  minWidth: "40px",
-                  height: "40px",
-                  borderRadius: "50%",
-                  background: viewType === "grid" ? "#e0e0e0" : "#f5f5f5",
+                  minWidth: "48px",
+                  height: "48px",
+                  borderRadius: "14px",
+                  background:
+                    viewType === "grid"
+                      ? "#111"
+                      : "#f5f5f5",
+                  color:
+                    viewType === "grid"
+                      ? "#fff"
+                      : "#333",
+                  transition: "0.3s",
                 }}
               >
-                <IoGrid />
+                <IoGrid size={22} />
               </Button>
 
-              <span style={{ fontSize: "14px", color: "#555" }}>
-                There are <b>27</b> Products
+              <span
+                style={{
+                  fontSize: "15px",
+                  color: "#555",
+                  fontWeight: "500",
+                }}
+              >
+                Showing <b>27</b> Products
               </span>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-              <span style={{ fontSize: "14px", color: "#555" }}>Sort By</span>
+
+            {/* Right */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "12px",
+              }}
+            >
+              <span
+                style={{
+                  fontWeight: "600",
+                  color: "#444",
+                }}
+              >
+                Sort By
+              </span>
 
               <Button
                 onClick={handleClick}
                 style={{
-                  textTransform: "none",
                   background: "#fff",
-                  border: "1px solid #ddd",
-                  borderRadius: "6px",
-                  padding: "6px 14px",
-                  fontSize: "14px",
-                  color: "#000",
-                  boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
+                  borderRadius: "12px",
+                  padding: "10px 18px",
+                  textTransform: "none",
+                  color: "#222",
+                  border: "1px solid #eee",
+                  boxShadow: "0 3px 10px rgba(0,0,0,0.06)",
                 }}
               >
                 {sortValue}
@@ -119,18 +242,16 @@ const Productlisting = () => {
                 onClose={handleClose}
                 PaperProps={{
                   style: {
-                    borderRadius: "8px",
-                    marginTop: "6px",
-                    minWidth: "200px",
-                    boxShadow: "0 6px 18px rgba(0,0,0,0.15)",
+                    borderRadius: "16px",
+                    padding: "8px",
                   },
                 }}
               >
                 {[
-                  "Name, A To Z",
-                  "Name, Z To A",
-                  "Price, Low To High",
-                  "Price, High To Low",
+                  "Featured",
+                  "Newest",
+                  "Price Low To High",
+                  "Price High To Low",
                 ].map((item) => (
                   <MenuItem
                     key={item}
@@ -139,8 +260,8 @@ const Productlisting = () => {
                       handleClose();
                     }}
                     style={{
-                      fontSize: "14px",
-                      fontWeight: sortValue === item ? "600" : "400",
+                      borderRadius: "10px",
+                      marginBottom: "4px",
                     }}
                   >
                     {item}
@@ -150,37 +271,105 @@ const Productlisting = () => {
             </div>
           </div>
 
-          {/* Product Layout */}
+          {/* Product Grid */}
           <div
             style={{
               display: "grid",
               gridTemplateColumns:
                 viewType === "list"
                   ? "1fr"
-                  : window.innerWidth < 768
-                  ? "repeat(2, 1fr)"
-                  : "repeat(4, 1fr)", 
-              gap: "16px",
-              background: "#f5f5f5",
-              padding: "12px",
-              borderRadius: "8px",
+                  : "repeat(auto-fit,minmax(220px,1fr))",
+              gap: "24px",
             }}
           >
-            <ProductItems view={viewType} />
-            <ProductItems2 view={viewType} />
-            <ProductItems3 view={viewType} />
-            <ProductItems4 view={viewType} />
-            <ProductItems5 view={viewType} />
-            <ProductItems6 view={viewType} />
-            <ProductItems7 view={viewType} />
-            <ProductItems8 view={viewType} />
-            <ProductItems9 view={viewType} />
-            <ProductItems10 view={viewType} />
-            <ProductItems11 view={viewType} />
-            <ProductItems12 view={viewType} />
+            <div className="productCard"><ProductItems view={viewType} /></div>
+            <div className="productCard"><ProductItems2 view={viewType} /></div>
+            <div className="productCard"><ProductItems3 view={viewType} /></div>
+            <div className="productCard"><ProductItems4 view={viewType} /></div>
+            <div className="productCard"><ProductItems5 view={viewType} /></div>
+            <div className="productCard"><ProductItems6 view={viewType} /></div>
+            <div className="productCard"><ProductItems7 view={viewType} /></div>
+            <div className="productCard"><ProductItems8 view={viewType} /></div>
+            <div className="productCard"><ProductItems9 view={viewType} /></div>
+            <div className="productCard"><ProductItems10 view={viewType} /></div>
+            <div className="productCard"><ProductItems11 view={viewType} /></div>
+            <div className="productCard"><ProductItems12 view={viewType} /></div>
           </div>
+
+          {/* Loader */}
+          {loading && (
+            <div
+              style={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                gap: "15px",
+                padding: "40px 0",
+              }}
+            >
+              <CircularProgress
+                size={45}
+                thickness={4}
+                style={{
+                  color: "#111",
+                }}
+              />
+
+              <p
+                style={{
+                  fontWeight: "600",
+                  color: "#444",
+                  letterSpacing: "1px",
+                }}
+              >
+                Loading More Products...
+              </p>
+            </div>
+          )}
         </div>
       </div>
+
+      {/* CSS Animation */}
+      <style>
+        {`
+          .productCard{
+            border-radius:22px;
+            transition:all 0.5s ease;
+            animation:fadeUp 0.8s ease;
+          }
+
+          .productCard:hover{
+            transform:translateY(-12px) scale(1.03);
+          }
+
+          @keyframes fadeUp{
+            from{
+              opacity:0;
+              transform:translateY(40px);
+            }
+
+            to{
+              opacity:1;
+              transform:translateY(0);
+            }
+          }
+
+          html{
+            scroll-behavior:smooth;
+          }
+
+          ::-webkit-scrollbar{
+            width:8px;
+          }
+
+          ::-webkit-scrollbar-thumb{
+            background:#111;
+            border-radius:20px;
+          }
+        `}
+      </style>
     </section>
   );
 };
