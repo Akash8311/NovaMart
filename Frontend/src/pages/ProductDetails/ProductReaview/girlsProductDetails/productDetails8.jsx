@@ -135,7 +135,8 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-             GRECIILOOKS Summer Dress for Woman | Boho Square Neck Long Dress | Women's Puff Sleeve Floral Printed A Line Maxi | Elegant Tie Front Slit Outfit | Comfortable Beach, Vacation, Party & Holiday Outfit
+             AKHILAM Women's Kanjivaram Woven Soft Silk Saree With Blouse Piece
+
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -152,7 +153,7 @@ const addToCart = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Premium Rayon • Comfortable Beach, Vacation, Party & Holiday Outfit
+              Premium Silk • Purple
             </p>
 
             {/* RATING */}
@@ -168,7 +169,7 @@ const addToCart = () => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (2126 reviews)
+                (259 reviews)
               </span>
             </div>
 
@@ -199,7 +200,7 @@ const addToCart = () => {
                   color: "#B12704",
                 }}
               >
-                ₹479
+                ₹1,699
               </span>
 
               <span
@@ -209,7 +210,7 @@ const addToCart = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹1,999
+                ₹7,549
               </span>
 
               <span
@@ -219,7 +220,7 @@ const addToCart = () => {
                   color: "#007185",
                 }}
               >
-                73% off
+                77% off
               </span>
             </div>
 
