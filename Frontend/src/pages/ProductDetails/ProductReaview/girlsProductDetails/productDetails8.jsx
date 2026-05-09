@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom7 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom7";
+import ProductZoom8 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom8";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -25,7 +25,7 @@ import ProductItems3 from "../../../../components/ProductItems/ProductItems3";
 import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
 import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
-import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
+import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
 import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
@@ -341,23 +341,23 @@ const addToCart = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Rayon</span>
+                <span>Silk</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  LengtH
+                  Color
                 </span>
-                <span>Maxi</span>
+                <span>Purple Saree || Purple Blouse</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Occasion type</span>
-                <span>Festival, Party, Wedding</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Fabric</span>
+                <span>Viscose Saree || Viscose Blouse</span>
 
- <span style={{ fontWeight: "500", color: "#555" }}>Sleeve type</span>
-                <span>Short Sleeve</span>
+ <span style={{ fontWeight: "500", color: "#555" }}>Print Or Pattern</span>
+                <span>Ethnic Motif Printed Saree || Ethnic Motif Blouse</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Style
+                 Work Details
                 </span>
-                <span>Classic
+                <span>Tassels and Latkans Saree || Saree Type: Banarasi
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -448,8 +448,7 @@ const addToCart = () => {
                     </li>
 
                     <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
+                      <strong>Manufacturer:</strong> AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market Surat, Gujarat 395010, AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market Surat, Gujarat 395010
                     </li>
                   </>
                 )}
@@ -522,7 +521,7 @@ const addToCart = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems8 />
+                <ProductItems7 />
               </SwiperSlide>
 
               <SwiperSlide>

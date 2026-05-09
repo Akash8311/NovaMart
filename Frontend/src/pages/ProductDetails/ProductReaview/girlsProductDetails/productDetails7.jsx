@@ -343,7 +343,7 @@ const addToCart = () => {
                 <span>Rayon</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  LengtH
+                  Length
                 </span>
                 <span>Maxi</span>
 
