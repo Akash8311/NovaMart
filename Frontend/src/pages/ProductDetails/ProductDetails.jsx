@@ -100,7 +100,7 @@ const addToCart = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Shirts
+            Knee Polyester Dress
           </Link>
         </Breadcrumbs>
 
