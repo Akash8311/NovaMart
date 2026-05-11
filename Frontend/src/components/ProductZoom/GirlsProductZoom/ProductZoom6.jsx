@@ -6,7 +6,6 @@ const images = [
   "https://m.media-amazon.com/images/I/61m1k6GoFxL._SX569_.jpg",
   "https://m.media-amazon.com/images/I/61yX5cs1fML._SX569_.jpg",
   "https://m.media-amazon.com/images/I/61-d+rbPdeL._SX569_.jpg",
-//   "https://m.media-amazon.com/images/I/616iR2fXT4L._SX569_.jpg",
   "https://m.media-amazon.com/images/I/71DcUyA1mSL.jpg"
 ];
 
