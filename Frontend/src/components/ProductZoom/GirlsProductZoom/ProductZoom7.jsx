@@ -6,7 +6,6 @@ const images = [
   "https://m.media-amazon.com/images/I/81wKtyiyG5L._SY741_.jpg",
   "https://m.media-amazon.com/images/I/81P8nElYHFL._SY741_.jpg",
   "https://m.media-amazon.com/images/I/81I5j3rGwAL._SY741_.jpg",
-//  "https://m.media-amazon.com/images/I/81I5j3rGwAL._SY741_.jpgg",
   "https://m.media-amazon.com/images/I/71KJowzIzLL._SX679_.jpg"
 ];
 const ProductZoom7 = () => {
