@@ -168,7 +168,6 @@ const ProductItems12 = () => {
             color: "#777",
           }}
         >
-          {/* Product Image */}
 
           <div
             style={{
@@ -229,7 +228,6 @@ const ProductItems12 = () => {
               Summer Casual Wear for Events, Date & Evening Look{" "}
             </p>
 
-            {/* Price Section */}
             <div
               style={{
                 marginTop: "6px",
