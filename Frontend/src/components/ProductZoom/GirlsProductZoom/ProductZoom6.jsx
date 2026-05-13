@@ -61,7 +61,6 @@ const ProductZoom6 = () => {
         ))}
       </div>
 
-      {/* MAIN IMAGE */}
       <div
         className="zoom-wrapper"
         onMouseMove={moveLens}
