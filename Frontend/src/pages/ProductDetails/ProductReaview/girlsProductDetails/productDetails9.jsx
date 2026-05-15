@@ -23,7 +23,7 @@ import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
 import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
-import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
+import ProductItems9 from "../../../../components/ProductItems/ProductItems8";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
@@ -522,7 +522,7 @@ const addToCart = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems9 />
+                <ProductItems8 />
               </SwiperSlide>
 
               <SwiperSlide>
