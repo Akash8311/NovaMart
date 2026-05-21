@@ -164,7 +164,7 @@ const ProductItems9 =  () =>{
         </div>
 
         <Link
-          to="/"
+          to="/productDetails9"
           style={{
             textDecoration: "none",
             color: "#777",
