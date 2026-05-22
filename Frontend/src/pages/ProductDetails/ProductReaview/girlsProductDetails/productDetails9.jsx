@@ -402,25 +402,25 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong> •</strong> ✨ Premium Chiffon Fabric with Ombre Effect – Made from lightweight and breathable chiffon, this saree features a stunning ombre gradient design that blends shades seamlessly, giving you a soft, graceful, and modern look.
+                  <strong> </strong> ✨ Premium Chiffon Fabric with Ombre Effect – Made from lightweight and breathable chiffon, this saree features a stunning ombre gradient design that blends shades seamlessly, giving you a soft, graceful, and modern look.
                 </li>
 
                 <li>
-                  <strong> • </strong> 👗 Ready-to-Wear Design – Pre-draped and easy to wear, making it an ideal choice for women seeking hassle-free styling.
+                  <strong></strong> 👗 Ready-to-Wear Design – Pre-draped and easy to wear, making it an ideal choice for women seeking hassle-free styling.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong> •</strong>🎬 Bollywood-Inspired Styling – Designed with a touch of Bollywood glamour, this ombre saree gives you a trendy, elegant vibe, making it ideal for women who want a fashionable ethnic statement.
+                      <strong></strong>🎬 Bollywood-Inspired Styling – Designed with a touch of Bollywood glamour, this ombre saree gives you a trendy, elegant vibe, making it ideal for women who want a fashionable ethnic statement.
                     </li>
 
                     <li>
-                      <strong>•</strong>🎉 Perfect for Parties, Weddings & Festivals – Whether it’s a wedding ceremony, festive function, cocktail party, or special celebration, this saree ensures you look stylish, charming, and picture-perfect.
+                      <strong></strong>🎉 Perfect for Parties, Weddings & Festivals – Whether it’s a wedding ceremony, festive function, cocktail party, or special celebration, this saree ensures you look stylish, charming, and picture-perfect.
                     </li>
 
                     <li>
-                      <strong>•</strong> 🎁 An Elegant Gift for Women – A timeless ethnic outfit that makes a thoughtful gift for birthdays, anniversaries, festive occasions, or as a beautiful surprise for loved ones.
+                      <strong></strong> 🎁 An Elegant Gift for Women – A timeless ethnic outfit that makes a thoughtful gift for birthdays, anniversaries, festive occasions, or as a beautiful surprise for loved ones.
 
                     </li>
 
