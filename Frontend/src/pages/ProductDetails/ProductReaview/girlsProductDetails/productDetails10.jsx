@@ -34,11 +34,11 @@ import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
 const productDetails10 = (props) => {
-  const [selectedSize, setSelectedSize] = useState("Normal");
+  const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
-  const sizes = ["Normal"];
+  const sizes = ["S","M","L","XL","XLL"];
 
   const product = {
     id: "Kurta Pant Set 1",
@@ -150,7 +150,7 @@ const productDetails10 = (props) => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Pre-Draped Saree • Maroon
+              Womens Co-Ord Set
             </p>
 
             {/* RATING */}
@@ -197,7 +197,7 @@ const productDetails10 = (props) => {
                   color: "#B12704",
                 }}
               >
-                ₹949
+                ₹799
               </span>
 
               <span
@@ -207,7 +207,7 @@ const productDetails10 = (props) => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹3,199
+                ₹1,199
               </span>
 
               <span
@@ -217,7 +217,7 @@ const productDetails10 = (props) => {
                   color: "#007185",
                 }}
               >
-                70% off
+                60% off
               </span>
             </div>
 
