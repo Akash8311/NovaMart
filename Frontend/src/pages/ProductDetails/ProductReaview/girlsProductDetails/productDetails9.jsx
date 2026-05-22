@@ -26,7 +26,7 @@ import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
 import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
-import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
+import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
@@ -345,13 +345,13 @@ const addToCart = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Color
                 </span>
-                <span>Purple Saree || Purple Blouse</span>
+                <span>Chiffon || Chiffon Blouse</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Fabric</span>
-                <span>Viscose Saree || Viscose Blouse</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Occasion type</span>
+                <span>Festival, Party, Wedding</span>
 
  <span style={{ fontWeight: "500", color: "#555" }}>Print Or Pattern</span>
-                <span>Ethnic Motif Printed Saree || Ethnic Motif Blouse</span>
+                <span>Ombre || Ethnic Motif Blouse</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                  Work Details
@@ -402,25 +402,26 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong>Exquisite Design:</strong> This party wear dress for women blends style and comfort with premium fabric and a flattering silhouette, making it perfect for parties, evening outings, and special
+                  <strong> •</strong> ✨ Premium Chiffon Fabric with Ombre Effect – Made from lightweight and breathable chiffon, this saree features a stunning ombre gradient design that blends shades seamlessly, giving you a soft, graceful, and modern look.
                 </li>
 
                 <li>
-                  <strong>Flattering Fit: </strong> Designed for elegance, this one-piece dress for women enhances your look, ensuring a chic and sophisticated appeal for all body types.
+                  <strong> • </strong> 👗 Ready-to-Wear Design – Pre-draped and easy to wear, making it an ideal choice for women seeking hassle-free styling.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Perfect for Every Occasion: </strong>Whether you're attending a romantic dinner, cocktail party, wedding, or festive event, this Western dress for women ensures you stand out in style.
+                      <strong> •</strong>🎬 Bollywood-Inspired Styling – Designed with a touch of Bollywood glamour, this ombre saree gives you a trendy, elegant vibe, making it ideal for women who want a fashionable ethnic statement.
                     </li>
 
                     <li>
-                      <strong>Versatile Styling Options: </strong>Pair this stylish dress with high heels, statement jewelry, or a chic clutch to create the perfect fashion-forward ensemble.
+                      <strong>•</strong>🎉 Perfect for Parties, Weddings & Festivals – Whether it’s a wedding ceremony, festive function, cocktail party, or special celebration, this saree ensures you look stylish, charming, and picture-perfect.
                     </li>
 
                     <li>
-                      <strong>Comfort Meets Style:</strong> Crafted from breathable, lightweight fabric, this trendy women's dress keeps you feeling comfortable and confident all day long.
+                      <strong>•</strong> 🎁 An Elegant Gift for Women – A timeless ethnic outfit that makes a thoughtful gift for birthdays, anniversaries, festive occasions, or as a beautiful surprise for loved ones.
+
                     </li>
 
                     <li>
@@ -524,7 +525,7 @@ const addToCart = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems9 />
+                <ProductItems8 />
               </SwiperSlide>
 
               <SwiperSlide>
