@@ -34,11 +34,11 @@ import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
 const productDetails9 = (props) =>  {
-  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedSize, setSelectedSize] = useState("Normal");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
-  const sizes = ["S","M","L","XL","2XL"];
+  const sizes = ["Normal"];
 
   const product = {
   id: "Pre-Draped Saree",
@@ -219,7 +219,7 @@ const addToCart = () => {
                   color: "#007185",
                 }}
               >
-                77% off
+                70% off
               </span>
             </div>
 
