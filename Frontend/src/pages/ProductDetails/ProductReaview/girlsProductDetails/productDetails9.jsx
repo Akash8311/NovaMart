@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom8 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom8";
+import ProductZoom9 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom9";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -115,7 +115,7 @@ const addToCart = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoom8 />
+            <ProductZoom9 />
           </div>
 
           <div
