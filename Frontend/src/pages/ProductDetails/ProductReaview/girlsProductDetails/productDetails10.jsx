@@ -27,7 +27,7 @@ import ProductItems6 from "../../../../components/ProductItems/ProductItems6";
 import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
 import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
-import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
+import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
 import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
@@ -113,7 +113,7 @@ const productDetails10 = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom9 />
+            <ProductZoom10 />
           </div>
 
           <div
@@ -403,41 +403,28 @@ const productDetails10 = (props) => {
                 }}
               >
                 <li>
-                  <strong> •</strong> ✨ Premium Chiffon Fabric with Ombre
-                  Effect – Made from lightweight and breathable chiffon, this
-                  saree features a stunning ombre gradient design that blends
-                  shades seamlessly, giving you a soft, graceful, and modern
-                  look.
+                  <strong> •</strong> Cotton fabric supports comfortable wear for work or daily routines
                 </li>
 
                 <li>
-                  <strong> • </strong> 👗 Ready-to-Wear Design – Pre-draped and
-                  easy to wear, making it an ideal choice for women seeking
-                  hassle-free styling.
+                  <strong> • </strong> Floral print adds a soft visual appeal for versatile styling
+
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong> •</strong>🎬 Bollywood-Inspired Styling –
-                      Designed with a touch of Bollywood glamour, this ombre
-                      saree gives you a trendy, elegant vibe, making it ideal
-                      for women who want a fashionable ethnic statement.
+                      <strong> •</strong>Mandarin collar and button down front create a structured outline
+
                     </li>
 
                     <li>
-                      <strong>•</strong>🎉 Perfect for Parties, Weddings &
-                      Festivals – Whether it’s a wedding ceremony, festive
-                      function, cocktail party, or special celebration, this
-                      saree ensures you look stylish, charming, and
-                      picture-perfect.
+                      <strong>•</strong>🎉 3/4 sleeves and calf length offer relaxed movement and balanced coverage
                     </li>
 
                     <li>
-                      <strong>•</strong> 🎁 An Elegant Gift for Women – A
-                      timeless ethnic outfit that makes a thoughtful gift for
-                      birthdays, anniversaries, festive occasions, or as a
-                      beautiful surprise for loved ones.
+                      <strong>•</strong> 🎁 Coordinated pant completes the outfit with a neat straight fit
+
                     </li>
 
                     <li>
@@ -548,7 +535,7 @@ const productDetails10 = (props) => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems10 />
+                <ProductItems9 />
               </SwiperSlide>
 
               <SwiperSlide>
