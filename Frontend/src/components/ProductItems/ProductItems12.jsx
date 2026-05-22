@@ -162,7 +162,7 @@ const ProductItems12 = () => {
         </div>
 
         <Link
-          to="/"
+          to="/productDetails12"
           style={{
             textDecoration: "none",
             color: "#777",
