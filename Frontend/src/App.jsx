@@ -26,6 +26,7 @@ import ProductDetails6 from "./pages/ProductDetails/ProductReaview/girlsProductD
 import ProductDetails7 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails7";
 import ProductDetails8 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails8";
 import ProductDetails9 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails9";
+import ProductDetails10 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails10";
 import ProductDetails11 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails11";
 
 import LogIn from "./pages/auth/logIn";

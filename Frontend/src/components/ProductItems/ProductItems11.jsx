@@ -183,7 +183,7 @@ const ProductItems11 = () =>{
            onMouseLeave={() => setIsHovered(false)}
          >
            <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/61Gs-lCCBiL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71fq4c-JbQL._SY741_.jpg"}
+             src={isHovered ? "https://m.media-amazon.com/images/I/51eXO+4wImL._SY741_.jpg" : "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg"}
              alt="product"
              style={{
                width: "70%",
@@ -210,7 +210,7 @@ const ProductItems11 = () =>{
                 width: "100%",
               }}
             >
-              Astral Bloom Women 
+              Holiday Ready Lightweight
             </h4>
 
             <p
@@ -222,7 +222,7 @@ const ProductItems11 = () =>{
                 margin: "0",
               }}
             >
-             The Souled Store Textured Dress: Astral Bloom Women and Girls Long Sleeves V-Neck Graphic Printed
+             Sweetheart Neckline Yellow Gingham Check Polyester Cotton Blend A-Line Holiday Ready Lightweight Casual Dress
             </p>
 
             {/* Price Section */}
@@ -241,7 +241,7 @@ const ProductItems11 = () =>{
                   color: "#ff4b4b",
                 }}
               >
-                ₹1,699
+                ₹2,599
               </span>
               <span
                 style={{
@@ -250,12 +250,12 @@ const ProductItems11 = () =>{
                   fontSize: "13px",
                 }}
               >
-                ₹1,999
+                ₹2,399
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                15% OFF
+                8% OFF
               </span>
             </div>
 
