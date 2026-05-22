@@ -152,7 +152,7 @@ const addToCart = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Premium Silk • Purple
+              Pre-Draped Saree • Maroon
             </p>
 
             {/* RATING */}
@@ -168,7 +168,7 @@ const addToCart = () => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (259 reviews)
+                (2695 reviews)
               </span>
             </div>
 
@@ -199,7 +199,7 @@ const addToCart = () => {
                   color: "#B12704",
                 }}
               >
-                ₹1,699
+                ₹949
               </span>
 
               <span
@@ -209,7 +209,7 @@ const addToCart = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹7,549
+                ₹3,199
               </span>
 
               <span
