@@ -38,7 +38,7 @@ const productDetails10 = (props) => {
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
-  const sizes = ["S","M","L","XL","XLL"];
+  const sizes = ["S", "M", "L", "XL", "XLL"];
 
   const product = {
     id: "Kurta Pant Set 1",
@@ -133,7 +133,9 @@ const productDetails10 = (props) => {
                 marginBottom: "6px",
               }}
             >
-              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round Neck Half Sleeeve Standard Length and Pull On Closure Type | Womens Co-Ord Set
+              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round
+              Neck Half Sleeeve Standard Length and Pull On Closure Type |
+              Womens Co-Ord Set
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -149,9 +151,7 @@ const productDetails10 = (props) => {
             </h1>
 
             {/* SUBTITLE */}
-            <p style={{ fontSize: "14px", color: "#777" }}>
-              Womens Co-Ord Set
-            </p>
+            <p style={{ fontSize: "14px", color: "#777" }}>Womens Co-Ord Set</p>
 
             {/* RATING */}
             <div
@@ -338,35 +338,35 @@ const productDetails10 = (props) => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Silk</span>
+                <span>Cotton</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Color</span>
-                <span>Chiffon || Chiffon Blouse</span>
+                <span>white</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Occasion type
+                  Sleeve type
                 </span>
-                <span>Festival, Party, Wedding</span>
+                <span>Short Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Print Or Pattern
+                  Length
                 </span>
-                <span>Ombre || Ethnic Motif Blouse</span>
+                <span>Calf Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Work Details
+                  Pattern
                 </span>
-                <span>Tassels and Latkans Saree || Saree Type: Banarasi</span>
+                <span>Floral</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Style
+                </span>
+                <span>A-Line</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Hand Wash Only</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
-                </span>
-                <span>Off Shoulder Neck</span>
+                <span>ODry Clean Only</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
