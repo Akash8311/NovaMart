@@ -33,42 +33,40 @@ import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
-const productDetails10 = () => (props) =>  {
-  const [selectedSize, setSelectedSize] = useState("M");
+const productDetails10 = (props) => {
+  const [selectedSize, setSelectedSize] = useState("Normal");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
-  const sizes = ["S","M","L","XL","2XL"];
+  const sizes = ["Normal"];
 
   const product = {
-  id: "Silk Saree s-7",
-  name: "Woven Soft Silk Saree",
-  price: 1699,
-  image: "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"
-};
+    id: "Kurta Pant Set 1",
+    name: "Kurta Pant Set",
+    price: 799,
+    image: "https://m.media-amazon.com/images/I/91ZTnOEL-6L._SX679_.jpg",
+  };
 
-const addToCart = () => {
-  const exist = cartItems.find((item) => item.id === product.id);
+  const addToCart = () => {
+    const exist = cartItems.find((item) => item.id === product.id);
 
-  if (exist) {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === product.id
-          ? { ...item, qty: item.qty + 1 }
-          : item
-      )
-    );
-  } else {
-    setCartItems([
-      ...cartItems,
-      {
-        ...product,
-        qty: 7,
-        size: selectedSize,
-      },
-    ]);
-  }
-};
+    if (exist) {
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id ? { ...item, qty: item.qty + 1 } : item,
+        ),
+      );
+    } else {
+      setCartItems([
+        ...cartItems,
+        {
+          ...product,
+          qty: 7,
+          size: selectedSize,
+        },
+      ]);
+    }
+  };
   return (
     <>
       {" "}
@@ -100,7 +98,7 @@ const addToCart = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Sarees 
+            Kurta Pant Set
           </Link>
         </Breadcrumbs>
 
@@ -115,7 +113,7 @@ const addToCart = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoom8 />
+            <ProductZoom9 />
           </div>
 
           <div
@@ -135,8 +133,7 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-             AKHILAM Women's Kanjivaram Woven Soft Silk Saree With Blouse Piece
-
+              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round Neck Half Sleeeve Standard Length and Pull On Closure Type | Womens Co-Ord Set
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -153,7 +150,7 @@ const addToCart = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Premium Silk • Purple
+              Pre-Draped Saree • Maroon
             </p>
 
             {/* RATING */}
@@ -169,7 +166,7 @@ const addToCart = () => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (259 reviews)
+                (2695 reviews)
               </span>
             </div>
 
@@ -183,7 +180,7 @@ const addToCart = () => {
                 borderRadius: "5px",
               }}
             >
-                Limited time deal
+              Limited time deal
             </button>
 
             <div
@@ -200,7 +197,7 @@ const addToCart = () => {
                   color: "#B12704",
                 }}
               >
-                ₹1,699
+                ₹949
               </span>
 
               <span
@@ -210,7 +207,7 @@ const addToCart = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹7,549
+                ₹3,199
               </span>
 
               <span
@@ -220,7 +217,7 @@ const addToCart = () => {
                   color: "#007185",
                 }}
               >
-                77% off
+                70% off
               </span>
             </div>
 
@@ -343,29 +340,32 @@ const addToCart = () => {
                 </span>
                 <span>Silk</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Color
-                </span>
-                <span>Purple Saree || Purple Blouse</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>Fabric</span>
-                <span>Viscose Saree || Viscose Blouse</span>
-
- <span style={{ fontWeight: "500", color: "#555" }}>Print Or Pattern</span>
-                <span>Ethnic Motif Printed Saree || Ethnic Motif Blouse</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Color</span>
+                <span>Chiffon || Chiffon Blouse</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Work Details
+                  Occasion type
                 </span>
-                <span>Tassels and Latkans Saree || Saree Type: Banarasi
-</span>
+                <span>Festival, Party, Wedding</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Print Or Pattern
+                </span>
+                <span>Ombre || Ethnic Motif Blouse</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Work Details
+                </span>
+                <span>Tassels and Latkans Saree || Saree Type: Banarasi</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
                 <span>Hand Wash Only</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Neck style</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Neck style
+                </span>
                 <span>Off Shoulder Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -403,25 +403,41 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong>Exquisite Design:</strong> This party wear dress for women blends style and comfort with premium fabric and a flattering silhouette, making it perfect for parties, evening outings, and special
+                  <strong> •</strong> ✨ Premium Chiffon Fabric with Ombre
+                  Effect – Made from lightweight and breathable chiffon, this
+                  saree features a stunning ombre gradient design that blends
+                  shades seamlessly, giving you a soft, graceful, and modern
+                  look.
                 </li>
 
                 <li>
-                  <strong>Flattering Fit: </strong> Designed for elegance, this one-piece dress for women enhances your look, ensuring a chic and sophisticated appeal for all body types.
+                  <strong> • </strong> 👗 Ready-to-Wear Design – Pre-draped and
+                  easy to wear, making it an ideal choice for women seeking
+                  hassle-free styling.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Perfect for Every Occasion: </strong>Whether you're attending a romantic dinner, cocktail party, wedding, or festive event, this Western dress for women ensures you stand out in style.
+                      <strong> •</strong>🎬 Bollywood-Inspired Styling –
+                      Designed with a touch of Bollywood glamour, this ombre
+                      saree gives you a trendy, elegant vibe, making it ideal
+                      for women who want a fashionable ethnic statement.
                     </li>
 
                     <li>
-                      <strong>Versatile Styling Options: </strong>Pair this stylish dress with high heels, statement jewelry, or a chic clutch to create the perfect fashion-forward ensemble.
+                      <strong>•</strong>🎉 Perfect for Parties, Weddings &
+                      Festivals – Whether it’s a wedding ceremony, festive
+                      function, cocktail party, or special celebration, this
+                      saree ensures you look stylish, charming, and
+                      picture-perfect.
                     </li>
 
                     <li>
-                      <strong>Comfort Meets Style:</strong> Crafted from breathable, lightweight fabric, this trendy women's dress keeps you feeling comfortable and confident all day long.
+                      <strong>•</strong> 🎁 An Elegant Gift for Women – A
+                      timeless ethnic outfit that makes a thoughtful gift for
+                      birthdays, anniversaries, festive occasions, or as a
+                      beautiful surprise for loved ones.
                     </li>
 
                     <li>
@@ -448,7 +464,10 @@ const addToCart = () => {
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market Surat, Gujarat 395010, AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market Surat, Gujarat 395010
+                      <strong>Manufacturer:</strong> AARSH LIFESTYLE PVT LTD,
+                      B-4024,Aashirwad Textile Market Surat, Gujarat 395010,
+                      AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market
+                      Surat, Gujarat 395010
                     </li>
                   </>
                 )}
@@ -525,7 +544,7 @@ const addToCart = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems9 />
+                <ProductItems8 />
               </SwiperSlide>
 
               <SwiperSlide>
@@ -547,5 +566,4 @@ const addToCart = () => {
   );
 };
 
-
-export default productDetails10
+export default productDetails10;
