@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom10 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom10";
+import ProductZoom11 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom11";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -28,7 +28,7 @@ import ProductItems5 from "../../../../components/ProductItems/ProductItems5";
 import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
 import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
 import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
-import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
+import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
 import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
@@ -99,7 +99,7 @@ const productDetails11 = (props) => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Kurta Pant Set
+            Casual Dress
           </Link>
         </Breadcrumbs>
 
@@ -114,7 +114,7 @@ const productDetails11 = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom10 />
+            <ProductZoom11 />
           </div>
 
           <div
@@ -134,9 +134,7 @@ const productDetails11 = (props) => {
                 marginBottom: "6px",
               }}
             >
-              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round
-              Neck Half Sleeeve Standard Length and Pull On Closure Type |
-              Womens Co-Ord Set
+              The Souled Store Disney: Bonjour Women and Girls Sleeveless Sweetheart Neckline Yellow Gingham Check Polyester Cotton Blend A-Line Holiday Ready Lightweight Casual Dress
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -152,7 +150,7 @@ const productDetails11 = (props) => {
             </h1>
 
             {/* SUBTITLE */}
-            <p style={{ fontSize: "14px", color: "#777" }}>Womens Co-Ord Set</p>
+            <p style={{ fontSize: "14px", color: "#777" }}>Holiday Ready Lightweight Casual Dress</p>
 
             {/* RATING */}
             <div
@@ -167,7 +165,7 @@ const productDetails11 = (props) => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (2695 reviews)
+                (695 reviews)
               </span>
             </div>
 
@@ -198,7 +196,7 @@ const productDetails11 = (props) => {
                   color: "#B12704",
                 }}
               >
-                ₹799
+                ₹2,399
               </span>
 
               <span
@@ -208,7 +206,7 @@ const productDetails11 = (props) => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹1,199
+                ₹2,599
               </span>
 
               <span
@@ -218,7 +216,7 @@ const productDetails11 = (props) => {
                   color: "#007185",
                 }}
               >
-                60% off
+                8% off
               </span>
             </div>
 
@@ -339,30 +337,33 @@ const productDetails11 = (props) => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Cotton</span>
+                <span>Polyester Blend
+</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Color</span>
-                <span>Beige</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
+                <span>Mini</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                 Occasion type
+                </span>
+                <span>Casual</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
                 </span>
-                <span>Short Sleeve</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Calf Length</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Pattern
-                </span>
-                <span>Floral</span>
+                <span>Sleeveless</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Style
                 </span>
-                <span>A-Line</span>
+                <span>A-Line
+</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Neck style
+                </span>
+                <span>Sweetheart Neck
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -404,23 +405,32 @@ const productDetails11 = (props) => {
                 }}
               >
                 <li>
-                  <strong> </strong> Cotton fabric supports comfortable wear for work or daily routines
+                  <strong> </strong> PREMIUM POLYESTER-COTTON BLEND: Crafted from a breathable and lightweight fabric, this dress ensures all-day comfort and durability for your casual outings.
                 </li>
 
                 <li>
-                  <strong></strong> Floral print adds a soft visual appeal for versatile styling
+                  <strong></strong> TRENDY GINGHAM CHECK PATTERN: Featuring a playful yellow and white gingham print with charming embroidery, this printed dress adds a touch of elegance to your summer wear.
 
                 </li>
+                  <li>
+                  <strong></strong> UNIQUE TIE-UP STRAPS: Designed with adjustable tie-up straps, this dress offers a customizable fit while enhancing its stylish and trendy design for comfortable fashion.
 
+                </li>  <li>
+                  <strong></strong> BRIGHT YELLOW A-LINE STYLE: The vibrant yellow color and flattering A-line silhouette make this dress a standout choice for casual wear, perfect for sunny days and streetwear looks.
+
+                </li>  <li>
+                  <strong></strong> EASY CARE INSTRUCTIONS: Machine washable for hassle-free maintenance, this dress is designed to retain its color and shape, ensuring long-lasting wear and convenience.
+
+                </li>
                 {expanded && (
                   <>
                     <li>
-                      <strong> </strong>Mandarin collar and button down front create a structured outline
+                      <strong>Packer </strong>The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
 
                     </li>
 
                     <li>
-                      <strong></strong>🎉 3/4 sleeves and calf length offer relaxed movement and balanced coverage
+                      <strong>Importer</strong>The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
                     </li>
 
                     <li>
@@ -429,33 +439,28 @@ const productDetails11 = (props) => {
                     </li>
 
                     <li>
-                      <strong></strong> Comfortable Gathered fit flatters all
-                      body types.
+                      <strong>Item Weight</strong> 250 g
                     </li>
 
                     <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
+                      <strong>Item Dimensions LxWxH</strong> 21 x 22 x 3 Centimeters
+
                     </li>
 
                     <li>
-                      <strong>Disclaimer :</strong> Colour Of The Actual Product
+                      <strong>Disclaimer </strong> Colour Of The Actual Product
                       May Slightly Vary Due To Different Photographic Lighting
                       Sources Or Your Display Color Settings Or Screen Type.
                     </li>
 
                     <li>
-                      <strong>EASY CARE:</strong> Machine washable fabric that
+                      <strong>EASY CARE </strong> Machine washable fabric that
                       is easy to maintain, wrinkle-resistant, and retains its
                       original shape and color over time.
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> AARSH LIFESTYLE PVT LTD,
-                      B-4024,Aashirwad Textile Market Surat, Gujarat 395010,
-                      AARSH LIFESTYLE PVT LTD, B-4024,Aashirwad Textile Market
-                      Surat, Gujarat 395010
+                      <strong>Manufacturer </strong> The Souled Store, The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
                     </li>
                   </>
                 )}
@@ -544,7 +549,7 @@ const productDetails11 = (props) => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems11 />
+                <ProductItems10 />
               </SwiperSlide>
             </Swiper>
           </div>
