@@ -33,7 +33,7 @@ import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
-const productDetails12 =(props) => {
+const productDetails12 = (props) => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
@@ -98,7 +98,7 @@ const productDetails12 =(props) => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Casual Dress
+            Maxi Outfit Dress
           </Link>
         </Breadcrumbs>
 
@@ -133,7 +133,8 @@ const productDetails12 =(props) => {
                 marginBottom: "6px",
               }}
             >
-              The Souled Store Disney: Bonjour Women and Girls Sleeveless Sweetheart Neckline Yellow Gingham Check Polyester Cotton Blend A-Line Holiday Ready Lightweight Casual Dress
+              Aahwan Black Floral Printed High Slit Ruched Bust Maxi Outfit
+              Dress for Women's & Girl's{" "}
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 |
@@ -149,7 +150,9 @@ const productDetails12 =(props) => {
             </h1>
 
             {/* SUBTITLE */}
-            <p style={{ fontSize: "14px", color: "#777" }}>Holiday Ready Lightweight Casual Dress</p>
+            <p style={{ fontSize: "14px", color: "#777" }}>
+              Aahwan Black Floral Printed High Slit Ruched Bust Maxi Outfit Dress
+            </p>
 
             {/* RATING */}
             <div
@@ -164,7 +167,7 @@ const productDetails12 =(props) => {
             >
               ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (695 reviews)
+                (628 reviews)
               </span>
             </div>
 
@@ -195,7 +198,7 @@ const productDetails12 =(props) => {
                   color: "#B12704",
                 }}
               >
-                ₹2,399
+                ₹453
               </span>
 
               <span
@@ -205,7 +208,7 @@ const productDetails12 =(props) => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹2,599
+                ₹1,999
               </span>
 
               <span
@@ -215,7 +218,7 @@ const productDetails12 =(props) => {
                   color: "#007185",
                 }}
               >
-                8% off
+                77% off
               </span>
             </div>
 
@@ -336,33 +339,22 @@ const productDetails12 =(props) => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Polyester Blend
-</span>
+                <span>Polyester</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
-                <span>Mini</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                 Occasion type
-                </span>
-                <span>Casual</span>
+                <span>Maxi</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
                 </span>
                 <span>Sleeveless</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>A-Line
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>A-Line</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
                 </span>
-                <span>Sweetheart Neck
-</span>
+                <span>Sweetheart Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -404,37 +396,54 @@ const productDetails12 =(props) => {
                 }}
               >
                 <li>
-                  <strong> </strong> PREMIUM POLYESTER-COTTON BLEND: Crafted from a breathable and lightweight fabric, this dress ensures all-day comfort and durability for your casual outings.
+                  <strong> </strong> PREMIUM POLYESTER-COTTON BLEND: Crafted
+                  from a breathable and lightweight fabric, this dress ensures
+                  all-day comfort and durability for your casual outings.
                 </li>
-
                 <li>
-                  <strong></strong> TRENDY GINGHAM CHECK PATTERN: Featuring a playful yellow and white gingham print with charming embroidery, this printed dress adds a touch of elegance to your summer wear.
-
+                  <strong></strong> TRENDY GINGHAM CHECK PATTERN: Featuring a
+                  playful yellow and white gingham print with charming
+                  embroidery, this printed dress adds a touch of elegance to
+                  your summer wear.
                 </li>
-                  <li>
-                  <strong></strong> UNIQUE TIE-UP STRAPS: Designed with adjustable tie-up straps, this dress offers a customizable fit while enhancing its stylish and trendy design for comfortable fashion.
-
-                </li>  <li>
-                  <strong></strong> BRIGHT YELLOW A-LINE STYLE: The vibrant yellow color and flattering A-line silhouette make this dress a standout choice for casual wear, perfect for sunny days and streetwear looks.
-
-                </li>  <li>
-                  <strong></strong> EASY CARE INSTRUCTIONS: Machine washable for hassle-free maintenance, this dress is designed to retain its color and shape, ensuring long-lasting wear and convenience.
-
+                <li>
+                  <strong></strong> UNIQUE TIE-UP STRAPS: Designed with
+                  adjustable tie-up straps, this dress offers a customizable fit
+                  while enhancing its stylish and trendy design for comfortable
+                  fashion.
+                </li>{" "}
+                <li>
+                  <strong></strong> BRIGHT YELLOW A-LINE STYLE: The vibrant
+                  yellow color and flattering A-line silhouette make this dress
+                  a standout choice for casual wear, perfect for sunny days and
+                  streetwear looks.
+                </li>{" "}
+                <li>
+                  <strong></strong> EASY CARE INSTRUCTIONS: Machine washable for
+                  hassle-free maintenance, this dress is designed to retain its
+                  color and shape, ensuring long-lasting wear and convenience.
                 </li>
                 {expanded && (
                   <>
                     <li>
-                      <strong>Packer </strong>The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
-
+                      <strong>Packer </strong>The Souled Store Pvt. Ltd.,Survey
+                      Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square
+                      Industrial Park, before Padgha Toll Naka,Nashik – Mumbai
+                      Highway, after Pushkar Mela Hotel,Kurund Village –
+                      Bhiwandi, Maharashtra – 421101
                     </li>
 
                     <li>
-                      <strong>Importer</strong>The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
+                      <strong>Importer</strong>The Souled Store Pvt. Ltd.,Survey
+                      Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square
+                      Industrial Park, before Padgha Toll Naka,Nashik – Mumbai
+                      Highway, after Pushkar Mela Hotel,Kurund Village –
+                      Bhiwandi, Maharashtra – 421101
                     </li>
 
                     <li>
-                      <strong></strong> 🎁 Coordinated pant completes the outfit with a neat straight fit
-
+                      <strong></strong> 🎁 Coordinated pant completes the outfit
+                      with a neat straight fit
                     </li>
 
                     <li>
@@ -442,8 +451,8 @@ const productDetails12 =(props) => {
                     </li>
 
                     <li>
-                      <strong>Item Dimensions LxWxH</strong> 21 x 22 x 3 Centimeters
-
+                      <strong>Item Dimensions LxWxH</strong> 21 x 22 x 3
+                      Centimeters
                     </li>
 
                     <li>
@@ -459,7 +468,12 @@ const productDetails12 =(props) => {
                     </li>
 
                     <li>
-                      <strong>Manufacturer </strong> The Souled Store, The Souled Store Pvt. Ltd.,Survey Nos. 68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square Industrial Park, before Padgha Toll Naka,Nashik – Mumbai Highway, after Pushkar Mela Hotel,Kurund Village – Bhiwandi, Maharashtra – 421101
+                      <strong>Manufacturer </strong> The Souled Store, The
+                      Souled Store Pvt. Ltd.,Survey Nos.
+                      68/2,69,70/1,70/2,70/3A,70/8B,71/1A,71/1B,K Square
+                      Industrial Park, before Padgha Toll Naka,Nashik – Mumbai
+                      Highway, after Pushkar Mela Hotel,Kurund Village –
+                      Bhiwandi, Maharashtra – 421101
                     </li>
                   </>
                 )}
@@ -557,4 +571,4 @@ const productDetails12 =(props) => {
     </>
   );
 };
-export default productDetails12
+export default productDetails12;
