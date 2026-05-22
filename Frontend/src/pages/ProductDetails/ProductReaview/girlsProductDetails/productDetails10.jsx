@@ -341,7 +341,7 @@ const productDetails10 = (props) => {
                 <span>Cotton</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Color</span>
-                <span>white</span>
+                <span>Beige</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
