@@ -2,11 +2,11 @@ import React, { useRef, useState } from "react";
 import "../ProductZoom.css";
 
 const images = [
-  "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71vWvrn8vqL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71f7u7UZvML._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71+Y0DeCe1L._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/61XPU+xUgDL._SY741_.jpg"
+  "https://m.media-amazon.com/images/I/51NgQWs-VyL.jpg",
+  "https://m.media-amazon.com/images/I/5124P5P3s1L._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/51q0Av9ZjoL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/513p7yVYovL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/51GKJyiJfHL._SY741_.jpg"
 ];
 
 
@@ -63,7 +63,6 @@ const ProductZoom9 = () => {
         ))}
       </div>
 
-      {/* MAIN IMAGE */}
       <div
         className="zoom-wrapper"
         onMouseMove={moveLens}
