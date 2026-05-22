@@ -185,8 +185,8 @@ const ProductItems12 = () => {
             <img
               src={
                 isHovered
-                  ? "https://m.media-amazon.com/images/I/71moy2N0i4L._SY741_.jpg"
-                  : "https://m.media-amazon.com/images/I/71cr+qE65IL._SY741_.jpg"
+                  ? "https://m.media-amazon.com/images/I/81nIM0Aoa8L._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/91MgN8FzIaL._SX679_.jpg"
               }
               alt="product"
               style={{
@@ -225,7 +225,7 @@ const ProductItems12 = () => {
                 margin: "0",
               }}
             >
-              Summer Casual Wear for Events, Date & Evening Look{" "}
+              Maxi Outfit Dress for Women's & Girl's
             </p>
 
             <div
@@ -243,7 +243,7 @@ const ProductItems12 = () => {
                   color: "#ff4b4b",
                 }}
               >
-                ₹499
+                ₹453
               </span>
               <span
                 style={{
@@ -252,12 +252,12 @@ const ProductItems12 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2,299
+                ₹1,999
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                80% OFF
+                77% OFF
               </span>
             </div>
 
@@ -272,7 +272,7 @@ const ProductItems12 = () => {
               }}
             >
               ⭐⭐⭐⭐⭐
-              <span style={{ fontSize: "13px", color: "#555" }}>(6958)</span>
+              <span style={{ fontSize: "13px", color: "#555" }}>(628)</span>
             </div>
 
             {/* Free Delivery */}

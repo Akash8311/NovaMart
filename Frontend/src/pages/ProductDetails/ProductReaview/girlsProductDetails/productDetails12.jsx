@@ -41,10 +41,10 @@ const productDetails12 =(props) => {
   const sizes = ["S", "M", "L", "XL", "XLL"];
 
   const product = {
-    id: "Casual Dress1",
-    name: "Casual Dress",
-    price: 2399,
-    image: "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg",
+    id: "Maxi Outfit Dress  1",
+    name: "Maxi Outfit Dress ",
+    price: 453,
+    image: "https://m.media-amazon.com/images/I/81nIM0Aoa8L._SY741_.jpg",
   };
 
   const addToCart = () => {
