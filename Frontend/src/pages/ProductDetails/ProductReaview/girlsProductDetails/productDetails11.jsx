@@ -42,10 +42,10 @@ const productDetails11 = (props) => {
   const sizes = ["S", "M", "L", "XL", "XLL"];
 
   const product = {
-    id: "Kurta Pant Set 1",
-    name: "Kurta Pant Set",
-    price: 799,
-    image: "https://m.media-amazon.com/images/I/91ZTnOEL-6L._SX679_.jpg",
+    id: "Casual Dress1",
+    name: "Casual Dress",
+    price: 2399,
+    image: "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg",
   };
 
   const addToCart = () => {
