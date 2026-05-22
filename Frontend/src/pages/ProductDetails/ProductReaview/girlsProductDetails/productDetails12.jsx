@@ -557,6 +557,4 @@ const productDetails12 =(props) => {
     </>
   );
 };
-
-
 export default productDetails12
