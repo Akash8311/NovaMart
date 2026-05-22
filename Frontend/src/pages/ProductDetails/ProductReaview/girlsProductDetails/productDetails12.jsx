@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom11 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom11";
+import ProductZoom12 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom12";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -29,7 +29,7 @@ import ProductItems7 from "../../../../components/ProductItems/ProductItems7";
 import ProductItems8 from "../../../../components/ProductItems/ProductItems8";
 import ProductItems9 from "../../../../components/ProductItems/ProductItems9";
 import ProductItems10 from "../../../../components/ProductItems/ProductItems10";
-import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
+import ProductItems11 from "../../../../components/ProductItems/ProductItems11";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
@@ -396,15 +396,10 @@ const productDetails12 = (props) => {
                 }}
               >
                 <li>
-                  <strong> </strong> PREMIUM POLYESTER-COTTON BLEND: Crafted
-                  from a breathable and lightweight fabric, this dress ensures
-                  all-day comfort and durability for your casual outings.
+                  <strong> </strong> PThe model (height 5'7") is wearing a size S
                 </li>
                 <li>
-                  <strong></strong> TRENDY GINGHAM CHECK PATTERN: Featuring a
-                  playful yellow and white gingham print with charming
-                  embroidery, this printed dress adds a touch of elegance to
-                  your summer wear.
+                  <strong></strong> 95% Polyester, 5% Elastane, Pattern: Solid,Pattern Type-Floral
                 </li>
                 <li>
                   <strong></strong> UNIQUE TIE-UP STRAPS: Designed with
@@ -562,7 +557,7 @@ const productDetails12 = (props) => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems10 />
+                <ProductItems11 />
               </SwiperSlide>
             </Swiper>
           </div>
