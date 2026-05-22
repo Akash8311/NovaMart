@@ -51,7 +51,6 @@ const Productlisting = () => {
 
       if (scrollTop + windowHeight >= fullHeight - 100) {
         setLoading(true);
-
         setTimeout(() => {
           setLoading(false);
         }, 1500);
@@ -59,7 +58,6 @@ const Productlisting = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -112,12 +110,16 @@ const Productlisting = () => {
           display: "flex",
           gap: "25px",
           flexWrap: "wrap",
+          alignItems: "flex-start", /* ← required for sticky to work */
         }}
       >
-        {/* Sidebar */}
+        {/* ─── SIDEBAR: sticky + slide-in animation ─── */}
         <div
+          className="sidebarWrap"
           style={{
             flex: "1 1 250px",
+            position: "sticky",   /* ← no scroll */
+            top: "25px",          /* ← sticks 25px from top of viewport */
             borderRadius: "20px",
             padding: "20px",
             boxShadow: "0 5px 20px rgba(0,0,0,0.06)",
@@ -159,14 +161,8 @@ const Productlisting = () => {
                   minWidth: "48px",
                   height: "48px",
                   borderRadius: "14px",
-                  background:
-                    viewType === "list"
-                      ? "#111"
-                      : "#f5f5f5",
-                  color:
-                    viewType === "list"
-                      ? "#fff"
-                      : "#333",
+                  background: viewType === "list" ? "#111" : "#f5f5f5",
+                  color: viewType === "list" ? "#fff" : "#333",
                   transition: "0.3s",
                 }}
               >
@@ -179,14 +175,8 @@ const Productlisting = () => {
                   minWidth: "48px",
                   height: "48px",
                   borderRadius: "14px",
-                  background:
-                    viewType === "grid"
-                      ? "#111"
-                      : "#f5f5f5",
-                  color:
-                    viewType === "grid"
-                      ? "#fff"
-                      : "#333",
+                  background: viewType === "grid" ? "#111" : "#f5f5f5",
+                  color: viewType === "grid" ? "#fff" : "#333",
                   transition: "0.3s",
                 }}
               >
@@ -212,14 +202,7 @@ const Productlisting = () => {
                 gap: "12px",
               }}
             >
-              <span
-                style={{
-                  fontWeight: "600",
-                  color: "#444",
-                }}
-              >
-                Sort By
-              </span>
+              <span style={{ fontWeight: "600", color: "#444" }}>Sort By</span>
 
               <Button
                 onClick={handleClick}
@@ -247,26 +230,23 @@ const Productlisting = () => {
                   },
                 }}
               >
-                {[
-                  "Featured",
-                  "Newest",
-                  "Price Low To High",
-                  "Price High To Low",
-                ].map((item) => (
-                  <MenuItem
-                    key={item}
-                    onClick={() => {
-                      setSortValue(item);
-                      handleClose();
-                    }}
-                    style={{
-                      borderRadius: "10px",
-                      marginBottom: "4px",
-                    }}
-                  >
-                    {item}
-                  </MenuItem>
-                ))}
+                {["Featured", "Newest", "Price Low To High", "Price High To Low"].map(
+                  (item) => (
+                    <MenuItem
+                      key={item}
+                      onClick={() => {
+                        setSortValue(item);
+                        handleClose();
+                      }}
+                      style={{
+                        borderRadius: "10px",
+                        marginBottom: "4px",
+                      }}
+                    >
+                      {item}
+                    </MenuItem>
+                  )
+                )}
               </Menu>
             </div>
           </div>
@@ -312,11 +292,8 @@ const Productlisting = () => {
               <CircularProgress
                 size={45}
                 thickness={4}
-                style={{
-                  color: "#111",
-                }}
+                style={{ color: "#111" }}
               />
-
               <p
                 style={{
                   fontWeight: "600",
@@ -331,42 +308,73 @@ const Productlisting = () => {
         </div>
       </div>
 
-      {/* CSS Animation */}
+      {/* ─── CSS ─── */}
       <style>
         {`
-          .productCard{
-            border-radius:22px;
-            transition:all 0.5s ease;
-            animation:fadeUp 0.8s ease;
+          /* ── Sidebar slide-in from left ── */
+          .sidebarWrap {
+            animation: slideInLeft 0.55s cubic-bezier(.22,1,.36,1) both;
           }
 
-          .productCard:hover{
-            transform:translateY(-12px) scale(1.03);
-          }
-
-          @keyframes fadeUp{
-            from{
-              opacity:0;
-              transform:translateY(40px);
+          @keyframes slideInLeft {
+            from {
+              opacity: 0;
+              transform: translateX(-40px);
             }
-
-            to{
-              opacity:1;
-              transform:translateY(0);
+            to {
+              opacity: 1;
+              transform: translateX(0);
             }
           }
 
-          html{
-            scroll-behavior:smooth;
+          /* ── Product cards: fade-up + staggered delays ── */
+          .productCard {
+            border-radius: 22px;
+            transition: transform 0.4s cubic-bezier(.22,1,.36,1),
+                        box-shadow 0.4s ease;
+            animation: fadeUp 0.6s cubic-bezier(.22,1,.36,1) both;
           }
 
-          ::-webkit-scrollbar{
-            width:8px;
+          .productCard:hover {
+            transform: translateY(-12px) scale(1.03);
+            box-shadow: 0 20px 45px rgba(0,0,0,0.12);
           }
 
-          ::-webkit-scrollbar-thumb{
-            background:#111;
-            border-radius:20px;
+          .productCard:nth-child(1)  { animation-delay: 0.05s; }
+          .productCard:nth-child(2)  { animation-delay: 0.10s; }
+          .productCard:nth-child(3)  { animation-delay: 0.15s; }
+          .productCard:nth-child(4)  { animation-delay: 0.20s; }
+          .productCard:nth-child(5)  { animation-delay: 0.25s; }
+          .productCard:nth-child(6)  { animation-delay: 0.30s; }
+          .productCard:nth-child(7)  { animation-delay: 0.35s; }
+          .productCard:nth-child(8)  { animation-delay: 0.40s; }
+          .productCard:nth-child(9)  { animation-delay: 0.45s; }
+          .productCard:nth-child(10) { animation-delay: 0.50s; }
+          .productCard:nth-child(11) { animation-delay: 0.55s; }
+          .productCard:nth-child(12) { animation-delay: 0.60s; }
+
+          @keyframes fadeUp {
+            from {
+              opacity: 0;
+              transform: translateY(40px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+
+          html {
+            scroll-behavior: smooth;
+          }
+
+          ::-webkit-scrollbar {
+            width: 8px;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background: #111;
+            border-radius: 20px;
           }
         `}
       </style>

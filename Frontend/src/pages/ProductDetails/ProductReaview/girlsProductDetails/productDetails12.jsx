@@ -113,7 +113,7 @@ const productDetails12 = (props) => {
               height: "fit-content",
             }}
           >
-            <ProductZoom11 />
+            <ProductZoom12 />
           </div>
 
           <div
@@ -553,7 +553,7 @@ const productDetails12 = (props) => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <ProductItems12 />
+                <ProductItems10 />
               </SwiperSlide>
 
               <SwiperSlide>
