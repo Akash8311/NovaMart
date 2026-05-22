@@ -5,7 +5,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import { Link as RouterLink } from "react-router-dom";
 
-import ProductZoom9 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom9";
+import ProductZoom10 from "../../../../components/ProductZoom/GirlsProductZoom/ProductZoom10";
 import { IoShirt } from "react-icons/io5";
 import { CiTrophy } from "react-icons/ci";
 import { RiSecurePaymentLine } from "react-icons/ri";
@@ -403,27 +403,27 @@ const productDetails10 = (props) => {
                 }}
               >
                 <li>
-                  <strong> •</strong> Cotton fabric supports comfortable wear for work or daily routines
+                  <strong> </strong> Cotton fabric supports comfortable wear for work or daily routines
                 </li>
 
                 <li>
-                  <strong> • </strong> Floral print adds a soft visual appeal for versatile styling
+                  <strong></strong> Floral print adds a soft visual appeal for versatile styling
 
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong> •</strong>Mandarin collar and button down front create a structured outline
+                      <strong> </strong>Mandarin collar and button down front create a structured outline
 
                     </li>
 
                     <li>
-                      <strong>•</strong>🎉 3/4 sleeves and calf length offer relaxed movement and balanced coverage
+                      <strong></strong>🎉 3/4 sleeves and calf length offer relaxed movement and balanced coverage
                     </li>
 
                     <li>
-                      <strong>•</strong> 🎁 Coordinated pant completes the outfit with a neat straight fit
+                      <strong></strong> 🎁 Coordinated pant completes the outfit with a neat straight fit
 
                     </li>
 

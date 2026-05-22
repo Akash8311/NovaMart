@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import "../ProductZoom.css";
 
 const images = [
-  "https://m.media-amazon.com/images/I/91ZTnOEL-6L._SX679_.jpg",
   "https://m.media-amazon.com/images/I/71pT4jLtqJL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/814BkEsQ1TL._SY741_.jpg",
   "https://m.media-amazon.com/images/I/81dhBjYWyiL._SY741_.jpg",
   "https://m.media-amazon.com/images/I/71LZcSAYhlL._SY741_.jpg",
   "https://m.media-amazon.com/images/I/81HVYcjvXjL._SY741_.jpg"
