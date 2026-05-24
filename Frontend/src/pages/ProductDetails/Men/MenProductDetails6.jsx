@@ -82,7 +82,7 @@ const MenProductDetails6 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen5 />
+            <ProductZoomMen6 />
           </div>
 
           <div
