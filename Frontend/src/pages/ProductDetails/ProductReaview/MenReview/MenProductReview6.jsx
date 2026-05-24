@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// ─── inline OnlyReviewSection ───
 const REVIEWS_DATA = [
   { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
   { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
@@ -194,8 +193,6 @@ function OnlyReviewSection() {
   );
 }
 
-// ─────────────────────────────────────────────
-// ── LYMIO RIB-SHIRT-02 DETAILS ──
 const DETAILS = [
   { label: "Date First Available", value: "20 November 2025" },
   { label: "Manufacturer", value: "SUNMEGH FASHION" },
@@ -275,8 +272,6 @@ function DescriptionTab() {
   );
 }
 
-// ─────────────────────────────────────────────
-// ── MAIN COMPONENT ──
 const TABS = [
   { id:"description", label:"Description" },
   { id:"review",      label:"Reviews", count:49 },
