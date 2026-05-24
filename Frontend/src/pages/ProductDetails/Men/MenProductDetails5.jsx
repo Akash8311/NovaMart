@@ -18,7 +18,6 @@ import MenProduct1 from "../Men/MenProduct1";
 import MenProduct2 from "../Men/MenProduct2";
 import MenProduct3 from "../Men/MenProduct3";
 import MenProduct4 from "../Men/MenProduct4";
-import MenProduct5 from "../Men/MenProduct5";
 import MenProduct6 from "../Men/MenProduct6";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
@@ -103,7 +102,7 @@ const MenProductDetails5 = () =>  {
                 marginBottom: "6px",
               }}
             >
-             https://m.media-amazon.com/images/I/91wQMHlZdGL._SX679_.jpg
+             Lymio Men Shirt 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                
@@ -134,9 +133,9 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐⭐⭐
+              ⭐⭐⭐⭐☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (459 reviews)
+                (1,309 reviews)
               </span>
             </div>
 
@@ -178,7 +177,7 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                   textDecoration: "line-through",
                 }}
               >
-                ₹2,195
+                ₹3,999
               </span>
 
               <span
@@ -188,7 +187,7 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                   color: "#007185",
                 }}
               >
-                77% off
+                89% off
               </span>
             </div>
 
@@ -309,7 +308,12 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material type{" "}
                 </span>
-                <span>Cotton Blend</span>
+                <span>Polyester</span>
+                     <span style={{ fontWeight: "500", color: "#555" }}>Fit type</span>
+                <span>Regular Fit
+
+</span>
+
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   length
@@ -317,9 +321,10 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 <span>Standard Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
+                  Collar style
                 </span>
-                <span>Modern</span>
+                <span>Collared Neck
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Closure type
@@ -327,14 +332,15 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Occasion type
+                 Neck style
                 </span>
-                <span>Wedding, Christmas, Anniversary, Birthday, Valentine's Day</span>
+                <span>Collared Neck
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Care instructions</span>
                 <span>Machine Wash
 </span>
-
+           
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
                 </span>
@@ -370,16 +376,11 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 }}
               >
                 <li>
-                  <strong>FABRIC:</strong> Premium quality 100% cotton twill
-                  fabric with mercerised soft finish that offers superior
-                  breathability, smooth texture, rich color retention, and
-                  all-day wearing comfort.
+                  <strong>FABRIC:</strong> PCasual Shirt for Men|| Shirt for Men|| Men Stylish Shirt
                 </li>
 
                 <li>
-                  <strong>COMFORT:</strong> Lightweight and skin-friendly
-                  material that keeps you cool and comfortable throughout long
-                  office hours or daily formal use.
+                  <strong>Sleeve Length:</strong> Long Sleeve.
                 </li>
 
                 {expanded && (
@@ -397,9 +398,8 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                     </li>
 
                     <li>
-                      <strong>COLLAR STYLE:</strong> Classic collar that
-                      enhances the formal appeal and maintains its shape even
-                      after multiple washes.
+                      <strong>COLLAR STYLE:</strong> Collared Neck
+
                     </li>
 
                     <li>
@@ -493,9 +493,7 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                 <MenProduct4 />
               </SwiperSlide>
 
-              <SwiperSlide>
-                <MenProduct5 />
-              </SwiperSlide>
+            
 
               <SwiperSlide>
                 <MenProduct6 />
