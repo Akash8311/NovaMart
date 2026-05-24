@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
 import "./ProductZoom.css";
 const images = [
-  "https://m.media-amazon.com/images/I/71dF+pDGxIL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/51ivhYL7ypL.jpg",
-  "https://m.media-amazon.com/images/I/51GvSReOAGL.jpg",
-  "https://m.media-amazon.com/images/I/51RmaAfkRkL.jpg",
-  "https://m.media-amazon.com/images/I/41uKa5xYPyL.jpg",
+  "https://m.media-amazon.com/images/I/71xomI4L7fL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/71xomI4L7fL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/51I3X430M5L._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/51wdQSG4RuL._SY741_.jpg",
+
 ];
 
 
