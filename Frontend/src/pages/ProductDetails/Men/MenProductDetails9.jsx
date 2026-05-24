@@ -21,7 +21,7 @@ import MenProduct4 from "../Men/MenProduct4";
 import MenProduct5 from "../Men/MenProduct5";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
-import MenProduct9 from "../Men/MenProduct9";
+import MenProduct6 from "../Men/MenProduct6";
 import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
 import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
 
@@ -498,10 +498,10 @@ M is your recommended size based on millions of customer orders.
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct8 />
+                <MenProduct6 />
               </SwiperSlide>
               <SwiperSlide>
-                <MenProduct9 />
+                <MenProduct8 />
               </SwiperSlide>
             </Swiper>
           </div>
