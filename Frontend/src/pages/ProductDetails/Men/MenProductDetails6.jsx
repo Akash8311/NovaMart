@@ -33,10 +33,10 @@ const MenProductDetails6 = () =>  {
  const sizes = ["S", "M", "L", "XLL"];
 
     const product = {
-  id: "Lymio Men Shirt",
-  name: "Lymio Men Shirt ",
-  price: 429,
-  image: "https://m.media-amazon.com/images/I/91wQMHlZdGL._SX679_.jpg"
+  id: "Cotton Checks Shirt1",
+  name: "Men’s Cotton Checks Shirt ",
+  price: 410,
+  image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg"
 
 };  return (
     <>
@@ -68,7 +68,7 @@ const MenProductDetails6 = () =>  {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Shirts
+            Cotton Checks Shirt
           </Link>
         </Breadcrumbs>
 
@@ -103,7 +103,7 @@ const MenProductDetails6 = () =>  {
                 marginBottom: "6px",
               }}
             >
-             Lymio Men Shirt 
+             Men’s Cotton Checks Shirt
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                
