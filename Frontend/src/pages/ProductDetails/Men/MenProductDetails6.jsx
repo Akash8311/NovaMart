@@ -22,7 +22,7 @@ import MenProduct5 from "../Men/MenProduct5";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen5 from "../../../components/ProductZoom/ProductZoomMen5";
+import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
 import MenProductReview5 from "../ProductReaview/MenReview/MenProductReview5.JSX";
 
 const MenProductDetails6 = () => {
@@ -311,14 +311,15 @@ M is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material type{" "}
                 </span>
-                <span>Polyester</span>
+                <span>Cotton</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Regular Fit</span>
+                <span>Classic Fit
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Standard Length</span>
+                <span>Long Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -326,9 +327,10 @@ M is your recommended size based on millions of customer orders.
                 <span>Collared Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Closure type
+                 Sleeve type
                 </span>
-                <span>Button</span>
+                <span>Long Sleeve
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
@@ -375,30 +377,26 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong>FABRIC:</strong> PCasual Shirt for Men|| Shirt for
-                  Men|| Men Stylish Shirt
+                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
                 </li>
 
                 <li>
-                  <strong>Sleeve Length:</strong> Long Sleeve.
+                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
+
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>FIT TYPE:</strong> Regular fit tailored to provide
-                      a clean, structured look without feeling too tight or too
-                      loose.
+                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
                     </li>
 
                     <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
+                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
                     </li>
 
                     <li>
-                      <strong>COLLAR STYLE:</strong> Collared Neck
+                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
                     </li>
 
                     <li>
@@ -414,9 +412,7 @@ M is your recommended size based on millions of customer orders.
                     </li>
 
                     <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
                     </li>
 
                     <li>
