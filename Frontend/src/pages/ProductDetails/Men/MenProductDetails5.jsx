@@ -23,7 +23,7 @@ import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import ProductZoomMen5 from "../../../components/ProductZoom/ProductZoomMen5";
-import MenProductReview3 from "../ProductReaview/MenReview/MenProductReview3.JSX";
+import MenProductReview5 from "../ProductReaview/MenReview/MenProductReview5.JSX";
 
 const MenProductDetails5 = () =>  {
   const [selectedSize, setSelectedSize] = useState("40");
@@ -455,7 +455,7 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
           </div>
         </div>
 
-        <MenProductReview3 />
+        <MenProductReview5 />
 
         <div className="Related-Product">
           <h2

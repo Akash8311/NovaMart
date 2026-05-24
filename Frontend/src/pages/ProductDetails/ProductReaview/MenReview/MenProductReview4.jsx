@@ -27,7 +27,7 @@ const MenProductReview4 = () => {
             }`}
             onClick={() => setActiveTab("review")}
           >
-            Review (13)
+            Review (3021)
           </span>
         </div>
 
