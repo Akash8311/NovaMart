@@ -23,7 +23,7 @@ import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview5 from "../ProductReaview/MenReview/MenProductReview5.JSX";
+import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
 
 const MenProductDetails6 = () => {
   const [selectedSize, setSelectedSize] = useState("M");
@@ -450,7 +450,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview5 />
+        <MenProductReview6 />
 
         <div className="Related-Product">
           <h2
