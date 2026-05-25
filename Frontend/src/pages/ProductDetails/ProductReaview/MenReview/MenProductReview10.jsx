@@ -194,16 +194,22 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "22 x 27 x 1.8 cm; 230 g" },
+  { label: "Date First Available", value: "11 May 2024" },
+  { label: "Manufacturer", value: "THE ZB" },
+  { label: "ASIN", value: "B0D3XN4PHG" },
+  { label: "Item Model Number", value: "MOD5_KURTA_GREEN_M" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
-  { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Manufacturer Details", value: "THE ZB" },
+  { label: "Packer", value: "THE ZB" },
+  { label: "Importer", value: "THE ZB" },
+  { label: "Item Weight", value: "230 g" },
+  { label: "Item Dimensions LxWxH", value: "22 x 27 x 1.8 Centimeters" },
+  { label: "Net Quantity", value: "1.00 Count" },
+  { label: "Included Components", value: "Kurta" },
+  { label: "Generic Name", value: "Dress Shirt" },
+  { label: "Best Sellers Rank", value: "#275 in Clothing & Accessories | #2 in Men's Kurtas" },
 ];
 
 const FEATURES = [

@@ -24,21 +24,21 @@ import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import MenProduct11 from "../Men/MenProduct11";
 import MenProduct12 from "../Men/MenProduct12";
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
+import ProductZoomMen10 from "../../../components/ProductZoom/ProductZoomMen10";
+import MenProductReview10 from "../ProductReaview/MenReview/MenProductReview10.JSX";
 
 
 const MenProductDetails10 = () => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "L","XL","2XL","3XL","4XL"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    id: " Casual Regular Fit Mandarin 1",
+    name: " Casual Regular Fit Mandarin ",
+    price: 499,
+    image: "https://m.media-amazon.com/images/I/91cz96QfVbL._SX679_.jpg",
   };
   return (
     <>
@@ -70,7 +70,7 @@ const MenProductDetails10 = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Cotton Checks Shirt
+            Kurta
           </Link>
         </Breadcrumbs>
 
@@ -85,7 +85,7 @@ const MenProductDetails10 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen10 />
           </div>
 
           <div
@@ -105,10 +105,10 @@ const MenProductDetails10 = () => {
                 marginBottom: "6px",
               }}
             >
-              Men’s Cotton Checks Shirt
+            Casual Regular Fit Mandarin
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
+              Zombom Cotton Polyester Blend Solid Casual Regular Fit Mandarin/Chinese Collor Short Kurta for Men{" "}
                 <p
                   style={{
                     fontSize: "14px",
@@ -123,7 +123,6 @@ const MenProductDetails10 = () => {
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
             
-L
 M is your recommended size based on millions of customer orders.
 
             </p>
@@ -141,7 +140,7 @@ M is your recommended size based on millions of customer orders.
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (209 reviews)
               </span>
             </div>
 
@@ -173,7 +172,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹499
               </span>
 
               <span
@@ -183,7 +182,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1,690
               </span>
 
               <span
@@ -193,7 +192,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#007185",
                 }}
               >
-                50% off
+                71% off
               </span>
             </div>
 
@@ -314,15 +313,17 @@ M is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material type{" "}
                 </span>
-                <span>Cotton</span>
+                <span>Cotton Blend</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
+                  Sleeve type
                 </span>
-                <span>Classic Fit
+                <span>Full Sleeve
+
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Long Length</span>
+                <span>Waist Length
+h</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -336,9 +337,10 @@ M is your recommended size based on millions of customer orders.
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                  Pattern
                 </span>
-                <span>Collared Neck</span>
+                <span>solid
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -380,22 +382,22 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong>Fabric :</strong> E Cotton Polyester Blend Men's Kurta || Pattern :- Solid Kurtas for men || Length Type :- Hip Length Kurta || Fit Type :- Regular Fit || Coller :- Mandarin/Chinese collar || Package Contain :- 1 Casual Short Kurta For Men.
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
+                  <strong>Sleeves :</strong> Full Sleeve With Cuff || Neck :- Stand Collar Kurta for boys || Pattern :- Kurta has a button placket & Slightly Curved.
 
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong>Occasion :</strong>Casual Wear || Party, Weddings, Sangeet, Mehandi || Office Wear || Formal Wear || Ganesh Chaturthi, Janmashtami || Evening Wear || Work Wear || Party Wear || Regular Outing Wear || Business Wear || Regular Wear || Professional Wear and best gift for your loved one.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
+                      <strong></strong> Please check the size chart for the garments measurements and order a garment for the ease of putting on and taking off the garment.
                     </li>
 
                     <li>
@@ -453,7 +455,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview10 />
 
         <div className="Related-Product">
           <h2
