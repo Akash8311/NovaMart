@@ -194,16 +194,19 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "30 x 20 x 2 cm; 200 g" },
+  { label: "Date First Available", value: "23 October 2024" },
+  { label: "Manufacturer", value: "U-TURN" },
+  { label: "ASIN", value: "B0DKP8NXCH" },
+  { label: "Item Part Number", value: "SDN-SKYBLUE-DHAARI-M" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
-  { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Packer", value: "U-TURN" },
+  { label: "Item Weight", value: "200 g" },
+  { label: "Item Dimensions LxWxH", value: "30 x 20 x 2 Centimeters" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Generic Name", value: "Shirt" },
+  { label: "Best Sellers Rank", value: "#1,586 in Clothing & Accessories | #70 in Men's Shirts" },
 ];
 
 const FEATURES = [

@@ -22,21 +22,21 @@ import MenProduct5 from "../Men/MenProduct5";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct6 from "../Men/MenProduct6";
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
+import ProductZoomMen9 from "../../../components/ProductZoom/ProductZoomMen9";
+import MenProductReview9 from "../ProductReaview/MenReview/MenProductReview9.JSX";
 
 
 const MenProductDetails9 = () => {
-  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedSize, setSelectedSize] = useState("S");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "L","XL"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    id: "Latest Formal Shirt1",
+    name: "Men’s Latest Formal Shirt ",
+    price: 378,
+    image: "https://m.media-amazon.com/images/I/71ky2F8QWmL._SY741_.jpg",
   };
   return (
     <>
@@ -68,7 +68,7 @@ const MenProductDetails9 = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Cotton Checks Shirt
+             Shirt
           </Link>
         </Breadcrumbs>
 
@@ -83,7 +83,7 @@ const MenProductDetails9 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen9 />
           </div>
 
           <div
@@ -106,7 +106,7 @@ const MenProductDetails9 = () => {
               Men’s Cotton Checks Shirt
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
+             U TURN Men's Casual Printed Striped Stylish Latest Formal Shirt for Men Plus Size Shirt for Men{" "}
                 <p
                   style={{
                     fontSize: "14px",
@@ -139,7 +139,7 @@ M is your recommended size based on millions of customer orders.
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (358 reviews)
               </span>
             </div>
 
@@ -171,7 +171,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹378
               </span>
 
               <span
@@ -181,7 +181,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1599
               </span>
 
               <span
@@ -191,7 +191,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#007185",
                 }}
               >
-                50% off
+                76% off
               </span>
             </div>
 
@@ -312,15 +312,17 @@ M is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material type{" "}
                 </span>
-                <span>Cotton</span>
+                <span>Cotton Mix</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Classic Fit
+                <span>Slim Fit
+
 </span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Long Length</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Collar style</span>
+                <span>Classic Collar
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -451,7 +453,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview9 />
 
         <div className="Related-Product">
           <h2

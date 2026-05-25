@@ -159,7 +159,7 @@ const MenProduct9 = () => {
               )}
             </div>
     
-            <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
+            <Link to="/MenProductDetails9" style={{ textDecoration: "none", color: "#777" }}>
               <div
                 style={{
                   width: "100%",
@@ -174,7 +174,7 @@ const MenProduct9 = () => {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <img
-                  src={isHovered ? "https://m.media-amazon.com/images/I/71FVdqiPTBL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71khKCJkyhL._SY741_.jpg"}
+                  src={isHovered ? "https://m.media-amazon.com/images/I/71ky2F8QWmL._SY741_.jpg" : "https://m.media-amazon.com/images/I/81gofKqW3gL._SX679_.jpg"}
                   alt="product"
                   style={{
                     width: "70%",
@@ -208,7 +208,7 @@ const MenProduct9 = () => {
                   margin: "0",
                 }}
               >
-              U TURN Men's Casual Printed Striped Stylish Latest Formal Shirt for Men
+               TURN Men's Casual Printed Striped Stylish Latest Formal Shirt for Men
               </p>
     
               {/* Price Section */}
