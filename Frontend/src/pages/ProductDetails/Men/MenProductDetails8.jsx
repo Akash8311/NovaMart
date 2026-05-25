@@ -22,21 +22,20 @@ import MenProduct5 from "../Men/MenProduct5";
 import MenProduct6 from "../Men/MenProduct6";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
-
+import ProductZoomMen8 from "../../../components/ProductZoom/ProductZoomMen8";
+import MenProductReview8 from "../ProductReaview/MenReview/MenProductReview8.JSX";
 
 const MenProductDetails8 = () => {
-  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "L","XL"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    id: "Half Seelves Regular Fit1",
+    name: "Half Seelves Regular Fit ",
+    price: 729,
+    image: "https://m.media-amazon.com/images/I/91Pt9K991OL._SX679_.jpg",
   };
   return (
     <>
@@ -68,7 +67,7 @@ const MenProductDetails8 = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Cotton Checks Shirt
+            Half Seelves Regular Fit
           </Link>
         </Breadcrumbs>
 
@@ -83,7 +82,7 @@ const MenProductDetails8 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen8 />
           </div>
 
           <div
@@ -103,10 +102,11 @@ const MenProductDetails8 = () => {
                 marginBottom: "6px",
               }}
             >
-              Men’s Cotton Checks Shirt
+              Allen Solly Men’s Polo T‑Shirt |
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
+                Comfortable Rich Cotton Blend, Band Collar, Regular Fit |
+                Stylish & Premium All Day Wear{" "}
                 <p
                   style={{
                     fontSize: "14px",
@@ -120,10 +120,7 @@ const MenProductDetails8 = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-L
-M is your recommended size based on millions of customer orders.
-
+              M is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -137,9 +134,9 @@ M is your recommended size based on millions of customer orders.
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+              ⭐⭐☆☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (1,321 reviews)
               </span>
             </div>
 
@@ -171,7 +168,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹729
               </span>
 
               <span
@@ -181,7 +178,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1,099
               </span>
 
               <span
@@ -191,7 +188,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#007185",
                 }}
               >
-                50% off
+                37% off
               </span>
             </div>
 
@@ -310,17 +307,18 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material type{" "}
+                 Material composition{" "}
                 </span>
-                <span>Cotton</span>
+                <span>60% Cotton, 40% Polyester</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Classic Fit
+                <span>Regular Fit
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Long Length</span>
+                <span>Standard Length
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -328,15 +326,14 @@ M is your recommended size based on millions of customer orders.
                 <span>Collared Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
+                  Sleeve type
                 </span>
-                <span>Long Sleeve
-</span>
+                <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                  Pattern
                 </span>
-                <span>Collared Neck</span>
+                <span>Solid</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -378,26 +375,41 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong></strong> Engineered With A Refined Blend Of Premium
+                  Cotton Fibers That Provide Exceptional Breathability, Natural
+                  Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched
+                  Comfort During Long Working Hours, Travel Days, Or Casual
+                  Weekend Outings.
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
-
+                  <strong></strong> Designed With An Elegant Multi-Tone Check
+                  Pattern That Adds Depth, Visual Appeal, And Timeless Charm To
+                  Your Wardrobe, Making It Effortlessly Suitable For Office
+                  Meetings, Outdoor Gatherings, Festive Celebrations, Or
+                  Everyday Smart-Casual Styling.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong></strong> Features A Meticulously Structured
+                      Collar, Reinforced Button Placket, And Precision-Cut
+                      Panels That Maintain The Shirt’s Crisp Silhouette,
+                      Ensuring It Stays Neatly Fitting And Visually Sharp Even
+                      After Repeated Wear And Multiple Wash Cycles.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
+                      <strong></strong> Constructed Using Durable, Double
+                      Stitched Seams And Reinforced Stress Points That Enhance
+                      Longevity, Prevent Tearing, And Ensure The Shirt
+                      Withstands Daily Usage, Frequent Washing, And Regular
+                      Ironing Without Wear And Tear.
                     </li>
 
                     <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong>Packer:</strong> Aditya Birla Fashion and Retail Limited. Kh No. 118/110/1, Building 2, Divyasree Technopolis, Yemalur Post, Off HAL Airport Road, Bengaluru-560037 - Contact - 9742580560
                     </li>
 
                     <li>
@@ -413,7 +425,7 @@ M is your recommended size based on millions of customer orders.
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> ABFRL, Aditya Birla Fashion and Retail Limited. Kh No. 118/110/1, Building 2, Divyasree Technopolis, Yemalur Post, Off HAL Airport Road, Bengaluru-560037 - Contact - 9742580560
                     </li>
 
                     <li>
@@ -451,7 +463,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview8 />
 
         <div className="Related-Product">
           <h2
@@ -511,5 +523,4 @@ M is your recommended size based on millions of customer orders.
   );
 };
 
-
-export default MenProductDetails8
+export default MenProductDetails8;

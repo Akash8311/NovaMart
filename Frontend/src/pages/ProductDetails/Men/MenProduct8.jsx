@@ -159,7 +159,7 @@ const MenProduct8 = () => {
               )}
             </div>
     
-            <Link to="/" style={{ textDecoration: "none", color: "#777" }}>
+            <Link to="/MenProductDetails8" style={{ textDecoration: "none", color: "#777" }}>
               <div
                 style={{
                   width: "100%",
@@ -252,7 +252,7 @@ const MenProduct8 = () => {
                 }}
               >
                 ⭐⭐⭐⭐⭐
-                <span style={{ fontSize: "13px", color: "#555" }}>(173)</span>
+                <span style={{ fontSize: "13px", color: "#555" }}>(1,321)</span>
               </div>
     
               {/* Delivery */}
