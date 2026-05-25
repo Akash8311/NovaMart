@@ -19,6 +19,11 @@ import MenProductDetails4 from "./pages/ProductDetails/Men/MenProductDetails4";
 import MenProductDetails5 from "./pages/ProductDetails/Men/MenProductDetails5";
 import MenProductDetails6 from "./pages/ProductDetails/Men/MenProductDetails6";
 import MenProductDetails7 from "./pages/ProductDetails/Men/MenProductDetails7";
+import MenProductDetails8 from "./pages/ProductDetails/Men/MenProductDetails8";
+import MenProductDetails9 from "./pages/ProductDetails/Men/MenProductDetails9";
+import MenProductDetails10 from "./pages/ProductDetails/Men/MenProductDetails10";
+import MenProductDetails11 from "./pages/ProductDetails/Men/MenProductDetails11";
+import MenProductDetails12 from "./pages/ProductDetails/Men/MenProductDetails12";
 
 // Girls Product
 import ProductDrtails2 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDrtails2";
@@ -160,6 +165,11 @@ const App = () => {
           <Route path="/menproductDetails5" element={<MenProductDetails5 />} />
           <Route path="/menproductDetails6" element={<MenProductDetails6 />} />
           <Route path="/menproductDetails7" element={<MenProductDetails7 />} />
+          <Route path="/menproductDetails8" element={<MenProductDetails8 />} />
+          <Route path="/menproductDetails9" element={<MenProductDetails9 />} />
+          <Route path="/menproductDetails10" element={<MenProductDetails10 />} />
+          <Route path="/menproductDetails11" element={<MenProductDetails11 />} />
+          <Route path="/menproductDetails12" element={<MenProductDetails12 />} />
 
 
           {/* girks product */}
