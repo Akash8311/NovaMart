@@ -22,8 +22,8 @@ import MenProduct5 from "../Men/MenProduct5";
 import MenProduct6 from "../Men/MenProduct6";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
+import ProductZoomMen7 from "../../../components/ProductZoom/ProductZoomMen7";
+import MenProductReview7 from "../ProductReaview/MenReview/MenProductReview7.JSX";
 
 const MenProductDetails7 =() => {
   const [selectedSize, setSelectedSize] = useState("M");
@@ -32,10 +32,10 @@ const MenProductDetails7 =() => {
   const sizes = ["S", "M", "L"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    id: "Casual wear 1",
+    name: "Casual wear Shirt ",
+    price: 949,
+    image: "https://m.media-amazon.com/images/I/51sawi-30SL._SX679_.jpg",
   };
   return (
     <>
@@ -67,7 +67,7 @@ const MenProductDetails7 =() => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Cotton Checks Shirt
+            Casual shirt
           </Link>
         </Breadcrumbs>
 
@@ -82,7 +82,7 @@ const MenProductDetails7 =() => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen7 />
           </div>
 
           <div
@@ -102,11 +102,10 @@ const MenProductDetails7 =() => {
                 marginBottom: "6px",
               }}
             >
-              Men’s Cotton Checks Shirt
+              Campus Sutra Men's White & Sage Green
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
-                <p
+Buffalo Check Button Up Regular Fit Shirt for Casual Wear | Cotton Shirt Crafted with Regular Sleeve, Comfort Fit & High-Performance for Everyday Wear                <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -120,7 +119,6 @@ const MenProductDetails7 =() => {
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
             
-L
 M is your recommended size based on millions of customer orders.
 
             </p>
@@ -136,9 +134,9 @@ M is your recommended size based on millions of customer orders.
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+              ⭐⭐⭐⭐☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (173 reviews)
               </span>
             </div>
 
@@ -170,7 +168,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹949
               </span>
 
               <span
@@ -180,7 +178,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1899
               </span>
 
               <span
@@ -313,18 +311,19 @@ M is your recommended size based on millions of customer orders.
                 </span>
                 <span>Cotton</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Classic Fit
+Pattern                </span>
+                <span>Checkered
+
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
                 <span>Long Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Collar style
+                  Fit type
                 </span>
-                <span>Collared Neck</span>
+                <span>Regular Fit
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                  Sleeve type
@@ -333,9 +332,10 @@ M is your recommended size based on millions of customer orders.
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                 Collar style
                 </span>
-                <span>Collared Neck</span>
+                <span>Spread Collar
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -377,26 +377,26 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong>💯FIT TYPE: </strong> This shirt has a regular fit. Quality craftsmanship is at the forefront. Using a range of high-quality fabrics, there is a seamlessly crafted collection for laid-back style.
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
+                  <strong>👌FABRIC:</strong> This shirt is fabricated with top-grade and durable material. Made of fabric that holds its shape throughout the day, lets you have no restriction and feel relaxed.
 
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong>🧥SLEEVE TYPE:</strong>  Long Sleeve. Designed to offer an energetic look, the shirt combines the warmth of comfortable and casual feel. Offering an elevated look, it showcases a perfect fit.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
+                      <strong>😎LAID-BACK ENSEMBLE:</strong>  Spruce up your look with this curated collection of shirt from Campus Sutra. When you're in need of a laid-back ensemble, rock this shirts with jeans and sneakers.
                     </li>
 
                     <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong>📃CARE INSTRUCTIONS:</strong> Machine wash. Wash & dry inside out. Wash separately. Don't soak for a long time. Do not bleach. Tumble dry normal cycle. Medium heat iron or line dry in reverse medium heat iron.
                     </li>
 
                     <li>
@@ -415,11 +415,7 @@ M is your recommended size based on millions of customer orders.
                       <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
                     </li>
 
-                    <li>
-                      <strong>EASY CARE:</strong> Machine washable fabric that
-                      is easy to maintain, wrinkle-resistant, and retains its
-                      original shape and color over time.
-                    </li>
+                   
 
                     <li>
                       <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
@@ -450,7 +446,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview7 />
 
         <div className="Related-Product">
           <h2
