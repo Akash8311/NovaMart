@@ -29,7 +29,7 @@ const MenProductDetails7 =() => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "L","XL","XXL"];
 
   const product = {
     id: "Casual wear 1",

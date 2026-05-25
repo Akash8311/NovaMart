@@ -194,16 +194,19 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "12 x 11 x 3 cm; 400 g" },
+  { label: "Date First Available", value: "14 March 2024" },
+  { label: "Manufacturer", value: "Campus Sutra" },
+  { label: "ASIN", value: "B0CY2MR2M8" },
+  { label: "Item Model Number", value: "CS2024_GR-002" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
-  { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Packer", value: "Campussutra Retail Private Limited, 2nd floor 117/A, 5th main road, 2nd stage, Industrial Suburb, Yeshwanthpur, Tumkur Road, Near Dr Prabhakar Kore Convention Center, Bengaluru 560022 Karnataka" },
+  { label: "Item Weight", value: "400 g" },
+  { label: "Item Dimensions LxWxH", value: "12 x 11 x 3 Centimeters" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Generic Name", value: "Shirt" },
+  { label: "Best Sellers Rank", value: "#311,309 in Clothing & Accessories | #15,826 in Men's Shirts" },
 ];
 
 const FEATURES = [
