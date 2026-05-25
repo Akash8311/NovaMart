@@ -194,23 +194,31 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "15 x 15 x 3 cm; 250 g" },
+  { label: "Date First Available", value: "5 April 2017" },
+  { label: "Manufacturer", value: "ABFRL" },
+  { label: "ASIN", value: "B06Y2C9TSR" },
+  { label: "Item Model Number", value: "AMKP317G04249" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
-  { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Manufacturer Details", value: "Aditya Birla Fashion and Retail Limited, Kh No. 118/110/1, Building 2, Divyasree Technopolis, Yemalur Post, Off HAL Airport Road, Bengaluru - 560037 | Contact: 9742580560" },
+  { label: "Packer", value: "Aditya Birla Fashion and Retail Limited, Bengaluru - 560037" },
+  { label: "Item Weight", value: "250 g" },
+  { label: "Item Dimensions LxWxH", value: "15 x 15 x 3 Centimeters" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Included Components", value: "1-T-shirt" },
+  { label: "Generic Name", value: "Polo" },
+  { label: "Best Sellers Rank", value: "#3 in Clothing & Accessories | #1 in Men's Polos" },
+  { label: "Customer Reviews", value: "4.1 out of 5 stars (81,328 ratings)" },
 ];
-
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  { icon: "👕", title: "Premium Polo Fabric", desc: "Soft breathable cotton blend fabric designed for all-day comfort and a classy look." },
+  
+  { icon: "✨", title: "Stylish Slim Fit", desc: "Modern slim-fit design that enhances your overall appearance with a clean silhouette." },
+  
+  { icon: "🧼", title: "Fade Resistant", desc: "High-quality fabric that maintains colour and texture even after multiple washes." },
+  
+  { icon: "🌞", title: "All-Day Comfort", desc: "Lightweight and skin-friendly material perfect for casual outings, office wear, and summer styling." },
 ];
 
 function DescriptionTab() {
