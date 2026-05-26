@@ -251,7 +251,7 @@ const MenProduct12 = () =>{
                 }}
               >
                 ⭐⭐⭐⭐⭐
-                <span style={{ fontSize: "13px", color: "#555" }}>(358)</span>
+                <span style={{ fontSize: "13px", color: "#555" }}>(1259)</span>
               </div>
     
               {/* Delivery */}

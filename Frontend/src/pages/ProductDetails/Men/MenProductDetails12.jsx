@@ -30,16 +30,16 @@ import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX
 
 
 const MenProductDetails12 = () => {
-  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "L","XL","2XL"];
 
   const product = {
     id: "GRECIILOOKS Men's1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    name: "GRECIILOOKS Men's",
+    price: 549,
+    image: "https://m.media-amazon.com/images/I/81zFP+zIIuL._SX679_.jpg",
   };
   return (
     <>
@@ -71,7 +71,7 @@ const MenProductDetails12 = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Cotton Checks Shirt
+           GRECIILOOKS Men's
           </Link>
         </Breadcrumbs>
 
@@ -86,7 +86,7 @@ const MenProductDetails12 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen12 />
           </div>
 
           <div
@@ -106,11 +106,10 @@ const MenProductDetails12 = () => {
                 marginBottom: "6px",
               }}
             >
-              Men’s Cotton Checks Shirt
+              GRECIILOOKS Men's
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
-                <p
+Polycotton Regular Fit Knitted Shirts for Men | Summer Shirt for Men | Everyday Fashion Outfit | Trendy Stylish Shirt for Man  {" "}              <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -124,8 +123,7 @@ const MenProductDetails12 = () => {
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
             
-L
-M is your recommended size based on millions of customer orders.
+L is your recommended size based on millions of customer orders.
 
             </p>
 
@@ -140,9 +138,9 @@ M is your recommended size based on millions of customer orders.
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+              ⭐⭐⭐⭐⭐
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (1,259 reviews)
               </span>
             </div>
 
@@ -174,7 +172,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹549
               </span>
 
               <span
@@ -184,7 +182,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1,999
               </span>
 
               <span
@@ -194,7 +192,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#007185",
                 }}
               >
-                50% off
+                73% off
               </span>
             </div>
 
