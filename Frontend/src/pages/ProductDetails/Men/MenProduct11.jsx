@@ -174,7 +174,7 @@ const MenProduct11 = () =>  {
                 onMouseLeave={() => setIsHovered(false)}
               >
                 <img
-                  src={isHovered ? "https://m.media-amazon.com/images/I/61UXCpXuFOL._SX569_.jpg" : "https://m.media-amazon.com/images/I/71Nhf+urZKL._SX679_.jpg"}
+                  src={isHovered ? "https://m.media-amazon.com/images/I/71JjpMjPSIL._SY741_.jpg" : "https://m.media-amazon.com/images/I/91j6f11+ULL._SX679_.jpg"}
                   alt="product"
                   style={{
                     width: "70%",
@@ -195,7 +195,7 @@ const MenProduct11 = () =>  {
                   marginTop: "10px",
                 }}
               >
-            Regular Fit Full Sleeve Short Kurta
+            Folgen Men’s 
               </h4>
     
               {/* Description */}
@@ -252,7 +252,7 @@ const MenProduct11 = () =>  {
                 }}
               >
                 ⭐⭐⭐⭐⭐
-                <span style={{ fontSize: "13px", color: "#555" }}>(358)</span>
+                <span style={{ fontSize: "13px", color: "#555" }}>(236)</span>
               </div>
     
               {/* Delivery */}
