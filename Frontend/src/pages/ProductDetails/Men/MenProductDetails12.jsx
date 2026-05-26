@@ -28,12 +28,11 @@ import MenProduct12 from "../Men/MenProduct12";
 import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
 import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
 
-
 const MenProductDetails12 = () => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L","XL","2XL"];
+  const sizes = ["S", "M", "L", "XL", "2XL"];
 
   const product = {
     id: "GRECIILOOKS Men's1",
@@ -71,7 +70,7 @@ const MenProductDetails12 = () => {
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-           GRECIILOOKS Men's
+            GRECIILOOKS Men's
           </Link>
         </Breadcrumbs>
 
@@ -109,7 +108,9 @@ const MenProductDetails12 = () => {
               GRECIILOOKS Men's
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-Polycotton Regular Fit Knitted Shirts for Men | Summer Shirt for Men | Everyday Fashion Outfit | Trendy Stylish Shirt for Man  {" "}              <p
+                Polycotton Regular Fit Knitted Shirts for Men | Summer Shirt for
+                Men | Everyday Fashion Outfit | Trendy Stylish Shirt for Man{" "}
+                <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -122,9 +123,7 @@ Polycotton Regular Fit Knitted Shirts for Men | Summer Shirt for Men | Everyday 
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-L is your recommended size based on millions of customer orders.
-
+              L is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -313,31 +312,31 @@ L is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material type{" "}
                 </span>
-                <span>Cotton</span>
+                <span>85% POLY 15%COTTON</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Classic Fit
-</span>
+                <span>Classic Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Long Length</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Collar style
-                </span>
-                <span>Collared Neck</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
-                </span>
-                <span>Long Sleeve
+                <span>Standard Length
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                 Collar style
                 </span>
-                <span>Collared Neck</span>
+                <span>Camp Collar
+</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Sleeve type
+                </span>
+                <span>Long Sleeve</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Pattern
+                </span>
+                <span>Solid</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -379,26 +378,28 @@ L is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong>Effortless Impressions:</strong>  Stand out, and leave a mark. This casual shirt for men can also used in office wear men's shirts
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
-
+                  <strong></strong> Versatile Style, Anywhere: Work casually; always do your best. This black shirt for men will boost your confidence for your outing.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong>Confident Style: </strong> feel confident in our premium textured full-sleeve shirt for men
+                    </li>
+                    <li>
+                      <strong>Discover Your Fit:</strong> Use our infographic size chart for the perfect men's shirt measurements.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
-                    </li>
-
-                    <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong></strong> Versatile Design Enables Seamless
+                      Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing
+                      You To Create Multiple Outfits With One Staple Piece While
+                      Maintaining A Stylish, Confident, And Well-Put-Together
+                      Look.
                     </li>
 
                     <li>
@@ -414,7 +415,8 @@ L is your recommended size based on millions of customer orders.
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH
+                      FASHION
                     </li>
 
                     <li>
@@ -452,7 +454,7 @@ L is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview12 />
 
         <div className="Related-Product">
           <h2
@@ -505,10 +507,10 @@ L is your recommended size based on millions of customer orders.
                 <MenProduct9 />
               </SwiperSlide>
 
-               <SwiperSlide>
+              <SwiperSlide>
                 <MenProduct10 />
-              </SwiperSlide> 
-               <SwiperSlide>
+              </SwiperSlide>
+              <SwiperSlide>
                 <MenProduct11 />
               </SwiperSlide>
             </Swiper>
@@ -519,5 +521,4 @@ L is your recommended size based on millions of customer orders.
   );
 };
 
-
-export default MenProductDetails12
+export default MenProductDetails12;
