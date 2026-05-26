@@ -23,7 +23,7 @@ import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import MenProduct10 from "../Men/MenProduct10";
-import MenProduct12 from "../Men/MenProduct12";
+import MenProduct11 from "../Men/MenProduct11";
 
 import ProductZoomMen12 from "../../../components/ProductZoom/ProductZoomMen12";
 import MenProductReview12 from "../ProductReaview/MenReview/MenProductReview12.JSX";
@@ -510,6 +510,7 @@ const MenProductDetails12 = () => {
               <SwiperSlide>
                 <MenProduct10 />
               </SwiperSlide>
+
               <SwiperSlide>
                 <MenProduct11 />
               </SwiperSlide>
