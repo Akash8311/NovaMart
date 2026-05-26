@@ -379,22 +379,22 @@ S is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong>Fabric :-</strong> Cotton Blend Men's Kurta || Pattern :- Print Kurtas for men || Length Type :- Hip Length Kurta || Fit Type :- Regular Fit || Coller :- Mandarin/Chinese collar || Package Contain :- 1 Casual Short Kurta For Men.
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
+                  <strong>Sleeves :-</strong> Full Sleeve With Cuff || Neck :- Stand Collar Kurta for boys || Pattern :- Kurta has a button placket & Slightly Curved.
 
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong>Occasion :-</strong> Casual Wear || Party, Weddings, Sangeet, Mehandi || Office Wear || Formal Wear || Ganesh Chaturthi, Janmashtami || Evening Wear || Work Wear || Party Wear || Regular Outing Wear || Business Wear || Regular Wear || Professional Wear and best gift for your loved one.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
+                      <strong></strong> Please check the size chart for the garments measurements and order a garment for the ease of putting on and taking off the garment.
                     </li>
 
                     <li>
