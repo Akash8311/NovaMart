@@ -24,15 +24,15 @@ import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import MenProduct10 from "../Men/MenProduct10";
 import MenProduct12 from "../Men/MenProduct12";
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
+import ProductZoomMen10 from "../../../components/ProductZoom/ProductZoomMen10";
+import MenProductReview10 from "../ProductReaview/MenReview/MenProductReview10.JSX";
 
 
 const MenProductDetails11 = () => {
-  const [selectedSize, setSelectedSize] = useState("M");
+  const [selectedSize, setSelectedSize] = useState("S");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L"];
+  const sizes = ["S", "M", "XL"];
 
   const product = {
     id: "Cotton Checks Shirt1",
@@ -85,7 +85,7 @@ const MenProductDetails11 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen6 />
+            <ProductZoomMen10 />
           </div>
 
           <div
@@ -122,8 +122,7 @@ Folgen Men’s Cotton Blend Kurta | Casual for Men | Comfortable & Stylish | Reg
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
             
-L
-M is your recommended size based on millions of customer orders.
+S is your recommended size based on millions of customer orders.
 
             </p>
 
@@ -321,12 +320,13 @@ M is your recommended size based on millions of customer orders.
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Long Length</span>
+                <span>Waist Length
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Collar style
+                  style
                 </span>
-                <span>Collared Neck</span>
+                <span>Regular</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                  Sleeve type
@@ -452,7 +452,7 @@ M is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview6 />
+        <MenProductReview10 />
 
         <div className="Related-Product">
           <h2

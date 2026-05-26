@@ -194,18 +194,22 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "23 x 28 x 1.75 cm; 225 g" },
+  { label: "Date First Available", value: "20 June 2025" },
+  { label: "Manufacturer", value: "FOLGEN" },
+  { label: "ASIN", value: "B0FDWV5WZJ" },
+  { label: "Item Model Number", value: "04_DEL_PRINT_RAMA_M" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
+  { label: "Manufacturer Details", value: "FOLGEN, Folgen Set The Trend" },
+  { label: "Packer", value: "folgen4you@gmail.com" },
+  { label: "Item Weight", value: "225 g" },
+  { label: "Item Dimensions LxWxH", value: "23 x 28 x 1.7 Centimeters" },
   { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Generic Name", value: "Shirt" },
+  { label: "Best Sellers Rank", value: "#21,029 in Clothing & Accessories | #174 in Men's Kurtas" },
 ];
-
+    
 const FEATURES = [
   { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
   { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
