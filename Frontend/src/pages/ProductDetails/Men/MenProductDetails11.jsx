@@ -24,8 +24,8 @@ import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
 import MenProduct10 from "../Men/MenProduct10";
 import MenProduct12 from "../Men/MenProduct12";
-import ProductZoomMen10 from "../../../components/ProductZoom/ProductZoomMen10";
-import MenProductReview10 from "../ProductReaview/MenReview/MenProductReview10.JSX";
+import ProductZoomMen11 from "../../../components/ProductZoom/ProductZoomMen1";
+import MenProductReview11 from "../ProductReaview/MenReview/MenProductReview11.JSX";
 
 
 const MenProductDetails11 = () => {
@@ -85,7 +85,7 @@ const MenProductDetails11 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen10 />
+            <ProductZoomMen11 />
           </div>
 
           <div
@@ -452,7 +452,7 @@ S is your recommended size based on millions of customer orders.
           </div>
         </div>
 
-        <MenProductReview10 />
+        <MenProductReview11 />
 
         <div className="Related-Product">
           <h2
