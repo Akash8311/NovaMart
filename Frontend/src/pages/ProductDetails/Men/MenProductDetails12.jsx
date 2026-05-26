@@ -25,8 +25,8 @@ import MenProduct9 from "../Men/MenProduct9";
 import MenProduct10 from "../Men/MenProduct10";
 import MenProduct12 from "../Men/MenProduct12";
 
-import ProductZoomMen6 from "../../../components/ProductZoom/ProductZoomMen6";
-import MenProductReview6 from "../ProductReaview/MenReview/MenProductReview6.JSX";
+import ProductZoomMen12 from "../../../components/ProductZoom/ProductZoomMen12";
+import MenProductReview12 from "../ProductReaview/MenReview/MenProductReview12.JSX";
 
 const MenProductDetails12 = () => {
   const [selectedSize, setSelectedSize] = useState("L");

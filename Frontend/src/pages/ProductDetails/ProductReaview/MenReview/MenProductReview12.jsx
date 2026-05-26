@@ -194,16 +194,21 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Date First Available", value: "20 November 2025" },
-  { label: "Manufacturer", value: "SUNMEGH FASHION" },
-  { label: "ASIN", value: "B0G357M7ZM" },
-  { label: "Item Model Number", value: "CHECKS_SHIRT_1001_M" },
+  { label: "Product Dimensions", value: "15 x 10 x 2 cm; 300 g" },
+  { label: "Date First Available", value: "9 March 2024" },
+  { label: "Manufacturer", value: "GRECIILOOKS" },
+  { label: "ASIN", value: "B0CXM7ZVQS" },
+  { label: "Item Model Number", value: "GL-MS-6162" },
   { label: "Country of Origin", value: "India" },
   { label: "Department", value: "Men" },
-  { label: "Packer", value: "SUNMEGH FASHION" },
-  { label: "Importer", value: "SUNMEGH FASHION" },
-  { label: "Net Quantity", value: "1.0 Count" },
-  { label: "Best Sellers Rank", value: "#1,240,631 in Clothing & Accessories | #69,640 in Men's Shirts" },
+  { label: "Manufacturer Details", value: "GRECIILOOKS, OSLC House, Kosad Ring Road, Surat - 394107, Gujarat | help.oslc@gmail.com" },
+  { label: "Packer", value: "OSLC House, Kosad Ring Road, Surat - 394107, Gujarat | help.oslc@gmail.com" },
+  { label: "Importer", value: "OSLC House, Kosad Ring Road, Surat - 394107, Gujarat | help.oslc@gmail.com" },
+  { label: "Item Weight", value: "300 g" },
+  { label: "Item Dimensions LxWxH", value: "15 x 10 x 2 Centimeters" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Generic Name", value: "Shirt for Men | Mens Casual Shirt | Men Stylish Shirt | Men Crochet Shirt | Men's Regular Fit | Men Formal Shirt | Men's Solid Slim Fit" },
+  { label: "Best Sellers Rank", value: "#8,404 in Clothing & Accessories | #355 in Men's Shirts" },
 ];
 
 const FEATURES = [
