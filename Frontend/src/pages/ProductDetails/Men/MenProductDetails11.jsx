@@ -35,10 +35,10 @@ const MenProductDetails11 = () => {
   const sizes = ["S", "M", "XL"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
-    name: "Men’s Cotton Checks Shirt ",
-    price: 410,
-    image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
+    id: "kurta 2 ",
+    name: "Folgen Men’s Cotton Blend ",
+    price: 499,
+    image: "https://m.media-amazon.com/images/I/71JjpMjPSIL._SY741_.jpg",
   };
   return (
     <>

@@ -36,7 +36,7 @@ const MenProductDetails12 = () => {
   const sizes = ["S", "M", "L"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
+    id: "GRECIILOOKS Men's1",
     name: "Men’s Cotton Checks Shirt ",
     price: 410,
     image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
