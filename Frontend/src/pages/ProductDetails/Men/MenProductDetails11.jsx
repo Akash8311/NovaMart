@@ -105,11 +105,10 @@ const MenProductDetails11 = () => {
                 marginBottom: "6px",
               }}
             >
-              Men’s Cotton Checks Shirt
+              Folgen Men’s Cotton Blend
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
-                <p
+Folgen Men’s Cotton Blend Kurta | Casual for Men | Comfortable & Stylish | Regular Fit | Kurtas for Men Under 500 | Full Sleeve Short Kurta Shirt | Printed                <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -139,9 +138,9 @@ M is your recommended size based on millions of customer orders.
                 marginBottom: "10px",
               }}
             >
-              ⭐⭐⭐☆☆
+              ⭐⭐⭐⭐☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (1,309 reviews)
+                (236 reviews)
               </span>
             </div>
 
@@ -173,7 +172,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#B12704",
                 }}
               >
-                ₹410
+                ₹499
               </span>
 
               <span
@@ -183,7 +182,7 @@ M is your recommended size based on millions of customer orders.
                   textDecoration: "line-through",
                 }}
               >
-                ₹820
+                ₹1,699
               </span>
 
               <span
