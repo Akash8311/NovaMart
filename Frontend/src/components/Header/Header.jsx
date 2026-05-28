@@ -27,15 +27,23 @@ const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
 
-  const handleLogout = () => {
-    setIsLogin(false);
-    setShowDropdown(false);
-    navigate("/");
-  };
+const handleLogout = () => {
+  // Remove saved login
+  localStorage.removeItem("isLogin");
+  localStorage.removeItem("user");
+
+  // Update state
+  setIsLogin(false);
+
+  // Close dropdown
+  setShowDropdown(false);
+
+  // Redirect home
+  navigate("/");
+};
 
   return (
     <header>
-      {/* Top Strip */}
       <div className="top-strip py-2 border-b" style={{ borderColor: "rgba(0,0,0,0.2)" }}>
         <div className="my-container px-4 mx-auto">
           <div className="flex items-center justify-between">
@@ -57,11 +65,8 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* Main Header */}
       <div className="header py-5 border-b" style={{ borderColor: "rgba(0,0,0,0.2)" }}>
         <div className="my-container flex items-center justify-between">
-          {/* Logo */}
           <div className="col1 w-[25%] h-[80%]">
             <Link to="/">
               <img src={logo} className="w-full h-auto" alt="logo" />

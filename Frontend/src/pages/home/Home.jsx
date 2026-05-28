@@ -264,12 +264,59 @@ const Home = () => {
 
 
         {/* Trusted Brands Section */}
+
+
+
+
+        {/* Blog Section */}
+        <section
+          className="blogsection"
+          style={{
+            padding: "5px",
+            background: "#fff",
+            paddingBottom: "10px",
+            paddingLeft: "75px",
+          }}
+        >
+          <div style={{ padding: "5" }}>
+            <h2
+              style={{
+                fontSize: "4vh",
+                paddingBottom: "0px",
+                fontWeight: "600",
+              }}
+            >
+              From The Blog
+            </h2>
+             <p className="blog-desc">
+        Explore trending insights, modern living ideas and inspiring stories
+        from our latest blog updates.
+      </p>
+
+            <div
+              style={{
+                margin: "auto",
+                display: "grid",
+                gridTemplateColumns:
+                  "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "40px",
+              }}
+            >
+              <BlogItems />
+              <BlogItems2 />
+              <BlogItems />
+              <BlogItems4 />
+            </div>
+          </div>
+        </section>
+
+        {/* Trusted Brands Section */}
 <section
   style={{
     background: "#fff",
     padding: "45px 0",
     overflow: "hidden",
-    marginTop: "10px",
+    marginTop: "none",
   }}
 >
   <style>
@@ -365,53 +412,6 @@ const Home = () => {
     </div>
   </div>
 </section>
-
-
-
-        {/* Blog Section */}
-        <section
-          className="blogsection"
-          style={{
-            padding: "5px",
-            background: "#fff",
-            paddingBottom: "10px",
-            paddingLeft: "75px",
-          }}
-        >
-          <div style={{ padding: "5" }}>
-            <h2
-              style={{
-                fontSize: "4vh",
-                paddingBottom: "0px",
-                fontWeight: "600",
-              }}
-            >
-              From The Blog
-            </h2>
-             <p className="blog-desc">
-        Explore trending insights, modern living ideas and inspiring stories
-        from our latest blog updates.
-      </p>
-
-            <div
-              style={{
-                margin: "auto",
-                display: "grid",
-                gridTemplateColumns:
-                  "repeat(auto-fit, minmax(280px, 1fr))",
-                gap: "40px",
-              }}
-            >
-              <BlogItems />
-              <BlogItems2 />
-              <BlogItems />
-              <BlogItems4 />
-            </div>
-          </div>
-        </section>
-
-        {/* Trusted Brands Section */}
-
 
 
 

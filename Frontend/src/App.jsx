@@ -105,7 +105,9 @@ const styleTag = `
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
   const [cartItems, setCartItems] = useState([]);
-  const [isLogin,setIsLogin] =useState(false);
+  const [isLogin, setIsLogin] = useState(
+  localStorage.getItem("isLogin") === "true"
+);
 
 
   const values = {

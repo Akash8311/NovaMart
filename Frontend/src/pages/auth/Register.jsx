@@ -1,6 +1,13 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
-import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useContext,
+} from "react";import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../../firebase";
+import { MyContext } from "../../App";
+
 const rules = {
   name:    v => v.trim().length >= 2 ? "" : "Full name must be at least 2 characters",
   email:   v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) ? "" : "Enter a valid email address",
@@ -179,6 +186,7 @@ const StrengthBar = ({ pw }) => {
 };
 
 const Register = () => {
+  const { setIsLogin } = useContext(MyContext);
 
   /* ── original state ── */
   const [form, setForm] = useState({
@@ -234,6 +242,8 @@ const Register = () => {
     }
   };
 
+
+
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
     // Also keep live validation for UI
@@ -246,42 +256,80 @@ const Register = () => {
       setErrors(prev=>({...prev,[field]:err}));
     }
   };
-  const handleSubmit = (e) => {
-    // Mark all as touched to show errors
-    setTouched({name:true,email:true,password:true,confirm:true});
-    const errs={
-      name:    rules.name(form.name),
-      email:   rules.email(form.email),
-      password:rules.password(form.password),
-      confirm: rules.confirm(form.confirm,form.password),
-    };
-    setErrors(errs);
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    if (!form.name || !form.email || !form.password || !form.confirm) {
-      alert("All fields are required");
-      return;
-    }
+  setTouched({
+    name: true,
+    email: true,
+    password: true,
+    confirm: true,
+  });
 
-    if (form.password !== form.confirm) {
-      alert("Passwords do not match");
-      return;
-    }
-
-    if (!agreed) { showToast("Please agree to the Terms & Conditions","error"); return; }
-
-    // Ripple effect
-    const btn = e.currentTarget;
-    const rect = btn.getBoundingClientRect();
-    const id = Date.now();
-    setRipples(r=>[...r,{x:rect.width/2,y:rect.height/2,id}]);
-    setTimeout(()=>setRipples(r=>r.filter(rr=>rr.id!==id)),700);
-
-    setLoading(true);
-    setTimeout(()=>{
-      setLoading(false);
-      alert("Account Created Successfully!");
-    },1800);
+  const errs = {
+    name: rules.name(form.name),
+    email: rules.email(form.email),
+    password: rules.password(form.password),
+    confirm: rules.confirm(form.confirm, form.password),
   };
+
+  setErrors(errs);
+
+  // Stop if errors exist
+  if (
+    errs.name ||
+    errs.email ||
+    errs.password ||
+    errs.confirm
+  ) {
+    return;
+  }
+
+  if (!agreed) {
+    showToast("Please agree to the Terms & Conditions", "error");
+    return;
+  }
+
+  // Save user
+  const userData = {
+    name: form.name,
+    email: form.email,
+  };
+
+  localStorage.setItem("user", JSON.stringify(userData));
+
+  // ✅ IMPORTANT
+  localStorage.setItem("isLogin", "true");
+setIsLogin(true);
+  // Ripple effect
+  const btn = e.currentTarget;
+  const rect = btn.getBoundingClientRect();
+  const id = Date.now();
+
+  setRipples((r) => [
+    ...r,
+    {
+      x: rect.width / 2,
+      y: rect.height / 2,
+      id,
+    },
+  ]);
+
+  setTimeout(() => {
+    setRipples((r) => r.filter((rr) => rr.id !== id));
+  }, 700);
+
+  setLoading(true);
+
+  setTimeout(() => {
+    setLoading(false);
+
+    alert("Account Created Successfully!");
+
+    // ✅ Redirect Home
+    window.location.href = "/";
+  }, 1500);
+};
 
   /* ── validation onBlur ── */
   const onBlur = field => () => {
