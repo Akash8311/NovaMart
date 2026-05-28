@@ -84,7 +84,6 @@ const MenProductDetails12 = () => {
           >
             <ProductZoomMen12 />
           </div>
-
           <div
             className="product-content"
             style={{
@@ -117,13 +116,9 @@ const MenProductDetails12 = () => {
                 </p>
               </span>
             </h1>
-
-            {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
               L is your recommended size based on millions of customer orders.
             </p>
-
-            {/* RATING */}
             <div
               style={{
                 display: "flex",
@@ -139,7 +134,6 @@ const MenProductDetails12 = () => {
                 (1,259 reviews)
               </span>
             </div>
-
             {/* PRICE SECTION */}
             <button
               style={{
@@ -153,7 +147,6 @@ const MenProductDetails12 = () => {
             >
               Limited time deal
             </button>
-
             <div
               style={{
                 display: "flex",
@@ -170,7 +163,6 @@ const MenProductDetails12 = () => {
               >
                 ₹549
               </span>
-
               <span
                 style={{
                   fontSize: "16px",
@@ -180,7 +172,6 @@ const MenProductDetails12 = () => {
               >
                 ₹1,999
               </span>
-
               <span
                 style={{
                   fontSize: "16px",
@@ -191,7 +182,6 @@ const MenProductDetails12 = () => {
                 73% off
               </span>
             </div>
-
             <p
               style={{
                 fontSize: "13px",

@@ -480,7 +480,7 @@ export default function Payment() {
                 </div>
 
                 <Field label="Street Address" focused={focus.address} icon={
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                  <svg viewBox="0 0 24 22" fill="none" stroke="currentColor" strokeWidth="1.8" ><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 }>
                   <textarea className="pay-textarea" rows={2} placeholder="House no., Street, Area..." value={form.address}
                     onChange={e => setF("address")(e.target.value)}
@@ -531,7 +531,7 @@ export default function Payment() {
                 {addrMsg && <div className="pay-addr-saved-msg">✓ Address saved successfully</div>}
               </div>
             </div>
-f            <div className="pay-card">
+f           <div className="pay-card">
               <div className="pay-card-header">
                 <div className="pay-card-num">02</div>
                 <h2 className="pay-card-title">Payment Method</h2>
@@ -619,7 +619,7 @@ f            <div className="pay-card">
 
               {payMethod === "upi" && (
                 <Field label="UPI ID" focused={focus.upi}>
-                  <input className="pay-input" placeholder="yourname@upi"
+                  <input className="pay-input" placeholder="yourupi@upi"
                     onFocus={() => foc("upi")} onBlur={() => blur("upi")} />
                 </Field>
               )}
