@@ -6,6 +6,9 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/home/Home";
+
+
+// productlisting pages here
 import Productlisting from "./pages/Productlisting/Productlisting";
 import Men_productListing from "./pages/Productlisting/Men_productListing";
 
@@ -45,6 +48,7 @@ import Drawer from "@mui/material/Drawer";
 import CartPage from "./pages/cart/CartPage";
 import Forgot from "./pages/auth/Forgot";
 import Payment from "./pages/cart/Payment";
+import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
 
 export const MyContext = createContext();
 
@@ -151,6 +155,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />
+          <Route path="/Kids_ProductListing" element={<Kids_ProductListing/>}/>
           <Route path="/Product/:id" element={<ProductDetails />} />
           <Route path="/logIn" element={<LogIn />} />
           <Route path="/Register" element={<Register />} />

@@ -77,7 +77,7 @@ const Navigation = () => {
 
                       </li>
                       <li className="list-none">
-                                                <Link to="/" className='w-full'>
+                                                <Link to="/kids_productListing" className='w-full'>
 
                         <Button className='!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start' style={{fontWeight:"400px"}}>
                                 kids
