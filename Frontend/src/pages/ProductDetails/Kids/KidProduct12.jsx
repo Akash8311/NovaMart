@@ -175,8 +175,8 @@ const KidProduct12 = () =>{
             <img
               src={
                 isHovered
-                  ? "https://m.media-amazon.com/images/I/61AGW-c+yfL._SY550_.jpg"
-                  : "https://m.media-amazon.com/images/I/81IE-D4URtL._SX679_.jpg"
+                  ? "https://m.media-amazon.com/images/I/91aSoMJf-xL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/91cA69M9urL._SX679_.jpg"
               }
               alt="product"
               style={{
@@ -197,7 +197,7 @@ const KidProduct12 = () =>{
               marginTop: "10px",
             }}
           >
-            AJ DEZINES Kids Ethnic Wear Silk Blend{" "}
+            AHHAAAA Kids Ethnic Silk Indian Bollywood{" "}
           </h4>
           <p
             style={{
@@ -208,8 +208,7 @@ const KidProduct12 = () =>{
               margin: "0",
             }}
           >
-            AJ DEZINES Kids Ethnic Wear Silk Blend Organza Floral Printed
-            Lehenga Choli for Girls With Dupatta{" "}
+           AHHAAAA Kids Ethnic Silk Indian Bollywood Style Print Indo-Western Sherwani Set For Boys 521MF{" "}
           </p>
           <div
             style={{
@@ -222,7 +221,7 @@ const KidProduct12 = () =>{
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹665
+              ₹949
             </span>
             <span
               style={{
@@ -231,12 +230,12 @@ const KidProduct12 = () =>{
                 fontSize: "13px",
               }}
             >
-              ₹4,499
+              ₹3,999
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              85% OFF
+              76% OFF
             </span>
           </div>
           <div
