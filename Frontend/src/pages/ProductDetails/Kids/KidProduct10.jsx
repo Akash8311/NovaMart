@@ -174,8 +174,8 @@ const KidProduct10 = () => {
             <img
               src={
                 isHovered
-                  ? "https://m.media-amazon.com/images/I/61AGW-c+yfL._SY550_.jpg"
-                  : "https://m.media-amazon.com/images/I/81IE-D4URtL._SX679_.jpg"
+                  ? "https://m.media-amazon.com/images/I/61ixpPdXXFL._SX679_.jpg"
+                  : "https://m.media-amazon.com/images/I/61HyxlQ8pUL._SY741_.jpg"
               }
               alt="product"
               style={{
@@ -196,7 +196,7 @@ const KidProduct10 = () => {
               marginTop: "10px",
             }}
           >
-            AJ DEZINES Kids Ethnic Wear Silk Blend{" "}
+            AJ DEZINES Kids Clothing Shirt Short Set For Boys{" "}
           </h4>
           <p
             style={{
@@ -207,8 +207,7 @@ const KidProduct10 = () => {
               margin: "0",
             }}
           >
-            AJ DEZINES Kids Ethnic Wear Silk Blend Organza Floral Printed
-            Lehenga Choli for Girls With Dupatta{" "}
+            AJ DEZINES Kids Clothing Shirt Short Set For Boys{" "}
           </p>
           <div
             style={{
@@ -221,7 +220,7 @@ const KidProduct10 = () => {
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹665
+              ₹764
             </span>
             <span
               style={{
@@ -230,12 +229,12 @@ const KidProduct10 = () => {
                 fontSize: "13px",
               }}
             >
-              ₹4,499
+              ₹2,999
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              85% OFF
+              75% OFF
             </span>
           </div>
           <div
