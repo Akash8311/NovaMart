@@ -5,12 +5,10 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-const MenProduct1 = () => {
-  const [wishlist, setWishlist] = useState(false);
+const kidsProduct1 = () => {
+   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
-const kidsProduct1 = () => {
   return (
       <>
         <div
@@ -176,8 +174,8 @@ const kidsProduct1 = () => {
               <img
                 src={
                   isHovered
-                    ? "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg"
-                    : "https://m.media-amazon.com/images/I/51sSJUx8mwL._SY879_.jpg"
+                    ? "https://m.media-amazon.com/images/I/51vxji8Zw1L._SY550_.jpg"
+                    : "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
                 }
                 alt="product"
                 style={{
@@ -198,7 +196,7 @@ const kidsProduct1 = () => {
                 marginTop: "10px",
               }}
             >
-              JVX Men Sweatshirts
+              BODYCARE
             </h4>
             <p
               style={{
@@ -209,8 +207,8 @@ const kidsProduct1 = () => {
                 margin: "0",
               }}
             >
-              Actual Products color may vary with product due to monitor|Available
-              in Plus Size
+             BODYCARE Girls Shorts Pack of 2
+
             </p>
             <div
               style={{
@@ -223,7 +221,7 @@ const kidsProduct1 = () => {
               <span
                 style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
               >
-                ₹459
+                ₹380
               </span>
               <span
                 style={{
@@ -232,12 +230,12 @@ const kidsProduct1 = () => {
                   fontSize: "13px",
                 }}
               >
-                ₹2999
+                ₹400
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                85% OFF
+                5% OFF
               </span>
             </div>
             <div
@@ -269,5 +267,5 @@ const kidsProduct1 = () => {
       </>
     );
   };
-}
+
 export default kidsProduct1
