@@ -48,7 +48,6 @@ const Kids_ProductListing = () =>{
         </Link>
       </Breadcrumbs>
 
-      {/* Main Layout */}
       <div style={{ display: "flex", gap: "12px" }}>
         {/* Sidebar */}
         <div style={{ width: "20%" }}>
