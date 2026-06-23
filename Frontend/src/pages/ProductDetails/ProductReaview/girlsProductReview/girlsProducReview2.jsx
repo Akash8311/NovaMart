@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-// ─── inline OnlyReviewSection (replace import if you prefer) ───
 const REVIEWS_DATA = [
   { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
   { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
@@ -91,8 +89,6 @@ function ReviewCard({ r, index }) {
     </div>
   );
 }
-
-// ── Review section ──
 function OnlyReviewSection() {
   const [reviews, setReviews] = useState(REVIEWS_DATA);
   const [rating, setRating] = useState(0);
@@ -156,20 +152,14 @@ function OnlyReviewSection() {
           ))}
         </div>
       </div>
-
-      {/* List */}
       <div style={{ padding:"0 28px", maxHeight:360, overflowY:"auto", scrollbarWidth:"thin", scrollbarColor:"#e2e8f0 transparent" }}>
         {reviews.map((r,i)=><ReviewCard key={r.id} r={r} index={i} />)}
       </div>
-
-      {/* Success */}
       {success&&(
         <div style={{ margin:"0 28px", background:"#dcfce7", border:"1px solid #86efac", color:"#166534", borderRadius:8, padding:"12px 16px", fontSize:13, fontWeight:500, display:"flex", alignItems:"center", gap:8, animation:"slideDown .4s ease" }}>
           ✓ Thank you! Your review was posted.
         </div>
       )}
-
-      {/* Form */}
       <div style={{ background:"#fafafa", borderTop:"1px solid #f1f5f9", padding:"24px 28px 28px" }}>
         <div style={{ fontSize:10, letterSpacing:"4px", textTransform:"uppercase", color:"#94a3b8", marginBottom:16 }}>Write a Review</div>
         <div style={{ display:"flex", flexDirection:"column", gap:12 }}>
@@ -202,9 +192,6 @@ function OnlyReviewSection() {
     </div>
   );
 }
-
-// ─────────────────────────────────────────────
-// ── DESCRIPTION DATA ──
 const DETAILS = [
   { label: "Product Dimension",     value: "30.48 × 24 × 10 cm; 450 g" },
   { label: "Date First Available",  value: "2 April 2026" },
@@ -247,15 +234,11 @@ function DescriptionTab() {
           </div>
         ))}
       </div>
-
-      {/* Divider */}
       <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:28 }}>
         <div style={{ flex:1, height:1, background:"#f1f5f9" }} />
         <span style={{ fontSize:11, letterSpacing:"3px", textTransform:"uppercase", color:"#94a3b8", fontWeight:600 }}>Product Details</span>
         <div style={{ flex:1, height:1, background:"#f1f5f9" }} />
       </div>
-
-      {/* Detail rows */}
       <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:0 }}>
         {DETAILS.map((d,i)=>{
           const isPacker = d.label === "Packer";
@@ -284,14 +267,10 @@ function DescriptionTab() {
     </div>
   );
 }
-
-// ─────────────────────────────────────────────
-// ── MAIN COMPONENT ──
 const TABS = [
   { id:"description", label:"Description" },
   { id:"review",      label:"Reviews", count:27 },
 ];
-
 export default function ProductReview() {
   const [activeTab, setActiveTab] = useState("description");
 
@@ -325,7 +304,6 @@ export default function ProductReview() {
                   transition:"background .2s, color .2s",
                 }}>{tab.count}</span>
               )}
-              {/* Active underline */}
               <span style={{
                 position:"absolute", bottom:-2, left:0, right:0, height:2,
                 background:"#6366f1", borderRadius:2,
