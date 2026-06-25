@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
-import "./ProductZoom.css";
+import "../ProductZoom.css";
+
 const images = [
   "https://m.media-amazon.com/images/I/51sawi-30SL._SX679_.jpg",
  
