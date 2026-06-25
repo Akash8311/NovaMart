@@ -22,7 +22,7 @@ import MenProduct5 from "../Men/MenProduct5";
 import MenProduct6 from "../Men/MenProduct6";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen8 from "../../../components/ProductZoom/ProductZoomMen8";
+import ProductZoomMen8 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen8";
 import MenProductReview8 from "../ProductReaview/MenReview/MenProductReview8.JSX";
 
 const MenProductDetails8 = () => {

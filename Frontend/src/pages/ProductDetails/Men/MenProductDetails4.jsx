@@ -23,7 +23,7 @@ import MenProduct6 from "../Men/MenProduct6";
 import MenProduct7 from "../Men/MenProduct7";
 import MenProduct8 from "../Men/MenProduct8";
 import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen3 from "../../../components/ProductZoom/ProductZoomMen4";
+import ProductZoomMen3 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen4";
 import MenProductReview3 from "../ProductReaview/MenReview/MenProductReview3.JSX";
 
 
