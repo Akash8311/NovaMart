@@ -495,38 +495,48 @@ const KidProductDetails1 = () =>{
               className="mySwiper"
             >
               <SwiperSlide>
-                <MenProduct1 />
+                <KidProduct2 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct2 />
+                <KidProduct3 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct3 />
+                <KidProduct4 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct4 />
+                <KidProduct5 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct5 />
+                <KidProduct6 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct6 />
+                <KidProduct7 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct7 />
+                <KidProduct8 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct8 />
+                <KidProduct9 />
               </SwiperSlide>
+
               <SwiperSlide>
-                <MenProduct9 />
+                <KidProduct10 />
+              </SwiperSlide>
+              
+              <SwiperSlide>
+                <KidProduct11 />
+              </SwiperSlide>
+
+              
+              <SwiperSlide>
+                <KidProduct12 />
               </SwiperSlide>
             </Swiper>
           </div>
