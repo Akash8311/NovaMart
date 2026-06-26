@@ -43,7 +43,7 @@ import ProductDetails12 from "./pages/ProductDetails/ProductReaview/girlsProduct
 
 
 // kid product
-
+import KidProductDetails1 from "./pages/ProductDetails/Kids/KidProductDetails1";
 
 
 import LogIn from "./pages/auth/logIn";
@@ -54,7 +54,7 @@ import CartPage from "./pages/cart/CartPage";
 import Forgot from "./pages/auth/Forgot";
 import Payment from "./pages/cart/Payment";
 import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
-import KidProductDetails1 from "./pages/ProductDetails/Kids/KidProductDetails1";
+
 
 export const MyContext = createContext();
 
@@ -197,6 +197,11 @@ const App = () => {
           <Route path="/ProductDetails10" element={<ProductDetails10 />} />
           <Route path="/ProductDetails11" element={<ProductDetails11 />} />
           <Route path="/ProductDetails12" element={<ProductDetails12 />} />
+
+
+        {/* kids product */}
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+
         </Routes>
 
         <Footer />
