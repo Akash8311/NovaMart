@@ -32,8 +32,7 @@ import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
 
-// import ProductZoomMen1 from "../../../components/ProductZoom/ProductZoomMen1";
-// import MenProductReview1 from "../ProductReaview/MenReview/MenProductReview1";
+import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
 
 
 
@@ -98,7 +97,7 @@ const KidProductDetails1 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomMen1 />
+            <ProductZoomKid1 />
           </div>
 
           <div
