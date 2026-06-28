@@ -77,7 +77,7 @@ const KidProductDetails10 = () =>{
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Shirts
+            Kids
           </Link>
         </Breadcrumbs>
 

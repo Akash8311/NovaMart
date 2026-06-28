@@ -42,7 +42,6 @@ const Productlisting = () => {
     setAnchorEl(null);
   };
 
-  // Scroll Loading Animation
   React.useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
@@ -190,7 +189,7 @@ const Productlisting = () => {
                   fontWeight: "500",
                 }}
               >
-                Showing <b>27</b> Products
+                Showing <b>12</b> Products
               </span>
             </div>
 

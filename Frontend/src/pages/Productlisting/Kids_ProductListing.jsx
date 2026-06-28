@@ -92,7 +92,7 @@ const Kids_ProductListing = () =>{
               </Button>
 
               <span style={{ fontSize: "14px", color: "#555" }}>
-                There are <b>27</b> Products
+                There are <b>12</b> Products
               </span>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>

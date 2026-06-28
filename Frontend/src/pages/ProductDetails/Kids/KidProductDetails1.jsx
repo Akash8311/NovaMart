@@ -82,7 +82,7 @@ const KidProductDetails1 = () =>{
             sx={{ display: "flex", alignItems: "center", gap: "4px" }}
           >
             <IoShirt fontSize="small" />
-            Shirts
+            Kids
           </Link>
         </Breadcrumbs>
 
@@ -438,7 +438,6 @@ const KidProductDetails1 = () =>{
                 )}
               </ul>
 
-              {/* SEE MORE / LESS */}
               <span
                 onClick={() => setExpanded(!expanded)}
                 style={{
