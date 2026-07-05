@@ -1,15 +1,16 @@
 import React, { useRef, useState } from "react";
-import "./ProductZoom.css";
+import "../ProductZoom.css";
 
 const images = [
-  "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/51L4C9ratuL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/81XyARMWd+L._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71rbIh+y5yL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/51K16m3brCL._SY500_.jpg",
+  "https://m.media-amazon.com/images/I/9187nUQYwbL._SY500_.jpg",
+  "https://m.media-amazon.com/images/I/51gZ47zpKzL._SY500_.jpg",
+  "https://m.media-amazon.com/images/I/51WtQsN2RjL._SY500_.jpg",
+  "https://m.media-amazon.com/images/I/51WtQsN2RjL._SY500_.jpg",
+  "https://m.media-amazon.com/images/I/81WQ3F6hwXL._SY500_.jpg",
 ];
 
-{
+const ProductZoomKid2 = () => {
   const imgRef = useRef(null);
   const lensRef = useRef(null);
   const [activeImg, setActiveImg] = useState(images[0]);

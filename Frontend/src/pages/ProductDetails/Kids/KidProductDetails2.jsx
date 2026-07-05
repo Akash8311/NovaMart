@@ -32,7 +32,7 @@ import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
+import ProductZoomKid2 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid2";
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
@@ -46,9 +46,9 @@ const KidProductDetails2 = () =>{
 
     const product = {
   id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  name: "Bodycare Girls Solid Cotton Shorts",
+  price: 325,
+  image: "https://m.media-amazon.com/images/I/51vJ5XUz2HL._SX569_.jpg"
 
 };
 
@@ -98,7 +98,7 @@ const KidProductDetails2 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid2 />
           </div>
 
           <div
@@ -118,12 +118,11 @@ const KidProductDetails2 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+            DYCA by Bodycare Girls Solid Cotton Shorts
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+                 Casual Regular Fit, Comfortable Shorts with Side Pockets for Kids
                 <p
                   style={{
                     fontSize: "14px",
