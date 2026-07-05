@@ -212,17 +212,17 @@ const App = () => {
 
         {/* kids product */}
          <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails2" element={<KidProductDetails2 />} />
+         <Route path="/kidProductDetails3" element={<KidProductDetails3 />} />
+         <Route path="/kidProductDetails4" element={<KidProductDetails4 />} />
+         <Route path="/kidProductDetails5" element={<KidProductDetails5 />} />
+         <Route path="/kidProductDetails6" element={<KidProductDetails6 />} />
+         <Route path="/kidProductDetails7" element={<KidProductDetails7 />} />
+         <Route path="/kidProductDetails8" element={<KidProductDetails8 />} />
+         <Route path="/kidProductDetails8" element={<KidProductDetails9 />} />
+         <Route path="/kidProductDetails10" element={<KidProductDetails10 />} />
+         <Route path="/kidProductDetails11" element={<KidProductDetails11 />} />
+         <Route path="/kidProductDetails12" element={<KidProductDetails12 />} />
 
         </Routes>
 

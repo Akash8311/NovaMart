@@ -16,17 +16,24 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
-import MenProduct1 from "../Men/MenProduct1";
-import MenProduct2 from "../Men/MenProduct2";
-import MenProduct3 from "../Men/MenProduct3";
-import MenProduct4 from "../Men/MenProduct4";
-import MenProduct5 from "../Men/MenProduct5";
-import MenProduct6 from "../Men/MenProduct6";
-import MenProduct7 from "../Men/MenProduct7";
-import MenProduct8 from "../Men/MenProduct8";
-import MenProduct9 from "../Men/MenProduct9";
-import ProductZoomMen1 from "../../../components/ProductZoom/ProductZoomMen1";
-import MenProductReview1 from "../ProductReaview/MenReview/MenProductReview1";
+
+
+
+import KidProduct2 from "./KidProduct2";
+import KidProduct3 from "./KidProduct3";
+import KidProduct4 from "./KidProduct4";
+import KidProduct5 from "./KidProduct5";
+import KidProduct6 from "./KidProduct6";
+import KidProduct7 from "./KidProduct7";
+import KidProduct8 from "./KidProduct8";
+import KidProduct9 from "./KidProduct9";
+import KidProduct10 from "./KidProduct10";
+import KidProduct11 from "./KidProduct11";
+import KidProduct12 from "./KidProduct12";
+
+
+import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
+import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails3 = () => {
