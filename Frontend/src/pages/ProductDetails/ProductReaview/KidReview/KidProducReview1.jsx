@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity", date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh", date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das", date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Pooja Sharma",
+    date: "2026-02-18",
+    comment:
+      "The Caribbean Blue colour looks exactly like the pictures. My daughter loved it and the fabric feels very soft.",
+    rating: 5,
+    initials: "PS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Akash Maity",
+    date: "2026-03-05",
+    comment:
+      "Good quality shorts with a comfortable fit. Worth buying for daily wear.",
+    rating: 4,
+    initials: "AM",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Sneha Das",
+    date: "2026-01-27",
+    comment:
+      "Nice stitching and lightweight fabric. Perfect for summer, though I wish there were more colour options.",
+    rating: 4,
+    initials: "SD",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Riya Gupta",
+    date: "2026-04-11",
+    comment:
+      "Excellent fitting and very comfortable. Even after multiple washes, the colour has not faded.",
+    rating: 5,
+    initials: "RG",
+    color: "#ec4899",
+  },
 ];
 
 const LABELS = ["", "Terrible", "Poor", "Okay", "Good", "Excellent"];
@@ -195,56 +231,61 @@ function OnlyReviewSection() {
 }
 
 const DETAILS = [
-  { label: "Brand Name", value: "BODYCARE" },
-  { label: "Item Type", value: "Casual Shorts" },
+  { label: "Brand Name", value: "DYCA" },
+  { label: "Generic Name", value: "Shorts" },
+  { label: "Item Type", value: "Regular Shorts" },
+  { label: "Target Audience", value: "Girls" },
   { label: "Age Range", value: "Kid" },
-  { label: "Style Number", value: "KLA4453-PK004_P2Print-1" },
-  { label: "Unit Count", value: "1 Count" },
-  { label: "Number of Items", value: "1" },
+  { label: "Colour", value: "Caribbean Blue" },
+  { label: "Fit Type", value: "Regular Fit" },
+  { label: "Pattern", value: "Solid" },
+  { label: "Rise Style", value: "Mid Rise" },
+  { label: "Season", value: "Summer" },
+  { label: "Occasion", value: "Casual" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Item Weight", value: "300 g" },
+  { label: "Item Dimensions", value: "15 × 12 × 7 cm" },
   { label: "Country of Origin", value: "India" },
-  { label: "Item Weight", value: "250 Grams" },
-  { label: "ASIN", value: "B0BBRB51XC" },
-  { label: "Manufacturer Part Number", value: "KLA4453-PK004_P2Print-1" },
   {
     label: "Manufacturer",
     value:
-      "Bodycare International Limited, D247/13, D Block, Sector 63, Noida, Uttar Pradesh - 201301",
+      "BODYCARE INTERNATIONAL LTD, Bodycare International Ltd., Noida",
   },
   {
     label: "Packer",
-    value: "Bodycare International Limited, Noida",
+    value: "BODYCARE INTERNATIONAL LTD",
   },
   {
     label: "Best Sellers Rank",
     value:
-      "#13,953 in Clothing & Accessories • #33 in Girls' Shorts",
+      "#9,321 in Clothing & Accessories • #22 in Girls' Shorts",
   },
   {
-    label: "Customer Rating",
-    value: "4.0 out of 5 Stars (39 Ratings)",
+    label: "ASIN",
+    value: "B0CYLV4TJ7",
   },
 ];
 
 const FEATURES = [
   {
-    icon: "🩳",
-    title: "Comfortable Fit",
-    desc: "Soft and breathable casual shorts specially designed for kids' everyday comfort.",
+    icon: "👧",
+    title: "Made for Girls",
+    desc: "Stylish regular-fit shorts specially designed for girls with maximum comfort.",
   },
   {
-    icon: "🌿",
-    title: "Skin Friendly",
-    desc: "Made from premium quality fabric that feels gentle on children's skin.",
+    icon: "💙",
+    title: "Caribbean Blue",
+    desc: "Modern Caribbean Blue colour that looks stylish and matches various outfits.",
+  },
+  {
+    icon: "🌞",
+    title: "Perfect for Summer",
+    desc: "Lightweight and breathable fabric keeps kids cool during warm weather.",
   },
   {
     icon: "🧺",
-    title: "Easy Wash",
-    desc: "Machine washable and retains its colour and shape after multiple washes.",
-  },
-  {
-    icon: "🇮🇳",
-    title: "Made in India",
-    desc: "Manufactured by Bodycare International Limited in Noida, India.",
+    title: "Easy Maintenance",
+    desc: "Machine washable fabric that maintains its colour and shape after repeated washing.",
   },
 ];
 
