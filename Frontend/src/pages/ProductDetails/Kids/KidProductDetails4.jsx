@@ -36,7 +36,7 @@ import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/Pro
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
-const KidProductDetails4 = () => {
+const KidProductDetails4 = () =>{
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
@@ -45,9 +45,9 @@ const KidProductDetails4 = () => {
 
     const product = {
   id: 5,
-  name: "JVX Men Sweatshirts",
-  price: 599,
-  image: "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg"
+  name: "BODYCARE Girls Shorts Pack of 2",
+  price: 437,
+  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
 
 };
 
@@ -97,7 +97,7 @@ const KidProductDetails4 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomMen1 />
+            <ProductZoomKid1 />
           </div>
 
           <div
@@ -117,11 +117,12 @@ const KidProductDetails4 = () => {
                 marginBottom: "6px",
               }}
             >
-              JVX Men Sweatshirts || Sweatshirts for Men
+              BODYCARE Girls Shorts Pack of 2
+
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11)
+                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
+                (SWEATSHIRT-11) */}
                 <p
                   style={{
                     fontSize: "14px",
@@ -135,9 +136,7 @@ const KidProductDetails4 = () => {
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Men sweatshirts || sweatshirts for Men || Unisex sweatshirts
-              ||Hoodie for men || unisex hoodie || hoodie || Available in Plus
-              Size
+              Ideal for school, playtime, sports, travel, and home wear.
             </p>
 
             {/* RATING */}
@@ -185,7 +184,7 @@ const KidProductDetails4 = () => {
                   color: "#B12704",
                 }}
               >
-                ₹599
+                ₹437
               </span>
 
               <span
@@ -195,7 +194,7 @@ const KidProductDetails4 = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹2,999
+                ₹460
               </span>
 
               <span
@@ -205,7 +204,7 @@ const KidProductDetails4 = () => {
                   color: "#007185",
                 }}
               >
-                80% off
+                5% off
               </span>
             </div>
 
@@ -326,30 +325,32 @@ const KidProductDetails4 = () => {
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Wool Blend</span>
+                <span>Cotton</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Sleeve type
+                  Style
                 </span>
-                <span>Long Sleeve</span>
+                <span>Shorts</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material type
+                  Length
                 </span>
-                <span>Wool Blend</span>
+                <span>Mid Thigh Length
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
                 <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
-                <span>Standard Length</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
+                <span>Cotton</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Neck style
+                  Care instructions
                 </span>
-                <span>Collared Neck</span>
+                <span>Machine Wash
+</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -386,24 +387,17 @@ const KidProductDetails4 = () => {
                 }}
               >
                 <li>
-                  <strong>FABRIC:</strong> Premium quality 100% cotton twill
-                  fabric with mercerised soft finish that offers superior
-                  breathability, smooth texture, rich color retention, and
-                  all-day wearing comfort.
+                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
                 </li>
 
                 <li>
-                  <strong>COMFORT:</strong> Lightweight and skin-friendly
-                  material that keeps you cool and comfortable throughout long
-                  office hours or daily formal use.
+                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>FIT TYPE:</strong> Regular fit tailored to provide
-                      a clean, structured look without feeling too tight or too
-                      loose.
+                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
                     </li>
 
                     <li>
@@ -413,15 +407,11 @@ const KidProductDetails4 = () => {
                     </li>
 
                     <li>
-                      <strong>COLLAR STYLE:</strong> Classic collar that
-                      enhances the formal appeal and maintains its shape even
-                      after multiple washes.
+                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
                     </li>
 
                     <li>
-                      <strong>SLEEVES:</strong> Full-length sleeves with neatly
-                      stitched buttoned cuffs for a sharp and polished
-                      appearance.
+                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
                     </li>
 
                     <li>
@@ -437,9 +427,7 @@ const KidProductDetails4 = () => {
                     </li>
 
                     <li>
-                      <strong>EASY CARE:</strong> Machine washable fabric that
-                      is easy to maintain, wrinkle-resistant, and retains its
-                      original shape and color over time.
+                      <strong>EASY CARE:</strong> MMachine Wash
                     </li>
 
                     <li>
@@ -450,7 +438,6 @@ const KidProductDetails4 = () => {
                 )}
               </ul>
 
-              {/* SEE MORE / LESS */}
               <span
                 onClick={() => setExpanded(!expanded)}
                 style={{
@@ -471,7 +458,7 @@ const KidProductDetails4 = () => {
           </div>
         </div>
 
-        <MenProductReview1 />
+        <KidProducReview1/>
 
         <div className="Related-Product">
           <h2
@@ -494,38 +481,48 @@ const KidProductDetails4 = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <MenProduct1 />
+                <KidProduct2 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct2 />
+                <KidProduct3 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct3 />
+                <KidProduct4 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct4 />
+                <KidProduct5 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct5 />
+                <KidProduct6 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct6 />
+                <KidProduct7 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct7 />
+                <KidProduct8 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <MenProduct8 />
+                <KidProduct9 />
               </SwiperSlide>
+
               <SwiperSlide>
-                <MenProduct9 />
+                <KidProduct10 />
+              </SwiperSlide>
+              
+              <SwiperSlide>
+                <KidProduct11 />
+              </SwiperSlide>
+
+              
+              <SwiperSlide>
+                <KidProduct12 />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -534,4 +531,8 @@ const KidProductDetails4 = () => {
     </>
   );
 };
+
+
+
+
 export default KidProductDetails4
