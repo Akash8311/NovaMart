@@ -44,6 +44,17 @@ import ProductDetails12 from "./pages/ProductDetails/ProductReaview/girlsProduct
 
 // kid product
 import KidProductDetails1 from "./pages/ProductDetails/Kids/KidProductDetails1";
+import KidProductDetails2 from "./pages/ProductDetails/Kids/KidProductDetails2";
+import KidProductDetails3 from "./pages/ProductDetails/Kids/KidProductDetails3";
+import KidProductDetails4 from "./pages/ProductDetails/Kids/KidProductDetails4";
+import KidProductDetails5 from "./pages/ProductDetails/Kids/KidProductDetails5";
+import KidProductDetails6 from "./pages/ProductDetails/Kids/KidProductDetails6";
+import KidProductDetails7 from "./pages/ProductDetails/Kids/KidProductDetails7";
+import KidProductDetails8 from "./pages/ProductDetails/Kids/KidProductDetails8";
+import KidProductDetails9 from "./pages/ProductDetails/Kids/KidProductDetails9";
+import KidProductDetails10 from "./pages/ProductDetails/Kids/KidProductDetails10";
+import KidProductDetails11 from "./pages/ProductDetails/Kids/KidProductDetails11";
+import KidProductDetails12 from "./pages/ProductDetails/Kids/KidProductDetails12";
 
 
 import LogIn from "./pages/auth/logIn";
@@ -200,6 +211,17 @@ const App = () => {
 
 
         {/* kids product */}
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
          <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
 
         </Routes>
