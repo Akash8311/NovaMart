@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -31,25 +29,21 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
-
-const KidProductDetails3 = () =>{
+const KidProductDetails3 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
   const sizes = ["S", "M", "L", "XL"];
 
-
-    const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
-
-};
+  const product = {
+    id: "kids 3",
+    name: "POLKA TOTS",
+    price: 799,
+    image: "https://m.media-amazon.com/images/I/61qC+hTlZCL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -117,12 +111,12 @@ const KidProductDetails3 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
-
+              POLKA TOTS Cotton Boys Summer T-shirts and Shorts Combo Set |
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+                Premium Printed Shirt & Shorts Combo| Summer Toddler Outfit for
+                Kids | Co-Ord Set For Boys | Racing car Print | Light Green 2-3
+                Y
                 <p
                   style={{
                     fontSize: "14px",
@@ -134,9 +128,8 @@ const KidProductDetails3 = () =>{
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+             
             </p>
 
             {/* RATING */}
@@ -152,7 +145,7 @@ const KidProductDetails3 = () =>{
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (31 reviews)
               </span>
             </div>
 
@@ -184,7 +177,7 @@ const KidProductDetails3 = () =>{
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹799
               </span>
 
               <span
@@ -194,7 +187,7 @@ const KidProductDetails3 = () =>{
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹999
               </span>
 
               <span
@@ -204,7 +197,7 @@ const KidProductDetails3 = () =>{
                   color: "#007185",
                 }}
               >
-                5% off
+                20% off
               </span>
             </div>
 
@@ -221,7 +214,7 @@ const KidProductDetails3 = () =>{
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -327,30 +320,26 @@ const KidProductDetails3 = () =>{
                 </span>
                 <span>Cotton</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
                 <span>Shorts</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
+                <span>Mid Thigh Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
                 <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material type
+                </span>
                 <span>Cotton</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Machine Wash
-</span>
+                <span>Machine Wash</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -387,17 +376,20 @@ const KidProductDetails3 = () =>{
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
+                  <strong>Soft & Breathable Fabric:</strong> Made from
+                  high-quality cotton for maximum comfort.
                 </li>
 
                 <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
+                  <strong>Elastic Waistband:</strong> Provides a secure and
+                  flexible fit for active kids.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
+                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for
+                      warm weather and everyday use.
                     </li>
 
                     <li>
@@ -407,11 +399,13 @@ const KidProductDetails3 = () =>{
                     </li>
 
                     <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
+                      <strong>Versatile Style:</strong> Easy to match with
+                      t-shirts, tops, and casual outfits.
                     </li>
 
                     <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
+                      <strong>Perfect for Multiple Occasions:</strong> Ideal for
+                      school, playtime, sports, travel, and home wear.
                     </li>
 
                     <li>
@@ -458,7 +452,7 @@ const KidProductDetails3 = () =>{
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview1 />
 
         <div className="Related-Product">
           <h2
@@ -515,12 +509,11 @@ const KidProductDetails3 = () =>{
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -531,4 +524,4 @@ const KidProductDetails3 = () =>{
     </>
   );
 };
-export default KidProductDetails3
+export default KidProductDetails3;
