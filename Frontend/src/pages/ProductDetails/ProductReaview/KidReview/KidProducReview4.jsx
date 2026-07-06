@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Aditi Sharma",
+    date: "2026-04-12",
+    comment:
+      "Absolutely loved this dress! The pink colour is vibrant and the fit is perfect.",
+    rating: 5,
+    initials: "AS",
+    color: "#ec4899",
+  },
+  {
+    id: 2,
+    name: "Neha Verma",
+    date: "2026-05-01",
+    comment:
+      "Very comfortable and stylish. The fabric feels soft and looks premium.",
+    rating: 4,
+    initials: "NV",
+    color: "#6366f1",
+  },
+  {
+    id: 3,
+    name: "Priya Das",
+    date: "2026-05-20",
+    comment:
+      "Beautiful dress for casual outings. The square neck design makes it look elegant.",
+    rating: 5,
+    initials: "PD",
+    color: "#14b8a6",
+  },
+  {
+    id: 4,
+    name: "Riya Kapoor",
+    date: "2026-06-08",
+    comment:
+      "Great quality and comfortable to wear all day. Worth the price.",
+    rating: 4,
+    initials: "RK",
+    color: "#f97316",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
@@ -193,31 +229,52 @@ function OnlyReviewSection() {
   );
 }
 
-
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "RUCDIX" },
+  { label: "Generic Name", value: "Bodycon Dress" },
+  { label: "Item Type", value: "Bodycon Dress" },
+  { label: "Colour", value: "Pink" },
+  { label: "Style Name", value: "Classic" },
+  { label: "Neck Style", value: "Square Neck" },
+  { label: "Sleeve Type", value: "Sleeveless" },
+  { label: "Closure Type", value: "Button" },
+  { label: "Occasion", value: "Casual" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Item Weight", value: "200 g" },
+  { label: "Item Dimensions", value: "12 × 14 × 12 cm" },
+  { label: "Country of Origin", value: "India" },
+  {
+    label: "Manufacturer",
+    value: "RUCDIX",
+  },
+  {
+    label: "Packer",
+    value: "RUCDIX",
+  },
 ];
 
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👗",
+    title: "Elegant Bodycon Fit",
+    desc: "Stylish bodycon dress designed to provide a flattering and comfortable fit.",
+  },
+  {
+    icon: "💖",
+    title: "Beautiful Pink Colour",
+    desc: "Classic pink shade that's perfect for casual outings and everyday fashion.",
+  },
+  {
+    icon: "✨",
+    title: "Modern Design",
+    desc: "Square neck, sleeveless style, and button closure create a trendy look.",
+  },
+  {
+    icon: "🌸",
+    title: "Perfect for Casual Wear",
+    desc: "Lightweight and comfortable dress suitable for daily wear and special occasions.",
+  },
 ];
-
 function DescriptionTab() {
   const [expandBSR, setExpandBSR] = useState(false);
   return (
@@ -276,9 +333,11 @@ function DescriptionTab() {
     </div>
   );
 }
+
+
 const TABS = [
-  { id:"description", label:"Description" },
-  { id:"review",      label:"Reviews", count:459 },
+  { id: "description", label: "Description" },
+  { id: "review", label: "Reviews", count: REVIEWS_DATA.length },
 ];
 
 export default function ProductReview() {
