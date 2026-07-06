@@ -40,7 +40,21 @@ const KidProductDetails4 = () =>{
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+  const sizes = [
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "5-6 Y",
+  "6-7 Y",
+  "7-8 Y",
+  "8-9 Y",
+  "9-10 Y",
+  "10-11 Y",
+  "11-12 Y",
+  "12-13 Y",
+  "13-14 Y",
+  "14-15 Y"
+];
 
 
     const product = {
@@ -324,26 +338,26 @@ const KidProductDetails4 = () =>{
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Material composition
                 </span>
-                <span>Cotton</span>
+                <span>Lycra Polyester</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Style
                 </span>
-                <span>Shorts</span>
+                <span>Classic</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Length
                 </span>
-                <span>Mid Thigh Length
+                <span>Mini
 </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
+                  Sleeve type
                 </span>
-                <span>Regular</span>
+                <span>Sleeveless</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Neck style</span>
+                <span>Square Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
