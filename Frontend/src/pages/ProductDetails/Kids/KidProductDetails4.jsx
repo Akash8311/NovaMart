@@ -44,10 +44,10 @@ const KidProductDetails4 = () =>{
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "Girls Floral Dress with Shrug1",
+  name: "Girls Floral Dress with Shrug",
+  price: 375,
+  image: "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg"
 
 };
 
@@ -117,12 +117,11 @@ const KidProductDetails4 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+             Girls Floral Dress with Shrug |
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+               Kids Lycra Polyester StretchDress | Stylish Spaghetti Strap Partydress for Girls
                 <p
                   style={{
                     fontSize: "14px",
