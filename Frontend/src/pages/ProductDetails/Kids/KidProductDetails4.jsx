@@ -135,7 +135,7 @@ const KidProductDetails4 = () =>{
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+              Strap Partydress for Girls
             </p>
 
             {/* RATING */}
@@ -151,7 +151,7 @@ const KidProductDetails4 = () =>{
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (24 reviews)
               </span>
             </div>
 
@@ -183,7 +183,7 @@ const KidProductDetails4 = () =>{
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹375
               </span>
 
               <span
@@ -193,7 +193,7 @@ const KidProductDetails4 = () =>{
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹699
               </span>
 
               <span
@@ -203,7 +203,7 @@ const KidProductDetails4 = () =>{
                   color: "#007185",
                 }}
               >
-                5% off
+                46% off
               </span>
             </div>
 
