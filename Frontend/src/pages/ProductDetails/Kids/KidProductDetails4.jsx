@@ -17,11 +17,9 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
-import KidProduct4 from "./KidProduct4";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct5 from "./KidProduct5";
 import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
@@ -31,39 +29,35 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
+import ProductZoomKid4 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid4";
+import KidProducReview4 from "../ProductReaview/KidReview/KidProducReview4";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
-
-
-const KidProductDetails4 = () =>{
-  const [selectedSize, setSelectedSize] = useState("40");
+const KidProductDetails4 = () => {
+const [selectedSize, setSelectedSize] = useState("11-12 Y");
   const [expanded, setExpanded] = useState(false);
 
   const sizes = [
-  "2-3 Y",
-  "3-4 Y",
-  "4-5 Y",
-  "5-6 Y",
-  "6-7 Y",
-  "7-8 Y",
-  "8-9 Y",
-  "9-10 Y",
-  "10-11 Y",
-  "11-12 Y",
-  "12-13 Y",
-  "13-14 Y",
-  "14-15 Y"
-];
+    "2-3 Y",
+    "3-4 Y",
+    "4-5 Y",
+    "5-6 Y",
+    "6-7 Y",
+    "7-8 Y",
+    "8-9 Y",
+    "9-10 Y",
+    "10-11 Y",
+    "11-12 Y",
+    "12-13 Y",
+    "13-14 Y",
+    "14-15 Y",
+  ];
 
-
-    const product = {
-  id: "Girls Floral Dress with Shrug1",
-  name: "Girls Floral Dress with Shrug",
-  price: 375,
-  image: "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg"
-
-};
+  const product = {
+    id: "Girls Floral Dress with Shrug1",
+    name: "Girls Floral Dress with Shrug",
+    price: 375,
+    image: "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg",
+  };
 
   return (
     <>
@@ -111,7 +105,7 @@ const KidProductDetails4 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid4 />
           </div>
 
           <div
@@ -131,11 +125,11 @@ const KidProductDetails4 = () =>{
                 marginBottom: "6px",
               }}
             >
-             Girls Floral Dress with Shrug |
-
+              Girls Floral Dress with Shrug |
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-               Kids Lycra Polyester StretchDress | Stylish Spaghetti Strap Partydress for Girls
+                Kids Lycra Polyester StretchDress | Stylish Spaghetti Strap
+                Partydress for Girls
                 <p
                   style={{
                     fontSize: "14px",
@@ -147,7 +141,6 @@ const KidProductDetails4 = () =>{
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Strap Partydress for Girls
             </p>
@@ -234,7 +227,7 @@ const KidProductDetails4 = () =>{
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -340,30 +333,26 @@ const KidProductDetails4 = () =>{
                 </span>
                 <span>Lycra Polyester</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
                 <span>Classic</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mini
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
+                <span>Mini</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
                 </span>
                 <span>Sleeveless</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Neck style</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Neck style
+                </span>
                 <span>Square Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Machine Wash
-</span>
+                <span>Machine Wash</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -400,52 +389,35 @@ const KidProductDetails4 = () =>{
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
+                  <strong>Stylish 2-Piece Outfit:</strong> Trendy floral
+                  spaghetti strap dress with a matching shrug that gives a cute
+                  and fashionable look for girls.
                 </li>
 
                 <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
+                  <strong>Comfortable Fabric:</strong> Made with soft Lycra
+                  Polyester fabric that is stretchable, lightweight, and
+                  comfortable for kids throughout the day.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
+                      <strong>Cute Floral Design:</strong> Beautiful floral
+                      print dress that adds a stylish and modern touch, perfect
+                      for fashionable young girls.
                     </li>
 
                     <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
+                      <strong>Perfect for Many Occasions:</strong> Ideal for
+                      birthday parties, family outings, vacations, festivals,
+                      celebrations, and everyday casual wear.
                     </li>
 
                     <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
-                    </li>
-
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
-                    </li>
-
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
-
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
-
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
+                      <strong>Lightweight & Easy to Wear:</strong> Breathable
+                      and lightweight material ensures maximum comfort, easy
+                      movement, and all-day wear for active kids.
                     </li>
                   </>
                 )}
@@ -471,7 +443,7 @@ const KidProductDetails4 = () =>{
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview4 />
 
         <div className="Related-Product">
           <h2
@@ -502,7 +474,7 @@ const KidProductDetails4 = () =>{
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct4 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
@@ -528,12 +500,11 @@ const KidProductDetails4 = () =>{
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -545,7 +516,4 @@ const KidProductDetails4 = () =>{
   );
 };
 
-
-
-
-export default KidProductDetails4
+export default KidProductDetails4;
