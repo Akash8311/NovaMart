@@ -175,8 +175,8 @@ const KidProduct4 = () =>  {
               <img
                 src={
                   isHovered
-                    ? "https://m.media-amazon.com/images/I/51BpKj1bAOL._SY741_.jpg"
-                    : "https://m.media-amazon.com/images/I/51VOjGelswL._SY741_.jpg"
+                    ? "https://m.media-amazon.com/images/I/71iZjrwsQGL._SY741_.jpg"
+                    : "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg"
                 }
                 alt="product"
                 style={{
@@ -197,7 +197,7 @@ const KidProduct4 = () =>  {
                 marginTop: "10px",
               }}
             >
-             Boys Tropical Floral Shirt
+            Girls Floral Dress with Shrug
             </h4>
             <p
               style={{
@@ -208,7 +208,7 @@ const KidProduct4 = () =>  {
                 margin: "0",
               }}
             >
-Boys Tropical Floral Shirt and Shorts Set Cotton Polyester Co-ord Outfit Yellow Short Sleeve Shirt with Matching Shorts Clothing            </p>
+ Kids Lycra Polyester StretchDress | Stylish Spaghetti Strap Partydress for Girls  </p>
             <div
               style={{
                 marginTop: "6px",
@@ -220,7 +220,7 @@ Boys Tropical Floral Shirt and Shorts Set Cotton Polyester Co-ord Outfit Yellow 
               <span
                 style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
               >
-                ₹635
+                ₹375
               </span>
               <span
                 style={{
@@ -229,12 +229,12 @@ Boys Tropical Floral Shirt and Shorts Set Cotton Polyester Co-ord Outfit Yellow 
                   fontSize: "13px",
                 }}
               >
-                ₹1,999
+                ₹699
               </span>
               <span
                 style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
               >
-                68% OFF
+                46% OFF
               </span>
             </div>
             <div
