@@ -17,8 +17,8 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct2 from "./KidProduct2";
-import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
 import KidProduct5 from "./KidProduct5";
 import KidProduct6 from "./KidProduct6";
@@ -29,8 +29,8 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import ProductZoomKid3 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid3";
+import KidProducReview3 from "../ProductReaview/KidReview/KidProducReview3";
 
 const KidProductDetails3 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
@@ -91,7 +91,7 @@ const KidProductDetails3 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid3 />
           </div>
 
           <div
@@ -128,9 +128,7 @@ const KidProductDetails3 = () => {
               </span>
             </h1>
 
-            <p style={{ fontSize: "14px", color: "#777" }}>
-             
-            </p>
+            <p style={{ fontSize: "14px", color: "#777" }}></p>
 
             {/* RATING */}
             <div
@@ -316,30 +314,32 @@ const KidProductDetails3 = () => {
                 }}
               >
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
+                  Material type
                 </span>
                 <span>Cotton</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
-                <span>Shorts</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
-                <span>Mid Thigh Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
                 <span>Regular</span>
 
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Modern</span>
+
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material type
+                  Closure type
                 </span>
-                <span>Cotton</span>
+                <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Machine Wash</span>
+                <span>Hand Wash Only</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Toddler</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -376,57 +376,52 @@ const KidProductDetails3 = () => {
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from
-                  high-quality cotton for maximum comfort.
+                  <strong>Premium Cotton Comfort:</strong> Crafted from 100%
+                  high-quality cotton, our co-ord set ensures maximum
+                  breathability for your kid. The soft, skin-friendly fabric is
+                  ideal for the Indian summer, keeping children cool and
+                  comfortable all day. This lightweight toddler outfit set is
+                  designed to prevent irritation, making it ideal for sensitive
+                  skin. Whether it is for a nap or active play, our breathable
+                  cotton shirt-and-short combo keeps your son fresh and
+                  comfortable throughout the day.
                 </li>
 
                 <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and
-                  flexible fit for active kids.
+                  <strong>Versatile Summer Wear:</strong> This versatile kids
+                  clothing set is designed for multi-purpose use. It functions
+                  perfectly as casual summer clothes, comfortable loungewear,
+                  airport outfit, or stylish nightwear. The breathable cotton
+                  fabric keeps children cool during outdoor play or indoor
+                  relaxation. The elasticated waistband on the shorts provides a
+                  snug yet flexible fit, allowing for easy movement.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for
-                      warm weather and everyday use.
+                      <strong>Vibrant Prints:</strong> Featuring playful and
+                      trendy all-over prints, this co-ord set offers a stylish
+                      shirt with matching shorts for a fashionable look.
+                      High-quality, eco-friendly dyes help keep the colours
+                      bright even after multiple washes.
                     </li>
 
                     <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
+                      <strong>Easy Wear Fit:</strong> Designed with a
+                      front-button shirt and an elasticated waistband for the
+                      shorts, ensuring hassle-free dressing and unrestricted
+                      movement. Available in multiple sizes from Newborn to 8
+                      years with a true-to-size fit.
                     </li>
 
                     <li>
-                      <strong>Versatile Style:</strong> Easy to match with
-                      t-shirts, tops, and casual outfits.
-                    </li>
-
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for
-                      school, playtime, sports, travel, and home wear.
-                    </li>
-
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
-
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
-
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
+                      <strong>About the Brand:</strong> POLKA TOTS is dedicated
+                      to providing premium baby products, including baby ethnic
+                      wear, baby carriers, strollers, beds, diaper bags,
+                      swaddles, and much more. The brand is committed to
+                      innovation, quality, and making parenting easier while
+                      creating lasting moments of happiness for families.
                     </li>
                   </>
                 )}
@@ -452,7 +447,7 @@ const KidProductDetails3 = () => {
           </div>
         </div>
 
-        <KidProducReview1 />
+        <KidProducReview3 />
 
         <div className="Related-Product">
           <h2
@@ -475,11 +470,11 @@ const KidProductDetails3 = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <KidProduct2 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct3 />
+                <KidProduct2 />
               </SwiperSlide>
 
               <SwiperSlide>

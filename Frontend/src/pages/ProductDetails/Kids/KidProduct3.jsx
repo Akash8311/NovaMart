@@ -174,8 +174,8 @@ const KidProduct3 = () => {
             <img
               src={
                 isHovered
-                  ? "https://m.media-amazon.com/images/I/51BpKj1bAOL._SY741_.jpg"
-                  : "https://m.media-amazon.com/images/I/61SpNKzJv7L._SY741_.jpg"
+                  ? "https://m.media-amazon.com/images/I/61SpNKzJv7L._SY606_.jpg"
+                  : "https://m.media-amazon.com/images/I/61qC+hTlZCL._SY606_.jpg"
               }
               alt="product"
               style={{

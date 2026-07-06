@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Ananya Roy",
+    date: "2026-04-21",
+    comment:
+      "Very happy with this shirt and shorts set. The fabric is soft, lightweight, and perfect for summer. The racing car print looks adorable.",
+    rating: 5,
+    initials: "AR",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Rohan Mehta",
+    date: "2026-05-08",
+    comment:
+      "Good quality for the price. The stitching is neat and the outfit fits my little one perfectly. Highly recommended.",
+    rating: 4,
+    initials: "RM",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Sneha Kapoor",
+    date: "2026-05-19",
+    comment:
+      "Beautiful colour and comfortable fabric. After several washes, the print and colour still look new.",
+    rating: 5,
+    initials: "SK",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Vikram Singh",
+    date: "2026-06-02",
+    comment:
+      "Excellent summer outfit for toddlers. The button closure is convenient and the material is breathable.",
+    rating: 5,
+    initials: "VS",
+    color: "#ec4899",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
@@ -195,27 +231,66 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "POLKA TOTS" },
+  { label: "Generic Name", value: "Shirt & Short Set" },
+  { label: "Item Type", value: "Shirt & Short Set" },
+  { label: "Model Name", value: "Print Half Sleeve Cod Short-Cotton" },
+  { label: "Style Name", value: "Modern" },
+  { label: "Style Number", value: "Print Half Sleeve Cod Short-Cotton" },
+  { label: "Part Number", value: "1110080042408" },
+  { label: "Colour", value: "Light Green_Racing Car Print" },
+  { label: "Pattern", value: "All Over Printed" },
+  { label: "Sleeve Type", value: "Half Sleeve" },
+  { label: "Fit Type", value: "Regular" },
+  { label: "Closure Type", value: "Button" },
+  { label: "Occasion", value: "Casual, Evening, Everyday" },
+  { label: "Collection", value: "Summer" },
+  { label: "Age Range", value: "Toddler" },
+  { label: "Included Components", value: "Shirt, Shorts" },
+  { label: "Net Quantity", value: "1 Count" },
+  { label: "Item Weight", value: "150 g" },
+  { label: "Item Dimensions", value: "20 × 20 × 2.5 cm" },
+  { label: "Country of Origin", value: "India" },
+  {
+    label: "Manufacturer",
+    value: "Eclat Globalbliz LLP, Eclat Globalbliz LLP",
+  },
+  {
+    label: "Packer",
+    value: "Eclat Globalbliz LLP",
+  },
+  {
+    label: "Best Sellers Rank",
+    value:
+      "#875,548 in Clothing & Accessories • #7,808 in Baby Boys' Clothing Sets",
+  },
+  {
+    label: "ASIN",
+    value: "B0DB4S63G1",
+  },
 ];
 
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👕",
+    title: "2-Piece Set",
+    desc: "Includes one printed half-sleeve shirt and one matching pair of shorts.",
+  },
+  {
+    icon: "🏎️",
+    title: "Racing Car Print",
+    desc: "Fun all-over racing car print in a stylish light green colour that kids will love.",
+  },
+  {
+    icon: "🌞",
+    title: "Summer Collection",
+    desc: "Soft, lightweight outfit designed for everyday comfort during warm weather.",
+  },
+  {
+    icon: "🇮🇳",
+    title: "Made in India",
+    desc: "Manufactured by Eclat Globalbliz LLP using quality materials for toddlers.",
+  },
 ];
 
 function DescriptionTab() {
@@ -276,9 +351,11 @@ function DescriptionTab() {
     </div>
   );
 }
+
+
 const TABS = [
-  { id:"description", label:"Description" },
-  { id:"review",      label:"Reviews", count:459 },
+  { id: "description", label: "Description" },
+  { id: "review", label: "Reviews", count: REVIEWS_DATA.length },
 ];
 
 export default function ProductReview() {
