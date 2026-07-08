@@ -38,17 +38,26 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails5 = () =>{
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("3-4");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+ const sizes = [
+  "0-6",
+  "1-2",
+  "2-3",
+  "3-4",
+  "4-5",
+  "5-6",
+  "6-7",
+  "6-12"
+];
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "Boys Co-Ord Set",
+  name: "Boys Co-Ord Set",
+  price: 349,
+  image: "https://m.media-amazon.com/images/I/31zq8wtG19L.jpg"
 
 };
 
@@ -98,7 +107,7 @@ const KidProductDetails5 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid5 />
           </div>
 
           <div
@@ -118,12 +127,11 @@ const KidProductDetails5 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              Boys Co-Ord Set | Stylish Solid Shirt & Shorts Set for Kids
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+                Stylish Solid Shirt & Shorts Set for Kids | Trendy Half Sleeve Casual Outfit | Premium Cotton Summer Wear | Smart Matching  Outfit for Boys with Comfortable Fit
                 <p
                   style={{
                     fontSize: "14px",
@@ -137,7 +145,7 @@ const KidProductDetails5 = () =>{
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+              {/* Ideal for school, playtime, sports, travel, and home wear. */}
             </p>
 
             {/* RATING */}
@@ -185,7 +193,7 @@ const KidProductDetails5 = () =>{
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹349
               </span>
 
               <span
@@ -195,7 +203,7 @@ const KidProductDetails5 = () =>{
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹1,499
               </span>
 
               <span
@@ -205,7 +213,7 @@ const KidProductDetails5 = () =>{
                   color: "#007185",
                 }}
               >
-                5% off
+                77% off
               </span>
             </div>
 
@@ -315,49 +323,49 @@ const KidProductDetails5 = () =>{
               </h3>
 
               <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr",
-                  rowGap: "10px",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
-                </span>
-                <span>Cotton</span>
+  style={{
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    rowGap: "10px",
+    fontSize: "14px",
+    color: "#333",
+  }}
+>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Material type
+  </span>
+  <span>Cotton</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Fit type
+  </span>
+  <span>Straight</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Style
+  </span>
+  <span>Classic</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Closure type
+  </span>
+  <span>Button</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Care instructions
+  </span>
+  <span>Hand Wash Only</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
-                <span>Machine Wash
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Age range description
+  </span>
+  <span>Kid</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Country of Origin
-                </span>
-                <span>India</span>
-              </div>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Country of Origin
+  </span>
+  <span>India</span>
+</div>
             </div>
 
             <div
@@ -380,64 +388,53 @@ const KidProductDetails5 = () =>{
               </h3>
 
               <ul
-                style={{
-                  paddingLeft: "18px",
-                  fontSize: "14px",
-                  color: "#333",
-                  lineHeight: "1.7",
-                }}
-              >
-                <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
-                </li>
+  style={{
+    paddingLeft: "18px",
+    fontSize: "14px",
+    color: "#333",
+    lineHeight: "1.7",
+  }}
+>
+  <li>
+    <strong>Matching Co-Ord Set:</strong> Includes a perfectly matched shirt and shorts combination for a stylish ready-to-wear outfit.
+  </li>
 
-                <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
-                </li>
+  <li>
+    <strong>Soft Cotton Fabric:</strong> Made from premium-quality, breathable cotton that feels gentle and comfortable on your child's skin.
+  </li>
 
-                {expanded && (
-                  <>
-                    <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
-                    </li>
+  {expanded && (
+    <>
+      <li>
+        <strong>Lightweight & Breathable:</strong> Airy cotton fabric keeps your child cool, fresh, and comfortable during hot summer days.
+      </li>
 
-                    <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
-                    </li>
+      <li>
+        <strong>Stylish Solid Design:</strong> Classic solid color gives a modern, trendy look suitable for boys and girls.
+      </li>
 
-                    <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
-                    </li>
+      <li>
+        <strong>Relaxed Fit:</strong> Designed for unrestricted movement, making it perfect for playing, running, and everyday activities.
+      </li>
 
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
-                    </li>
+      <li>
+        <strong>Skin-Friendly Material:</strong> Soft, sweat-friendly fabric provides all-day comfort without irritation.
+      </li>
 
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
+      <li>
+        <strong>Perfect for Many Occasions:</strong> Ideal for casual wear, vacations, outings, birthdays, playtime, and daily use.
+      </li>
 
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
+      <li>
+        <strong>Easy Care:</strong> Machine Wash.
+      </li>
 
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
-                    </li>
-                  </>
-                )}
-              </ul>
+      <li>
+        <strong>Country of Origin:</strong> Made in India.
+      </li>
+    </>
+  )}
+</ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -459,7 +456,7 @@ const KidProductDetails5 = () =>{
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview5/>
 
         <div className="Related-Product">
           <h2
