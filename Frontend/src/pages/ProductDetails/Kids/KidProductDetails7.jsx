@@ -106,7 +106,7 @@ const sizes = [
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid7 />
           </div>
 
           <div
@@ -126,12 +126,10 @@ const sizes = [
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
-
+             AJ DEZINES Kids Ethnic Wear Silk Blend
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+               Organza Floral Printed Lehenga Choli for Girls With Dupatta
                 <p
                   style={{
                     fontSize: "14px",
@@ -145,7 +143,7 @@ const sizes = [
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+              {/* Ideal for school, playtime, sports, travel, and home wear. */}
             </p>
 
             {/* RATING */}
@@ -193,7 +191,7 @@ const sizes = [
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹399
               </span>
 
               <span
@@ -203,7 +201,7 @@ const sizes = [
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹4,999
               </span>
 
               <span
@@ -213,7 +211,7 @@ const sizes = [
                   color: "#007185",
                 }}
               >
-                5% off
+                91% off
               </span>
             </div>
 
@@ -322,50 +320,50 @@ const sizes = [
                 Product Details
               </h3>
 
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr",
-                  rowGap: "10px",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
-                </span>
-                <span>Cotton</span>
+            <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    rowGap: "10px",
+    fontSize: "14px",
+    color: "#333",
+  }}
+>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Material type
+  </span>
+  <span>Silk Blend</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Fit type
+  </span>
+  <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Style
+  </span>
+  <span>Lehenga Choli</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Closure type
+  </span>
+  <span>Button</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Care instructions
+  </span>
+  <span>Machine Wash</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
-                <span>Machine Wash
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Age range description
+  </span>
+  <span>Kid</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Country of Origin
-                </span>
-                <span>India</span>
-              </div>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Country of Origin
+  </span>
+  <span>India</span>
+</div>
             </div>
 
             <div
@@ -388,64 +386,53 @@ const sizes = [
               </h3>
 
               <ul
-                style={{
-                  paddingLeft: "18px",
-                  fontSize: "14px",
-                  color: "#333",
-                  lineHeight: "1.7",
-                }}
-              >
-                <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
-                </li>
+  style={{
+    paddingLeft: "18px",
+    fontSize: "14px",
+    color: "#333",
+    lineHeight: "1.7",
+  }}
+>
+  <li>
+    <strong>Stylish Ethnic Outfit:</strong> Beautiful Lehenga Choli set designed especially for girls with a fashionable and traditional look.
+  </li>
 
-                <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
-                </li>
+  <li>
+    <strong>Premium Quality Fabric:</strong> Made from soft, durable, and comfortable fabric to ensure all-day comfort.
+  </li>
 
-                {expanded && (
-                  <>
-                    <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
-                    </li>
+  {expanded && (
+    <>
+      <li>
+        <strong>3-Piece Set:</strong> Includes 1 Lehenga (Skirt), 1 Choli (Top), and 1 Matching Dupatta for a complete festive outfit.
+      </li>
 
-                    <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
-                    </li>
+      <li>
+        <strong>Perfect for Special Occasions:</strong> Ideal for weddings, festivals, family functions, birthdays, cultural events, and celebrations.
+      </li>
 
-                    <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
-                    </li>
+      <li>
+        <strong>Comfortable Fit:</strong> Designed to provide easy movement while keeping your child stylish and comfortable.
+      </li>
 
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
-                    </li>
+      <li>
+        <strong>Elegant Design:</strong> Traditional Lehenga Choli style with attractive detailing for a graceful ethnic appearance.
+      </li>
 
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
+      <li>
+        <strong>Size Information:</strong> Please refer to the size chart in the product images before placing your order for the best fit.
+      </li>
 
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
+      <li>
+        <strong>Easy Care:</strong> Machine Wash.
+      </li>
 
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
-                    </li>
-                  </>
-                )}
-              </ul>
+      <li>
+        <strong>Country of Origin:</strong> Made in India.
+      </li>
+    </>
+  )}
+</ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
