@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -31,25 +29,31 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
-
-const KidProductDetails6 = () =>  {
-  const [selectedSize, setSelectedSize] = useState("40");
+const KidProductDetails6 = () => {
+  const [selectedSize, setSelectedSize] = useState("5-6 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+  const sizes = [
+    "2-3 Y",
+    "3-4 Y",
+    "4-5 Y",
+    "5-6 Y",
+    "6-7 Y",
+    "7-8 Y",
+    "8-9 Y",
+    "9-10 Y",
+    "10-11 Y",
+  ];
 
-
-    const product = {
-  id: "KIDS 6",
-  name: "AJ DEZINES Boys Cotton ",
-  price: 424,
-  image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg"
-
-};
+  const product = {
+    id: "KIDS 6",
+    name: "AJ DEZINES Boys Cotton ",
+    price: 424,
+    image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg",
+  };
 
   return (
     <>
@@ -118,10 +122,10 @@ const KidProductDetails6 = () =>  {
               }}
             >
               AJ DEZINES Boys Cotton Full Sleeve Printed Kurta
-
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-          Pajama Set for Kids - Ethnic wear | Special Occasion & Traditional Outfit |Boys Kurta Pyjama Set - Regular Fit
+                Pajama Set for Kids - Ethnic wear | Special Occasion &
+                Traditional Outfit |Boys Kurta Pyjama Set - Regular Fit
                 <p
                   style={{
                     fontSize: "14px",
@@ -133,10 +137,7 @@ const KidProductDetails6 = () =>  {
               </span>
             </h1>
 
-          
-            <p style={{ fontSize: "14px", color: "#777" }}>
-             
-            </p>
+            <p style={{ fontSize: "14px", color: "#777" }}></p>
 
             {/* RATING */}
             <div
@@ -220,7 +221,7 @@ const KidProductDetails6 = () =>  {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -322,34 +323,32 @@ const KidProductDetails6 = () =>  {
                 }}
               >
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
+                  Material type
                 </span>
                 <span>Cotton</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
                 <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Modern</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Machine Wash
-</span>
+                <span>Machine Wash</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Kid</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -377,65 +376,54 @@ const KidProductDetails6 = () =>  {
                 About this item
               </h3>
 
-              <ul
-                style={{
-                  paddingLeft: "18px",
-                  fontSize: "14px",
-                  color: "#333",
-                  lineHeight: "1.7",
-                }}
-              >
-                <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
-                </li>
+             <ul
+  style={{
+    paddingLeft: "18px",
+    fontSize: "14px",
+    color: "#333",
+    lineHeight: "1.7",
+  }}
+>
+  <li>
+    <strong>Premium Cotton Fabric:</strong> Made from high-quality cotton that is soft, lightweight, breathable, and comfortable for all-day wear.
+  </li>
 
-                <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
-                </li>
+  <li>
+    <strong>Traditional Design:</strong> Features a stylish mandarin collar, front button closure, side slits, and a straight hem for a classic ethnic look.
+  </li>
 
-                {expanded && (
-                  <>
-                    <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
-                    </li>
+  {expanded && (
+    <>
+      <li>
+        <strong>Comfortable Pajama:</strong> Straight-fit pajama with a partially elasticated waistband provides a secure and comfortable fit.
+      </li>
 
-                    <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
-                    </li>
+      <li>
+        <strong>Complete 2-Piece Set:</strong> Includes one kurta and one matching pajama for a coordinated traditional outfit.
+      </li>
 
-                    <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
-                    </li>
+      <li>
+        <strong>Perfect for Special Occasions:</strong> Ideal for weddings, festivals, family gatherings, religious ceremonies, cultural events, Diwali, Eid, and Independence Day celebrations.
+      </li>
 
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
-                    </li>
+      <li>
+        <strong>Versatile Style:</strong> Easily pairs with traditional footwear and accessories for a complete festive look.
+      </li>
 
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
+      <li>
+        <strong>Ideal for Photoshoots:</strong> A stylish ethnic outfit that's perfect for memorable family and festive photos.
+      </li>
 
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
+      <li>
+        <strong>Garment Care:</strong> Machine wash separately using a mild detergent. Avoid harsh detergents to preserve the fabric quality.
+      </li>
 
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
-                    </li>
-                  </>
-                )}
-              </ul>
+      <li>
+        <strong>Country of Origin:</strong> Made in India.
+      </li>
+    </>
+  )}
+</ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -457,7 +445,7 @@ const KidProductDetails6 = () =>  {
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview1 />
 
         <div className="Related-Product">
           <h2
@@ -496,7 +484,7 @@ const KidProductDetails6 = () =>  {
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct6 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
@@ -514,12 +502,11 @@ const KidProductDetails6 = () =>  {
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -531,4 +518,4 @@ const KidProductDetails6 = () =>  {
   );
 };
 
-export default KidProductDetails6
+export default KidProductDetails6;
