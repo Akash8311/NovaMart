@@ -32,8 +32,8 @@ import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import ProductZoomKid5 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid5";
+import KidProducReview5 from "../ProductReaview/KidReview/KidProducReview5";
 
 
 
