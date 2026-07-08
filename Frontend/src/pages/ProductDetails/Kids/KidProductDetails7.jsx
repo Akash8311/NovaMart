@@ -38,17 +38,25 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails7 = () => {
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("10-11 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
-
+const sizes = [
+  "4-5 Y",
+  "6-7 Y",
+  "7-8 Y",
+  "8-9 Y",
+  "9-10 Y",
+  "10-11 Y",
+  "12-13 Y",
+  "14-15 Y"
+];
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "kids 7",
+  name: "AJ DEZINES Kids Ethnic Wear Silk Blend",
+  price: 399,
+  image: "https://m.media-amazon.com/images/I/61r61E4KKGL._SY741_.jpg"
 
 };
 
