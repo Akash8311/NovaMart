@@ -195,27 +195,41 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "XARQION" },
+  { label: "Model Name", value: "Co-Ord Set" },
+  { label: "Part Number", value: "6321" },
+  { label: "Item Type", value: "Co-Ord Set" },
+  { label: "Age Range", value: "Kid" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "100 Grams" },
+  { label: "Item Dimensions", value: "8 × 5 × 5 Centimeters" },
+  { label: "ASIN", value: "B0GY45GWMB" },
+  { label: "Best Sellers Rank", value: "#36,427 in Clothing & Accessories · #342 in Boys' Clothing Sets" },
+  { label: "Manufacturer", value: "XARQION" },
+  { label: "Packer", value: "GUJARAT" },
 ];
 
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👕",
+    title: "Matching Co-Ord Set",
+    desc: "Includes a stylish short-sleeve shirt and matching shorts for a complete ready-to-wear outfit."
+  },
+  {
+    icon: "🌿",
+    title: "Soft Cotton Fabric",
+    desc: "Made from breathable, lightweight cotton that keeps kids comfortable throughout the day."
+  },
+  {
+    icon: "🧒",
+    title: "Comfort Fit",
+    desc: "Straight-fit design with a button closure allows easy movement and all-day comfort."
+  },
+  {
+    icon: "✨",
+    title: "Classic Style",
+    desc: "Solid black co-ord set, perfect for casual wear, outings, vacations, parties, and daily use."
+  },
 ];
 
 function DescriptionTab() {
