@@ -44,10 +44,10 @@ const KidProductDetails6 = () =>  {
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "KIDS 6",
+  name: "AJ DEZINES Boys Cotton ",
+  price: 424,
+  image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg"
 
 };
 
@@ -117,12 +117,11 @@ const KidProductDetails6 = () =>  {
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              AJ DEZINES Boys Cotton Full Sleeve Printed Kurta
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+          Pajama Set for Kids - Ethnic wear | Special Occasion & Traditional Outfit |Boys Kurta Pyjama Set - Regular Fit
                 <p
                   style={{
                     fontSize: "14px",
@@ -136,7 +135,7 @@ const KidProductDetails6 = () =>  {
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+             
             </p>
 
             {/* RATING */}
@@ -152,7 +151,7 @@ const KidProductDetails6 = () =>  {
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (36 reviews)
               </span>
             </div>
 
@@ -184,7 +183,7 @@ const KidProductDetails6 = () =>  {
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹424
               </span>
 
               <span
@@ -194,7 +193,7 @@ const KidProductDetails6 = () =>  {
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹1,99
               </span>
 
               <span
@@ -204,7 +203,7 @@ const KidProductDetails6 = () =>  {
                   color: "#007185",
                 }}
               >
-                5% off
+                77% off
               </span>
             </div>
 
