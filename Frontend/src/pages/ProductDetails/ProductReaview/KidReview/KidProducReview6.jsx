@@ -1,12 +1,47 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Rohit Sharma",
+    date: "2026-06-20",
+    comment:
+      "Excellent kurta pajama set. The fabric is soft, the print looks premium, and the fitting is perfect for my son. Great value for money.",
+    rating: 5,
+    initials: "RS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    date: "2026-06-14",
+    comment:
+      "Beautiful ethnic outfit for festivals. The material is comfortable and my child loved wearing it during the celebration.",
+    rating: 5,
+    initials: "PV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Amit Gupta",
+    date: "2026-05-29",
+    comment:
+      "Good quality product with neat stitching. The size fits as expected and the color matches the pictures.",
+    rating: 4,
+    initials: "AG",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Sneha Kapoor",
+    date: "2026-06-25",
+    comment:
+      "Purchased this for Independence Day celebration. The kurta looks stylish, feels comfortable, and received many compliments.",
+    rating: 5,
+    initials: "SK",
+    color: "#ec4899",
+  },
 ];
-
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
 
 function Star({ filled, size = 16, onClick, onHover, onLeave }) {
@@ -195,27 +230,57 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "AJ DEZINES" },
+  { label: "Model Name", value: "1291-BLUE" },
+  { label: "Style Number", value: "1291" },
+  { label: "Part Number", value: "1291-BLUE-5" },
+  { label: "Item Type", value: "Boys Kurta Set" },
+  { label: "Age Range", value: "Kid" },
+  { label: "Included Components", value: "Kurta, Pajama" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "190 Grams" },
+  { label: "Item Dimensions", value: "27 × 20 × 1 Centimeters" },
+  { label: "Unit Count", value: "1.0 Count" },
+  { label: "ASIN", value: "B0FLYF27KM" },
+  {
+    label: "Best Sellers Rank",
+    value:
+      "#6,839 in Clothing & Accessories · #8 in Boys' Kurta Sets",
+  },
+  {
+    label: "Manufacturer",
+    value:
+      "Shri Shantinath Trading Company, Plot No. 63/E-130, Sector 63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201301",
+  },
+  {
+    label: "Packer / Importer",
+    value:
+      "Shri Shantinath Trading Company, Plot No. 63/E-130, Sector 63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201301",
+  },
 ];
 
+
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👕",
+    title: "Premium Cotton Fabric",
+    desc: "Made from soft, breathable premium cotton that provides all-day comfort and a luxurious feel.",
+  },
+  {
+    icon: "✨",
+    title: "Traditional Ethnic Design",
+    desc: "Features a modern printed kurta with a mandarin collar, long sleeves, front button closure, and matching pajama.",
+  },
+  {
+    icon: "🎉",
+    title: "Perfect for Festivals",
+    desc: "Ideal for Diwali, Eid, Independence Day, weddings, family functions, ethnic day, and cultural events.",
+  },
+  {
+    icon: "🧺",
+    title: "Easy Care",
+    desc: "Machine washable fabric designed to maintain its quality, comfort, and vibrant look after every wash.",
+  },
 ];
 
 function DescriptionTab() {
@@ -276,9 +341,11 @@ function DescriptionTab() {
     </div>
   );
 }
+
+
 const TABS = [
-  { id:"description", label:"Description" },
-  { id:"review",      label:"Reviews", count:459 },
+  { id: "description", label: "Description" },
+  { id: "review", label: "Reviews", count: 4 },
 ];
 
 export default function ProductReview() {
