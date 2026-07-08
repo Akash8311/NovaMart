@@ -2,11 +2,11 @@ import React, { useRef, useState } from "react";
 import "../ProductZoom.css";
 
 const images = [
-  "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/51L4C9ratuL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/81XyARMWd+L._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71rbIh+y5yL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/61r61E4KKGL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/61AGW-c+yfL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/61cbr5gzZHL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/61DN-rO1UzL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/71OnH3-6CQL._SY741_.jpg",
 ];
 const ProductZoomKid7 = () => {
   const imgRef = useRef(null);
