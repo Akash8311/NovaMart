@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Rahul Sharma",
+    date: "2026-06-18",
+    comment:
+      "Excellent quality co-ord set. The cotton fabric is soft, comfortable, and my son loved wearing it. Worth buying!",
+    rating: 5,
+    initials: "RS",
+    color: "#3b82f6",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    date: "2026-05-27",
+    comment:
+      "Nice design and perfect fit. The material feels breathable and is ideal for summer. Happy with the purchase.",
+    rating: 4,
+    initials: "PV",
+    color: "#10b981",
+  },
+  {
+    id: 3,
+    name: "Amit Patel",
+    date: "2026-04-09",
+    comment:
+      "Good value for money. The stitching is neat, the color looks exactly like the pictures, and it washes well.",
+    rating: 4,
+    initials: "AP",
+    color: "#f59e0b",
+  },
+  {
+    id: 4,
+    name: "Sneha Gupta",
+    date: "2026-06-30",
+    comment:
+      "Very comfortable and stylish. My child wears it regularly for outings and playtime. Highly recommended!",
+    rating: 5,
+    initials: "SG",
+    color: "#ec4899",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
@@ -290,9 +326,11 @@ function DescriptionTab() {
     </div>
   );
 }
+
+
 const TABS = [
-  { id:"description", label:"Description" },
-  { id:"review",      label:"Reviews", count:459 },
+  { id: "description", label: "Description" },
+  { id: "review", label: "Reviews", count: 4 },
 ];
 
 export default function ProductReview() {
