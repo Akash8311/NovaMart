@@ -207,8 +207,7 @@ const KidProduct5 = () => {
               margin: "0",
             }}
           >
-            Boys Co-Ord Set | Stylish Solid Shirt & Shorts Set for Kids | Trendy
-            Half Sleeve Casual Outfit
+            Boys Co-Ord Set | Stylish Solid Shirt & Shorts Set for Kids 
           </p>
           <div
             style={{
