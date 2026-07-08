@@ -30,7 +30,7 @@ import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
 import ProductZoomKid6 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid6";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import KidProducReview6 from "../ProductReaview/KidReview/KidProducReview6";
 
 const KidProductDetails6 = () => {
   const [selectedSize, setSelectedSize] = useState("5-6 Y");
@@ -445,7 +445,7 @@ const KidProductDetails6 = () => {
           </div>
         </div>
 
-        <KidProducReview1 />
+        <KidProducReview6 />
 
         <div className="Related-Product">
           <h2
