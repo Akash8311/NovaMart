@@ -22,7 +22,7 @@ import { Pagination } from "swiper/modules";
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
-import KidProduct5 from "./KidProduct5";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
@@ -491,7 +491,7 @@ const KidProductDetails5 = () =>{
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct5 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
