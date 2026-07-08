@@ -156,7 +156,7 @@ const KidProduct6 = () => {
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails6"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
@@ -221,7 +221,7 @@ const KidProduct6 = () => {
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹474
+              ₹424
             </span>
             <span
               style={{
