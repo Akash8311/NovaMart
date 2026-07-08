@@ -21,7 +21,7 @@ import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
 import KidProduct5 from "./KidProduct5";
-import KidProduct6 from "./KidProduct6";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
 import KidProduct9 from "./KidProduct9";
@@ -29,7 +29,7 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
+import ProductZoomKid6 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid6";
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 const KidProductDetails6 = () => {
@@ -101,7 +101,7 @@ const KidProductDetails6 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid6 />
           </div>
 
           <div
