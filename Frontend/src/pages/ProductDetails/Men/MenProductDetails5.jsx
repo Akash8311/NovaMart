@@ -293,7 +293,7 @@ Lymio Men Shirt || Rib Design Shirt for Man || Full Sleeve || Casual Style (Pack
                   color: "#1a1a1a",
                 }}
               >
-                Product Details
+                Top highlights
               </h3>
 
               <div

@@ -210,7 +210,7 @@ const KidProduct8 = () => {
               margin: "0",
             }}
           >
-        AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls - Casual Outfit | Vacation Wear |Beach Dress {" "}
+        AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls Casual Outfit {" "}
           </p>
           <div
             style={{

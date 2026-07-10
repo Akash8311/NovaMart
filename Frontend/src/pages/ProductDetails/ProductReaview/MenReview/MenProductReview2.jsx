@@ -275,14 +275,15 @@ function DescriptionTab() {
       </div>
     </div>
   );
+
 }
 const TABS = [
-  { id:"description", label:"Description" },
-  { id:"review",      label:"Reviews", count:459 },
+  { id: "Product details", label: "Product details" },
+  { id: "review", label: "Reviews", count: REVIEWS_DATA.length },
 ];
 
 export default function ProductReview() {
-  const [activeTab, setActiveTab] = useState("description");
+  const [activeTab, setActiveTab] = useState("Product details");
 
   return (
     <div style={{ width:"100%", fontFamily:"'Segoe UI', system-ui, sans-serif" }}>
@@ -328,7 +329,7 @@ export default function ProductReview() {
 
       {/* Tab content */}
       <div style={{ background:"#fff", borderRadius:"0 0 16px 16px", overflow:"hidden", border:"1px solid #f1f5f9", borderTop:"none" }}>
-        {activeTab==="description" && <DescriptionTab />}
+        {activeTab==="Product details" && <DescriptionTab />}
         {activeTab==="review"      && <OnlyReviewSection />}
       </div>
 

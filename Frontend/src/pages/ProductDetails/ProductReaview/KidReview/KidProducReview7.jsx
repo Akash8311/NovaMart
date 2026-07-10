@@ -807,12 +807,13 @@ function DescriptionTab() {
   );
 }
 const TABS = [
-  { id: "description", label: "Description" },
-  { id: "review", label: "Reviews", count: 4 },
+  { id: "Product details", label: "Product details" },
+  { id: "review", label: "Reviews", count: REVIEWS_DATA.length },
 ];
 
 export default function ProductReview() {
-  const [activeTab, setActiveTab] = useState("description");
+  const [activeTab, setActiveTab] = useState("Product details");
+
 
   return (
     <div
@@ -894,7 +895,7 @@ export default function ProductReview() {
           borderTop: "none",
         }}
       >
-        {activeTab === "description" && <DescriptionTab />}
+        {activeTab === "Product details" && <DescriptionTab />}
         {activeTab === "review" && <OnlyReviewSection />}
       </div>
 

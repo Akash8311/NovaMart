@@ -316,7 +316,7 @@ const sizes = [
                   color: "#1a1a1a",
                 }}
               >
-                Product Details
+                Top highlights
               </h3>
 
             <div

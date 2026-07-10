@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -31,31 +29,19 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
 import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
-
-
-
-const KidProductDetails10 = () =>  {
+const KidProductDetails10 = () => {
   const [selectedSize, setSelectedSize] = useState("2-3 Y");
   const [expanded, setExpanded] = useState(false);
-  const sizes = [
-  "6-12 M",
-  "1-2 Y",
-  "2-3 Y",
-  "3-4 Y",
-  "4-5 Y",
-  "5-6 Y"
-];
-    const product = {
-  id: "kids 10",
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 764,
-  image: "https://m.media-amazon.com/images/I/61BDty+ZweL._SY741_.jpg"
-
-};
+  const sizes = ["6-12 M", "1-2 Y", "2-3 Y", "3-4 Y", "4-5 Y", "5-6 Y"];
+  const product = {
+    id: "kids 10",
+    name: "BODYCARE Girls Shorts Pack of 2",
+    price: 764,
+    image: "https://m.media-amazon.com/images/I/61BDty+ZweL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -124,10 +110,9 @@ const KidProductDetails10 = () =>  {
               }}
             >
               AJ DEZINES Kids
-
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-               Clothing Shirt Short Set For Boys
+                Clothing Shirt Short Set For Boys
                 <p
                   style={{
                     fontSize: "14px",
@@ -139,7 +124,6 @@ const KidProductDetails10 = () =>  {
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Ideal for school, playtime, sports, travel, and home wear.
             </p>
@@ -157,7 +141,7 @@ const KidProductDetails10 = () =>  {
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (5 reviews)
               </span>
             </div>
 
@@ -189,7 +173,7 @@ const KidProductDetails10 = () =>  {
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹764
               </span>
 
               <span
@@ -199,7 +183,7 @@ const KidProductDetails10 = () =>  {
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹2,999
               </span>
 
               <span
@@ -209,7 +193,7 @@ const KidProductDetails10 = () =>  {
                   color: "#007185",
                 }}
               >
-                5% off
+                75% off
               </span>
             </div>
 
@@ -226,7 +210,7 @@ const KidProductDetails10 = () =>  {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -315,7 +299,7 @@ const KidProductDetails10 = () =>  {
                   color: "#1a1a1a",
                 }}
               >
-                Product Details
+               Top highlights
               </h3>
 
               <div
@@ -328,34 +312,33 @@ const KidProductDetails10 = () =>  {
                 }}
               >
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
+                  Material type
                 </span>
-                <span>Cotton</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
-
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+                <span>Cotton Blend</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
                 <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Modern</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>Theme</span>
                 <span>Cotton</span>
+
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
                 </span>
-                <span>Machine Wash
-</span>
+                <span>
+                  Machine Wash (Gentle Cycle), Tumble Dry Low, Do Not Iron,
+                  Store in a Cool, Dry Place
+                </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -382,7 +365,6 @@ const KidProductDetails10 = () =>  {
               >
                 About this item
               </h3>
-
               <ul
                 style={{
                   paddingLeft: "18px",
@@ -392,52 +374,56 @@ const KidProductDetails10 = () =>  {
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
+                  <strong>Premium Cotton Fabric:</strong> Crafted from pure
+                  cotton for the shirt, shorts, cap, and bow, ensuring softness,
+                  breathability, and all-day comfort.
                 </li>
 
                 <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
+                  <strong>Complete 5-Piece Outfit:</strong> Includes 1 Shirt, 1
+                  Shorts, 1 Matching Suspender, 1 Bow Tie, and 1 Cap for a
+                  stylish coordinated look.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
+                      <strong>Comfortable Fit:</strong> Shorts feature a
+                      partially elastic waistband with button and zipper closure
+                      for a secure and comfortable fit.
                     </li>
 
                     <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
+                      <strong>Stylish Design:</strong> Half-sleeve shirt with
+                      front button closure, spread collar, matching bow tie,
+                      suspenders, and cap for a smart appearance.
                     </li>
 
                     <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
+                      <strong>Functional Details:</strong> Shorts include two
+                      side pockets, while the elasticated suspenders provide a
+                      secure and adjustable fit.
                     </li>
 
                     <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
+                      <strong>Perfect for Special Occasions:</strong> Ideal for
+                      birthdays, weddings, parties, family functions, festive
+                      celebrations, and memorable photoshoots.
                     </li>
 
                     <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
+                      <strong>Available in Multiple Sizes:</strong> Offered in a
+                      range of sizes to provide the perfect fit for boys across
+                      different age groups.
                     </li>
 
                     <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
+                      <strong>Easy Care:</strong> Machine wash gently with mild
+                      detergent to maintain fabric quality and color.
                     </li>
 
                     <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
+                      <strong>Country of Origin:</strong> Made in India.
                     </li>
                   </>
                 )}
@@ -463,7 +449,7 @@ const KidProductDetails10 = () =>  {
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview1 />
 
         <div className="Related-Product">
           <h2
@@ -520,12 +506,11 @@ const KidProductDetails10 = () =>  {
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -537,4 +522,4 @@ const KidProductDetails10 = () =>  {
   );
 };
 
-export default KidProductDetails10
+export default KidProductDetails10;

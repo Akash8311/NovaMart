@@ -309,7 +309,7 @@ const KidProductDetails9 = () => {
                   color: "#1a1a1a",
                 }}
               >
-                Product Details
+                Top highlights
               </h3>
 
               <div
@@ -460,11 +460,11 @@ const KidProductDetails9 = () => {
         </div>
 
         <div>
-          <h2>Product description</h2>
+          <h2 style={{marginTop:"10vh",paddingBottom:"0"}}>Product description</h2>
           <p
             style={{
               fontSize: "14px",
-              color: "#333",
+              color: "#1f1e1e",
               lineHeight: "1.8",
               margin: 0,
             }}

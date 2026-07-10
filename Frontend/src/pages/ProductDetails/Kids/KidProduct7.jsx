@@ -207,8 +207,8 @@ const KidProduct7 = () => {
               margin: "0",
             }}
           >
-            AJ DEZINES Kids Ethnic Wear Silk Blend Organza Floral Printed
-            Lehenga Choli for Girls With Dupatta{" "}
+            Silk Blend Organza Floral Printed Lehenga Choli for Girls With
+            Dupatta{" "}
           </p>
           <div
             style={{

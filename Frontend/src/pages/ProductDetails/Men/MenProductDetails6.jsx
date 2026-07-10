@@ -296,7 +296,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#1a1a1a",
                 }}
               >
-                Product Details
+                Top highlights
               </h3>
 
               <div
