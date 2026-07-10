@@ -38,17 +38,26 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails8 = () =>{
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("9-10 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+  const sizes = [
+  "18-24 M",
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "6-7 Y",
+  "7-8 Y",
+  "8-9 Y",
+  "9-10 Y"
+];
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "kids 8",
+  name: "Coords Set for Girls",
+  price: 719,
+  image: "https://m.media-amazon.com/images/I/61KBpp-GttL._SY741_.jpg"
 
 };
 
@@ -98,7 +107,7 @@ const KidProductDetails8 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid8 />
           </div>
 
           <div
@@ -118,12 +127,11 @@ const KidProductDetails8 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls - Casual Outfit
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+                | Vacation Wear |Beach Dress |Tropical Printed Top Pant for girls | Sleeveless, for Girls, Vacation Wear, Beach Dress
                 <p
                   style={{
                     fontSize: "14px",
@@ -153,7 +161,7 @@ const KidProductDetails8 = () =>{
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (16 reviews)
               </span>
             </div>
 
@@ -185,7 +193,7 @@ const KidProductDetails8 = () =>{
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹719
               </span>
 
               <span
@@ -195,7 +203,7 @@ const KidProductDetails8 = () =>{
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹2,499
               </span>
 
               <span
@@ -205,7 +213,7 @@ const KidProductDetails8 = () =>{
                   color: "#007185",
                 }}
               >
-                5% off
+                71% off
               </span>
             </div>
 
@@ -314,50 +322,52 @@ const KidProductDetails8 = () =>{
                 Product Details
               </h3>
 
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr",
-                  rowGap: "10px",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
-                </span>
-                <span>Cotton</span>
+             <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    rowGap: "10px",
+    fontSize: "14px",
+    color: "#333",
+  }}
+>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Material type
+  </span>
+  <span>Cotton</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Fit type
+  </span>
+  <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Style
+  </span>
+  <span>Modern</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Closure type
+  </span>
+  <span>Button</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Care instructions
+  </span>
+  <span>Machine Wash</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
-                <span>Machine Wash
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Age range description
+  </span>
+  <span>Kid</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Country of Origin
-                </span>
-                <span>India</span>
-              </div>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Country of Origin
+  </span>
+  <span>India</span>
+</div>
+
+
             </div>
 
             <div
