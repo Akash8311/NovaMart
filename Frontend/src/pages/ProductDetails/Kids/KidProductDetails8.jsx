@@ -29,8 +29,8 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid8";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview8";
+import ProductZoomKid8 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid8";
+import KidProducReview8 from "../ProductReaview/KidReview/KidProducReview8";
 
 const KidProductDetails8 = () => {
   const [selectedSize, setSelectedSize] = useState("9-10 Y");
