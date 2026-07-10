@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Priya Sharma",
+    date: "2026-06-21",
+    comment:
+      "Absolutely loved this cord set! The fabric is soft, breathable, and the floral design looks even better in person. My daughter was very happy.",
+    rating: 5,
+    initials: "PS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Ritika Verma",
+    date: "2026-06-12",
+    comment:
+      "Perfect for summer. The cotton material is lightweight, the fit is comfortable, and the stitching quality is excellent.",
+    rating: 5,
+    initials: "RV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Ankit Gupta",
+    date: "2026-05-28",
+    comment:
+      "Very good quality for the price. The colors are vibrant, and the size matched the chart perfectly. Recommended.",
+    rating: 4,
+    initials: "AG",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Sneha Kapoor",
+    date: "2026-06-30",
+    comment:
+      "Beautiful outfit for casual outings and vacations. Comfortable to wear all day and easy to wash. Worth buying.",
+    rating: 5,
+    initials: "SK",
+    color: "#ec4899",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
