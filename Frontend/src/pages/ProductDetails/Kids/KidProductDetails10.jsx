@@ -39,17 +39,21 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails10 = () =>  {
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("2-3 Y");
   const [expanded, setExpanded] = useState(false);
-
-  const sizes = ["S", "M", "L", "XL"];
-
-
+  const sizes = [
+  "6-12 M",
+  "1-2 Y",
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "5-6 Y"
+];
     const product = {
-  id: 5,
+  id: "kids 10",
   name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  price: 764,
+  image: "https://m.media-amazon.com/images/I/61BDty+ZweL._SY741_.jpg"
 
 };
 
@@ -119,12 +123,11 @@ const KidProductDetails10 = () =>  {
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              AJ DEZINES Kids
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+               Clothing Shirt Short Set For Boys
                 <p
                   style={{
                     fontSize: "14px",
