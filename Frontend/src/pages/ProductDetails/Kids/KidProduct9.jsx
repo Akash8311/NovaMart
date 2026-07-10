@@ -155,7 +155,7 @@ const KidProduct9 = () =>{
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails9"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
@@ -223,7 +223,7 @@ const KidProduct9 = () =>{
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹635
+              ₹599
             </span>
             <span
               style={{
@@ -232,12 +232,12 @@ const KidProduct9 = () =>{
                 fontSize: "13px",
               }}
             >
-              ₹2,499
+              ₹2,599
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              75% OFF
+              79% OFF
             </span>
           </div>
           <div
