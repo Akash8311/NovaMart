@@ -155,7 +155,7 @@ const KidProduct10 = () => {
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails10"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
@@ -196,7 +196,7 @@ const KidProduct10 = () => {
               marginTop: "10px",
             }}
           >
-            AJ DEZINES Kids Clothing Shirt Short Set For Boys{" "}
+          Kids Clothing Shirt Short Set For Boys{" "}
           </h4>
           <p
             style={{
