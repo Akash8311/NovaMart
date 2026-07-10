@@ -155,7 +155,7 @@ const KidProduct8 = () => {
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails8"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
