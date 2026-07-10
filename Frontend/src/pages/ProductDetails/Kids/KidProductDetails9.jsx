@@ -24,13 +24,13 @@ import KidProduct5 from "./KidProduct5";
 import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
-import KidProduct9 from "./KidProduct9";
+import KidsProduct9 from "./KidsProduct1";
 import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import ProductZoomKid9 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid9";
+import KidProducReview9 from "../ProductReaview/KidReview/KidProducReview9";
 
 const KidProductDetails9 = () => {
   const [selectedSize, setSelectedSize] = useState("8-9 Y");
@@ -529,7 +529,7 @@ const KidProductDetails9 = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct9 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
