@@ -145,7 +145,7 @@ const sizes = [
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+             
             </p>
 
             {/* RATING */}
@@ -161,7 +161,7 @@ const sizes = [
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (32 reviews)
               </span>
             </div>
 
@@ -193,7 +193,7 @@ const sizes = [
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹449
               </span>
 
               <span
@@ -203,7 +203,7 @@ const sizes = [
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹2,499
               </span>
 
               <span
@@ -213,7 +213,7 @@ const sizes = [
                   color: "#007185",
                 }}
               >
-                5% off
+                82% off
               </span>
             </div>
 
