@@ -38,10 +38,19 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails9 = () => {
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState( "8-9 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+const sizes = [
+  "18-24 M",
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "6-7 Y",
+  "7-8 Y",
+  "8-9 Y",
+  "9-10 Y"
+];
 
 
     const product = {

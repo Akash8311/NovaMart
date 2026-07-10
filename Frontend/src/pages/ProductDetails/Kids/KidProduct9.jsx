@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-const KidProduct9 = () =>{
+const KidProduct9 = () => {
   const [wishlist, setWishlist] = useState(false);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -195,9 +195,8 @@ const KidProduct9 = () =>{
               color: "#333",
               marginTop: "10px",
             }}
-          >AJ DEZINES Kids Cotton Half Sleeve Co-ords Set for Girls - Casual Outfit 
-            
-            {" "}
+          >
+        Kids Cotton Half Sleeve{" "}
           </h4>
           <p
             style={{
@@ -207,10 +206,10 @@ const KidProduct9 = () =>{
               overflow: "hidden",
               margin: "0",
             }}
-          >       AJ DEZINES Kids Cotton Half Sleeve Co-ords Set for Girls - Casual Outfit | Vacation Wear |Beach Dress
-          
-           {" "}
-
+          >
+            {" "}
+            AJ DEZINES Kids Cotton Half Sleeve Co-ords Set for Girls - Casual
+            Outfit{" "}
           </p>
           <div
             style={{
@@ -223,7 +222,7 @@ const KidProduct9 = () =>{
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹599
+              ₹449
             </span>
             <span
               style={{
@@ -232,12 +231,12 @@ const KidProduct9 = () =>{
                 fontSize: "13px",
               }}
             >
-              ₹2,599
+              ₹2,499
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              79% OFF
+              82% OFF
             </span>
           </div>
           <div
@@ -250,7 +249,7 @@ const KidProduct9 = () =>{
             }}
           >
             ⭐⭐⭐⭐⭐
-            <span style={{ fontSize: "13px", color: "#555" }}>(202)</span>
+            <span style={{ fontSize: "13px", color: "#555" }}>(36)</span>
           </div>
 
           {/* Delivery */}
@@ -270,5 +269,4 @@ const KidProduct9 = () =>{
   );
 };
 
-
-export default KidProduct9
+export default KidProduct9;
