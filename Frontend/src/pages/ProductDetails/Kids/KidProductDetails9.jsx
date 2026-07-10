@@ -54,10 +54,10 @@ const sizes = [
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "kids 9",
+  name:  "Kids Cotton Half Sleeve ",
+  price: 449,
+  image: "https://m.media-amazon.com/images/I/61P94ddh63L._SY741_.jpg"
 
 };
 
