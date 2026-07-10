@@ -107,7 +107,7 @@ const sizes = [
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid9 />
           </div>
 
           <div
@@ -127,12 +127,11 @@ const sizes = [
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+             AJ DEZINES Kids Cotton Half Sleeve Coords
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+               Set for Girls - Casual Outfit | Vacation Wear |Beach Dress |Floral Printed Top Pant for girls - Regular Fit
                 <p
                   style={{
                     fontSize: "14px",
