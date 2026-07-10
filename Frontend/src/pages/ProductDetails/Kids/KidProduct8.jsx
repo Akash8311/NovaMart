@@ -223,7 +223,7 @@ const KidProduct8 = () => {
             <span
               style={{ fontWeight: "700", fontSize: "16px", color: "#ff4b4b" }}
             >
-              ₹759
+              ₹719
             </span>
             <span
               style={{
@@ -237,7 +237,7 @@ const KidProduct8 = () => {
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
             >
-              70% OFF
+              71% OFF
             </span>
           </div>
           <div
