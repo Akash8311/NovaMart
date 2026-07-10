@@ -17,49 +17,42 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
 import KidProduct5 from "./KidProduct5";
 import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
-import KidProduct8 from "./KidProduct8";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct9 from "./KidProduct9";
 import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
+import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid8";
+import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview8";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
-
-
-
-const KidProductDetails8 = () =>{
+const KidProductDetails8 = () => {
   const [selectedSize, setSelectedSize] = useState("9-10 Y");
   const [expanded, setExpanded] = useState(false);
 
   const sizes = [
-  "18-24 M",
-  "2-3 Y",
-  "3-4 Y",
-  "4-5 Y",
-  "6-7 Y",
-  "7-8 Y",
-  "8-9 Y",
-  "9-10 Y"
-];
+    "18-24 M",
+    "2-3 Y",
+    "3-4 Y",
+    "4-5 Y",
+    "6-7 Y",
+    "7-8 Y",
+    "8-9 Y",
+    "9-10 Y",
+  ];
 
-
-    const product = {
-  id: "kids 8",
-  name: "Coords Set for Girls",
-  price: 719,
-  image: "https://m.media-amazon.com/images/I/61KBpp-GttL._SY741_.jpg"
-
-};
+  const product = {
+    id: "kids 8",
+    name: "Coords Set for Girls",
+    price: 719,
+    image: "https://m.media-amazon.com/images/I/61KBpp-GttL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -127,11 +120,12 @@ const KidProductDetails8 = () =>{
                 marginBottom: "6px",
               }}
             >
-              AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls - Casual Outfit
-
+              AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls - Casual
+              Outfit
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                | Vacation Wear |Beach Dress |Tropical Printed Top Pant for girls | Sleeveless, for Girls, Vacation Wear, Beach Dress
+                | Vacation Wear |Beach Dress |Tropical Printed Top Pant for
+                girls | Sleeveless, for Girls, Vacation Wear, Beach Dress
                 <p
                   style={{
                     fontSize: "14px",
@@ -143,7 +137,6 @@ const KidProductDetails8 = () =>{
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Ideal for school, playtime, sports, travel, and home wear.
             </p>
@@ -230,7 +223,7 @@ const KidProductDetails8 = () =>{
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -322,52 +315,48 @@ const KidProductDetails8 = () =>{
                 Product Details
               </h3>
 
-             <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    rowGap: "10px",
-    fontSize: "14px",
-    color: "#333",
-  }}
->
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Material type
-  </span>
-  <span>Cotton</span>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "220px 1fr",
+                  rowGap: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material type
+                </span>
+                <span>Cotton</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Fit type
-  </span>
-  <span>Regular</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Regular</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Style
-  </span>
-  <span>Modern</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Modern</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Closure type
-  </span>
-  <span>Button</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Button</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Care instructions
-  </span>
-  <span>Machine Wash</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Machine Wash</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Age range description
-  </span>
-  <span>Kid</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Kid</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Country of Origin
-  </span>
-  <span>India</span>
-</div>
-
-
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Country of Origin
+                </span>
+                <span>India</span>
+              </div>
             </div>
 
             <div
@@ -398,52 +387,56 @@ const KidProductDetails8 = () =>{
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
+                  <strong>Premium Cotton Fabric:</strong> Made from soft,
+                  breathable cotton that provides maximum comfort and durability
+                  for all-day wear.
                 </li>
 
                 <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
+                  <strong>Stylish Tropical Design:</strong> Features a
+                  sleeveless tropical print top with matching pants for a trendy
+                  summer look.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
+                      <strong>Comfortable Fit:</strong> Elasticated waistband on
+                      the pants ensures a secure, flexible, and comfortable fit.
                     </li>
 
                     <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
+                      <strong>2-Piece Co-Ord Set:</strong> Includes one stylish
+                      top and one matching pant for a complete coordinated
+                      outfit.
                     </li>
 
                     <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
+                      <strong>Perfect for Summer:</strong> Lightweight,
+                      breathable fabric keeps your child cool and comfortable
+                      during warm weather.
                     </li>
 
                     <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
+                      <strong>Ideal for Many Occasions:</strong> Perfect for
+                      summer outings, casual wear, beach trips, playdates,
+                      family gatherings, and vacations.
                     </li>
 
                     <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
+                      <strong>Easy Care:</strong> Machine wash gently with mild
+                      detergent. Air dry to preserve the vibrant tropical print
+                      and fabric quality.
                     </li>
 
                     <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
+                      <strong>Long-Lasting Quality:</strong> Premium stitching
+                      and durable fabric ensure lasting comfort and everyday
+                      use.
                     </li>
 
                     <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
+                      <strong>Country of Origin:</strong> Made in India.
                     </li>
                   </>
                 )}
@@ -469,7 +462,7 @@ const KidProductDetails8 = () =>{
           </div>
         </div>
 
-        <KidProducReview1/>
+        <KidProducReview8 />
 
         <div className="Related-Product">
           <h2
@@ -516,7 +509,7 @@ const KidProductDetails8 = () =>{
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct8 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
@@ -526,12 +519,11 @@ const KidProductDetails8 = () =>{
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -542,4 +534,4 @@ const KidProductDetails8 = () =>{
     </>
   );
 };
-export default KidProductDetails8
+export default KidProductDetails8;
