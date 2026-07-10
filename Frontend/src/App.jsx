@@ -219,7 +219,7 @@ const App = () => {
          <Route path="/kidProductDetails6" element={<KidProductDetails6 />} />
          <Route path="/kidProductDetails7" element={<KidProductDetails7 />} />
          <Route path="/kidProductDetails8" element={<KidProductDetails8 />} />
-         <Route path="/kidProductDetails8" element={<KidProductDetails9 />} />
+         <Route path="/kidProductDetails9" element={<KidProductDetails9 />} />
          <Route path="/kidProductDetails10" element={<KidProductDetails10 />} />
          <Route path="/kidProductDetails11" element={<KidProductDetails11 />} />
          <Route path="/kidProductDetails12" element={<KidProductDetails12 />} />

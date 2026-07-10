@@ -24,7 +24,7 @@ import KidProduct5 from "./KidProduct5";
 import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
-import KidsProduct9 from "./KidsProduct1";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
