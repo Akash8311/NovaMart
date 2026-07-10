@@ -1,10 +1,46 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Priya Sharma",
+    date: "2026-06-18",
+    comment:
+      "Beautiful co-ord set! The tropical print is vibrant, the fabric is soft, and my daughter loved wearing it on our vacation.",
+    rating: 5,
+    initials: "PS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Neha Verma",
+    date: "2026-06-09",
+    comment:
+      "Excellent quality and perfect fitting. The cotton material is lightweight and keeps my child comfortable even in hot weather.",
+    rating: 5,
+    initials: "NV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Rohit Gupta",
+    date: "2026-05-30",
+    comment:
+      "Very stylish outfit with good stitching. The colors are exactly as shown in the pictures and the size fits perfectly.",
+    rating: 4,
+    initials: "RG",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Anjali Kapoor",
+    date: "2026-06-25",
+    comment:
+      "Perfect summer outfit for outings and family events. Comfortable, breathable, and looks premium. Highly recommended!",
+    rating: 5,
+    initials: "AK",
+    color: "#ec4899",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
@@ -195,27 +231,55 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "AJ DEZINES" },
+  { label: "Model Name", value: "G-CO-2032-RED" },
+  { label: "Style Number", value: "G-CO-2032" },
+  { label: "Part Number", value: "G-CO-2032-RED-4-5Y-24" },
+  { label: "Item Type", value: "Girls Cord Sets" },
+  { label: "Age Range", value: "Kid" },
+  { label: "Included Components", value: "Bottom, Top" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "130 Grams" },
+  { label: "Item Dimensions", value: "24 × 21 × 1 Centimeters" },
+  { label: "Unit Count", value: "1.0 Count" },
+  { label: "ASIN", value: "B0F4XZ5VCV" },
+  {
+    label: "Best Sellers Rank",
+    value: "#8,264 in Clothing & Accessories · #53 in Girls' Clothing Sets",
+  },
+  {
+    label: "Manufacturer",
+    value:
+      "Shri Shantinath Trading Company, 1st & 2nd Floor, 114, B-Block, Sector-63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201309",
+  },
+  {
+    label: "Packer / Importer",
+    value:
+      "Shri Shantinath Trading Company, Plot No. 63/E-130, Sector 63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201301",
+  },
 ];
 
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "🌴",
+    title: "Tropical Summer Design",
+    desc: "Stylish tropical print sleeveless top with matching bottoms for a fresh and fashionable summer look.",
+  },
+  {
+    icon: "🌿",
+    title: "Premium Cotton Fabric",
+    desc: "Made from soft, breathable cotton that keeps kids cool, comfortable, and active throughout the day.",
+  },
+  {
+    icon: "👧",
+    title: "Comfortable Co-Ord Set",
+    desc: "Includes a matching top and bottom with a regular fit and elasticated waistband for everyday comfort.",
+  },
+  {
+    icon: "☀️",
+    title: "Perfect for Summer",
+    desc: "Ideal for beach wear, vacations, casual outings, family events, and everyday summer adventures.",
+  },
 ];
 
 function DescriptionTab() {
