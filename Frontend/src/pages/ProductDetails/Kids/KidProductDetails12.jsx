@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -29,38 +27,33 @@ import KidProduct8 from "./KidProduct8";
 import KidProduct9 from "./KidProduct9";
 import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
-import KidProduct12 from "./KidProduct12";
+import KidsProduct1 from "./KidsProduct1";
 
-
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
-
-
-
+import ProductZoomKid12 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid12";
+import KidProducReview12 from "../ProductReaview/KidReview/KidProducReview12";
 
 const KidProductDetails12 = () => {
   const [selectedSize, setSelectedSize] = useState("9-10 Y");
   const [expanded, setExpanded] = useState(false);
 
-const sizes = [
-  "2-3 Y",
-  "3-4 Y",
-  "4-5 Y",
-  "5-6 Y",
-  "6-7 Y",
-  "7-8 Y",
-  "8-9 Y",
-  "9-10 Y",
-  "10-11 Y"
-];
+  const sizes = [
+    "2-3 Y",
+    "3-4 Y",
+    "4-5 Y",
+    "5-6 Y",
+    "6-7 Y",
+    "7-8 Y",
+    "8-9 Y",
+    "9-10 Y",
+    "10-11 Y",
+  ];
 
-    const product = {
-  id: "kids 12",
-  name: " Indian Bollywood Style",
-  price: 949,
-  image: "https://m.media-amazon.com/images/I/71UDtIDpa2L._SY741_.jpg"
-
-};
+  const product = {
+    id: "kids 12",
+    name: " Indian Bollywood Style",
+    price: 949,
+    image: "https://m.media-amazon.com/images/I/71UDtIDpa2L._SY741_.jpg",
+  };
 
   return (
     <>
@@ -108,7 +101,7 @@ const sizes = [
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid12 />
           </div>
 
           <div
@@ -129,10 +122,9 @@ const sizes = [
               }}
             >
               AHHAAAA Kids Ethnic Silk Indian Bollywood
-
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Style Print Indo-Western Sherwani Set For Boys 521MF
+                Style Print Indo-Western Sherwani Set For Boys 521MF
                 <p
                   style={{
                     fontSize: "14px",
@@ -144,9 +136,8 @@ const sizes = [
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for  playtime, travel, and home wear.
+              Ideal for playtime, travel, and home wear.
             </p>
 
             {/* RATING */}
@@ -231,7 +222,7 @@ const sizes = [
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -323,42 +314,38 @@ const sizes = [
                 Top highlights
               </h3>
 
-            <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    rowGap: "10px",
-    fontSize: "14px",
-    color: "#333",
-  }}
->
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Material composition
-  </span>
-  <span>Silk Blend</span>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "220px 1fr",
+                  rowGap: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material composition
+                </span>
+                <span>Silk Blend</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Style
-  </span>
-  <span>Ethnic Wear</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Ethnic Wear</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Fit type
-  </span>
-  <span>Regular Fit</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Regular Fit</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Care instructions
-  </span>
-  <span>Dry Clean Only</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Dry Clean Only</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Country of Origin
-  </span>
-  <span>India</span>
-</div>
-
-
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Country of Origin
+                </span>
+                <span>India</span>
+              </div>
             </div>
 
             <div
@@ -380,54 +367,68 @@ const sizes = [
                 About this item
               </h3>
 
-            <ul
-  style={{
-    paddingLeft: "18px",
-    fontSize: "14px",
-    color: "#333",
-    lineHeight: "1.7",
-  }}
->
-  <li>
-    <strong>Premium Silk Blend Fabric:</strong> Crafted from high-quality Art Silk with elegant mirror work for a rich and traditional ethnic look.
-  </li>
+              <ul
+                style={{
+                  paddingLeft: "18px",
+                  fontSize: "14px",
+                  color: "#333",
+                  lineHeight: "1.7",
+                }}
+              >
+                <li>
+                  <strong>Premium Silk Blend Fabric:</strong> Crafted from
+                  high-quality Art Silk with elegant mirror work for a rich and
+                  traditional ethnic look.
+                </li>
 
-  <li>
-    <strong>Complete 3-Piece Set:</strong> Includes 1 Kurta, 1 Waistcoat, and 1 Matching Pant for a stylish festive outfit.
-  </li>
+                <li>
+                  <strong>Complete 3-Piece Set:</strong> Includes 1 Kurta, 1
+                  Waistcoat, and 1 Matching Pant for a stylish festive outfit.
+                </li>
 
-  {expanded && (
-    <>
-      <li>
-        <strong>Comfortable Regular Fit:</strong> Designed to provide a comfortable fit while allowing easy movement for kids.
-      </li>
+                {expanded && (
+                  <>
+                    <li>
+                      <strong>Comfortable Regular Fit:</strong> Designed to
+                      provide a comfortable fit while allowing easy movement for
+                      kids.
+                    </li>
 
-      <li>
-        <strong>Perfect for Every Celebration:</strong> Ideal for weddings, festivals, temple visits, birthdays, Diwali, Holi, Navratri, Dussehra, Christmas, Onam, Pongal, Ugadi, and other special occasions.
-      </li>
+                    <li>
+                      <strong>Perfect for Every Celebration:</strong> Ideal for
+                      weddings, festivals, temple visits, birthdays, Diwali,
+                      Holi, Navratri, Dussehra, Christmas, Onam, Pongal, Ugadi,
+                      and other special occasions.
+                    </li>
 
-      <li>
-        <strong>Traditional Ethnic Design:</strong> Features a beautifully crafted waistcoat with mirror work, giving a royal and elegant appearance.
-      </li>
+                    <li>
+                      <strong>Traditional Ethnic Design:</strong> Features a
+                      beautifully crafted waistcoat with mirror work, giving a
+                      royal and elegant appearance.
+                    </li>
 
-      <li>
-        <strong>Suitable Age Group:</strong> Available in sizes suitable for children from 2 years to 11 years.
-      </li>
+                    <li>
+                      <strong>Suitable Age Group:</strong> Available in sizes
+                      suitable for children from 2 years to 11 years.
+                    </li>
 
-      <li>
-        <strong>Easy Care:</strong> Dry clean recommended. For light cleaning, use a gentle cold wash to preserve the fabric and embroidery.
-      </li>
+                    <li>
+                      <strong>Easy Care:</strong> Dry clean recommended. For
+                      light cleaning, use a gentle cold wash to preserve the
+                      fabric and embroidery.
+                    </li>
 
-      <li>
-        <strong>Color Disclaimer:</strong> Product color may vary slightly due to screen brightness and display settings.
-      </li>
+                    <li>
+                      <strong>Color Disclaimer:</strong> Product color may vary
+                      slightly due to screen brightness and display settings.
+                    </li>
 
-      <li>
-        <strong>Country of Origin:</strong> Made in India.
-      </li>
-    </>
-  )}
-</ul>
+                    <li>
+                      <strong>Country of Origin:</strong> Made in India.
+                    </li>
+                  </>
+                )}
+              </ul>
               <span
                 onClick={() => setExpanded(!expanded)}
                 style={{
@@ -448,7 +449,34 @@ const sizes = [
           </div>
         </div>
 
-        <KidProducReview1/>
+        <div>
+          <h2 style={{ marginTop: "10vh", paddingBottom: "0" }}>
+            Product description
+          </h2>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#1f1e1e",
+              lineHeight: "1.8",
+              margin: 0,
+            }}
+          >
+            Specially handcrafted clothing collection for the kid's boys; these
+            ethnic wear are quite comfortable to wear and skin-friendly as well.
+            It will give your rockstar a fabulous ethnic look!Kids Ethnic Silk
+            Blend Sherwani Set for Children!This kids clothes have a soft
+            texture and the fit is regular for boys clothing. These party wear
+            for boys set featureing an eye-catching design!Kids Ethnic Silk
+            Blend Sherwani Set for Children!hese ethnics wear are quite
+            comfortable to wear and skin-friendly as well. It will give your
+            rockstar a fabulous ethnic look!Kids Ethnic Silk Blend Sherwani Set
+            for Children!Marriages; Weddings; Temple visit; all festive wear;
+            Diwali; Navratri; Dussehra; pooja; Christmas; Onam; Pongal; Ganesha;
+            Ugadi; birthday all spacial occasion!
+          </p>
+        </div>
+
+        <KidProducReview12 />
 
         <div className="Related-Product">
           <h2
@@ -505,14 +533,13 @@ const sizes = [
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
-                <KidProduct12 />
+                <KidsProduct1 />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -522,4 +549,4 @@ const sizes = [
   );
 };
 
-export default KidProductDetails12
+export default KidProductDetails12;
