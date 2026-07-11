@@ -1,10 +1,106 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Rahul Sharma",
+    date: "2026-06-28",
+    comment:
+      "Absolutely stunning sherwani set! The fabric feels premium, the stitching is excellent, and my son looked like a prince at the wedding. Highly recommended.",
+    rating: 5,
+    initials: "RS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    date: "2026-06-22",
+    comment:
+      "Excellent quality and beautiful design. The fitting was perfect, and the color looked exactly like the pictures. Great value for money.",
+    rating: 5,
+    initials: "PV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Amit Gupta",
+    date: "2026-06-18",
+    comment:
+      "Bought this for my son's birthday celebration. Everyone complimented his outfit. Comfortable fabric and premium finish.",
+    rating: 5,
+    initials: "AG",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Sneha Kapoor",
+    date: "2026-06-15",
+    comment:
+      "Beautiful ethnic wear for kids. The sherwani is lightweight, comfortable, and perfect for long events. My child loved wearing it.",
+    rating: 5,
+    initials: "SK",
+    color: "#ec4899",
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    date: "2026-06-11",
+    comment:
+      "Premium quality fabric with excellent stitching. Fits perfectly and looks much more expensive than its price.",
+    rating: 5,
+    initials: "VS",
+    color: "#8b5cf6",
+  },
+  {
+    id: 6,
+    name: "Neha Joshi",
+    date: "2026-07-02",
+    comment:
+      "Purchased for a family wedding. The sherwani looked elegant and stylish. Delivery was quick, and the quality exceeded expectations.",
+    rating: 5,
+    initials: "NJ",
+    color: "#0ea5e9",
+  },
+  {
+    id: 7,
+    name: "Rohit Patel",
+    date: "2026-06-20",
+    comment:
+      "Amazing product! Soft fabric, accurate sizing, and a classy traditional look. Definitely one of the best ethnic outfits for boys.",
+    rating: 5,
+    initials: "RP",
+    color: "#22c55e",
+  },
+  {
+    id: 8,
+    name: "Anjali Mehta",
+    date: "2026-06-25",
+    comment:
+      "Very impressed with the craftsmanship. The embroidery and finishing are beautiful, and my son was comfortable throughout the function.",
+    rating: 5,
+    initials: "AM",
+    color: "#f43f5e",
+  },
+  {
+    id: 9,
+    name: "Karan Malhotra",
+    date: "2026-06-30",
+    comment:
+      "Perfect sherwani set for festivals and weddings. The fit was true to size, and the overall quality is outstanding.",
+    rating: 5,
+    initials: "KM",
+    color: "#06b6d4",
+  },
+  {
+    id: 10,
+    name: "Pooja Sharma",
+    date: "2026-07-05",
+    comment:
+      "Loved everything about this outfit. Premium material, elegant look, and excellent comfort. Would definitely purchase again from this brand.",
+    rating: 5,
+    initials: "PS",
+    color: "#eab308",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
