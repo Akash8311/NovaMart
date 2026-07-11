@@ -156,7 +156,7 @@ const KidProduct12 = () =>{
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails12"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
@@ -208,7 +208,7 @@ const KidProduct12 = () =>{
               margin: "0",
             }}
           >
-           AHHAAAA Kids Ethnic Silk Indian Bollywood Style Print Indo-Western Sherwani Set For Boys 521MF{" "}
+           AHHAAAA Kids Ethnic Silk Indian Bollywood Style {" "}
           </p>
           <div
             style={{
