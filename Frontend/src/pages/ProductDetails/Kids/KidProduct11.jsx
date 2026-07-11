@@ -156,7 +156,7 @@ const KidProduct11 = () =>{
         </div>
 
         <Link
-          to="/KidProductDetails4"
+          to="/KidProductDetails11"
           style={{ textDecoration: "none", color: "#777" }}
         >
           <div
@@ -210,7 +210,7 @@ const KidProduct11 = () =>{
               margin: "0",
             }}
           >
-            superminis Boys Printed Denim Halfsleeve Co-ord Set
+           Printed Denim Halfsleeve
             
             {" "}
           </p>
