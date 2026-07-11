@@ -39,11 +39,20 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails12 = () => {
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("9-10 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
-
+const sizes = [
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "5-6 Y",
+  "6-7 Y",
+  "7-8 Y",
+  "8-9 Y",
+  "9-10 Y",
+  "10-11 Y"
+];
 
     const product = {
   id: "kids 12",
@@ -119,12 +128,11 @@ const KidProductDetails12 = () => {
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              AHHAAAA Kids Ethnic Silk Indian Bollywood
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
-                (SWEATSHIRT-11) */}
+              Style Print Indo-Western Sherwani Set For Boys 521MF
                 <p
                   style={{
                     fontSize: "14px",
@@ -138,7 +146,7 @@ const KidProductDetails12 = () => {
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+              Ideal for  playtime, travel, and home wear.
             </p>
 
             {/* RATING */}
@@ -154,7 +162,7 @@ const KidProductDetails12 = () => {
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                |(252 reviews)
               </span>
             </div>
 
@@ -186,7 +194,7 @@ const KidProductDetails12 = () => {
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹949
               </span>
 
               <span
@@ -196,7 +204,7 @@ const KidProductDetails12 = () => {
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹3,999
               </span>
 
               <span
@@ -206,7 +214,7 @@ const KidProductDetails12 = () => {
                   color: "#007185",
                 }}
               >
-                5% off
+                76% off
               </span>
             </div>
 
@@ -315,50 +323,42 @@ const KidProductDetails12 = () => {
                 Top highlights
               </h3>
 
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr",
-                  rowGap: "10px",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material composition
-                </span>
-                <span>Cotton</span>
+            <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    rowGap: "10px",
+    fontSize: "14px",
+    color: "#333",
+  }}
+>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Material composition
+  </span>
+  <span>Silk Blend</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
-                <span>Shorts</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Style
+  </span>
+  <span>Ethnic Wear</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
-                <span>Mid Thigh Length
-</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Fit type
+  </span>
+  <span>Regular Fit</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Care instructions
+  </span>
+  <span>Dry Clean Only</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Material type</span>
-                <span>Cotton</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Country of Origin
+  </span>
+  <span>India</span>
+</div>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
-                <span>Machine Wash
-</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Country of Origin
-                </span>
-                <span>India</span>
-              </div>
             </div>
 
             <div
@@ -380,66 +380,54 @@ const KidProductDetails12 = () => {
                 About this item
               </h3>
 
-              <ul
-                style={{
-                  paddingLeft: "18px",
-                  fontSize: "14px",
-                  color: "#333",
-                  lineHeight: "1.7",
-                }}
-              >
-                <li>
-                  <strong>Soft & Breathable Fabric:</strong> Made from high-quality cotton for maximum comfort.
-                </li>
+            <ul
+  style={{
+    paddingLeft: "18px",
+    fontSize: "14px",
+    color: "#333",
+    lineHeight: "1.7",
+  }}
+>
+  <li>
+    <strong>Premium Silk Blend Fabric:</strong> Crafted from high-quality Art Silk with elegant mirror work for a rich and traditional ethnic look.
+  </li>
 
-                <li>
-                  <strong>Elastic Waistband:</strong> Provides a secure and flexible fit for active kids.
-                </li>
+  <li>
+    <strong>Complete 3-Piece Set:</strong> Includes 1 Kurta, 1 Waistcoat, and 1 Matching Pant for a stylish festive outfit.
+  </li>
 
-                {expanded && (
-                  <>
-                    <li>
-                      <strong>Lightweight & Skin-Friendly:</strong> Perfect for warm weather and everyday use.
-                    </li>
+  {expanded && (
+    <>
+      <li>
+        <strong>Comfortable Regular Fit:</strong> Designed to provide a comfortable fit while allowing easy movement for kids.
+      </li>
 
-                    <li>
-                      <strong>DESIGN:</strong> Solid pattern with a timeless
-                      design that never goes out of style and pairs effortlessly
-                      with trousers, chinos, or formal pants.
-                    </li>
+      <li>
+        <strong>Perfect for Every Celebration:</strong> Ideal for weddings, festivals, temple visits, birthdays, Diwali, Holi, Navratri, Dussehra, Christmas, Onam, Pongal, Ugadi, and other special occasions.
+      </li>
 
-                    <li>
-                      <strong>Versatile Style:</strong> Easy to match with t-shirts, tops, and casual outfits.
-                    </li>
+      <li>
+        <strong>Traditional Ethnic Design:</strong> Features a beautifully crafted waistcoat with mirror work, giving a royal and elegant appearance.
+      </li>
 
-                    <li>
-                      <strong>Perfect for Multiple Occasions:</strong> Ideal for school, playtime, sports, travel, and home wear.
-                    </li>
+      <li>
+        <strong>Suitable Age Group:</strong> Available in sizes suitable for children from 2 years to 11 years.
+      </li>
 
-                    <li>
-                      <strong>CRAFTSMANSHIP:</strong> Precisely stitched seams
-                      and durable buttons ensure long-lasting performance and
-                      premium finish.
-                    </li>
+      <li>
+        <strong>Easy Care:</strong> Dry clean recommended. For light cleaning, use a gentle cold wash to preserve the fabric and embroidery.
+      </li>
 
-                    <li>
-                      <strong>VERSATILITY:</strong> Suitable for office wear,
-                      business meetings, interviews, formal events, and smart
-                      casual occasions.
-                    </li>
+      <li>
+        <strong>Color Disclaimer:</strong> Product color may vary slightly due to screen brightness and display settings.
+      </li>
 
-                    <li>
-                      <strong>EASY CARE:</strong> MMachine Wash
-                    </li>
-
-                    <li>
-                      <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
-                      with attention to quality and detail.
-                    </li>
-                  </>
-                )}
-              </ul>
-
+      <li>
+        <strong>Country of Origin:</strong> Made in India.
+      </li>
+    </>
+  )}
+</ul>
               <span
                 onClick={() => setExpanded(!expanded)}
                 style={{
