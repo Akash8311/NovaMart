@@ -25,12 +25,12 @@ import KidProduct6 from "./KidProduct6";
 import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
 import KidProduct9 from "./KidProduct9";
-import KidProduct10 from "./KidProduct10";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import ProductZoomKid10 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid10";
+import KidProducReview10 from "../ProductReaview/KidReview/KidProducReview10";
 
 const KidProductDetails10 = () => {
   const [selectedSize, setSelectedSize] = useState("2-3 Y");

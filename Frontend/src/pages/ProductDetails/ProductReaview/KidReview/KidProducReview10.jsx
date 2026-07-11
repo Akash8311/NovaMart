@@ -195,27 +195,54 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "AJ DEZINES" },
+  { label: "Model Name", value: "Twister-CA-56" },
+  { label: "Style Number", value: "Twister-CA-56" },
+  { label: "Item Type", value: "Shirt Short Set" },
+  { label: "Department", value: "Boys" },
+  { label: "Included Components", value: "Shirt, Shorts" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "340 Grams" },
+  { label: "Item Dimensions", value: "25 × 17 × 2 Centimeters" },
+  { label: "Unit Count", value: "1 Count" },
+  { label: "Number of Items", value: "1" },
+  { label: "ASIN", value: "B0CFVW9CS5" },
+  {
+    label: "Best Sellers Rank",
+    value: "#92,410 in Clothing & Accessories · #784 in Boys' Clothing Sets",
+  },
+  {
+    label: "Manufacturer",
+    value:
+      "Shri Shantinath Trading Company, 1st & 2nd Floor, 114, B-Block, Sector-63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201309",
+  },
+  {
+    label: "Packer / Importer",
+    value:
+      "Shri Shantinath Trading Company, Plot No. 63/E-130, Sector 63, Noida, Gautam Buddha Nagar, Uttar Pradesh - 201301",
+  },
 ];
-
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👕",
+    title: "Premium Cotton Blend",
+    desc: "Made from soft, breathable fabric that provides all-day comfort and durability for active kids.",
+  },
+  {
+    icon: "🩳",
+    title: "Stylish Shirt & Shorts Set",
+    desc: "Includes a matching shirt and shorts for a smart, coordinated look suitable for every occasion.",
+  },
+  {
+    icon: "✨",
+    title: "Comfortable Regular Fit",
+    desc: "Designed with a regular fit that allows easy movement and ensures maximum comfort throughout the day.",
+  },
+  {
+    icon: "🎉",
+    title: "Perfect for Every Occasion",
+    desc: "Ideal for birthdays, parties, family outings, vacations, festivals, and everyday casual wear.",
+  },
 ];
 
 function DescriptionTab() {
