@@ -102,9 +102,7 @@ const REVIEWS_DATA = [
     color: "#eab308",
   },
 ];
-
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
-
 function Star({ filled, size = 16, onClick, onHover, onLeave }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" style={{ display:"block", cursor: onClick?"pointer":"default", transition:"transform .15s, filter .15s" }}
@@ -144,7 +142,6 @@ function AnimBar({ count, total, delay }) {
     </div>
   );
 }
-
 function Avatar({ initials, color, size=42 }) {
   return (
     <div style={{ width:size, height:size, borderRadius:"50%", flexShrink:0,
