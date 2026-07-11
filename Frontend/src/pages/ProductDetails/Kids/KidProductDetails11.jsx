@@ -38,17 +38,23 @@ import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
 
 
 const KidProductDetails11 = () =>{
-  const [selectedSize, setSelectedSize] = useState("40");
+  const [selectedSize, setSelectedSize] = useState("3-4 Y");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L", "XL"];
+ const sizes = [
+  "2-3 Y",
+  "3-4 Y",
+  "4-5 Y",
+  "5-6 Y",
+  "6-7 Y"
+];
 
 
     const product = {
-  id: 5,
-  name: "BODYCARE Girls Shorts Pack of 2",
-  price: 437,
-  image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
+  id: "kids 11",
+  name: "Boys Printed Denim Halfsleeve",
+  price: 899,
+  image: "https://m.media-amazon.com/images/I/61GYuAjxm9L._SX679_.jpg"
 
 };
 
@@ -98,7 +104,7 @@ const KidProductDetails11 = () =>{
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid11 />
           </div>
 
           <div
