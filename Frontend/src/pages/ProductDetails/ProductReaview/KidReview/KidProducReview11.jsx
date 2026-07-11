@@ -1,12 +1,67 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Rahul Sharma",
+    date: "2026-06-25",
+    comment:
+      "Excellent clothing set! The fabric feels soft, the stitching is neat, and the fitting is perfect. My son loved wearing it.",
+    rating: 5,
+    initials: "RS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    date: "2026-06-17",
+    comment:
+      "Very good quality for the price. The material is comfortable, and the colors look exactly like the product images.",
+    rating: 4,
+    initials: "PV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Amit Gupta",
+    date: "2026-06-08",
+    comment:
+      "Purchased this for my son's birthday. The outfit looked stylish and received many compliments. Worth buying.",
+    rating: 5,
+    initials: "AG",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Sneha Kapoor",
+    date: "2026-07-01",
+    comment:
+      "Comfortable, lightweight, and easy to wash. The fit is true to size and the quality exceeded my expectations.",
+    rating: 5,
+    initials: "SK",
+    color: "#ec4899",
+  },
+  {
+    id: 5,
+    name: "Vikram Singh",
+    date: "2026-06-14",
+    comment:
+      "Good fabric quality and durable stitching. Perfect for casual outings, family functions, and everyday wear.",
+    rating: 4,
+    initials: "VS",
+    color: "#8b5cf6",
+  },
+  {
+    id: 6,
+    name: "Neha Joshi",
+    date: "2026-07-05",
+    comment:
+      "Beautiful clothing set with a premium finish. My child felt comfortable all day, and I'll definitely order another one.",
+    rating: 5,
+    initials: "NJ",
+    color: "#0ea5e9",
+  },
 ];
-
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
 
 function Star({ filled, size = 16, onClick, onHover, onLeave }) {
@@ -195,27 +250,53 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "ASW Retail Corporation" },
+  { label: "Model Name", value: "50493-BCD2" },
+  { label: "Part Number", value: "50493-BCD2" },
+  { label: "Item Type", value: "Clothing Set" },
+  { label: "Department", value: "Boys" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "250 Grams" },
+  { label: "Item Dimensions", value: "44.4 × 17.8 × 2 Centimeters" },
+  { label: "Unit Count", value: "2.0 Set" },
+  { label: "Number of Items", value: "2" },
+  { label: "ASIN", value: "B0H1CZ9LHX" },
+  {
+    label: "Best Sellers Rank",
+    value: "#54,155 in Clothing & Accessories",
+  },
+  {
+    label: "Manufacturer",
+    value: "ASW Retail Corporation",
+  },
+  {
+    label: "Packer / Importer",
+    value: "ASW Retail Corporation",
+  },
 ];
 
+
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👕",
+    title: "Premium Clothing Set",
+    desc: "Stylish 2-piece clothing set designed for boys with a modern and comfortable fit.",
+  },
+  {
+    icon: "🌿",
+    title: "Comfortable Fabric",
+    desc: "Made from soft, breathable material that provides lasting comfort for everyday wear.",
+  },
+  {
+    icon: "✨",
+    title: "Modern Design",
+    desc: "Trendy design suitable for casual outings, family gatherings, birthdays, and festive occasions.",
+  },
+  {
+    icon: "🧺",
+    title: "Easy Care",
+    desc: "Durable fabric that is easy to maintain and suitable for regular machine washing.",
+  },
 ];
 
 function DescriptionTab() {
