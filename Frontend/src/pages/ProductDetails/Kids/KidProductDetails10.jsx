@@ -89,7 +89,7 @@ const KidProductDetails10 = () => {
               height: "fit-content",
             }}
           >
-            <ProductZoomKid1 />
+            <ProductZoomKid10 />
           </div>
 
           <div
@@ -302,49 +302,54 @@ const KidProductDetails10 = () => {
                Top highlights
               </h3>
 
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "220px 1fr",
-                  rowGap: "10px",
-                  fontSize: "14px",
-                  color: "#333",
-                }}
-              >
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Material type
-                </span>
-                <span>Cotton Blend</span>
+             <div
+  style={{
+    display: "grid",
+    gridTemplateColumns: "220px 1fr",
+    rowGap: "10px",
+    fontSize: "14px",
+    color: "#333",
+  }}
+>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Material type
+  </span>
+  <span>Cotton Blend</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Fit type
-                </span>
-                <span>Regular</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Fit type
+  </span>
+  <span>Regular</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
-                <span>Modern</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Style
+  </span>
+  <span>Modern</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Theme</span>
-                <span>Cotton</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Theme
+  </span>
+  <span>Cotton</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Closure type
-                </span>
-                <span>Button</span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Closure type
+  </span>
+  <span>Button</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Care instructions
-                </span>
-                <span>
-                  Machine Wash (Gentle Cycle), Tumble Dry Low, Do Not Iron,
-                  Store in a Cool, Dry Place
-                </span>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Care instructions
+  </span>
+  <span>
+    Machine Wash (Gentle Cycle), Tumble Dry Low, Do Not Iron, Store in a Cool,
+    Dry Place
+  </span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Country of Origin
-                </span>
-                <span>India</span>
-              </div>
+  <span style={{ fontWeight: "500", color: "#555" }}>
+    Country of Origin
+  </span>
+  <span>India</span>
+</div>
+
             </div>
 
             <div
@@ -365,69 +370,55 @@ const KidProductDetails10 = () => {
               >
                 About this item
               </h3>
+
               <ul
-                style={{
-                  paddingLeft: "18px",
-                  fontSize: "14px",
-                  color: "#333",
-                  lineHeight: "1.7",
-                }}
-              >
-                <li>
-                  <strong>Premium Cotton Fabric:</strong> Crafted from pure
-                  cotton for the shirt, shorts, cap, and bow, ensuring softness,
-                  breathability, and all-day comfort.
-                </li>
+  style={{
+    paddingLeft: "18px",
+    fontSize: "14px",
+    color: "#333",
+    lineHeight: "1.7",
+  }}
+>
+  <li>
+    <strong>Premium Cotton Fabric:</strong> Made from 100% pure cotton for the shirt, shorts, cap, and bow tie, ensuring superior comfort, breathability, and durability.
+  </li>
 
-                <li>
-                  <strong>Complete 5-Piece Outfit:</strong> Includes 1 Shirt, 1
-                  Shorts, 1 Matching Suspender, 1 Bow Tie, and 1 Cap for a
-                  stylish coordinated look.
-                </li>
+  <li>
+    <strong>Complete 5-Piece Set:</strong> Includes 1 Shirt, 1 Shorts, 1 Matching Suspender, 1 Bow Tie, and 1 Cap for a smart and coordinated look.
+  </li>
 
-                {expanded && (
-                  <>
-                    <li>
-                      <strong>Comfortable Fit:</strong> Shorts feature a
-                      partially elastic waistband with button and zipper closure
-                      for a secure and comfortable fit.
-                    </li>
+  {expanded && (
+    <>
+      <li>
+        <strong>Classic Design:</strong> Features a half-sleeve shirt with front button closure, spread collar, matching bow tie, and coordinating cap for a stylish appearance.
+      </li>
 
-                    <li>
-                      <strong>Stylish Design:</strong> Half-sleeve shirt with
-                      front button closure, spread collar, matching bow tie,
-                      suspenders, and cap for a smart appearance.
-                    </li>
+      <li>
+        <strong>Comfortable Fit:</strong> Shorts feature a partially elastic waistband with button and zipper closure for a secure and comfortable fit.
+      </li>
 
-                    <li>
-                      <strong>Functional Details:</strong> Shorts include two
-                      side pockets, while the elasticated suspenders provide a
-                      secure and adjustable fit.
-                    </li>
+      <li>
+        <strong>Functional Details:</strong> Includes two side pockets and adjustable elastic suspenders for added convenience and style.
+      </li>
 
-                    <li>
-                      <strong>Perfect for Special Occasions:</strong> Ideal for
-                      birthdays, weddings, parties, family functions, festive
-                      celebrations, and memorable photoshoots.
-                    </li>
+      <li>
+        <strong>Perfect for Special Occasions:</strong> Ideal for birthdays, weddings, parties, festivals, family functions, photoshoots, and other celebrations.
+      </li>
 
-                    <li>
-                      <strong>Available in Multiple Sizes:</strong> Offered in a
-                      range of sizes to provide the perfect fit for boys across
-                      different age groups.
-                    </li>
+      <li>
+        <strong>Available in Multiple Sizes:</strong> Designed to provide the perfect fit for boys across different age groups.
+      </li>
 
-                    <li>
-                      <strong>Easy Care:</strong> Machine wash gently with mild
-                      detergent to maintain fabric quality and color.
-                    </li>
+      <li>
+        <strong>Easy Care:</strong> Machine wash with a mild detergent to maintain fabric softness and long-lasting color.
+      </li>
 
-                    <li>
-                      <strong>Country of Origin:</strong> Made in India.
-                    </li>
-                  </>
-                )}
-              </ul>
+      <li>
+        <strong>Country of Origin:</strong> Made in India.
+      </li>
+    </>
+  )}
+</ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -449,7 +440,23 @@ const KidProductDetails10 = () => {
           </div>
         </div>
 
-        <KidProducReview1 />
+
+
+        <div>
+          <h2 style={{marginTop:"10vh",paddingBottom:"0"}}>Product description</h2>
+          <p
+            style={{
+              fontSize: "14px",
+              color: "#1f1e1e",
+              lineHeight: "1.8",
+              margin: 0,
+            }}
+          >
+            AJ Dezines offers a range of clothing sets for baby boys & boys that is inspired by the children in our lives, whose stories and dreams make their way into these western style. Made from cool and breathable cotton & polyester fabric. shorts with shirt gives perfect look. shorts with partial elasticated waistband ensuring comfort fit and easy dressing. This sets is convenient in summers, spring and fall. Perfect for function wear, wedding, festive wear, party wear, birthday, school, outside wear etc. This clothings shirt short set for boys is available in different colors, black, navy blue, white, mustard, pink, brown, black-white, blue, peach-blue and white-blue.
+          </p>
+        </div>
+
+        <KidProducReview10 />
 
         <div className="Related-Product">
           <h2
@@ -504,7 +511,7 @@ const KidProductDetails10 = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <KidProduct10 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               <SwiperSlide>
