@@ -124,7 +124,7 @@ const KidProductDetails11 = () =>{
                 marginBottom: "6px",
               }}
             >
-              BODYCARE Girls Shorts Pack of 2
+              superminis Boys Printed Denim Halfsleeve Co-ord Set
 
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
@@ -143,7 +143,7 @@ const KidProductDetails11 = () =>{
 
           
             <p style={{ fontSize: "14px", color: "#777" }}>
-              Ideal for school, playtime, sports, travel, and home wear.
+              Ideal for playtime, sports, travel, and home wear.
             </p>
 
             {/* RATING */}
@@ -159,7 +159,7 @@ const KidProductDetails11 = () =>{
             >
               ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
-                (152 reviews)
+                (21 reviews)
               </span>
             </div>
 
@@ -191,7 +191,7 @@ const KidProductDetails11 = () =>{
                   color: "#B12704",
                 }}
               >
-                ₹437
+                ₹899
               </span>
 
               <span
@@ -201,7 +201,7 @@ const KidProductDetails11 = () =>{
                   textDecoration: "line-through",
                 }}
               >
-                ₹460
+                ₹1,299
               </span>
 
               <span
@@ -211,7 +211,7 @@ const KidProductDetails11 = () =>{
                   color: "#007185",
                 }}
               >
-                5% off
+                31% off
               </span>
             </div>
 
