@@ -195,29 +195,53 @@ function OnlyReviewSection() {
 
 
 const DETAILS = [
-  { label: "Brand Name",                    value: "Lymio" },
-  { label: "Model Name",                    value: "RIB-Shirt-02" },
-  { label: "Style Number",                  value: "RIB-Shirt-02-Black-M" },
-  { label: "Item Type",                     value: "Shirt" },
-  { label: "Age Range",                     value: "Adult" },
-  { label: "Country of Origin",             value: "India" },
-  { label: "Item Weight",                   value: "299 Grams" },
-  { label: "Unit Count",                    value: "1 Count" },
-  { label: "Number of Items",               value: "1" },
-  { label: "ASIN",                          value: "B0CRPGGZLR" },
-  { label: "Manufacturer Part Number",      value: "RIB-Shirt-02-Black-M" },
-  { label: "Best Sellers Rank",             value: "#6,199 in Clothing & Accessories · #277 in Men's Shirts" },
-  { label: "Manufacturer",                  value: "J B Fashion, Surat – 395004" },
-  { label: "Packer / Importer",             value: "J B Fashion, Surat – 395004" },
+  { label: "Brand Name", value: "Muskan Fashion" },
+  { label: "Model Name", value: "PNK521MF-2" },
+  { label: "Part Number", value: "PNK521MF-2" },
+  { label: "Item Type", value: "Sherwani Set" },
+  { label: "Department", value: "Boys" },
+  { label: "Country of Origin", value: "India" },
+  { label: "Item Weight", value: "280 Grams" },
+  { label: "Package Dimensions", value: "33 × 23.6 × 5.5 Centimeters" },
+  { label: "Unit Count", value: "1 Count" },
+  { label: "Number of Items", value: "1" },
+  { label: "ASIN", value: "B0C9QRYVTR" },
+  {
+    label: "Best Sellers Rank",
+    value: "#10,611 in Clothing & Accessories · #1 in Boys' Sherwanis",
+  },
+  {
+    label: "Manufacturer",
+    value: "Muskan Fashion",
+  },
+  {
+    label: "Packer / Importer",
+    value: "Muskan Fashion",
+  },
 ];
 
 const FEATURES = [
-  { icon: "🧵", title: "Ribbed Texture",   desc: "Distinctive rib knit fabric that adds visual depth and a premium tactile feel." },
-  { icon: "✂️", title: "Tailored Fit",     desc: "Precision cut for a slim, flattering silhouette that works across all size ranges." },
-  { icon: "🧼", title: "Easy Care",        desc: "Machine washable. Retains colour and shape wash after wash." },
-  { icon: "🚚", title: "Fast Delivery",    desc: "Ships within 24 hours. Free delivery on orders above ₹499." },
+  {
+    icon: "👑",
+    title: "Royal Sherwani Set",
+    desc: "Elegant ethnic sherwani set designed to give boys a traditional and royal festive look.",
+  },
+  {
+    icon: "✨",
+    title: "Premium Fabric",
+    desc: "Made from high-quality fabric that is soft, comfortable, and suitable for long hours of wear.",
+  },
+  {
+    icon: "🎉",
+    title: "Perfect for Celebrations",
+    desc: "Ideal for weddings, festivals, birthdays, cultural events, family functions, and religious ceremonies.",
+  },
+  {
+    icon: "🧺",
+    title: "Easy Maintenance",
+    desc: "Designed for durability and easy care, helping maintain its premium appearance after use.",
+  },
 ];
-
 function DescriptionTab() {
   const [expandBSR, setExpandBSR] = useState(false);
   return (
