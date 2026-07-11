@@ -28,12 +28,12 @@ import KidProduct7 from "./KidProduct7";
 import KidProduct8 from "./KidProduct8";
 import KidProduct9 from "./KidProduct9";
 import KidProduct10 from "./KidProduct10";
-import KidProduct11 from "./KidProduct11";
+import KidsProduct1 from "./KidsProduct1";
 import KidProduct12 from "./KidProduct12";
 
 
-import ProductZoomKid1 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid1";
-import KidProducReview1 from "../ProductReaview/KidReview/KidProducReview1";
+import ProductZoomKid11 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid11";
+import KidProducReview11 from "../ProductReaview/KidReview/KidProducReview11";
 
 
 
@@ -528,7 +528,7 @@ const KidProductDetails11 = () =>{
               </SwiperSlide>
               
               <SwiperSlide>
-                <KidProduct11 />
+                <KidsProduct1 />
               </SwiperSlide>
 
               
