@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -31,35 +29,21 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid5 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid5";
 import KidProducReview5 from "../ProductReaview/KidReview/KidProducReview5";
 
-
-
-const KidProductDetails5 = () =>{
+const KidProductDetails5 = () => {
   const [selectedSize, setSelectedSize] = useState("3-4");
   const [expanded, setExpanded] = useState(false);
 
- const sizes = [
-  "0-6",
-  "1-2",
-  "2-3",
-  "3-4",
-  "4-5",
-  "5-6",
-  "6-7",
-  "6-12"
-];
+  const sizes = ["0-6", "1-2", "2-3", "3-4", "4-5", "5-6", "6-7", "6-12"];
 
-
-    const product = {
-  id: "Boys Co-Ord Set",
-  name: "Boys Co-Ord Set",
-  price: 349,
-  image: "https://m.media-amazon.com/images/I/31zq8wtG19L.jpg"
-
-};
+  const product = {
+    id: "Boys Co-Ord Set",
+    name: "Boys Co-Ord Set",
+    price: 349,
+    image: "https://m.media-amazon.com/images/I/31zq8wtG19L.jpg",
+  };
 
   return (
     <>
@@ -128,10 +112,11 @@ const KidProductDetails5 = () =>{
               }}
             >
               Boys Co-Ord Set | Stylish Solid Shirt & Shorts Set for Kids
-
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                Stylish Solid Shirt & Shorts Set for Kids | Trendy Half Sleeve Casual Outfit | Premium Cotton Summer Wear | Smart Matching  Outfit for Boys with Comfortable Fit
+                Stylish Solid Shirt & Shorts Set for Kids | Trendy Half Sleeve
+                Casual Outfit | Premium Cotton Summer Wear | Smart Matching
+                Outfit for Boys with Comfortable Fit
                 <p
                   style={{
                     fontSize: "14px",
@@ -143,7 +128,6 @@ const KidProductDetails5 = () =>{
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               {/* Ideal for school, playtime, sports, travel, and home wear. */}
             </p>
@@ -230,7 +214,7 @@ const KidProductDetails5 = () =>{
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -323,49 +307,47 @@ const KidProductDetails5 = () =>{
               </h3>
 
               <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    rowGap: "10px",
-    fontSize: "14px",
-    color: "#333",
-  }}
->
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Material type
-  </span>
-  <span>Cotton</span>
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "220px 1fr",
+                  rowGap: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material type
+                </span>
+                <span>Cotton</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Fit type
-  </span>
-  <span>Straight</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Straight</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Style
-  </span>
-  <span>Classic</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Classic</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Closure type
-  </span>
-  <span>Button</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Button</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Care instructions
-  </span>
-  <span>Hand Wash Only</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Hand Wash Only</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Age range description
-  </span>
-  <span>Kid</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Kid</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Country of Origin
-  </span>
-  <span>India</span>
-</div>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Country of Origin
+                </span>
+                <span>India</span>
+              </div>
             </div>
 
             <div
@@ -388,53 +370,66 @@ const KidProductDetails5 = () =>{
               </h3>
 
               <ul
-  style={{
-    paddingLeft: "18px",
-    fontSize: "14px",
-    color: "#333",
-    lineHeight: "1.7",
-  }}
->
-  <li>
-    <strong>Matching Co-Ord Set:</strong> Includes a perfectly matched shirt and shorts combination for a stylish ready-to-wear outfit.
-  </li>
+                style={{
+                  paddingLeft: "18px",
+                  fontSize: "14px",
+                  color: "#333",
+                  lineHeight: "1.7",
+                }}
+              >
+                <li>
+                  <strong>Matching Co-Ord Set:</strong> Includes a perfectly
+                  matched shirt and shorts combination for a stylish
+                  ready-to-wear outfit.
+                </li>
 
-  <li>
-    <strong>Soft Cotton Fabric:</strong> Made from premium-quality, breathable cotton that feels gentle and comfortable on your child's skin.
-  </li>
+                <li>
+                  <strong>Soft Cotton Fabric:</strong> Made from
+                  premium-quality, breathable cotton that feels gentle and
+                  comfortable on your child's skin.
+                </li>
 
-  {expanded && (
-    <>
-      <li>
-        <strong>Lightweight & Breathable:</strong> Airy cotton fabric keeps your child cool, fresh, and comfortable during hot summer days.
-      </li>
+                {expanded && (
+                  <>
+                    <li>
+                      <strong>Lightweight & Breathable:</strong> Airy cotton
+                      fabric keeps your child cool, fresh, and comfortable
+                      during hot summer days.
+                    </li>
 
-      <li>
-        <strong>Stylish Solid Design:</strong> Classic solid color gives a modern, trendy look suitable for boys and girls.
-      </li>
+                    <li>
+                      <strong>Stylish Solid Design:</strong> Classic solid color
+                      gives a modern, trendy look suitable for boys and girls.
+                    </li>
 
-      <li>
-        <strong>Relaxed Fit:</strong> Designed for unrestricted movement, making it perfect for playing, running, and everyday activities.
-      </li>
+                    <li>
+                      <strong>Relaxed Fit:</strong> Designed for unrestricted
+                      movement, making it perfect for playing, running, and
+                      everyday activities.
+                    </li>
 
-      <li>
-        <strong>Skin-Friendly Material:</strong> Soft, sweat-friendly fabric provides all-day comfort without irritation.
-      </li>
+                    <li>
+                      <strong>Skin-Friendly Material:</strong> Soft,
+                      sweat-friendly fabric provides all-day comfort without
+                      irritation.
+                    </li>
 
-      <li>
-        <strong>Perfect for Many Occasions:</strong> Ideal for casual wear, vacations, outings, birthdays, playtime, and daily use.
-      </li>
+                    <li>
+                      <strong>Perfect for Many Occasions:</strong> Ideal for
+                      casual wear, vacations, outings, birthdays, playtime, and
+                      daily use.
+                    </li>
 
-      <li>
-        <strong>Easy Care:</strong> Machine Wash.
-      </li>
+                    <li>
+                      <strong>Easy Care:</strong> Machine Wash.
+                    </li>
 
-      <li>
-        <strong>Country of Origin:</strong> Made in India.
-      </li>
-    </>
-  )}
-</ul>
+                    <li>
+                      <strong>Country of Origin:</strong> Made in India.
+                    </li>
+                  </>
+                )}
+              </ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -456,7 +451,7 @@ const KidProductDetails5 = () =>{
           </div>
         </div>
 
-        <KidProducReview5/>
+        <KidProducReview5 />
 
         <div className="Related-Product">
           <h2
@@ -479,48 +474,37 @@ const KidProductDetails5 = () =>{
               className="mySwiper"
             >
               <SwiperSlide>
-                <KidProduct2 />
+                <KidProduct11 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct3 />
+                <KidProduct5 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct4 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidsProduct1 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct6 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct7 />
-              </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct8 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct9 />
+                <KidProduct3 />
               </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
               <SwiperSlide>
-                <KidProduct11 />
+                <KidProduct6 />
               </SwiperSlide>
-
-              
               <SwiperSlide>
                 <KidProduct12 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct4 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct9 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct7 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct2 />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -529,4 +513,4 @@ const KidProductDetails5 = () =>{
     </>
   );
 };
-export default KidProductDetails5
+export default KidProductDetails5;

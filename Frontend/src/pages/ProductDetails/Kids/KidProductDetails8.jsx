@@ -487,45 +487,35 @@ const KidProductDetails8 = () => {
               <SwiperSlide>
                 <KidProduct2 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct3 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct4 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct5 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct6 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct7 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidsProduct1 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct9 />
-              </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-
+              <SwiperSlide>
+                <KidProduct5 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct7 />
+              </SwiperSlide>
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
-
+              <SwiperSlide>
+                <KidProduct3 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct9 />
+              </SwiperSlide>
               <SwiperSlide>
                 <KidProduct12 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct4 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct6 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct8 />
               </SwiperSlide>
             </Swiper>
           </div>

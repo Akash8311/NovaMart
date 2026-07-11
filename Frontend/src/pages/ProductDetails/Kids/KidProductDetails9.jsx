@@ -460,7 +460,9 @@ const KidProductDetails9 = () => {
         </div>
 
         <div>
-          <h2 style={{marginTop:"10vh",paddingBottom:"0"}}>Product description</h2>
+          <h2 style={{ marginTop: "10vh", paddingBottom: "0" }}>
+            Product description
+          </h2>
           <p
             style={{
               fontSize: "14px",

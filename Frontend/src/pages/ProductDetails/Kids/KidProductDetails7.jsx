@@ -17,7 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
 import KidsProduct1 from "./KidsProduct1";
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
@@ -30,34 +29,30 @@ import KidProduct10 from "./KidProduct10";
 import KidProduct11 from "./KidProduct11";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid7 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid7";
 import KidProducReview7 from "../ProductReaview/KidReview/KidProducReview7";
-
-
 
 const KidProductDetails7 = () => {
   const [selectedSize, setSelectedSize] = useState("10-11 Y");
   const [expanded, setExpanded] = useState(false);
 
-const sizes = [
-  "4-5 Y",
-  "6-7 Y",
-  "7-8 Y",
-  "8-9 Y",
-  "9-10 Y",
-  "10-11 Y",
-  "12-13 Y",
-  "14-15 Y"
-];
+  const sizes = [
+    "4-5 Y",
+    "6-7 Y",
+    "7-8 Y",
+    "8-9 Y",
+    "9-10 Y",
+    "10-11 Y",
+    "12-13 Y",
+    "14-15 Y",
+  ];
 
-    const product = {
-  id: "kids 7",
-  name: "AJ DEZINES Kids Ethnic Wear Silk Blend",
-  price: 399,
-  image: "https://m.media-amazon.com/images/I/61r61E4KKGL._SY741_.jpg"
-
-};
+  const product = {
+    id: "kids 7",
+    name: "AJ DEZINES Kids Ethnic Wear Silk Blend",
+    price: 399,
+    image: "https://m.media-amazon.com/images/I/61r61E4KKGL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -125,10 +120,10 @@ const sizes = [
                 marginBottom: "6px",
               }}
             >
-             AJ DEZINES Kids Ethnic Wear Silk Blend
+              AJ DEZINES Kids Ethnic Wear Silk Blend
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-               Organza Floral Printed Lehenga Choli for Girls With Dupatta
+                Organza Floral Printed Lehenga Choli for Girls With Dupatta
                 <p
                   style={{
                     fontSize: "14px",
@@ -140,7 +135,6 @@ const sizes = [
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               {/* Ideal for school, playtime, sports, travel, and home wear. */}
             </p>
@@ -227,7 +221,7 @@ const sizes = [
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -319,50 +313,48 @@ const sizes = [
                 Top highlights
               </h3>
 
-            <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    rowGap: "10px",
-    fontSize: "14px",
-    color: "#333",
-  }}
->
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Material type
-  </span>
-  <span>Silk Blend</span>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "220px 1fr",
+                  rowGap: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material type
+                </span>
+                <span>Silk Blend</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Fit type
-  </span>
-  <span>Regular</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Regular</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Style
-  </span>
-  <span>Lehenga Choli</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Lehenga Choli</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Closure type
-  </span>
-  <span>Button</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Button</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Care instructions
-  </span>
-  <span>Machine Wash</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Machine Wash</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Age range description
-  </span>
-  <span>Kid</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Kid</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Country of Origin
-  </span>
-  <span>India</span>
-</div>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Country of Origin
+                </span>
+                <span>India</span>
+              </div>
             </div>
 
             <div
@@ -385,53 +377,65 @@ const sizes = [
               </h3>
 
               <ul
-  style={{
-    paddingLeft: "18px",
-    fontSize: "14px",
-    color: "#333",
-    lineHeight: "1.7",
-  }}
->
-  <li>
-    <strong>Stylish Ethnic Outfit:</strong> Beautiful Lehenga Choli set designed especially for girls with a fashionable and traditional look.
-  </li>
+                style={{
+                  paddingLeft: "18px",
+                  fontSize: "14px",
+                  color: "#333",
+                  lineHeight: "1.7",
+                }}
+              >
+                <li>
+                  <strong>Stylish Ethnic Outfit:</strong> Beautiful Lehenga
+                  Choli set designed especially for girls with a fashionable and
+                  traditional look.
+                </li>
 
-  <li>
-    <strong>Premium Quality Fabric:</strong> Made from soft, durable, and comfortable fabric to ensure all-day comfort.
-  </li>
+                <li>
+                  <strong>Premium Quality Fabric:</strong> Made from soft,
+                  durable, and comfortable fabric to ensure all-day comfort.
+                </li>
 
-  {expanded && (
-    <>
-      <li>
-        <strong>3-Piece Set:</strong> Includes 1 Lehenga (Skirt), 1 Choli (Top), and 1 Matching Dupatta for a complete festive outfit.
-      </li>
+                {expanded && (
+                  <>
+                    <li>
+                      <strong>3-Piece Set:</strong> Includes 1 Lehenga (Skirt),
+                      1 Choli (Top), and 1 Matching Dupatta for a complete
+                      festive outfit.
+                    </li>
 
-      <li>
-        <strong>Perfect for Special Occasions:</strong> Ideal for weddings, festivals, family functions, birthdays, cultural events, and celebrations.
-      </li>
+                    <li>
+                      <strong>Perfect for Special Occasions:</strong> Ideal for
+                      weddings, festivals, family functions, birthdays, cultural
+                      events, and celebrations.
+                    </li>
 
-      <li>
-        <strong>Comfortable Fit:</strong> Designed to provide easy movement while keeping your child stylish and comfortable.
-      </li>
+                    <li>
+                      <strong>Comfortable Fit:</strong> Designed to provide easy
+                      movement while keeping your child stylish and comfortable.
+                    </li>
 
-      <li>
-        <strong>Elegant Design:</strong> Traditional Lehenga Choli style with attractive detailing for a graceful ethnic appearance.
-      </li>
+                    <li>
+                      <strong>Elegant Design:</strong> Traditional Lehenga Choli
+                      style with attractive detailing for a graceful ethnic
+                      appearance.
+                    </li>
 
-      <li>
-        <strong>Size Information:</strong> Please refer to the size chart in the product images before placing your order for the best fit.
-      </li>
+                    <li>
+                      <strong>Size Information:</strong> Please refer to the
+                      size chart in the product images before placing your order
+                      for the best fit.
+                    </li>
 
-      <li>
-        <strong>Easy Care:</strong> Machine Wash.
-      </li>
+                    <li>
+                      <strong>Easy Care:</strong> Machine Wash.
+                    </li>
 
-      <li>
-        <strong>Country of Origin:</strong> Made in India.
-      </li>
-    </>
-  )}
-</ul>
+                    <li>
+                      <strong>Country of Origin:</strong> Made in India.
+                    </li>
+                  </>
+                )}
+              </ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -453,7 +457,7 @@ const sizes = [
           </div>
         </div>
 
-        <KidProducReview7/>
+        <KidProducReview7 />
 
         <div className="Related-Product">
           <h2
@@ -476,48 +480,37 @@ const sizes = [
               className="mySwiper"
             >
               <SwiperSlide>
-                <KidProduct2 />
+                <KidProduct9 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct3 />
+                <KidProduct7 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct4 />
+                <KidProduct12 />
               </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct5 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct6 />
+                <KidProduct3 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <KidsProduct1 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct8 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct9 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct10 />
-              </SwiperSlide>
-              
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
-
-              
               <SwiperSlide>
-                <KidProduct12 />
+                <KidProduct8 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct2 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct6 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct4 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct10 />
               </SwiperSlide>
             </Swiper>
           </div>
@@ -526,4 +519,4 @@ const sizes = [
     </>
   );
 };
-export default KidProductDetails7
+export default KidProductDetails7;

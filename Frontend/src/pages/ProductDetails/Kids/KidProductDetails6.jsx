@@ -376,54 +376,71 @@ const KidProductDetails6 = () => {
                 About this item
               </h3>
 
-             <ul
-  style={{
-    paddingLeft: "18px",
-    fontSize: "14px",
-    color: "#333",
-    lineHeight: "1.7",
-  }}
->
-  <li>
-    <strong>Premium Cotton Fabric:</strong> Made from high-quality cotton that is soft, lightweight, breathable, and comfortable for all-day wear.
-  </li>
+              <ul
+                style={{
+                  paddingLeft: "18px",
+                  fontSize: "14px",
+                  color: "#333",
+                  lineHeight: "1.7",
+                }}
+              >
+                <li>
+                  <strong>Premium Cotton Fabric:</strong> Made from high-quality
+                  cotton that is soft, lightweight, breathable, and comfortable
+                  for all-day wear.
+                </li>
 
-  <li>
-    <strong>Traditional Design:</strong> Features a stylish mandarin collar, front button closure, side slits, and a straight hem for a classic ethnic look.
-  </li>
+                <li>
+                  <strong>Traditional Design:</strong> Features a stylish
+                  mandarin collar, front button closure, side slits, and a
+                  straight hem for a classic ethnic look.
+                </li>
 
-  {expanded && (
-    <>
-      <li>
-        <strong>Comfortable Pajama:</strong> Straight-fit pajama with a partially elasticated waistband provides a secure and comfortable fit.
-      </li>
+                {expanded && (
+                  <>
+                    <li>
+                      <strong>Comfortable Pajama:</strong> Straight-fit pajama
+                      with a partially elasticated waistband provides a secure
+                      and comfortable fit.
+                    </li>
 
-      <li>
-        <strong>Complete 2-Piece Set:</strong> Includes one kurta and one matching pajama for a coordinated traditional outfit.
-      </li>
+                    <li>
+                      <strong>Complete 2-Piece Set:</strong> Includes one kurta
+                      and one matching pajama for a coordinated traditional
+                      outfit.
+                    </li>
 
-      <li>
-        <strong>Perfect for Special Occasions:</strong> Ideal for weddings, festivals, family gatherings, religious ceremonies, cultural events, Diwali, Eid, and Independence Day celebrations.
-      </li>
+                    <li>
+                      <strong>Perfect for Special Occasions:</strong> Ideal for
+                      weddings, festivals, family gatherings, religious
+                      ceremonies, cultural events, Diwali, Eid, and Independence
+                      Day celebrations.
+                    </li>
 
-      <li>
-        <strong>Versatile Style:</strong> Easily pairs with traditional footwear and accessories for a complete festive look.
-      </li>
+                    <li>
+                      <strong>Versatile Style:</strong> Easily pairs with
+                      traditional footwear and accessories for a complete
+                      festive look.
+                    </li>
 
-      <li>
-        <strong>Ideal for Photoshoots:</strong> A stylish ethnic outfit that's perfect for memorable family and festive photos.
-      </li>
+                    <li>
+                      <strong>Ideal for Photoshoots:</strong> A stylish ethnic
+                      outfit that's perfect for memorable family and festive
+                      photos.
+                    </li>
 
-      <li>
-        <strong>Garment Care:</strong> Machine wash separately using a mild detergent. Avoid harsh detergents to preserve the fabric quality.
-      </li>
+                    <li>
+                      <strong>Garment Care:</strong> Machine wash separately
+                      using a mild detergent. Avoid harsh detergents to preserve
+                      the fabric quality.
+                    </li>
 
-      <li>
-        <strong>Country of Origin:</strong> Made in India.
-      </li>
-    </>
-  )}
-</ul>
+                    <li>
+                      <strong>Country of Origin:</strong> Made in India.
+                    </li>
+                  </>
+                )}
+              </ul>
 
               <span
                 onClick={() => setExpanded(!expanded)}
@@ -468,47 +485,37 @@ const KidProductDetails6 = () => {
               className="mySwiper"
             >
               <SwiperSlide>
+                <KidProduct6 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct12 />
+              </SwiperSlide>
+              <SwiperSlide>
                 <KidProduct2 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct3 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct4 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct5 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidsProduct1 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct7 />
-              </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct8 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct9 />
+                <KidProduct4 />
               </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-
+              <SwiperSlide>
+                <KidProduct7 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct3 />
+              </SwiperSlide>
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
-
               <SwiperSlide>
-                <KidProduct12 />
+                <KidProduct5 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct9 />
               </SwiperSlide>
             </Swiper>
           </div>

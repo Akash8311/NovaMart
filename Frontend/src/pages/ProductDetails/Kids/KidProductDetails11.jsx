@@ -17,8 +17,6 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-
-
 import KidProduct2 from "./KidProduct2";
 import KidProduct3 from "./KidProduct3";
 import KidProduct4 from "./KidProduct4";
@@ -31,32 +29,21 @@ import KidProduct10 from "./KidProduct10";
 import KidsProduct1 from "./KidsProduct1";
 import KidProduct12 from "./KidProduct12";
 
-
 import ProductZoomKid11 from "../../../components/ProductZoom/KidsProductZoom/ProductZoomKid11";
 import KidProducReview11 from "../ProductReaview/KidReview/KidProducReview11";
 
-
-
-const KidProductDetails11 = () =>{
+const KidProductDetails11 = () => {
   const [selectedSize, setSelectedSize] = useState("3-4 Y");
   const [expanded, setExpanded] = useState(false);
 
- const sizes = [
-  "2-3 Y",
-  "3-4 Y",
-  "4-5 Y",
-  "5-6 Y",
-  "6-7 Y"
-];
+  const sizes = ["2-3 Y", "3-4 Y", "4-5 Y", "5-6 Y", "6-7 Y"];
 
-
-    const product = {
-  id: "kids 11",
-  name: "Boys Printed Denim Halfsleeve",
-  price: 899,
-  image: "https://m.media-amazon.com/images/I/61GYuAjxm9L._SX679_.jpg"
-
-};
+  const product = {
+    id: "kids 11",
+    name: "Boys Printed Denim Halfsleeve",
+    price: 899,
+    image: "https://m.media-amazon.com/images/I/61GYuAjxm9L._SX679_.jpg",
+  };
 
   return (
     <>
@@ -125,7 +112,6 @@ const KidProductDetails11 = () =>{
               }}
             >
               superminis Boys Printed Denim Halfsleeve Co-ord Set
-
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
                 {/* || Unisex Hoodie ||Hoodie ||Available in Plus Size
@@ -141,7 +127,6 @@ const KidProductDetails11 = () =>{
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Ideal for playtime, sports, travel, and home wear.
             </p>
@@ -228,7 +213,7 @@ const KidProductDetails11 = () =>{
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -320,50 +305,48 @@ const KidProductDetails11 = () =>{
                 Top highlights
               </h3>
 
-             <div
-  style={{
-    display: "grid",
-    gridTemplateColumns: "220px 1fr",
-    rowGap: "10px",
-    fontSize: "14px",
-    color: "#333",
-  }}
->
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Material type
-  </span>
-  <span>Denim</span>
+              <div
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "220px 1fr",
+                  rowGap: "10px",
+                  fontSize: "14px",
+                  color: "#333",
+                }}
+              >
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Material type
+                </span>
+                <span>Denim</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Fit type
-  </span>
-  <span>Regular</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Fit type
+                </span>
+                <span>Regular</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Style
-  </span>
-  <span>Casual</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
+                <span>Casual</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Closure type
-  </span>
-  <span>Pull On</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Closure type
+                </span>
+                <span>Pull On</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Care instructions
-  </span>
-  <span>Machine Wash</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Machine Wash</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Age range description
-  </span>
-  <span>Kid</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Age range description
+                </span>
+                <span>Kid</span>
 
-  <span style={{ fontWeight: "500", color: "#555" }}>
-    Country of Origin
-  </span>
-  <span>India</span>
-</div>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Country of Origin
+                </span>
+                <span>India</span>
+              </div>
             </div>
 
             <div
@@ -385,54 +368,69 @@ const KidProductDetails11 = () =>{
                 About this item
               </h3>
 
-          <ul
-  style={{
-    paddingLeft: "18px",
-    fontSize: "14px",
-    color: "#333",
-    lineHeight: "1.7",
-  }}
->
-  <li>
-    <strong>Premium Denim Fabric:</strong> Made from high-quality denim fabric for superior durability, comfort, and a stylish look.
-  </li>
+              <ul
+                style={{
+                  paddingLeft: "18px",
+                  fontSize: "14px",
+                  color: "#333",
+                  lineHeight: "1.7",
+                }}
+              >
+                <li>
+                  <strong>Premium Denim Fabric:</strong> Made from high-quality
+                  denim fabric for superior durability, comfort, and a stylish
+                  look.
+                </li>
 
-  <li>
-    <strong>Modern Solid Design:</strong> Features a solid pattern that gives boys a smart, fashionable, and trendy appearance.
-  </li>
+                <li>
+                  <strong>Modern Solid Design:</strong> Features a solid pattern
+                  that gives boys a smart, fashionable, and trendy appearance.
+                </li>
 
-  {expanded && (
-    <>
-      <li>
-        <strong>Stylish Shirt Design:</strong> Designed with a classic collar neck and half sleeves for a modern casual look.
-      </li>
+                {expanded && (
+                  <>
+                    <li>
+                      <strong>Stylish Shirt Design:</strong> Designed with a
+                      classic collar neck and half sleeves for a modern casual
+                      look.
+                    </li>
 
-      <li>
-        <strong>Comfortable Fit:</strong> Soft and breathable fabric ensures all-day comfort while allowing easy movement.
-      </li>
+                    <li>
+                      <strong>Comfortable Fit:</strong> Soft and breathable
+                      fabric ensures all-day comfort while allowing easy
+                      movement.
+                    </li>
 
-      <li>
-        <strong>Perfect for Special Occasions:</strong> Ideal for weddings, birthday parties, festivals, family functions, photoshoots, and other celebrations.
-      </li>
+                    <li>
+                      <strong>Perfect for Special Occasions:</strong> Ideal for
+                      weddings, birthday parties, festivals, family functions,
+                      photoshoots, and other celebrations.
+                    </li>
 
-      <li>
-        <strong>Versatile Wear:</strong> Suitable for both festive occasions and casual outings, making it a great wardrobe essential.
-      </li>
+                    <li>
+                      <strong>Versatile Wear:</strong> Suitable for both festive
+                      occasions and casual outings, making it a great wardrobe
+                      essential.
+                    </li>
 
-      <li>
-        <strong>Easy Care:</strong> Gentle machine wash recommended. Wash dark colors separately to maintain color and fabric quality.
-      </li>
+                    <li>
+                      <strong>Easy Care:</strong> Gentle machine wash
+                      recommended. Wash dark colors separately to maintain color
+                      and fabric quality.
+                    </li>
 
-      <li>
-        <strong>Long-Lasting Quality:</strong> Premium stitching and durable denim fabric ensure excellent performance after repeated use.
-      </li>
+                    <li>
+                      <strong>Long-Lasting Quality:</strong> Premium stitching
+                      and durable denim fabric ensure excellent performance
+                      after repeated use.
+                    </li>
 
-      <li>
-        <strong>Country of Origin:</strong> Made in India.
-      </li>
-    </>
-  )}
-</ul>
+                    <li>
+                      <strong>Country of Origin:</strong> Made in India.
+                    </li>
+                  </>
+                )}
+              </ul>
               <span
                 onClick={() => setExpanded(!expanded)}
                 style={{
@@ -453,10 +451,10 @@ const KidProductDetails11 = () =>{
           </div>
         </div>
 
-
-
-           <div>
-          <h2 style={{marginTop:"10vh",paddingBottom:"0"}}>Product description</h2>
+        <div>
+          <h2 style={{ marginTop: "10vh", paddingBottom: "0" }}>
+            Product description
+          </h2>
           <p
             style={{
               fontSize: "14px",
@@ -465,11 +463,20 @@ const KidProductDetails11 = () =>{
               margin: 0,
             }}
           >
-       Superminis Dress your little boy in style with the Clothing Set, designed for boys aged 2 to 10 years. Made from denim fabric, this stylish blue outfit offers both comfort and durability for all-day wear. Featuring a smart collar neck and trendy half sleeves, the solid-pattern design gives a classy and fashionable look Ideal for special occasions. Whether it’s a festive celebration, wedding function, or party event, this outfit ensures your child stands out with confidence and charm. The soft and breathable fabric provides ease of movement while maintaining a stylish appearance, making it an ideal addition to your kid’s wardrobe.
+            Superminis Dress your little boy in style with the Clothing Set,
+            designed for boys aged 2 to 10 years. Made from denim fabric, this
+            stylish blue outfit offers both comfort and durability for all-day
+            wear. Featuring a smart collar neck and trendy half sleeves, the
+            solid-pattern design gives a classy and fashionable look Ideal for
+            special occasions. Whether it’s a festive celebration, wedding
+            function, or party event, this outfit ensures your child stands out
+            with confidence and charm. The soft and breathable fabric provides
+            ease of movement while maintaining a stylish appearance, making it
+            an ideal addition to your kid’s wardrobe.
           </p>
         </div>
 
-        <KidProducReview11/>
+        <KidProducReview11 />
 
         <div className="Related-Product">
           <h2
@@ -526,12 +533,11 @@ const KidProductDetails11 = () =>{
               <SwiperSlide>
                 <KidProduct10 />
               </SwiperSlide>
-              
+
               <SwiperSlide>
                 <KidsProduct1 />
               </SwiperSlide>
 
-              
               <SwiperSlide>
                 <KidProduct12 />
               </SwiperSlide>
@@ -543,4 +549,4 @@ const KidProductDetails11 = () =>{
   );
 };
 
-export default KidProductDetails11
+export default KidProductDetails11;

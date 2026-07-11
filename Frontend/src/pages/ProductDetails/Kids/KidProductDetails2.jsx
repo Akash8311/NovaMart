@@ -263,7 +263,7 @@ const KidProductDetails2 = () => {
                   color: "#1a1a1a",
                 }}
               >
-               Top highlights
+                Top highlights
               </h3>
 
               <div
@@ -336,25 +336,47 @@ const KidProductDetails2 = () => {
                 }}
               >
                 <li>
-                  <strong>Soft & Breathable Fabric:</strong>Soft Cotton Fabric-Crafted from cotton fabric, these girls' shorts provide a soft, breathable, and skin-friendly feel that keeps kids comfortable throughout the day. The lightweight material allows proper air circulation, making it perfect for warm weather, active playtime, and everyday wear
+                  <strong>Soft & Breathable Fabric:</strong>Soft Cotton
+                  Fabric-Crafted from cotton fabric, these girls' shorts provide
+                  a soft, breathable, and skin-friendly feel that keeps kids
+                  comfortable throughout the day. The lightweight material
+                  allows proper air circulation, making it perfect for warm
+                  weather, active playtime, and everyday wear
                 </li>
 
                 <li>
-                  <strong></strong> Comfortable Regular Fit Design-These casual shorts are designed with a regular fit that offers the perfect balance of comfort and style. The relaxed structure allows easy movement, making them ideal for running, playing, or relaxing at home without feeling tight or restrictive.
+                  <strong></strong> Comfortable Regular Fit Design-These casual
+                  shorts are designed with a regular fit that offers the perfect
+                  balance of comfort and style. The relaxed structure allows
+                  easy movement, making them ideal for running, playing, or
+                  relaxing at home without feeling tight or restrictive.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Stylish Solid Color Look-Featuring a simple yet trendy solid color design, these kids' shorts are easy to pair with t-shirts, tops, or casual wear. The versatile style makes them suitable for different occasions such as outings, vacations, school activities, or daily casual wear.
+                      <strong></strong> Stylish Solid Color Look-Featuring a
+                      simple yet trendy solid color design, these kids' shorts
+                      are easy to pair with t-shirts, tops, or casual wear. The
+                      versatile style makes them suitable for different
+                      occasions such as outings, vacations, school activities,
+                      or daily casual wear.
                     </li>
 
                     <li>
-                      <strong></strong>Functional Side Pockets-Equipped with convenient side pockets, these shorts allow kids to carry small essentials like toys, hair clips, or little treasures. The pockets also add a practical and stylish element to the overall design.
+                      <strong></strong>Functional Side Pockets-Equipped with
+                      convenient side pockets, these shorts allow kids to carry
+                      small essentials like toys, hair clips, or little
+                      treasures. The pockets also add a practical and stylish
+                      element to the overall design.
                     </li>
 
                     <li>
-                      <strong></strong> Perfect for Daily Wear-These comfortable cotton shorts are great for multiple activities including playtime, sports practice, travel, picnics, and home wear. The durable stitching and quality fabric ensure long-lasting use even with regular washing and active use.
+                      <strong></strong> Perfect for Daily Wear-These comfortable
+                      cotton shorts are great for multiple activities including
+                      playtime, sports practice, travel, picnics, and home wear.
+                      The durable stitching and quality fabric ensure
+                      long-lasting use even with regular washing and active use.
                     </li>
 
                     <li>
@@ -429,47 +451,37 @@ const KidProductDetails2 = () => {
               className="mySwiper"
             >
               <SwiperSlide>
-                <KidsProduct1 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct3 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct4 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct5 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct6 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct7 />
-              </SwiperSlide>
-
-              <SwiperSlide>
                 <KidProduct8 />
               </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct9 />
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <KidProduct10 />
-              </SwiperSlide>
-
               <SwiperSlide>
                 <KidProduct11 />
               </SwiperSlide>
-
+              <SwiperSlide>
+                <KidProduct3 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct6 />
+              </SwiperSlide>
               <SwiperSlide>
                 <KidProduct12 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct5 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct9 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct2 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct7 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct10 />
+              </SwiperSlide>
+              <SwiperSlide>
+                <KidProduct4 />
               </SwiperSlide>
             </Swiper>
           </div>
