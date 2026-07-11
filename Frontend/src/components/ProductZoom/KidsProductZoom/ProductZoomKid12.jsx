@@ -3,10 +3,10 @@ import "../ProductZoom.css";
 
 const images = [
   "https://m.media-amazon.com/images/I/71UDtIDpa2L._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/61SOAIN5udL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/51L4C9ratuL._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/81XyARMWd+L._SY741_.jpg",
-  "https://m.media-amazon.com/images/I/71rbIh+y5yL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/91aSoMJf-xL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/81RgSW9EVlL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/81+uGjtqaeL._SY741_.jpg",
+  "https://m.media-amazon.com/images/I/81a-SGpjohL._SY741_.jpg",
 ];
 const ProductZoomKid12 = () =>{
   const imgRef = useRef(null);
