@@ -1,10 +1,66 @@
 import { useState } from "react";
 
 const REVIEWS_DATA = [
-  { id: 1, name: "Pankaj Kumar", date: "2025-06-10", comment: "Best product I've bought this year. Exceeded every expectation — quality is outstanding!", rating: 5, initials: "PK", color: "#6366f1" },
-  { id: 2, name: "Akash Maity",  date: "2025-12-17", comment: "Decent product, does what it says. Nothing extraordinary, but solid for the price.", rating: 3, initials: "AM", color: "#14b8a6" },
-  { id: 3, name: "Varun Singh",  date: "2025-02-13", comment: "Nice product and great value for money. Would definitely consider buying again.", rating: 3, initials: "VS", color: "#f97316" },
-  { id: 4, name: "Asutosh Das",  date: "2025-11-23", comment: "Really good product with perfect fitting. Highly recommended to everyone!", rating: 5, initials: "AD", color: "#ec4899" },
+  {
+    id: 1,
+    name: "Rahul Sharma",
+    date: "2026-06-18",
+    comment:
+      "Excellent shirt and shorts set. The fabric is soft, breathable, and the fitting is perfect. My son looked very smart at the birthday party.",
+    rating: 5,
+    initials: "RS",
+    color: "#6366f1",
+  },
+  {
+    id: 2,
+    name: "Priya Verma",
+    date: "2026-06-11",
+    comment:
+      "Good quality product with neat stitching. The colors are exactly as shown, and the outfit is very comfortable for kids.",
+    rating: 4,
+    initials: "PV",
+    color: "#14b8a6",
+  },
+  {
+    id: 3,
+    name: "Amit Singh",
+    date: "2026-05-30",
+    comment:
+      "Really happy with this purchase. The material feels premium, and the shirt-short combination is perfect for casual outings and family functions.",
+    rating: 5,
+    initials: "AS",
+    color: "#f97316",
+  },
+  {
+    id: 4,
+    name: "Sneha Kapoor",
+    date: "2026-06-25",
+    comment:
+      "Beautiful outfit for my son. The fit was accurate, the fabric is comfortable, and it received many compliments during our vacation.",
+    rating: 5,
+    initials: "SK",
+    color: "#ec4899",
+  },
+  {
+    id: 5,
+    name: "Vikram Patel",
+    date: "2026-06-07",
+    comment:
+      "Worth the price. Comfortable to wear, easy to wash, and the quality is excellent. I would definitely recommend it.",
+    rating: 4,
+    initials: "VP",
+    color: "#8b5cf6",
+  },
+  {
+    id: 6,
+    name: "Neha Gupta",
+    date: "2026-06-28",
+    comment:
+      "Stylish and comfortable outfit for kids. Perfect for birthdays, parties, and everyday wear. Will purchase another color soon.",
+    rating: 5,
+    initials: "NG",
+    color: "#0ea5e9",
+  },
 ];
 
 const LABELS = ["","Terrible","Poor","Okay","Good","Excellent"];
