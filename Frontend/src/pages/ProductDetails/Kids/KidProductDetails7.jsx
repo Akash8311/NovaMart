@@ -482,8 +482,8 @@ const KidProductDetails7 = () => {
               <SwiperSlide>
                 <KidProduct9 />
               </SwiperSlide>
-              <SwiperSlide>
-                <KidProduct7 />
+            <SwiperSlide>
+                <KidsProduct1 />
               </SwiperSlide>
               <SwiperSlide>
                 <KidProduct12 />

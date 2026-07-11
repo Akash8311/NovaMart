@@ -484,8 +484,8 @@ const KidProductDetails6 = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              <SwiperSlide>
-                <KidProduct6 />
+             <SwiperSlide>
+                <KidsProduct1 />
               </SwiperSlide>
               <SwiperSlide>
                 <KidProduct12 />
