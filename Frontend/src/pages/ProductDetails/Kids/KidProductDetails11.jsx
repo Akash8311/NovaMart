@@ -34,14 +34,23 @@ import KidProducReview11 from "../ProductReaview/KidReview/KidProducReview11";
 
 const KidProductDetails11 = () => {
   const [selectedSize, setSelectedSize] = useState("3-4 Y");
-  const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["2-3 Y", "3-4 Y", "4-5 Y", "5-6 Y", "6-7 Y"];
+  const [expanded, setExpanded] = useState(false);
+  const sizeData = {
+  "2-3 Y": { price: 899, original: 1299, discount: 31 },
+  "3-4 Y": { price: 999, original: 1299, discount: 23 },
+  "4-5 Y": { price: 899, original: 1299, discount: 31 },
+  "5-6 Y": { price: 899, original: 1299, discount: 31 },
+  "6-7 Y": { price: 899, original: 1299, discount: 31 },
+};
+const sizes = Object.keys(sizeData);
+const current = sizeData[selectedSize];
+
 
   const product = {
     id: "kids 11",
     name: "Boys Printed Denim Halfsleeve",
-    price: 899,
+    price: current.price,
     image: "https://m.media-amazon.com/images/I/61GYuAjxm9L._SX679_.jpg",
   };
 
@@ -169,35 +178,35 @@ const KidProductDetails11 = () => {
                 gap: "12px",
               }}
             >
-              <span
-                style={{
-                  fontSize: "28px",
-                  fontWeight: "600",
-                  color: "#B12704",
-                }}
-              >
-                ₹899
-              </span>
+             <span
+  style={{
+    fontSize: "28px",
+    fontWeight: "600",
+    color: "#B12704",
+  }}
+>
+  ₹{current.price}
+</span>
 
-              <span
-                style={{
-                  fontSize: "16px",
-                  color: "#777",
-                  textDecoration: "line-through",
-                }}
-              >
-                ₹1,299
-              </span>
+<span
+  style={{
+    fontSize: "16px",
+    color: "#777",
+    textDecoration: "line-through",
+  }}
+>
+  ₹{current.original}
+</span>
 
-              <span
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "500",
-                  color: "#007185",
-                }}
-              >
-                31% off
-              </span>
+<span
+  style={{
+    fontSize: "16px",
+    fontWeight: "500",
+    color: "#007185",
+  }}
+>
+  {current.discount}% off
+</span>
             </div>
 
             <p
@@ -258,32 +267,66 @@ const KidProductDetails11 = () => {
               </p>
 
               <div
-                style={{
-                  display: "flex",
-                  gap: "10px",
-                  flexWrap: "wrap",
-                }}
-              >
-                {sizes.map((size) => (
-                  <button
-                    key={size}
-                    onClick={() => setSelectedSize(size)}
-                    style={{
-                      padding: "8px 14px",
-                      borderRadius: "6px",
-                      border:
-                        selectedSize === size
-                          ? "2px solid #007185"
-                          : "1px solid #ccc",
-                      background: selectedSize === size ? "#e6f3f8" : "#fff",
-                      cursor: "pointer",
-                      fontWeight: "500",
-                    }}
-                  >
-                    {size}
-                  </button>
-                ))}
-              </div>
+  style={{
+    display: "flex",
+    gap: "12px",
+    flexWrap: "wrap",
+  }}
+>
+  {Object.entries(sizeData).map(([size, data]) => (
+    <button
+      key={size}
+      onClick={() => setSelectedSize(size)}
+      style={{
+        width: "95px",
+        minHeight: "85px",
+        borderRadius: "8px",
+        border:
+          selectedSize === size
+            ? "2px solid #007185"
+            : "1px solid #d5d9d9",
+        background: selectedSize === size ? "#e6f3f8" : "#fff",
+        cursor: "pointer",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        transition: "0.2s",
+      }}
+    >
+      <span
+        style={{
+          fontSize: "16px",
+          fontWeight: "600",
+          color: "#111",
+        }}
+      >
+        {size}
+      </span>
+
+      <span
+        style={{
+          fontSize: "15px",
+          fontWeight: "600",
+          color: "#B12704",
+          marginTop: "6px",
+        }}
+      >
+        ₹{data.price}
+      </span>
+
+      <span
+        style={{
+          fontSize: "11px",
+          color: "#777",
+          textDecoration: "line-through",
+        }}
+      >
+        ₹{data.original}
+      </span>
+    </button>
+  ))}
+</div>
             </div>
 
             {/* PRODUCT DETAILS */}
