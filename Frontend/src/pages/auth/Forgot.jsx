@@ -1,14 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-
-/*
-  STEP FLOW:
-    1 → Enter email  → send OTP  (hook your email/OTP API at handleSendOtp)
-    2 → Enter 6-digit OTP → validate
-    3 → Enter new password + confirm → reset (hook Firebase at handleResetPw)
-    4 → Success screen
-*/
-
 const STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap');
 
@@ -470,10 +461,8 @@ export default function ForgotPassword() {
           </div>
         </div>
 
-        {/* ── RIGHT PANEL ── */}
         <div className={`fp-right ${mounted?"in":""}`}>
 
-          {/* ── STEP 1: Email ── */}
           {step === 1 && (
             <div key="s1" className="fp-step-panel">
               <div className="fp-eyebrow">Account recovery</div>
