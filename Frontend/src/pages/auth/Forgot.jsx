@@ -504,8 +504,6 @@ export default function ForgotPassword() {
               </p>
             </div>
           )}
-
-          {/* ── STEP 2: OTP ── */}
           {step === 2 && (
             <div key="s2" className="fp-step-panel">
               <div className="fp-eyebrow">Verification</div>
@@ -559,7 +557,6 @@ export default function ForgotPassword() {
             </div>
           )}
 
-          {/* ── STEP 3: New Password ── */}
           {step === 3 && (
             <div key="s3" className="fp-step-panel">
               <div className="fp-eyebrow">New password</div>
@@ -567,8 +564,6 @@ export default function ForgotPassword() {
               <p className="fp-panel-sub">Make it strong — at least 8 characters with a mix of letters, numbers &amp; symbols.</p>
 
               {error && <div className="fp-alert error"><span>✕</span> {error}</div>}
-
-              {/* New password field */}
               <div className={`fp-form-group${pwFocus==="new"?" focused":""}`} style={{marginBottom:8}}>
                 <label className="fp-form-label">New Password</label>
                 <div className="fp-input-wrap">
