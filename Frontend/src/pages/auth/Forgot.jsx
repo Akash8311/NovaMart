@@ -628,7 +628,7 @@ export default function ForgotPassword() {
             </div>
           )}
 
-          {/* ── STEP 4: Success ── */}
+
           {step === 4 && (
             <div key="s4" className="fp-step-panel" style={{textAlign:"center"}}>
               <div className="fp-success-icon">✓</div>
