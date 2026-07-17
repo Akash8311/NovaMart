@@ -12,13 +12,12 @@ import { useState } from "react";
 import Qtybox from "../../../../components/QtyBox/Qtybox";
 import "../../Product.css";
 import GirlsProducReview3 from "../girlsProductReview/girlsProducReview3";
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 import ProductItems from "../../../../components/ProductItems/ProductItems";
 import ProductItems2 from "../../../../components/ProductItems/ProductItems2";
 import ProductItems4 from "../../../../components/ProductItems/ProductItems4";
@@ -33,43 +32,39 @@ import ProductItems12 from "../../../../components/ProductItems/ProductItems12";
 import { useContext } from "react";
 import { MyContext } from "../../../../App";
 
-
-const productDetails3 =(props) => {
+const productDetails3 = (props) => {
   const [selectedSize, setSelectedSize] = useState("");
   const [expanded, setExpanded] = useState(false);
   const { cartItems, setCartItems } = useContext(MyContext);
 
   const sizes = [];
 
+  const product = {
+    id: Date.now(),
+    name: "Maroon Pure Silk Saree",
+    price: 799,
+    image: "https://m.media-amazon.com/images/I/61nK2fhO9oL._SX569_.jpg",
+  };
+  const addToCart = () => {
+    const exist = cartItems.find((item) => item.id === product.id);
 
-    const product = {
-  id: Date.now(),
-  name: "Maroon Pure Silk Saree",
-  price: 799,
- image: "https://m.media-amazon.com/images/I/61nK2fhO9oL._SX569_.jpg"
-};
-const addToCart = () => {
-  const exist = cartItems.find((item) => item.id === product.id);
-
-  if (exist) {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === product.id
-          ? { ...item, qty: item.qty + 1 }
-          : item
-      )
-    );
-  } else {
-    setCartItems([
-      ...cartItems,
-      {
-        ...product,
-        qty: 1,
-        size: selectedSize,
-      },
-    ]);
-  }
-};
+    if (exist) {
+      setCartItems(
+        cartItems.map((item) =>
+          item.id === product.id ? { ...item, qty: item.qty + 1 } : item,
+        ),
+      );
+    } else {
+      setCartItems([
+        ...cartItems,
+        {
+          ...product,
+          qty: 1,
+          size: selectedSize,
+        },
+      ]);
+    }
+  };
   return (
     <>
       {" "}
@@ -137,10 +132,11 @@ const addToCart = () => {
                 marginBottom: "6px",
               }}
             >
-             Maroon Pure Silk Saree 
+              Maroon Pure Silk Saree
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-                | Women's Printed Maroon Pure Silk Saree With Heavy Embroidered Work Border
+                | Women's Printed Maroon Pure Silk Saree With Heavy Embroidered
+                Work Border
                 <p
                   style={{
                     fontSize: "19px",
@@ -168,13 +164,11 @@ const addToCart = () => {
                 marginBottom: "10px",
               }}
             >
-            ⭐⭐⭐☆☆
+              ⭐⭐⭐☆☆
               <span style={{ fontSize: "13px", color: "#555" }}>
                 (19 reviews)
               </span>
             </div>
-
-           
 
             <div
               style={{
@@ -227,7 +221,7 @@ const addToCart = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -334,26 +328,26 @@ const addToCart = () => {
                 <span>Fandy Silk</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                Weave type
+                  Weave type
                 </span>
                 <span>Banarasi</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Occasion type
                 </span>
-                <span>Festival, Wedding, Party
-</span>
+                <span>Festival, Wedding, Party</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Included components
                 </span>
-                <span>Yashika Saree for Women with Unstitched Blouse Piece</span>
+                <span>
+                  Yashika Saree for Women with Unstitched Blouse Piece
+                </span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Care instructions
+                  Care instructions
                 </span>
-                <span>Hand Wash Only
-</span>
+                <span>Hand Wash Only</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Standard Length</span>
@@ -393,21 +387,27 @@ const addToCart = () => {
                 }}
               >
                 <li>
-                  <strong>Saree Fabric </strong> Fandy Silk || Blouse Fabric : Fandy Silk
+                  <strong>Saree Fabric </strong> Fandy Silk || Blouse Fabric :
+                  Fandy Silk
                 </li>
 
                 <li>
-                  <strong>Saree Length : </strong> 6.3 Mtr included Blouse Piece (5.5 Mtr Saree + 0.80 Mtr Blouse)
+                  <strong>Saree Length : </strong> 6.3 Mtr included Blouse Piece
+                  (5.5 Mtr Saree + 0.80 Mtr Blouse)
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Saree Work Type : </strong>Hand Work Lace Boarder / Comfortable to wear
+                      <strong>Saree Work Type : </strong>Hand Work Lace Boarder
+                      / Comfortable to wear
                     </li>
 
                     <li>
-                      <strong>Perfect for Event:</strong>Festive Wear Saree | Party Wear Saree | Occasional Wear Saree | Traditional Wear Saree | Wedding Wear Saree | Reception Wear Saree | Butta Sarees Latest Design
+                      <strong>Perfect for Event:</strong>Festive Wear Saree |
+                      Party Wear Saree | Occasional Wear Saree | Traditional
+                      Wear Saree | Wedding Wear Saree | Reception Wear Saree |
+                      Butta Sarees Latest Design
                     </li>
 
                     <li>
@@ -417,7 +417,9 @@ const addToCart = () => {
                     </li>
 
                     <li>
-                      <strong>Size recommendation:</strong> please use the infographic size chart guidance to determine your perfect size; a size large is recommended stylish dress for women.
+                      <strong>Size recommendation:</strong> please use the
+                      infographic size chart guidance to determine your perfect
+                      size; a size large is recommended stylish dress for women.
                     </li>
 
                     <li>
@@ -427,8 +429,9 @@ const addToCart = () => {
                     </li>
 
                     <li>
-                      <strong>Disclaimer :</strong> Colour Of The Actual Product May Slightly Vary Due To Different Photographic Lighting Sources Or Your Display Color Settings Or Screen Type.
-
+                      <strong>Disclaimer :</strong> Colour Of The Actual Product
+                      May Slightly Vary Due To Different Photographic Lighting
+                      Sources Or Your Display Color Settings Or Screen Type.
                     </li>
 
                     <li>
@@ -466,7 +469,7 @@ const addToCart = () => {
           </div>
         </div>
 
-               <GirlsProducReview3/>
+        <GirlsProducReview3 />
         <div className="Related-Product">
           <h2
             style={{
@@ -478,66 +481,63 @@ const addToCart = () => {
             Related Products
           </h2>
           <div className="men-products">
-              <Swiper
-        slidesPerView={6}
-        spaceBetween={0}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <ProductItems/>
-        </SwiperSlide>
+            <Swiper
+              slidesPerView={6}
+              spaceBetween={0}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <ProductItems />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems2 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems2/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems4 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems5 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems4/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems6 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-        <ProductItems5/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems7 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems6/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems8 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems7/>
-        </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems9 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems8/>
-          </SwiperSlide>
+              <SwiperSlide>
+                <ProductItems10 />
+              </SwiperSlide>
 
+              <SwiperSlide>
+                <ProductItems12 />
+              </SwiperSlide>
 
-        <SwiperSlide>
-          <ProductItems9/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems10/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems12/>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <ProductItems11/>
-        </SwiperSlide>
-      </Swiper>
+              <SwiperSlide>
+                <ProductItems11 />
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </section>
     </>
   );
 };
-export default productDetails3
+export default productDetails3;
