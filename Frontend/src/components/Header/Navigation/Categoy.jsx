@@ -138,6 +138,7 @@ const [opneFootWear,setOpenFootWear] = useState (false);
               </li>
 
               <li className="list-none">
+                 <Link to="/Kids_Productlisting" className='w-full'>
                 <Button
                   className="w-full !justify-start !text-left !text-black"
                   sx={{
@@ -151,6 +152,7 @@ const [opneFootWear,setOpenFootWear] = useState (false);
                 >
                   Kids
                 </Button>
+                  </Link>
               </li>
             </ul>
           )}
@@ -158,10 +160,10 @@ const [opneFootWear,setOpenFootWear] = useState (false);
       </ul>
 
       <ul className="w-full">
-        <li className="list-none">
-          {/* Main Category Button */}
+        
+         
           <Button
-            onClick={() => setOpenElectronic(!openElectronic)}
+           
             className="w-full !justify-start !text-left !text-black"
             sx={{
               color: "black",
@@ -174,86 +176,14 @@ const [opneFootWear,setOpenFootWear] = useState (false);
             }}
           >
             Electronics
-            {openElectronic ? (
-              <RiSubtractFill
-                style={{ fontSize: "20px", marginLeft: "13.5vh" }}
-              />
-            ) : (
-              <RiMenuAddFill
-                style={{ fontSize: "20px", marginLeft: "13.5vh" }}
-              />
-            )}
+           
           </Button>
 
-          {openElectronic && (
-            <ul className="ml-5 mt-1 space-y-1 transition-all duration-300 ease-in-out">
-              <li className="list-none">
-                <Button
-                  className="w-full !justify-start !text-left !text-black"
-                  sx={{
-                    color: "black",
-                    fontSize: "13px",
-                    textTransform: "none",
-                    justifyContent: "flex-start",
-                    width: "100%",
-                    "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
-                  }}
-                >
-                  Smart Watch
-                </Button>
-              </li>
-
-              <li className="list-none">
-                <Button
-                  className="w-full !justify-start !text-left !text-black"
-                  sx={{
-                    color: "black",
-                    fontSize: "13px",
-                    textTransform: "none",
-                    justifyContent: "flex-start",
-                    width: "100%",
-                    "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
-                  }}
-                >
-                  Laptops
-                </Button>
-              </li>
-
-              <li className="list-none">
-                <Button
-                  className="w-full !justify-start !text-left !text-black"
-                  sx={{
-                    color: "black",
-                    fontSize: "13px",
-                    textTransform: "none",
-                    justifyContent: "flex-start",
-                    width: "100%",
-                    "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
-                  }}
-                >
-                  Mobiles
-                </Button>
-              </li>
-              
-              <li className="list-none">
-                <Button
-                  className="w-full !justify-start !text-left !text-black"
-                  sx={{
-                    color: "black",
-                    fontSize: "13px",
-                    textTransform: "none",
-                    justifyContent: "flex-start",
-                    width: "100%",
-                    "&:hover": { backgroundColor: "rgba(0,0,0,0.05)" },
-                  }}
-                >
-                  Headphone
-                </Button>
-              </li>
+        
             </ul>
-          )}
-        </li>
-      </ul>
+     
+  
+ 
 
       <ul className="w-full">
         <li className="list-none">
