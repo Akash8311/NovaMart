@@ -1,78 +1,311 @@
+/* ==========================================================================
+   HomeSlider — editorial hero slider
+   Palette: ink #14120F · ivory #F5F0E6 · gold #C9A227 · rose #B4626B
+   ========================================================================== */
+
 .HomeSlider {
-  width: 100%;
   position: relative;
-  overflow: hidden;
-}
-
-.sliderHome {
   width: 100%;
-  height: 64vh;
-  border-radius: 10px;
+  height: 640px;
+  max-height: 82vh;
+  overflow: hidden;
+  background: #14120f;
+  isolation: isolate;
 }
 
-/* Each slide image */
+.sliderHome,
+.sliderHome .swiper-wrapper,
+.sliderHome .swiper-slide {
+  height: 100%;
+}
+
+/* ---------- slide + image ---------- */
+
 .slide-container {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 .slide-image {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: 82vh;
+  height: 100%;
   object-fit: cover;
-  transition: transform 6s ease;
+  transform: scale(1.08);
+  will-change: transform;
 }
 
-/* Overlay gradient effect */
+.slide-image.is-kenburns {
+  animation: kenburns 6.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+@keyframes kenburns {
+  0% {
+    transform: scale(1.08) translate3d(0, 0, 0);
+  }
+  100% {
+    transform: scale(1.18) translate3d(-1.5%, -1.5%, 0);
+  }
+}
+
 .overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 40%;
-  width: 100%;
+  inset: 0;
   background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+      0deg,
+      rgba(10, 9, 7, 0.82) 0%,
+      rgba(10, 9, 7, 0.35) 42%,
+      rgba(10, 9, 7, 0.05) 65%
+    ),
+    linear-gradient(90deg, rgba(10, 9, 7, 0.5) 0%, rgba(10, 9, 7, 0) 55%);
+  pointer-events: none;
 }
 
+/* ---------- text content ---------- */
 
-/* Navigation arrows */
-.swiper-button-next,
-.swiper-button-prev {
-  color:#fff !important;
-  width: 45px;
-  height: 45px;
-  transition: all 0.3s ease;
-  
+.slide-content {
+  position: absolute;
+  left: 6%;
+  bottom: 13%;
+  z-index: 3;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  color: #f5f0e6;
 }
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover {
-  color: #1a1a1b !important;
-
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: revealUp 700ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation-delay: var(--d, 0ms);
 }
 
-
-/* Fade effect smooth */
-.swiper-fade .swiper-slide {
-  transition-property: opacity !important;
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.slide-eyebrow {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c9a227;
+}
 
-/* Responsive design */
+.slide-title {
+  margin: 0;
+  font-family: "Fraunces", "Georgia", serif;
+  font-weight: 600;
+  font-size: clamp(32px, 4.4vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -0.01em;
+  color: #f5f0e6;
+}
+
+.slide-subtitle {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: clamp(14px, 1.1vw, 16px);
+  line-height: 1.5;
+  color: rgba(245, 240, 230, 0.78);
+  max-width: 46ch;
+}
+
+.slide-cta {
+  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  padding: 13px 22px;
+  border-radius: 999px;
+  background: #f5f0e6;
+  color: #14120f;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: background 260ms ease, transform 260ms ease, color 260ms ease;
+}
+
+.slide-cta svg {
+  transition: transform 260ms ease;
+}
+
+.slide-cta:hover {
+  background: #c9a227;
+  color: #14120f;
+  transform: translateY(-2px);
+}
+
+.slide-cta:hover svg {
+  transform: translateX(3px);
+}
+
+/* ---------- stories-style progress nav ---------- */
+
+.slider-progress {
+  position: absolute;
+  top: 24px;
+  left: 6%;
+  right: 6%;
+  z-index: 4;
+  display: flex;
+  gap: 6px;
+}
+
+.progress-segment {
+  flex: 1;
+  height: 3px;
+  padding: 0;
+  border: none;
+  background: rgba(245, 240, 230, 0.28);
+  border-radius: 999px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-segment::after {
+  content: "";
+  position: absolute;
+  inset: -8px 0;
+}
+
+.progress-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: #f5f0e6;
+  transform-origin: left center;
+  transform: scaleX(0);
+  transition: transform 100ms linear;
+}
+
+/* ---------- arrows ---------- */
+
+.slider-arrows {
+  position: absolute;
+  right: 6%;
+  bottom: 13%;
+  z-index: 4;
+  display: flex;
+  gap: 10px;
+}
+
+.slider-arrow {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(245, 240, 230, 0.35);
+  background: rgba(20, 18, 15, 0.35);
+  backdrop-filter: blur(6px);
+  color: #f5f0e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 240ms ease, border-color 240ms ease, transform 240ms ease;
+}
+
+.slider-arrow:hover {
+  background: #f5f0e6;
+  color: #14120f;
+  border-color: #f5f0e6;
+  transform: translateY(-2px);
+}
+
+.slider-arrow:active {
+  transform: translateY(0);
+}
+
+/* ---------- counter ---------- */
+
+.slider-counter {
+  position: absolute;
+  right: 6%;
+  top: 24px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: rgba(245, 240, 230, 0.75);
+  margin-top: 14px;
+}
+
+.slider-counter .current {
+  color: #f5f0e6;
+  font-weight: 600;
+}
+
+.slider-counter .divider {
+  width: 14px;
+  height: 1px;
+  background: rgba(245, 240, 230, 0.4);
+}
+
+/* ---------- responsive ---------- */
+
 @media (max-width: 768px) {
-  .sliderHome,
-  .slide-image {
-    height: 55vh;
+  .HomeSlider {
+    height: 520px;
+  }
+
+  .slide-content {
+    left: 6%;
+    right: 6%;
+    bottom: 18%;
+    max-width: none;
+  }
+
+  .slider-arrows {
+    display: none;
+  }
+
+  .slider-counter {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  .sliderHome,
-  .slide-image {
-    height: 45vh;
+  .HomeSlider {
+    height: 440px;
+  }
+
+  .slide-subtitle {
+    display: none;
+  }
+}
+
+/* ---------- reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-image.is-kenburns {
+    animation: none;
+    transform: scale(1.02);
+  }
+
+  .reveal {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  .slider-arrow,
+  .slide-cta {
+    transition: none;
   }
 }
