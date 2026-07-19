@@ -54,7 +54,7 @@ const Reveal = ({ children, delay = 0, from = "up", style = {} }) => {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.12 }
+      { threshold: 0.12 },
     );
     observer.observe(node);
     return () => observer.disconnect();
@@ -109,7 +109,7 @@ const CountUp = ({ target, suffix = "", duration = 1400 }) => {
           observer.unobserve(node);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
     observer.observe(node);
     return () => observer.disconnect();
@@ -196,8 +196,22 @@ const TailorRail = () => {
 };
 
 const Eyebrow = ({ children, light = false }) => (
-  <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
-    <span style={{ width: "28px", height: "1px", background: TOKENS.wine, display: "inline-block" }} />
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      marginBottom: "10px",
+    }}
+  >
+    <span
+      style={{
+        width: "28px",
+        height: "1px",
+        background: TOKENS.wine,
+        display: "inline-block",
+      }}
+    />
     <span
       style={{
         fontFamily: "'Inter', sans-serif",
@@ -215,10 +229,26 @@ const Eyebrow = ({ children, light = false }) => (
 
 /* Trust badges shown under the hero — classic e-commerce reassurance row */
 const TRUST_ITEMS = [
-  { icon: TbTruckDelivery, title: "Free Shipping", desc: "On orders over ₹199" },
-  { icon: MdOutlineSecurity, title: "Secure Payment", desc: "100% protected checkout" },
-  { icon: MdOutlineAssignmentReturn, title: "Easy Returns", desc: "7-day hassle-free returns" },
-  { icon: MdSupportAgent, title: "24/7 Support", desc: "We're always here to help" },
+  {
+    icon: TbTruckDelivery,
+    title: "Free Shipping",
+    desc: "On orders over ₹199",
+  },
+  {
+    icon: MdOutlineSecurity,
+    title: "Secure Payment",
+    desc: "100% protected checkout",
+  },
+  {
+    icon: MdOutlineAssignmentReturn,
+    title: "Easy Returns",
+    desc: "7-day hassle-free returns",
+  },
+  {
+    icon: MdSupportAgent,
+    title: "24/7 Support",
+    desc: "We're always here to help",
+  },
 ];
 
 const STATS = [
@@ -238,7 +268,11 @@ const Home = () => {
   return (
     <div
       className="fashion-home"
-      style={{ background: TOKENS.paperSoft, fontFamily: "'Inter', sans-serif", color: TOKENS.ink }}
+      style={{
+        background: TOKENS.paperSoft,
+        fontFamily: "'Inter', sans-serif",
+        color: TOKENS.ink,
+      }}
     >
       <style>
         {`
@@ -382,7 +416,9 @@ const Home = () => {
                   <Reveal key={item.title} delay={i * 0.08} from="up">
                     <div className="trust-card">
                       <div className="trust-icon-wrap">
-                        <Icon style={{ fontSize: "26px", color: TOKENS.wine }} />
+                        <Icon
+                          style={{ fontSize: "26px", color: TOKENS.wine }}
+                        />
                       </div>
                       <h4
                         style={{
@@ -394,7 +430,15 @@ const Home = () => {
                       >
                         {item.title}
                       </h4>
-                      <p style={{ margin: 0, fontSize: "13px", color: TOKENS.muted }}>{item.desc}</p>
+                      <p
+                        style={{
+                          margin: 0,
+                          fontSize: "13px",
+                          color: TOKENS.muted,
+                        }}
+                      >
+                        {item.desc}
+                      </p>
                     </div>
                   </Reveal>
                 );
@@ -404,7 +448,10 @@ const Home = () => {
         </section>
 
         <section style={{ background: TOKENS.paper, marginTop: "6px" }}>
-          <div className="my-container" style={{ paddingTop: "34px", paddingBottom: "34px" }}>
+          <div
+            className="my-container"
+            style={{ paddingTop: "34px", paddingBottom: "34px" }}
+          >
             {/* Free shipping strip */}
             <Reveal from="scale">
               <div
@@ -428,8 +475,17 @@ const Home = () => {
                   if (truck) truck.style.animation = "none";
                 }}
               >
-                <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-                  <TbTruckDelivery className="truck" style={{ fontSize: "58px", color: TOKENS.wine, transition: "0.4s" }} />
+                <div
+                  style={{ display: "flex", alignItems: "center", gap: "12px" }}
+                >
+                  <TbTruckDelivery
+                    className="truck"
+                    style={{
+                      fontSize: "58px",
+                      color: TOKENS.wine,
+                      transition: "0.4s",
+                    }}
+                  />
                   <span
                     style={{
                       fontFamily: "'Playfair Display', serif",
@@ -440,17 +496,43 @@ const Home = () => {
                       alignItems: "center",
                     }}
                   >
-                    FREE SHIPPING <SiFreenet style={{ marginTop: "5px", fontSize: "20px", color: TOKENS.gold }} />
+                    FREE SHIPPING{" "}
+                    <SiFreenet
+                      style={{
+                        marginTop: "5px",
+                        fontSize: "20px",
+                        color: TOKENS.gold,
+                      }}
+                    />
                   </span>
                 </div>
 
-                <div style={{ height: "48px", width: "1px", background: TOKENS.line }} />
+                <div
+                  style={{
+                    height: "48px",
+                    width: "1px",
+                    background: TOKENS.line,
+                  }}
+                />
 
-                <span style={{ fontSize: "16px", fontWeight: 400, color: TOKENS.muted, maxWidth: "260px" }}>
+                <span
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: 400,
+                    color: TOKENS.muted,
+                    maxWidth: "260px",
+                  }}
+                >
                   Free delivery on your first order and on all orders over ₹199
                 </span>
 
-                <div style={{ height: "48px", width: "1px", background: TOKENS.line }} />
+                <div
+                  style={{
+                    height: "48px",
+                    width: "1px",
+                    background: TOKENS.line,
+                  }}
+                />
 
                 <span
                   style={{
@@ -484,17 +566,45 @@ const Home = () => {
                     <Eyebrow>Seasonal Edit</Eyebrow>
                     <h2
                       className="display-heading"
-                      style={{ fontSize: "34px", margin: 0, display: "flex", alignItems: "center", gap: "10px", fontWeight: 700 }}
+                      style={{
+                        fontSize: "34px",
+                        margin: 0,
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "10px",
+                        fontWeight: 700,
+                      }}
                     >
-                      Popular Products <MdOutlineShoppingCart style={{ color: TOKENS.gold, fontSize: "26px" }} />
+                      Popular Products{" "}
+                      <MdOutlineShoppingCart
+                        style={{ color: TOKENS.gold, fontSize: "26px" }}
+                      />
                     </h2>
-                    <p style={{ marginTop: "8px", color: TOKENS.muted, fontSize: "15px" }}>
+                    <p
+                      style={{
+                        marginTop: "8px",
+                        color: TOKENS.muted,
+                        fontSize: "15px",
+                      }}
+                    >
                       Do not miss the current offers until the end of the year.
                     </p>
                   </div>
 
-                  <Box className="fh-tab" sx={{ maxWidth: { xs: 260, sm: 520 }, bgcolor: "transparent" }}>
-                    <Tabs value={value} onChange={handleChange} variant="scrollable" scrollButtons allowScrollButtonsMobile>
+                  <Box
+                    className="fh-tab"
+                    sx={{
+                      maxWidth: { xs: 260, sm: 520 },
+                      bgcolor: "transparent",
+                    }}
+                  >
+                    <Tabs
+                      value={value}
+                      onChange={handleChange}
+                      variant="scrollable"
+                      scrollButtons
+                      allowScrollButtonsMobile
+                    >
                       <Tab label="Fashion" />
                       <Tab label="Electronics" />
                       <Tab label="Mobile" />
@@ -522,7 +632,6 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Stats strip — animated counters */}
         <section style={{ background: TOKENS.paperSoft, padding: "56px 0" }}>
           <div
             className="my-container"
@@ -538,7 +647,15 @@ const Home = () => {
                   <div className="stat-number">
                     <CountUp target={s.target} suffix={s.suffix} />
                   </div>
-                  <div style={{ fontSize: "13px", letterSpacing: "1px", color: TOKENS.muted, textTransform: "uppercase", marginTop: "4px" }}>
+                  <div
+                    style={{
+                      fontSize: "13px",
+                      letterSpacing: "1px",
+                      color: TOKENS.muted,
+                      textTransform: "uppercase",
+                      marginTop: "4px",
+                    }}
+                  >
                     {s.label}
                   </div>
                 </div>
@@ -547,28 +664,63 @@ const Home = () => {
           </div>
         </section>
 
-        {/* Blog Section */}
-        <section className="blogsection" style={{ padding: "70px 75px 60px", background: TOKENS.paper }}>
+        <section
+          className="blogsection"
+          style={{ padding: "70px 75px 60px", background: TOKENS.paper }}
+        >
           <Reveal>
             <Eyebrow>Journal</Eyebrow>
-            <h2 className="display-heading" style={{ fontSize: "38px", paddingBottom: "6px", fontWeight: 700, margin: 0 }}>
+            <h2
+              className="display-heading"
+              style={{
+                fontSize: "38px",
+                paddingBottom: "6px",
+                fontWeight: 700,
+                margin: 0,
+              }}
+            >
               From The Blog
             </h2>
             <p className="blog-desc">
-              Explore trending insights, modern living ideas and inspiring stories from our latest blog updates.
+              Explore trending insights, modern living ideas and inspiring
+              stories from our latest blog updates.
             </p>
           </Reveal>
 
-          <div style={{ margin: "36px auto 0", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "40px" }}>
-            <Reveal delay={0.05} from="up"><div className="blog-grid-item"><BlogItems /></div></Reveal>
-            <Reveal delay={0.1} from="up"><div className="blog-grid-item"><BlogItems2 /></div></Reveal>
-            <Reveal delay={0.15} from="up"><div className="blog-grid-item"><BlogItems /></div></Reveal>
-            <Reveal delay={0.2} from="up"><div className="blog-grid-item"><BlogItems4 /></div></Reveal>
+          <div
+            style={{
+              margin: "36px auto 0",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+              gap: "40px",
+            }}
+          >
+            <Reveal delay={0.05} from="up">
+              <div className="blog-grid-item">
+                <BlogItems />
+              </div>
+            </Reveal>
+            <Reveal delay={0.1} from="up">
+              <div className="blog-grid-item">
+                <BlogItems2 />
+              </div>
+            </Reveal>
+            <Reveal delay={0.15} from="up">
+              <div className="blog-grid-item">
+                <BlogItems />
+              </div>
+            </Reveal>
+            <Reveal delay={0.2} from="up">
+              <div className="blog-grid-item">
+                <BlogItems4 />
+              </div>
+            </Reveal>
           </div>
         </section>
 
-        {/* Newsletter / offer strip — new e-commerce section */}
-        <section style={{ background: TOKENS.paperSoft, padding: "10px 75px 60px" }}>
+        <section
+          style={{ background: TOKENS.paperSoft, padding: "10px 75px 60px" }}
+        >
           <Reveal from="scale">
             <div
               className="newsletter-box"
@@ -583,11 +735,19 @@ const Home = () => {
             >
               <div style={{ maxWidth: "480px" }}>
                 <Eyebrow>Stay In Style</Eyebrow>
-                <h3 className="display-heading" style={{ fontSize: "26px", margin: "0 0 8px", fontWeight: 700 }}>
+                <h3
+                  className="display-heading"
+                  style={{
+                    fontSize: "26px",
+                    margin: "0 0 8px",
+                    fontWeight: 700,
+                  }}
+                >
                   Get 10% off your first order
                 </h3>
                 <p style={{ margin: 0, color: TOKENS.muted, fontSize: "14px" }}>
-                  Join our list for early access to new drops, private sales and styling edits.
+                  Join our list for early access to new drops, private sales and
+                  styling edits.
                 </p>
               </div>
               <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
@@ -609,20 +769,51 @@ const Home = () => {
             </div>
           </Reveal>
         </section>
-
-        {/* Trusted Brands Section — transparent background, blends with page */}
         <section style={{ background: "transparent", padding: "20px 0 70px" }}>
           <Reveal>
             <div style={{ textAlign: "center", marginBottom: "36px" }}>
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: "12px" }}>
-                <span style={{ width: "40px", height: "1px", background: TOKENS.gold }} />
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "12px",
+                }}
+              >
+                <span
+                  style={{
+                    width: "40px",
+                    height: "1px",
+                    background: TOKENS.gold,
+                  }}
+                />
                 <MdVerified style={{ color: TOKENS.gold, fontSize: "20px" }} />
-                <span style={{ width: "40px", height: "1px", background: TOKENS.gold }} />
+                <span
+                  style={{
+                    width: "40px",
+                    height: "1px",
+                    background: TOKENS.gold,
+                  }}
+                />
               </div>
-              <h2 className="display-heading" style={{ fontSize: "36px", fontWeight: 700, marginTop: "10px", color: TOKENS.ink }}>
+              <h2
+                className="display-heading"
+                style={{
+                  fontSize: "36px",
+                  fontWeight: 700,
+                  marginTop: "10px",
+                  color: TOKENS.ink,
+                }}
+              >
                 Trusted Brands
               </h2>
-              <p style={{ color: TOKENS.muted, fontSize: "14px", marginTop: "4px" }}>
+              <p
+                style={{
+                  color: TOKENS.muted,
+                  fontSize: "14px",
+                  marginTop: "4px",
+                }}
+              >
                 Authentic products from the labels you already love
               </p>
             </div>
@@ -632,27 +823,27 @@ const Home = () => {
             <div className="brand-slider">
               {[
                 [
-  "ALLEN SOLLY",
-  "LOUIS PHILIPPE",
-  "PETER ENGLAND",
-  "VAN HEUSEN",
-  "MUFTI",
-  "WRANGLER",
-  "LEE",
-  "SPYKAR",
-  "FLYING MACHINE",
-  "WROGN",
-  "BEWAKOOF",
-  "MAX",
-  "BIBA",
-  "FABINDIA",
-  "MANYAVAR",
-  "AURELIA",
-  "GLOBAL DESI",
-  "US POLO ASSN",
-  "ROADSTER",
-  "HRX"
-]
+                  "ALLEN SOLLY",
+                  "LOUIS PHILIPPE",
+                  "PETER ENGLAND",
+                  "VAN HEUSEN",
+                  "MUFTI",
+                  "WRANGLER",
+                  "LEE",
+                  "SPYKAR",
+                  "FLYING MACHINE",
+                  "WROGN",
+                  "BEWAKOOF",
+                  "MAX",
+                  "BIBA",
+                  "FABINDIA",
+                  "MANYAVAR",
+                  "AURELIA",
+                  "GLOBAL DESI",
+                  "US POLO ASSN",
+                  "ROADSTER",
+                  "HRX",
+                ],
               ].map((brand, i) => (
                 <span className="brand-name" key={`${brand}-${i}`}>
                   {brand}
