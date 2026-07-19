@@ -227,7 +227,6 @@ const Eyebrow = ({ children, light = false }) => (
   </div>
 );
 
-/* Trust badges shown under the hero — classic e-commerce reassurance row */
 const TRUST_ITEMS = [
   {
     icon: TbTruckDelivery,
@@ -400,7 +399,6 @@ const Home = () => {
           <CatSlider />
         </Reveal>
 
-        {/* Trust badges strip — e-commerce reassurance row */}
         <section style={{ background: TOKENS.paper, padding: "40px 0 10px" }}>
           <div className="my-container">
             <div
@@ -452,7 +450,6 @@ const Home = () => {
             className="my-container"
             style={{ paddingTop: "34px", paddingBottom: "34px" }}
           >
-            {/* Free shipping strip */}
             <Reveal from="scale">
               <div
                 className="shipping-bar"
