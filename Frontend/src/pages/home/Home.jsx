@@ -631,10 +631,28 @@ const Home = () => {
           <div className="brand-wrapper">
             <div className="brand-slider">
               {[
-                "NIKE", "ADIDAS", "PUMA", "APPLE", "SAMSUNG", "SONY",
-                "OPPO", "XIAOMI", "REALME", "ZARA", "LEVI'S",
-                "NIKE", "ADIDAS", "PUMA", "APPLE", "SAMSUNG", "SONY",
-                "OPPO", "XIAOMI", "REALME", "ZARA", "LEVI'S",
+                [
+  "ALLEN SOLLY",
+  "LOUIS PHILIPPE",
+  "PETER ENGLAND",
+  "VAN HEUSEN",
+  "MUFTI",
+  "WRANGLER",
+  "LEE",
+  "SPYKAR",
+  "FLYING MACHINE",
+  "WROGN",
+  "BEWAKOOF",
+  "MAX",
+  "BIBA",
+  "FABINDIA",
+  "MANYAVAR",
+  "AURELIA",
+  "GLOBAL DESI",
+  "US POLO ASSN",
+  "ROADSTER",
+  "HRX"
+]
               ].map((brand, i) => (
                 <span className="brand-name" key={`${brand}-${i}`}>
                   {brand}
