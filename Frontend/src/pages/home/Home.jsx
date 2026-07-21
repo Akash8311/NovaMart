@@ -23,9 +23,6 @@ import BlogItems from "../../components/BlogItems/BlogItems";
 import BlogItems2 from "../../components/BlogItems/BlogItems2";
 import BlogItems4 from "../../components/BlogItems/BlogItems4";
 
-/* ----------------------------------------------------------------
-   DESIGN TOKENS — Editorial Fashion / E-commerce
-------------------------------------------------------------------*/
 const TOKENS = {
   ink: "#14110F",
   paper: "#FFFFFF",
