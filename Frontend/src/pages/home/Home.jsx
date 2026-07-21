@@ -36,10 +36,6 @@ const TOKENS = {
   muted: "#6E6A63",
 };
 
-/* ----------------------------------------------------------------
-   Reveal — fade + lift on scroll. Accepts a "from" direction so
-   sections can enter from below, left, right, or scale in.
-------------------------------------------------------------------*/
 const Reveal = ({ children, delay = 0, from = "up", style = {} }) => {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
