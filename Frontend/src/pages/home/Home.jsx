@@ -82,10 +82,7 @@ const Reveal = ({ children, delay = 0, from = "up", style = {} }) => {
   );
 };
 
-/* ----------------------------------------------------------------
-   CountUp — animates a number from 0 to target when scrolled into
-   view. Used in the stats strip below.
-------------------------------------------------------------------*/
+
 const CountUp = ({ target, suffix = "", duration = 1400 }) => {
   const ref = useRef(null);
   const [val, setVal] = useState(0);
