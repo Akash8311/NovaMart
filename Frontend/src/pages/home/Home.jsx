@@ -123,9 +123,6 @@ const CountUp = ({ target, suffix = "", duration = 1400 }) => {
   );
 };
 
-/* ----------------------------------------------------------------
-   TailorRail — fixed vertical "measuring tape" scroll indicator.
-------------------------------------------------------------------*/
 const TailorRail = () => {
   const [pct, setPct] = useState(0);
 
