@@ -44,7 +44,6 @@ const AdsSectionHome = () => {
         </Swiper>
       </div>
 
-      {/* RIGHT SIDE SMALL ADS */}
  <div className="right-ads">
 
   {/* RIGHT AD 1 */}
@@ -59,7 +58,6 @@ const AdsSectionHome = () => {
     </div>
   </div>
 
-  {/* RIGHT AD 2 */}
   <div className="right-box-container">
     <img src={AdsBannerR2} className="right-box-img" alt="" />
     <div className="right-text animate-text">
