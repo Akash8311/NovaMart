@@ -802,7 +802,6 @@ const Home = () => {
               </p>
             </div>
           </Reveal>
-
           <div className="brand-wrapper">
             <div className="brand-slider">
               {[
