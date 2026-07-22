@@ -46,7 +46,6 @@ const AdsSectionHome = () => {
 
  <div className="right-ads">
 
-  {/* RIGHT AD 1 */}
   <div className="right-box-container">
     <img src={AdsBannerR1} className="right-box-img" alt="" />
     <div className="right-text animate-text">
