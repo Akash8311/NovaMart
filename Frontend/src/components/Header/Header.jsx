@@ -13,9 +13,6 @@ import Tooltip from "@mui/material/Tooltip";
 import Navigation from "./Navigation/Navigation";
 import { MyContext } from "../../App";
 
-
-
-
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -26,52 +23,57 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
-  const {
-    setOpenCartPanel,
-    isLogin,
-    setIsLogin,
-    cartItems,
-  } = useContext(MyContext);
+  const { setOpenCartPanel, isLogin, setIsLogin, cartItems } =
+    useContext(MyContext);
 
-  const itemCount = cartItems.reduce(
-    (sum, item) => sum + item.qty,
-    0
-  );
+  const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
 
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
 
-const handleLogout = () => {
-  // Remove saved login
-  localStorage.removeItem("isLogin");
-  localStorage.removeItem("user");
+  const handleLogout = () => {
+    // Remove saved login
+    localStorage.removeItem("isLogin");
+    localStorage.removeItem("user");
 
-  // Update state
-  setIsLogin(false);
+    // Update state
+    setIsLogin(false);
 
-  // Close dropdown
-  setShowDropdown(false);
+    // Close dropdown
+    setShowDropdown(false);
 
-  // Redirect home
-  navigate("/");
-};
+    // Redirect home
+    navigate("/");
+  };
 
   return (
     <header>
-      <div className="top-strip py-2 border-b" style={{ borderColor: "rgba(0,0,0,0.2)" }}>
+      <div
+        className="top-strip py-2 border-b"
+        style={{ borderColor: "rgba(0,0,0,0.2)" }}
+      >
         <div className="my-container px-4 mx-auto">
           <div className="flex items-center justify-between">
             <p className="text-[12px] font-normal text-gray-700">
               Get Up to 50% off new season styles, limited time offer
             </p>
-            <ul className="flex items-center gap-8 bg-gray-100" style={{ gap: "50px" }}>
+            <ul
+              className="flex items-center gap-8 bg-gray-100"
+              style={{ gap: "50px" }}
+            >
               <li className="list-none">
-                <Link to="/help-center" className="text-[14px] Link no-underline transition">
+                <Link
+                  to="/help-center"
+                  className="text-[14px] Link no-underline transition"
+                >
                   Help Center
                 </Link>
               </li>
               <li className="list-none">
-                <Link to="/order-tracking" className="text-[14px] Link no-underline transition">
+                <Link
+                  to="/order-tracking"
+                  className="text-[14px] Link no-underline transition"
+                >
                   Order Tracking
                 </Link>
               </li>
@@ -79,7 +81,10 @@ const handleLogout = () => {
           </div>
         </div>
       </div>
-      <div className="header py-5 border-b" style={{ borderColor: "rgba(0,0,0,0.2)" }}>
+      <div
+        className="header py-5 border-b"
+        style={{ borderColor: "rgba(0,0,0,0.2)" }}
+      >
         <div className="my-container flex items-center justify-between">
           <div className="col1 w-[25%] h-[80%]">
             <Link to="/">
@@ -94,13 +99,17 @@ const handleLogout = () => {
 
           {/* Right Icons */}
           <div className="cal3 w-[30%] flex items-center">
-            <ul className="flex items-center justify-end w-full" style={{ gap: "8px", marginRight: "20px" }}>
-
+            <ul
+              className="flex items-center justify-end w-full"
+              style={{ gap: "8px", marginRight: "20px" }}
+            >
               {/* ── AUTH SECTION ── */}
               {isLogin ? (
                 <li className="list-none relative">
                   <Tooltip title="My Account">
-                    <IconButton onClick={() => setShowDropdown((prev) => !prev)}>
+                    <IconButton
+                      onClick={() => setShowDropdown((prev) => !prev)}
+                    >
                       <CgProfile size={24} />
                     </IconButton>
                   </Tooltip>
@@ -123,18 +132,36 @@ const handleLogout = () => {
                       <Link
                         to="/profile"
                         onClick={() => setShowDropdown(false)}
-                        style={{ display: "block", padding: "12px 18px", fontSize: 13, color: "#333", textDecoration: "none" }}
+                        style={{
+                          display: "block",
+                          padding: "12px 18px",
+                          fontSize: 13,
+                          color: "#333",
+                          textDecoration: "none",
+                        }}
                       >
                         My Profile
                       </Link>
                       <Link
                         to="/CartPage"
                         onClick={() => setShowDropdown(false)}
-                        style={{ display: "block", padding: "12px 18px", fontSize: 13, color: "#333", textDecoration: "none" }}
+                        style={{
+                          display: "block",
+                          padding: "12px 18px",
+                          fontSize: 13,
+                          color: "#333",
+                          textDecoration: "none",
+                        }}
                       >
                         My Orders
                       </Link>
-                      <hr style={{ margin: 0, border: "none", borderTop: "1px solid #f0f0f0" }} />
+                      <hr
+                        style={{
+                          margin: 0,
+                          border: "none",
+                          borderTop: "1px solid #f0f0f0",
+                        }}
+                      />
                       <button
                         onClick={handleLogout}
                         style={{
@@ -157,13 +184,19 @@ const handleLogout = () => {
                 // ✅ Logged out → show Login | Register
                 <>
                   <li className="list-none">
-                    <Link to="/logIn" className="text-[17px] Link no-underline transition font-[400]">
+                    <Link
+                      to="/logIn"
+                      className="text-[17px] Link no-underline transition font-[400]"
+                    >
                       Login
                     </Link>
                   </li>
                   <span>|</span>
                   <li className="list-none">
-                    <Link to="/Register" className="text-[17px] Link no-underline transition font-[400]">
+                    <Link
+                      to="/Register"
+                      className="text-[17px] Link no-underline transition font-[400]"
+                    >
                       Register
                     </Link>
                   </li>
@@ -192,17 +225,15 @@ const handleLogout = () => {
                 </Tooltip>
               </li>
 
-              {/* Cart */}
-             <li className="list-none">
-  <Tooltip title="Cart">
-    <IconButton onClick={() => setOpenCartPanel(true)}>
-      <StyledBadge badgeContent={itemCount} color="secondary">
-        <BsCart3 />
-      </StyledBadge>
-    </IconButton>
-  </Tooltip>
-</li>
-
+              <li className="list-none">
+                <Tooltip title="Cart">
+                  <IconButton onClick={() => setOpenCartPanel(true)}>
+                    <StyledBadge badgeContent={itemCount} color="secondary">
+                      <BsCart3 />
+                    </StyledBadge>
+                  </IconButton>
+                </Tooltip>
+              </li>
             </ul>
           </div>
         </div>
