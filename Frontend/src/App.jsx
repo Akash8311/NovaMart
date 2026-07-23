@@ -130,16 +130,20 @@ const App = () => {
   localStorage.getItem("isLogin") === "true"
 );
 
+const itemCount = cartItems.reduce(
+  (sum, item) => sum + item.qty,
+  0
+);
 
-  const values = {
-    openCartPanel,
-    setOpenCartPanel,
-    cartItems,
-    setCartItems,
-    isLogin,
-    setIsLogin,
-  };
-
+const values = {
+  openCartPanel,
+  setOpenCartPanel,
+  cartItems,
+  setCartItems,
+  itemCount,
+  isLogin,
+  setIsLogin,
+};
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.qty,
     0,
@@ -159,7 +163,6 @@ const App = () => {
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-  const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
 
   return (
     <MyContext.Provider value={values}>

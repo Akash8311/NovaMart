@@ -8,10 +8,13 @@ import IconButton from "@mui/material/IconButton";
 import { BsCart3 } from "react-icons/bs";
 import { BiGitCompare } from "react-icons/bi";
 import { CiHeart } from "react-icons/ci";
-import { CgProfile } from "react-icons/cg"; 
+import { CgProfile } from "react-icons/cg";
 import Tooltip from "@mui/material/Tooltip";
 import Navigation from "./Navigation/Navigation";
 import { MyContext } from "../../App";
+
+
+
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
@@ -23,7 +26,18 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
-  const { setOpenCartPanel, isLogin, setIsLogin } = useContext(MyContext);
+  const {
+    setOpenCartPanel,
+    isLogin,
+    setIsLogin,
+    cartItems,
+  } = useContext(MyContext);
+
+  const itemCount = cartItems.reduce(
+    (sum, item) => sum + item.qty,
+    0
+  );
+
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
 
@@ -179,15 +193,15 @@ const handleLogout = () => {
               </li>
 
               {/* Cart */}
-              <li className="list-none">
-                <Tooltip title="Cart">
-                  <IconButton onClick={() => setOpenCartPanel(true)}>
-                    <StyledBadge badgeContent={4} color="secondary">
-                      <BsCart3 />
-                    </StyledBadge>
-                  </IconButton>
-                </Tooltip>
-              </li>
+             <li className="list-none">
+  <Tooltip title="Cart">
+    <IconButton onClick={() => setOpenCartPanel(true)}>
+      <StyledBadge badgeContent={itemCount} color="secondary">
+        <BsCart3 />
+      </StyledBadge>
+    </IconButton>
+  </Tooltip>
+</li>
 
             </ul>
           </div>

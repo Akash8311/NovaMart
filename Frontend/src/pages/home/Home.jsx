@@ -131,18 +131,7 @@ const TailorRail = () => {
 
   return (
     <div className="tailor-rail">
-      <span
-        style={{
-          fontSize: "10px",
-          letterSpacing: "2px",
-          color: TOKENS.muted,
-          writingMode: "vertical-rl",
-          marginBottom: "10px",
-          fontFamily: "'Inter', sans-serif",
-        }}
-      >
-        SCROLL
-      </span>
+      
       <div
         style={{
           position: "relative",
@@ -485,7 +474,7 @@ const Home = () => {
                       style={{
                         marginTop: "5px",
                         fontSize: "20px",
-                        color: TOKENS.gold,
+                        color: "gray",
                       }}
                     />
                   </span>
