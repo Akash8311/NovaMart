@@ -103,7 +103,6 @@ const Header = () => {
               className="flex items-center justify-end w-full"
               style={{ gap: "8px", marginRight: "20px" }}
             >
-              {/* ── AUTH SECTION ── */}
               {isLogin ? (
                 <li className="list-none relative">
                   <Tooltip title="My Account">
