@@ -214,7 +214,6 @@ const Header = () => {
                 </Tooltip>
               </li>
 
-              {/* Wishlist */}
               <li className="list-none">
                 <Tooltip title="Wishlist">
                   <IconButton>
