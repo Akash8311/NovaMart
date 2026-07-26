@@ -181,7 +181,6 @@ const Header = () => {
                   )}
                 </li>
               ) : (
-                // ✅ Logged out → show Login | Register
                 <>
                   <li className="list-none">
                     <Link
@@ -203,7 +202,6 @@ const Header = () => {
                 </>
               )}
 
-              {/* Compare */}
               <li className="list-none">
                 <Tooltip title="Compare">
                   <IconButton>
