@@ -36,7 +36,6 @@ const Header = () => {
     localStorage.removeItem("isLogin");
     localStorage.removeItem("user");
 
-    // Update state
     setIsLogin(false);
 
     // Close dropdown
