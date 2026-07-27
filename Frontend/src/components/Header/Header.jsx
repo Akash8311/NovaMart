@@ -42,7 +42,6 @@ const Header = () => {
     // Close dropdown
     setShowDropdown(false);
 
-    // Redirect home
     navigate("/");
   };
 
