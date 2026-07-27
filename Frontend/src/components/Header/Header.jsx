@@ -97,7 +97,6 @@ const Header = () => {
             <Search />
           </div>
 
-          {/* Right Icons */}
           <div className="cal3 w-[30%] flex items-center">
             <ul
               className="flex items-center justify-end w-full"
