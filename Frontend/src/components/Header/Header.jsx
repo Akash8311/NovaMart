@@ -92,7 +92,6 @@ const Header = () => {
             </Link>
           </div>
 
-          {/* Search */}
           <div className="cal2 w-[40%]">
             <Search />
           </div>
