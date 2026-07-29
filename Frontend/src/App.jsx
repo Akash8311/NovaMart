@@ -616,7 +616,7 @@ const values = {
             )}
           </div>
 
-          {/* ── FOOTER: SUMMARY + CHECKOUT ── */}
+         
           {cartItems.length > 0 && (
             <div
               style={{
