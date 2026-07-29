@@ -38,7 +38,6 @@ const Header = () => {
 
     setIsLogin(false);
 
-    // Close dropdown
     setShowDropdown(false);
 
     navigate("/");
