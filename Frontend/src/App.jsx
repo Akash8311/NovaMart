@@ -566,7 +566,7 @@ const values = {
                       </div>
                     </div>
 
-                    {/* Price + Delete */}
+                    {/* delete price */}
                     <div
                       style={{
                         display: "flex",
