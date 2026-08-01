@@ -136,12 +136,20 @@ const itemCount = cartItems.reduce(
   0
 );
 
+
+// add wishlist section
 const values = {
   openCartPanel,
   setOpenCartPanel,
+
   cartItems,
   setCartItems,
+
+  wishlistItems,
+  setWishlistItems,
+
   itemCount,
+
   isLogin,
   setIsLogin,
 };
