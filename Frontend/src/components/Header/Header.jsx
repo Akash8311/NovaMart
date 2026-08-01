@@ -33,6 +33,7 @@ const {
 
 
   const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
+  const wishlistCount = wishlistItems.length;
 
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
@@ -218,19 +219,18 @@ const {
 
 
 
-
-
+{/* wishlist */}
               <li className="list-none">
                 <Tooltip title="Wishlist">
                   <IconButton>
-                    <StyledBadge badgeContent={4} color="secondary">
-                      <CiHeart />
-                    </StyledBadge>
+                 <StyledBadge badgeContent={wishlistCount} color="secondary">
+  <CiHeart />
+</StyledBadge>
                   </IconButton>
                 </Tooltip>
               </li>
 
-
+{/* wishlist end */}
 
 
 

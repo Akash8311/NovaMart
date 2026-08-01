@@ -126,6 +126,7 @@ const styleTag = `
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
   const [cartItems, setCartItems] = useState([]);
+  const [wishlistItems, setWishlistItems] = useState([]);
   const [isLogin, setIsLogin] = useState(
   localStorage.getItem("isLogin") === "true"
 );
