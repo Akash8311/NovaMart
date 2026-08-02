@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Product6 from "../../assets/Product6.png";
 import Duplicate6 from "../../assets/Duplicate6.png";
 
