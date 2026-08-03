@@ -14,12 +14,13 @@ const ProductItems = () => {
   const [isHovered, setIsHovered] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
 
-  const product = {
-    id: 847,
-    name: "Bodycon lavender dress",
-    price: 599,
-    image: "https://m.media-amazon.com/images/I/71YnZ4mL9ZL._SY741_.jpg",
-  };
+
+const product = {
+  id: 1,
+  name: "Miss Chase Women's Dress",
+  price: 1299,
+  image: "https://m.media-amazon.com/images/I/71YnZ4mL9ZL._SY741_.jpg",
+};
 
   return (
     <>
@@ -234,8 +235,8 @@ const ProductItems = () => {
               margin: "0",
             }}
           >
-            Miss Chase Women's Solid Sleeveless Collared Bodycon Above Knee
-            Polyester Dress with Pockets
+            Miss Chase Women's Solid Sleeveless Collared Bodycon
+        
           </p>
 
           <div

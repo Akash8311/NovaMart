@@ -1,6 +1,5 @@
 import React, { useState, useContext } from "react";
-import { MyContext } from "../../App";
-import { useState } from "react";
+import { MyContext } from "../../../App";
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
