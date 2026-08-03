@@ -12,7 +12,13 @@ const ProductItems2 = () => {
    const { wishlistItems, setWishlistItems } = useContext(MyContext);
     const [hover, setHover] = useState(false);
     const [isHovered, setIsHovered] = useState(false);
-  
+    
+   const product = {
+  id: "4",
+  name: "Janasya Women Green Georgette Kurta ",
+  price: 1499,
+  image: "https://m.media-amazon.com/images/I/81cI92az8VL._SY741_.jpg"
+};
     return (
     <>
     <div

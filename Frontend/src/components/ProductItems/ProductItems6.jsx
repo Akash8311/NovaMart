@@ -10,13 +10,18 @@ import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 import { MyContext } from "../../App";
 
-
-
 const ProductItems6 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  const product = {
+    id: "6",
+    name: "Janasya Women Green Georgette Kurta ",
+    price: 1499,
+    image: "https://m.media-amazon.com/images/I/71GWX3-hHjL._SX569_.jpg",
+  };
 
   return (
     <>

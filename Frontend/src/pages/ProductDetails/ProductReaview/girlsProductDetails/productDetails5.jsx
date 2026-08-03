@@ -41,7 +41,7 @@ const productDetails5 = (props) =>  {
   const sizes = ["S","M","L","XL"];
 
   const product = {
-  id: "kurta-4",
+  id: "5",
   name: "Janasya Women Green Georgette Kurta ",
   price: 1549,
   image: "https://m.media-amazon.com/images/I/61I548CayQL._SX569_.jpg"

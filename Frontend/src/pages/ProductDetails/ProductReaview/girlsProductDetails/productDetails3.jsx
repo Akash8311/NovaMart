@@ -40,7 +40,7 @@ const productDetails3 = (props) => {
   const sizes = [];
 
   const product = {
-    id: Date.now(),
+    id: 3,
     name: "Maroon Pure Silk Saree",
     price: 799,
     image: "https://m.media-amazon.com/images/I/61nK2fhO9oL._SX569_.jpg",
