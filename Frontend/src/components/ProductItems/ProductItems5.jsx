@@ -12,6 +12,7 @@ import { MyContext } from "../../App";
 
 const ProductItems2 = () => {
    const [wishlist, setWishlist] = useState(false);
+   const { wishlistItems, setWishlistItems } = useContext(MyContext);
     const [hover, setHover] = useState(false);
       const [isHovered, setIsHovered] = useState(false);
     
