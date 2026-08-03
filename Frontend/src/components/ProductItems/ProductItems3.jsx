@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import Product3 from "../../assets/Product3.png";
 import Duplicate3 from "../../assets/Duplicate3.png";
-
+import { MyContext } from "../../App";
 import { Link } from 'react-router-dom';
 import { CiHeart } from "react-icons/ci";
 import { FaHeart } from "react-icons/fa";

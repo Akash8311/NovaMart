@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
-
+import { MyContext } from "../../App";
 
 const ProductItems2 = () => {
    const [wishlist, setWishlist] = useState(false);
