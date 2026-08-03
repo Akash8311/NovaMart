@@ -9,6 +9,7 @@ import { MdZoomOutMap } from "react-icons/md";
 
 const MenProduct8 = () => {
      const [wishlist, setWishlist] = useState(false);
+     const { wishlistItems, setWishlistItems } = useContext(MyContext);
       const [hover, setHover] = useState(false);
       const [isHovered, setIsHovered] = useState(false);
   return (
