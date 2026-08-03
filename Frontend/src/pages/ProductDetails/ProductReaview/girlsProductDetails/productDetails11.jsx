@@ -42,7 +42,7 @@ const productDetails11 = (props) => {
   const sizes = ["S", "M", "L", "XL", "XLL"];
 
   const product = {
-    id: "Casual Dress1",
+    id: "11",
     name: "Casual Dress",
     price: 2399,
     image: "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg",

@@ -41,7 +41,7 @@ const productDetails10 = (props) => {
   const sizes = ["S", "M", "L", "XL", "XLL"];
 
   const product = {
-    id: "Kurta Pant Set 1",
+    id: "10",
     name: "Kurta Pant Set",
     price: 799,
     image: "https://m.media-amazon.com/images/I/91ZTnOEL-6L._SX679_.jpg",
@@ -348,9 +348,7 @@ const productDetails10 = (props) => {
                 </span>
                 <span>Short Sleeve</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Length
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Length</span>
                 <span>Calf Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -358,9 +356,7 @@ const productDetails10 = (props) => {
                 </span>
                 <span>Floral</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
                 <span>A-Line</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -403,28 +399,30 @@ const productDetails10 = (props) => {
                 }}
               >
                 <li>
-                  <strong> </strong> Cotton fabric supports comfortable wear for work or daily routines
+                  <strong> </strong> Cotton fabric supports comfortable wear for
+                  work or daily routines
                 </li>
 
                 <li>
-                  <strong></strong> Floral print adds a soft visual appeal for versatile styling
-
+                  <strong></strong> Floral print adds a soft visual appeal for
+                  versatile styling
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong> </strong>Mandarin collar and button down front create a structured outline
-
+                      <strong> </strong>Mandarin collar and button down front
+                      create a structured outline
                     </li>
 
                     <li>
-                      <strong></strong>🎉 3/4 sleeves and calf length offer relaxed movement and balanced coverage
+                      <strong></strong>🎉 3/4 sleeves and calf length offer
+                      relaxed movement and balanced coverage
                     </li>
 
                     <li>
-                      <strong></strong> 🎁 Coordinated pant completes the outfit with a neat straight fit
-
+                      <strong></strong> 🎁 Coordinated pant completes the outfit
+                      with a neat straight fit
                     </li>
 
                     <li>

@@ -13,7 +13,12 @@ const ProductItems8 = () =>{
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
+const product = {
+  id: "8",
+  name: "Woven Soft Silk Saree",
+  price: 1699,
+  image: "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"
+};
   return (
     <>
       <div

@@ -41,7 +41,7 @@ const productDetails8 = (props) =>  {
   const sizes = ["S","M","L","XL","2XL"];
 
   const product = {
-  id: "Silk Saree s-7",
+  id: "8",
   name: "Woven Soft Silk Saree",
   price: 1699,
   image: "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"

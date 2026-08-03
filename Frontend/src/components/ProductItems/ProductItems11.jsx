@@ -7,11 +7,17 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-const ProductItems11 = () =>{
+const ProductItems11 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const product = {
+    id: "11",
+    name: "Casual Dress",
+    price: 2399,
+    image: "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -171,32 +177,35 @@ const ProductItems11 = () =>{
         >
           {/* Product Image */}
 
-      <div
-           style={{
-             width: "100%",
-             height: "200px",
-             overflow: "hidden",
-             borderRadius: "10px",
-             display: "flex",
-             justifyContent: "center",
-             alignItems: "center",
-           }}
-           onMouseEnter={() => setIsHovered(true)}
-           onMouseLeave={() => setIsHovered(false)}
-         >
-           <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/51eXO+4wImL._SY741_.jpg" : "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg"}
-             alt="product"
-             style={{
-               width: "70%",
-               height: "100%",
-               objectFit: "cover",
-               transition: "0.4s",
-               transform: isHovered ? "scale(1.1)" : "scale(1)",
-             }}
-           />
-         </div>
-     
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              overflow: "hidden",
+              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/51eXO+4wImL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/619LfPjQsvL._SY741_.jpg"
+              }
+              alt="product"
+              style={{
+                width: "70%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "0.4s",
+                transform: isHovered ? "scale(1.1)" : "scale(1)",
+              }}
+            />
+          </div>
 
           {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
@@ -224,7 +233,8 @@ const ProductItems11 = () =>{
                 margin: "0",
               }}
             >
-             Sweetheart Neckline Yellow Gingham Check Polyester Cotton Blend A-Line Holiday Ready Lightweight Casual Dress
+              Sweetheart Neckline Yellow Gingham Check Polyester Cotton Blend
+              A-Line Holiday Ready Lightweight Casual Dress
             </p>
 
             {/* Price Section */}
@@ -293,5 +303,4 @@ const ProductItems11 = () =>{
   );
 };
 
-
-export default ProductItems11
+export default ProductItems11;

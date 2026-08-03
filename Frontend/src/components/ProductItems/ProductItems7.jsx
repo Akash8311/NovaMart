@@ -12,6 +12,13 @@ const ProductItems2 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+const product = {
+  id: "7",
+  name: "GRECIILOOKS Summer Dress for Woman",
+  price: 479,
+  image: "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY741_.jpg"
+};
+
 
   return (
     <>

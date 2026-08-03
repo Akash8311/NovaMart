@@ -41,7 +41,7 @@ const productDetails9 = (props) =>  {
   const sizes = ["Normal"];
 
   const product = {
-  id: "Pre-Draped Saree",
+  id: "9",
   name: "Woven Soft Silk Saree",
   price: 949,
   image: "https://m.media-amazon.com/images/I/51NgQWs-VyL.jpg"

@@ -12,7 +12,12 @@ const ProductItems12 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
+  const product = {
+    id: "12",
+    name: "Maxi Outfit Dress ",
+    price: 453,
+    image: "https://m.media-amazon.com/images/I/81nIM0Aoa8L._SY741_.jpg",
+  };
   return (
     <>
       <div
@@ -169,7 +174,6 @@ const ProductItems12 = () => {
             color: "#777",
           }}
         >
-
           <div
             style={{
               width: "100%",

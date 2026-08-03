@@ -41,7 +41,7 @@ const productDetails7 = (props) =>  {
   const sizes = ["S","M","L","XL","2XL"];
 
   const product = {
-  id: "Summer Dress-7",
+  id: "7",
   name: "GRECIILOOKS Summer Dress for Woman",
   price: 479,
   image: "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY741_.jpg"

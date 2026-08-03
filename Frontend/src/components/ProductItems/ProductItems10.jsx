@@ -7,12 +7,18 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-const ProductItems10 = () =>{
+const ProductItems10 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  const product = {
+    id: "10",
+    name: "Kurta Pant Set",
+    price: 799,
+    image: "https://m.media-amazon.com/images/I/91ZTnOEL-6L._SX679_.jpg",
+  };
   return (
     <>
       <div
@@ -171,32 +177,35 @@ const ProductItems10 = () =>{
         >
           {/* Product Image */}
 
-      <div
-           style={{
-             width: "100%",
-             height: "200px",
-             overflow: "hidden",
-             borderRadius: "10px",
-             display: "flex",
-             justifyContent: "center",
-             alignItems: "center",
-           }}
-           onMouseEnter={() => setIsHovered(true)}
-           onMouseLeave={() => setIsHovered(false)}
-         >
-           <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/81HVYcjvXjL._SY741_.jpg" : "https://m.media-amazon.com/images/I/61xtN+BjS2L._SY741_.jpg"}
-             alt="product"
-             style={{
-               width: "70%",
-               height: "100%",
-               objectFit: "cover",
-               transition: "0.4s",
-               transform: isHovered ? "scale(1.1)" : "scale(1)",
-             }}
-           />
-         </div>
-     
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              overflow: "hidden",
+              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/81HVYcjvXjL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/61xtN+BjS2L._SY741_.jpg"
+              }
+              alt="product"
+              style={{
+                width: "70%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "0.4s",
+                transform: isHovered ? "scale(1.1)" : "scale(1)",
+              }}
+            />
+          </div>
 
           {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
@@ -224,7 +233,8 @@ const ProductItems10 = () =>{
                 margin: "0",
               }}
             >
-              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round Neck Half Sleeeve Standard Length
+              Amzira Women's Cotton Floral Printed Kurta Pant Set with Round
+              Neck Half Sleeeve Standard Length
             </p>
 
             {/* Price Section */}
@@ -293,5 +303,4 @@ const ProductItems10 = () =>{
   );
 };
 
-
-export default ProductItems10
+export default ProductItems10;
