@@ -95,7 +95,6 @@ const ProductItems12 = () => {
             </button>
           )}
 
-          {/* 🔁 Compare Button */}
           {hover && (
             <button
               style={{
@@ -130,7 +129,6 @@ const ProductItems12 = () => {
             </button>
           )}
 
-          {/* 🔍 Zoom Button */}
           {hover && (
             <button
               style={{
