@@ -52,7 +52,6 @@ const ProductItems12 = () => {
             zIndex: 1000,
           }}
         >
-          {/* ❤️ Wishlist Button */}
           {hover && (
             <button
               onClick={() => setWishlist(!wishlist)}
