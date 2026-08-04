@@ -201,7 +201,6 @@ const ProductItems12 = () => {
             />
           </div>
 
-          {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
             <h4
               style={{
