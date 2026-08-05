@@ -13,7 +13,7 @@ const KidProduct7 = () => {
   const [isHovered, setIsHovered] = useState(false);
 
     const product = {
-    id: "18",
+    id: "kids 7",
     name: "AJ DEZINES Kids Ethnic Wear Silk Blend",
     price: 399,
     image: "https://m.media-amazon.com/images/I/61r61E4KKGL._SY741_.jpg",
