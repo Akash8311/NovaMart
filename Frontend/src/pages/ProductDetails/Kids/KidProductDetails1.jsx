@@ -44,7 +44,7 @@ const KidProductDetails1 = () =>{
 
 
     const product = {
-  id: 5,
+  id: 12,
   name: "BODYCARE Girls Shorts Pack of 2",
   price: 437,
   image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"
