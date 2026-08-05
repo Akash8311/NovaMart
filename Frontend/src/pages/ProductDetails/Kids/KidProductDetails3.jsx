@@ -39,7 +39,7 @@ const KidProductDetails3 = () => {
   const sizes = ["S", "M", "L", "XL"];
 
   const product = {
-    id: "kids 14",
+    id: "kids 3",
     name: "POLKA TOTS",
     price: 799,
     image: "https://m.media-amazon.com/images/I/61qC+hTlZCL._SY741_.jpg",

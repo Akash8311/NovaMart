@@ -53,7 +53,7 @@ const KidProductDetails4 = () => {
   ];
 
   const product = {
-    id: "15",
+    id: "kids 4",
     name: "Girls Floral Dress with Shrug",
     price: 375,
     image: "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg",

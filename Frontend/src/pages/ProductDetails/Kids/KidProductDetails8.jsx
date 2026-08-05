@@ -48,7 +48,7 @@ const KidProductDetails8 = () => {
   ];
 
   const product = {
-    id: "19",
+    id: "kids 8",
     name: "Coords Set for Girls",
     price: 719,
     image: "https://m.media-amazon.com/images/I/61KBpp-GttL._SY741_.jpg",
