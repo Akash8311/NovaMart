@@ -12,6 +12,13 @@ const KidProduct6 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+  const product = {
+    id: "17",
+    name: "AJ DEZINES Boys Cotton ",
+    price: 424,
+    image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg",
+  };
   return (
     <>
       <div

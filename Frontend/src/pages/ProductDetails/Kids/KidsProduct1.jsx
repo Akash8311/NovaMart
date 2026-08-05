@@ -13,7 +13,7 @@ const kidsProduct1 = () => {
   const [isHovered, setIsHovered] = useState(false);
 
      const product = {
-  id: 13,
+  id:"kids 1",
   name: "BODYCARE Girls Shorts Pack of 2",
   price: 437,
   image: "https://m.media-amazon.com/images/I/914MX-FkZvL._SX679_.jpg"

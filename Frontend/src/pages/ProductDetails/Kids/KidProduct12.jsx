@@ -12,6 +12,13 @@ const KidProduct12 = () =>{
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  
+    const product = {
+    id: "kids 12",
+    name: " Indian Bollywood Style",
+    price: 949,
+    image: "https://m.media-amazon.com/images/I/71UDtIDpa2L._SY741_.jpg",
+  };
   return (
     <>
       <div

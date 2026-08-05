@@ -49,7 +49,7 @@ const KidProductDetails6 = () => {
   ];
 
   const product = {
-    id: "KIDS 6",
+    id: "17",
     name: "AJ DEZINES Boys Cotton ",
     price: 424,
     image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg",

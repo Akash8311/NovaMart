@@ -11,6 +11,13 @@ const KidProduct10 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+    const product = {
+    id: "kids 10",
+    name: "BODYCARE Girls Shorts Pack of 2",
+    price: 764,
+    image: "https://m.media-amazon.com/images/I/61BDty+ZweL._SY741_.jpg",
+  };
   return (
     <>
       <div

@@ -13,7 +13,7 @@ const KidProduct2 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const product = {
-    id: 13,
+    id: "kids 2",
     name: "Bodycare Girls Solid Cotton Shorts",
     price: 325,
     image: "https://m.media-amazon.com/images/I/51vJ5XUz2HL._SX569_.jpg",

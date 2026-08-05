@@ -36,6 +36,7 @@ const KidProductDetails10 = () => {
   const [selectedSize, setSelectedSize] = useState("2-3 Y");
   const [expanded, setExpanded] = useState(false);
   const sizes = ["6-12 M", "1-2 Y", "2-3 Y", "3-4 Y", "4-5 Y", "5-6 Y"];
+  
   const product = {
     id: "kids 10",
     name: "BODYCARE Girls Shorts Pack of 2",
