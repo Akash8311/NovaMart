@@ -27,7 +27,6 @@ import MenProduct12 from "../Men/MenProduct12";
 import ProductZoomMen11 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen11";
 import MenProductReview11 from "../ProductReaview/MenReview/MenProductReview11.JSX";
 
-
 const MenProductDetails11 = () => {
   const [selectedSize, setSelectedSize] = useState("S");
   const [expanded, setExpanded] = useState(false);
@@ -35,11 +34,12 @@ const MenProductDetails11 = () => {
   const sizes = ["S", "M", "XL"];
 
   const product = {
-    id: "kurta 2 ",
+    id: "mens 11",
     name: "Folgen Men’s Cotton Blend ",
     price: 499,
     image: "https://m.media-amazon.com/images/I/71JjpMjPSIL._SY741_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -108,7 +108,10 @@ const MenProductDetails11 = () => {
               Folgen Men’s Cotton Blend
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-Folgen Men’s Cotton Blend Kurta | Casual for Men | Comfortable & Stylish | Regular Fit | Kurtas for Men Under 500 | Full Sleeve Short Kurta Shirt | Printed                <p
+                Folgen Men’s Cotton Blend Kurta | Casual for Men | Comfortable &
+                Stylish | Regular Fit | Kurtas for Men Under 500 | Full Sleeve
+                Short Kurta Shirt | Printed{" "}
+                <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -121,9 +124,7 @@ Folgen Men’s Cotton Blend Kurta | Casual for Men | Comfortable & Stylish | Reg
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-S is your recommended size based on millions of customer orders.
-
+              S is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -316,23 +317,18 @@ S is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Classic Fit
-</span>
+                <span>Classic Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Waist Length
-</span>
+                <span>Waist Length</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>style</span>
                 <span>Regular</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
+                  Sleeve type
                 </span>
-                <span>Long Sleeve
-</span>
+                <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
@@ -379,26 +375,41 @@ S is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong>Fabric :-</strong> Cotton Blend Men's Kurta || Pattern :- Print Kurtas for men || Length Type :- Hip Length Kurta || Fit Type :- Regular Fit || Coller :- Mandarin/Chinese collar || Package Contain :- 1 Casual Short Kurta For Men.
+                  <strong>Fabric :-</strong> Cotton Blend Men's Kurta || Pattern
+                  :- Print Kurtas for men || Length Type :- Hip Length Kurta ||
+                  Fit Type :- Regular Fit || Coller :- Mandarin/Chinese collar
+                  || Package Contain :- 1 Casual Short Kurta For Men.
                 </li>
 
                 <li>
-                  <strong>Sleeves :-</strong> Full Sleeve With Cuff || Neck :- Stand Collar Kurta for boys || Pattern :- Kurta has a button placket & Slightly Curved.
-
+                  <strong>Sleeves :-</strong> Full Sleeve With Cuff || Neck :-
+                  Stand Collar Kurta for boys || Pattern :- Kurta has a button
+                  placket & Slightly Curved.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Occasion :-</strong> Casual Wear || Party, Weddings, Sangeet, Mehandi || Office Wear || Formal Wear || Ganesh Chaturthi, Janmashtami || Evening Wear || Work Wear || Party Wear || Regular Outing Wear || Business Wear || Regular Wear || Professional Wear and best gift for your loved one.
+                      <strong>Occasion :-</strong> Casual Wear || Party,
+                      Weddings, Sangeet, Mehandi || Office Wear || Formal Wear
+                      || Ganesh Chaturthi, Janmashtami || Evening Wear || Work
+                      Wear || Party Wear || Regular Outing Wear || Business Wear
+                      || Regular Wear || Professional Wear and best gift for
+                      your loved one.
                     </li>
 
                     <li>
-                      <strong></strong> Please check the size chart for the garments measurements and order a garment for the ease of putting on and taking off the garment.
+                      <strong></strong> Please check the size chart for the
+                      garments measurements and order a garment for the ease of
+                      putting on and taking off the garment.
                     </li>
 
                     <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong></strong> Versatile Design Enables Seamless
+                      Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing
+                      You To Create Multiple Outfits With One Staple Piece While
+                      Maintaining A Stylish, Confident, And Well-Put-Together
+                      Look.
                     </li>
 
                     <li>
@@ -414,7 +425,8 @@ S is your recommended size based on millions of customer orders.
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH
+                      FASHION
                     </li>
 
                     <li>
@@ -506,9 +518,9 @@ S is your recommended size based on millions of customer orders.
                 <MenProduct9 />
               </SwiperSlide>
 
-               <SwiperSlide>
+              <SwiperSlide>
                 <MenProduct10 />
-              </SwiperSlide> 
+              </SwiperSlide>
               <SwiperSlide>
                 <MenProduct12 />
               </SwiperSlide>
@@ -520,5 +532,4 @@ S is your recommended size based on millions of customer orders.
   );
 };
 
-
-export default MenProductDetails11
+export default MenProductDetails11;

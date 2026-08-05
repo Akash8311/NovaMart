@@ -34,14 +34,12 @@ const MenProductDetails1 = () => {
 
   const sizes = ["S", "M", "L", "XL"];
 
-
-    const product = {
-  id: 5,
-  name: "JVX Men Sweatshirts",
-  price: 599,
-  image: "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg"
-
-};
+  const product = {
+    id: "mens 1",
+    name: "JVX Men Sweatshirts",
+    price: 599,
+    image: "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -125,7 +123,6 @@ const MenProductDetails1 = () => {
               </span>
             </h1>
 
-          
             <p style={{ fontSize: "14px", color: "#777" }}>
               Men sweatshirts || sweatshirts for Men || Unisex sweatshirts
               ||Hoodie for men || unisex hoodie || hoodie || Available in Plus
@@ -214,7 +211,7 @@ const MenProductDetails1 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 

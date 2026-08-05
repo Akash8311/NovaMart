@@ -29,14 +29,15 @@ const MenProductDetails8 = () => {
   const [selectedSize, setSelectedSize] = useState("L");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L","XL"];
+  const sizes = ["S", "M", "L", "XL"];
 
   const product = {
-    id: "Half Seelves Regular Fit1",
+    id: "mens 8",
     name: "Half Seelves Regular Fit ",
     price: 729,
     image: "https://m.media-amazon.com/images/I/91Pt9K991OL._SX679_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -307,18 +308,16 @@ const MenProductDetails8 = () => {
                 }}
               >
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Material composition{" "}
+                  Material composition{" "}
                 </span>
                 <span>60% Cotton, 40% Polyester</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Regular Fit
-</span>
+                <span>Regular Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Standard Length
-</span>
+                <span>Standard Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -409,7 +408,10 @@ const MenProductDetails8 = () => {
                     </li>
 
                     <li>
-                      <strong>Packer:</strong> Aditya Birla Fashion and Retail Limited. Kh No. 118/110/1, Building 2, Divyasree Technopolis, Yemalur Post, Off HAL Airport Road, Bengaluru-560037 - Contact - 9742580560
+                      <strong>Packer:</strong> Aditya Birla Fashion and Retail
+                      Limited. Kh No. 118/110/1, Building 2, Divyasree
+                      Technopolis, Yemalur Post, Off HAL Airport Road,
+                      Bengaluru-560037 - Contact - 9742580560
                     </li>
 
                     <li>
@@ -425,7 +427,10 @@ const MenProductDetails8 = () => {
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> ABFRL, Aditya Birla Fashion and Retail Limited. Kh No. 118/110/1, Building 2, Divyasree Technopolis, Yemalur Post, Off HAL Airport Road, Bengaluru-560037 - Contact - 9742580560
+                      <strong>Manufacturer:</strong> ABFRL, Aditya Birla Fashion
+                      and Retail Limited. Kh No. 118/110/1, Building 2,
+                      Divyasree Technopolis, Yemalur Post, Off HAL Airport Road,
+                      Bengaluru-560037 - Contact - 9742580560
                     </li>
 
                     <li>

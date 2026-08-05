@@ -12,6 +12,12 @@ const MenProduct11 = () => {
 
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const product = {
+    id: "mens 11",
+    name: "Folgen Men’s Cotton Blend ",
+    price: 499,
+    image: "https://m.media-amazon.com/images/I/71JjpMjPSIL._SY741_.jpg",
+  };
   return (
     <>
       <div

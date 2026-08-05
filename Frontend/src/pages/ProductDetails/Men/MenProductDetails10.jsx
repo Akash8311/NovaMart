@@ -27,19 +27,19 @@ import MenProduct12 from "../Men/MenProduct12";
 import ProductZoomMen10 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen10";
 import MenProductReview10 from "../ProductReaview/MenReview/MenProductReview10.JSX";
 
-
 const MenProductDetails10 = () => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L","XL","2XL","3XL","4XL"];
+  const sizes = ["S", "M", "L", "XL", "2XL", "3XL", "4XL"];
 
   const product = {
-    id: " Casual Regular Fit Mandarin 1",
+    id: "mens 10",
     name: " Casual Regular Fit Mandarin ",
     price: 499,
     image: "https://m.media-amazon.com/images/I/91cz96QfVbL._SX679_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -105,10 +105,11 @@ const MenProductDetails10 = () => {
                 marginBottom: "6px",
               }}
             >
-            Casual Regular Fit Mandarin
+              Casual Regular Fit Mandarin
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Zombom Cotton Polyester Blend Solid Casual Regular Fit Mandarin/Chinese Collor Short Kurta for Men{" "}
+                Zombom Cotton Polyester Blend Solid Casual Regular Fit
+                Mandarin/Chinese Collor Short Kurta for Men{" "}
                 <p
                   style={{
                     fontSize: "14px",
@@ -122,9 +123,7 @@ const MenProductDetails10 = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-M is your recommended size based on millions of customer orders.
-
+              M is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -298,7 +297,7 @@ M is your recommended size based on millions of customer orders.
                   color: "#1a1a1a",
                 }}
               >
-               Top highlights
+                Top highlights
               </h3>
 
               <div
@@ -317,13 +316,10 @@ M is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
                 </span>
-                <span>Full Sleeve
-
-</span>
+                <span>Full Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Waist Length
-h</span>
+                <span>Waist Length h</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Collar style
@@ -331,16 +327,14 @@ h</span>
                 <span>Collared Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
+                  Sleeve type
                 </span>
-                <span>Long Sleeve
-</span>
+                <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Pattern
                 </span>
-                <span>solid
-</span>
+                <span>solid</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -382,26 +376,42 @@ h</span>
                 }}
               >
                 <li>
-                  <strong>Fabric :</strong> E Cotton Polyester Blend Men's Kurta || Pattern :- Solid Kurtas for men || Length Type :- Hip Length Kurta || Fit Type :- Regular Fit || Coller :- Mandarin/Chinese collar || Package Contain :- 1 Casual Short Kurta For Men.
+                  <strong>Fabric :</strong> E Cotton Polyester Blend Men's Kurta
+                  || Pattern :- Solid Kurtas for men || Length Type :- Hip
+                  Length Kurta || Fit Type :- Regular Fit || Coller :-
+                  Mandarin/Chinese collar || Package Contain :- 1 Casual Short
+                  Kurta For Men.
                 </li>
 
                 <li>
-                  <strong>Sleeves :</strong> Full Sleeve With Cuff || Neck :- Stand Collar Kurta for boys || Pattern :- Kurta has a button placket & Slightly Curved.
-
+                  <strong>Sleeves :</strong> Full Sleeve With Cuff || Neck :-
+                  Stand Collar Kurta for boys || Pattern :- Kurta has a button
+                  placket & Slightly Curved.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Occasion :</strong>Casual Wear || Party, Weddings, Sangeet, Mehandi || Office Wear || Formal Wear || Ganesh Chaturthi, Janmashtami || Evening Wear || Work Wear || Party Wear || Regular Outing Wear || Business Wear || Regular Wear || Professional Wear and best gift for your loved one.
+                      <strong>Occasion :</strong>Casual Wear || Party, Weddings,
+                      Sangeet, Mehandi || Office Wear || Formal Wear || Ganesh
+                      Chaturthi, Janmashtami || Evening Wear || Work Wear ||
+                      Party Wear || Regular Outing Wear || Business Wear ||
+                      Regular Wear || Professional Wear and best gift for your
+                      loved one.
                     </li>
 
                     <li>
-                      <strong></strong> Please check the size chart for the garments measurements and order a garment for the ease of putting on and taking off the garment.
+                      <strong></strong> Please check the size chart for the
+                      garments measurements and order a garment for the ease of
+                      putting on and taking off the garment.
                     </li>
 
                     <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong></strong> Versatile Design Enables Seamless
+                      Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing
+                      You To Create Multiple Outfits With One Staple Piece While
+                      Maintaining A Stylish, Confident, And Well-Put-Together
+                      Look.
                     </li>
 
                     <li>
@@ -417,7 +427,8 @@ h</span>
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH
+                      FASHION
                     </li>
 
                     <li>
@@ -505,16 +516,15 @@ h</span>
                 <MenProduct8 />
               </SwiperSlide>
 
-
               <SwiperSlide>
                 <MenProduct9 />
               </SwiperSlide>
 
-               <SwiperSlide>
+              <SwiperSlide>
                 <MenProduct11 />
               </SwiperSlide>
 
-               <SwiperSlide>
+              <SwiperSlide>
                 <MenProduct12 />
               </SwiperSlide>
             </Swiper>
@@ -525,5 +535,4 @@ h</span>
   );
 };
 
-
-export default MenProductDetails10
+export default MenProductDetails10;

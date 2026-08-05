@@ -25,18 +25,19 @@ import MenProduct9 from "../Men/MenProduct9";
 import ProductZoomMen7 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen7";
 import MenProductReview7 from "../ProductReaview/MenReview/MenProductReview7.JSX";
 
-const MenProductDetails7 =() => {
+const MenProductDetails7 = () => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["S", "M", "L","XL","XXL"];
+  const sizes = ["S", "M", "L", "XL", "XXL"];
 
   const product = {
-    id: "Casual wear 1",
+    id: "mens 7",
     name: "Casual wear Shirt ",
     price: 949,
     image: "https://m.media-amazon.com/images/I/51sawi-30SL._SX679_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -105,7 +106,10 @@ const MenProductDetails7 =() => {
               Campus Sutra Men's White & Sage Green
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-Buffalo Check Button Up Regular Fit Shirt for Casual Wear | Cotton Shirt Crafted with Regular Sleeve, Comfort Fit & High-Performance for Everyday Wear                <p
+                Buffalo Check Button Up Regular Fit Shirt for Casual Wear |
+                Cotton Shirt Crafted with Regular Sleeve, Comfort Fit &
+                High-Performance for Everyday Wear{" "}
+                <p
                   style={{
                     fontSize: "14px",
                     color: "blue",
@@ -118,9 +122,7 @@ Buffalo Check Button Up Regular Fit Shirt for Casual Wear | Cotton Shirt Crafted
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-M is your recommended size based on millions of customer orders.
-
+              M is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -311,10 +313,9 @@ M is your recommended size based on millions of customer orders.
                 </span>
                 <span>Cotton</span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
-Pattern                </span>
-                <span>Checkered
-
-</span>
+                  Pattern{" "}
+                </span>
+                <span>Checkered</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
                 <span>Long Length</span>
@@ -322,20 +323,17 @@ Pattern                </span>
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Regular Fit
-</span>
+                <span>Regular Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
+                  Sleeve type
                 </span>
-                <span>Long Sleeve
-</span>
+                <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Collar style
+                  Collar style
                 </span>
-                <span>Spread Collar
-</span>
+                <span>Spread Collar</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Care instructions
@@ -377,26 +375,40 @@ Pattern                </span>
                 }}
               >
                 <li>
-                  <strong>💯FIT TYPE: </strong> This shirt has a regular fit. Quality craftsmanship is at the forefront. Using a range of high-quality fabrics, there is a seamlessly crafted collection for laid-back style.
+                  <strong>💯FIT TYPE: </strong> This shirt has a regular fit.
+                  Quality craftsmanship is at the forefront. Using a range of
+                  high-quality fabrics, there is a seamlessly crafted collection
+                  for laid-back style.
                 </li>
 
                 <li>
-                  <strong>👌FABRIC:</strong> This shirt is fabricated with top-grade and durable material. Made of fabric that holds its shape throughout the day, lets you have no restriction and feel relaxed.
-
+                  <strong>👌FABRIC:</strong> This shirt is fabricated with
+                  top-grade and durable material. Made of fabric that holds its
+                  shape throughout the day, lets you have no restriction and
+                  feel relaxed.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>🧥SLEEVE TYPE:</strong>  Long Sleeve. Designed to offer an energetic look, the shirt combines the warmth of comfortable and casual feel. Offering an elevated look, it showcases a perfect fit.
+                      <strong>🧥SLEEVE TYPE:</strong> Long Sleeve. Designed to
+                      offer an energetic look, the shirt combines the warmth of
+                      comfortable and casual feel. Offering an elevated look, it
+                      showcases a perfect fit.
                     </li>
 
                     <li>
-                      <strong>😎LAID-BACK ENSEMBLE:</strong>  Spruce up your look with this curated collection of shirt from Campus Sutra. When you're in need of a laid-back ensemble, rock this shirts with jeans and sneakers.
+                      <strong>😎LAID-BACK ENSEMBLE:</strong> Spruce up your look
+                      with this curated collection of shirt from Campus Sutra.
+                      When you're in need of a laid-back ensemble, rock this
+                      shirts with jeans and sneakers.
                     </li>
 
                     <li>
-                      <strong>📃CARE INSTRUCTIONS:</strong> Machine wash. Wash & dry inside out. Wash separately. Don't soak for a long time. Do not bleach. Tumble dry normal cycle. Medium heat iron or line dry in reverse medium heat iron.
+                      <strong>📃CARE INSTRUCTIONS:</strong> Machine wash. Wash &
+                      dry inside out. Wash separately. Don't soak for a long
+                      time. Do not bleach. Tumble dry normal cycle. Medium heat
+                      iron or line dry in reverse medium heat iron.
                     </li>
 
                     <li>
@@ -412,10 +424,9 @@ Pattern                </span>
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH
+                      FASHION
                     </li>
-
-                   
 
                     <li>
                       <strong>COUNTRY OF ORIGIN:</strong> Proudly made in India
@@ -506,5 +517,4 @@ Pattern                </span>
   );
 };
 
-
-export default MenProductDetails7
+export default MenProductDetails7;

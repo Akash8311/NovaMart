@@ -32,11 +32,12 @@ const MenProductDetails6 = () => {
   const sizes = ["S", "M", "L"];
 
   const product = {
-    id: "Cotton Checks Shirt1",
+    id: "mens 6",
     name: "Men’s Cotton Checks Shirt ",
     price: 410,
     image: "https://m.media-amazon.com/images/I/A1i0ldOB-3L._SX679_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -105,7 +106,9 @@ const MenProductDetails6 = () => {
               Men’s Cotton Checks Shirt
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-              Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric Construction, Classic Collar for Everyday Casual Style Or Special Occasion{" "}
+                Men’s Cotton Checks Shirt with Full Sleeves, Soft Fabric
+                Construction, Classic Collar for Everyday Casual Style Or
+                Special Occasion{" "}
                 <p
                   style={{
                     fontSize: "14px",
@@ -119,10 +122,7 @@ const MenProductDetails6 = () => {
 
             {/* SUBTITLE */}
             <p style={{ fontSize: "14px", color: "#777" }}>
-            
-L
-M is your recommended size based on millions of customer orders.
-
+              L M is your recommended size based on millions of customer orders.
             </p>
 
             {/* RATING */}
@@ -315,8 +315,7 @@ M is your recommended size based on millions of customer orders.
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Fit type
                 </span>
-                <span>Classic Fit
-</span>
+                <span>Classic Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
                 <span>Long Length</span>
@@ -327,10 +326,9 @@ M is your recommended size based on millions of customer orders.
                 <span>Collared Neck</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Sleeve type
+                  Sleeve type
                 </span>
-                <span>Long Sleeve
-</span>
+                <span>Long Sleeve</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Neck style
@@ -377,26 +375,45 @@ M is your recommended size based on millions of customer orders.
                 }}
               >
                 <li>
-                  <strong></strong> Engineered With A Refined Blend Of Premium Cotton Fibers That Provide Exceptional Breathability, Natural Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched Comfort During Long Working Hours, Travel Days, Or Casual Weekend Outings.
+                  <strong></strong> Engineered With A Refined Blend Of Premium
+                  Cotton Fibers That Provide Exceptional Breathability, Natural
+                  Softness And A Smooth Skin-Friendly Feel, Ensuring Unmatched
+                  Comfort During Long Working Hours, Travel Days, Or Casual
+                  Weekend Outings.
                 </li>
 
                 <li>
-                  <strong></strong> Designed With An Elegant Multi-Tone Check Pattern That Adds Depth, Visual Appeal, And Timeless Charm To Your Wardrobe, Making It Effortlessly Suitable For Office Meetings, Outdoor Gatherings, Festive Celebrations, Or Everyday Smart-Casual Styling.
-
+                  <strong></strong> Designed With An Elegant Multi-Tone Check
+                  Pattern That Adds Depth, Visual Appeal, And Timeless Charm To
+                  Your Wardrobe, Making It Effortlessly Suitable For Office
+                  Meetings, Outdoor Gatherings, Festive Celebrations, Or
+                  Everyday Smart-Casual Styling.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong></strong> Features A Meticulously Structured Collar, Reinforced Button Placket, And Precision-Cut Panels That Maintain The Shirt’s Crisp Silhouette, Ensuring It Stays Neatly Fitting And Visually Sharp Even After Repeated Wear And Multiple Wash Cycles.
+                      <strong></strong> Features A Meticulously Structured
+                      Collar, Reinforced Button Placket, And Precision-Cut
+                      Panels That Maintain The Shirt’s Crisp Silhouette,
+                      Ensuring It Stays Neatly Fitting And Visually Sharp Even
+                      After Repeated Wear And Multiple Wash Cycles.
                     </li>
 
                     <li>
-                      <strong></strong> Constructed Using Durable, Double Stitched Seams And Reinforced Stress Points That Enhance Longevity, Prevent Tearing, And Ensure The Shirt Withstands Daily Usage, Frequent Washing, And Regular Ironing Without Wear And Tear.
+                      <strong></strong> Constructed Using Durable, Double
+                      Stitched Seams And Reinforced Stress Points That Enhance
+                      Longevity, Prevent Tearing, And Ensure The Shirt
+                      Withstands Daily Usage, Frequent Washing, And Regular
+                      Ironing Without Wear And Tear.
                     </li>
 
                     <li>
-                      <strong></strong> Versatile Design Enables Seamless Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing You To Create Multiple Outfits With One Staple Piece While Maintaining A Stylish, Confident, And Well-Put-Together Look.
+                      <strong></strong> Versatile Design Enables Seamless
+                      Pairing With Jeans, Chinos, Trousers, Or Jackets, Allowing
+                      You To Create Multiple Outfits With One Staple Piece While
+                      Maintaining A Stylish, Confident, And Well-Put-Together
+                      Look.
                     </li>
 
                     <li>
@@ -412,7 +429,8 @@ M is your recommended size based on millions of customer orders.
                     </li>
 
                     <li>
-                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH FASHION
+                      <strong>Manufacturer:</strong> SUNMEGH FASHION, SUNMEGH
+                      FASHION
                     </li>
 
                     <li>

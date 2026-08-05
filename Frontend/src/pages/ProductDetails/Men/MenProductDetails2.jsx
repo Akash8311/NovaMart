@@ -32,14 +32,12 @@ const MenProductDetails2 = () => {
 
   const sizes = ["S", "M", "L", "XL"];
 
-
-    const product = {
-  id: 6,
-  name: "Fit Casual Shirt",
-  price: 649,
-  image: "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg"
-
-};
+  const product = {
+    id: "mens 2",
+    name: "Fit Casual Shirt",
+    price: 649,
+    image: "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg",
+  };
   return (
     <>
       {" "}
@@ -200,7 +198,7 @@ const MenProductDetails2 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -289,7 +287,7 @@ const MenProductDetails2 = () => {
                   color: "#1a1a1a",
                 }}
               >
-               Top highlights
+                Top highlights
               </h3>
 
               <div

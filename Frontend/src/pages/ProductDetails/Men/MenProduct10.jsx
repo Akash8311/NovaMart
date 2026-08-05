@@ -11,6 +11,12 @@ const MenProduct10 = () => {
 
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const product = {
+    id: "mens 10",
+    name: " Casual Regular Fit Mandarin ",
+    price: 499,
+    image: "https://m.media-amazon.com/images/I/91cz96QfVbL._SX679_.jpg",
+  };
   return (
     <>
       <div

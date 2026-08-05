@@ -26,20 +26,20 @@ import MenProduct9 from "../Men/MenProduct9";
 import ProductZoomMen3 from "../../../components/ProductZoom/MenProductZoom/ProductZoomMen4";
 import MenProductReview3 from "../ProductReaview/MenReview/MenProductReview3.JSX";
 
-
-const MenProductDetails4 = () =>  {
+const MenProductDetails4 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
- const sizes = ["S", "M", "L", "XLL"];
+  const sizes = ["S", "M", "L", "XLL"];
 
-    const product = {
-  id: 8,
-  name: "Casual Button Down Shirts",
-  price: 495,
-  image: "https://m.media-amazon.com/images/I/41uKa5xYPyL.jpg"
+  const product = {
+    id: "mens 4",
+    name: "Casual Button Down Shirts",
+    price: 495,
+    image: "https://m.media-amazon.com/images/I/41uKa5xYPyL.jpg",
+  };
 
-};  return (
+  return (
     <>
       {" "}
       <section style={{ padding: "10px", background: "#fafafa" }}>
@@ -104,11 +104,12 @@ const MenProductDetails4 = () =>  {
                 marginBottom: "6px",
               }}
             >
-             Casual Button Down Shirts
+              Casual Button Down Shirts
               <span style={{ color: "#555", fontWeight: "400" }}>
                 {" "}
-               
-|Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach Summer Shirts| Men Stylish Shirt | Men Fancy (Available in Plus Size)
+                |Down Shirts Long Sleeve Linen Shirt Fashion Textured Beach
+                Summer Shirts| Men Stylish Shirt | Men Fancy (Available in Plus
+                Size)
                 <p
                   style={{
                     fontSize: "14px",
@@ -207,7 +208,7 @@ const MenProductDetails4 = () =>  {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                 <Qtybox product={product} />
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -313,14 +314,10 @@ const MenProductDetails4 = () =>  {
                 </span>
                 <span>Cotton Blend</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  length
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>length</span>
                 <span>Standard Length</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
                 <span>Modern</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -329,13 +326,16 @@ const MenProductDetails4 = () =>  {
                 <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Occasion type
+                  Occasion type
                 </span>
-                <span>Wedding, Christmas, Anniversary, Birthday, Valentine's Day</span>
+                <span>
+                  Wedding, Christmas, Anniversary, Birthday, Valentine's Day
+                </span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Care instructions</span>
-                <span>Machine Wash
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Machine Wash</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
@@ -521,5 +521,4 @@ const MenProductDetails4 = () =>  {
   );
 };
 
-
-export default MenProductDetails4
+export default MenProductDetails4;

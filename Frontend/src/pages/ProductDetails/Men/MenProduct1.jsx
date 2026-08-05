@@ -11,7 +11,12 @@ const MenProduct1 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-
+  const product = {
+    id: "mens 1",
+    name: "JVX Men Sweatshirts",
+    price: 599,
+    image: "https://m.media-amazon.com/images/I/61MCKVRROeL._SY741_.jpg",
+  };
   return (
     <>
       <div

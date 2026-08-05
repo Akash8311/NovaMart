@@ -12,6 +12,12 @@ const MenProduct12 = () => {
 
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const product = {
+    id: "mens 12",
+    name: "GRECIILOOKS Men's",
+    price: 549,
+    image: "https://m.media-amazon.com/images/I/81zFP+zIIuL._SX679_.jpg",
+  };
   return (
     <>
       <div

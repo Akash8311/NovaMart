@@ -11,6 +11,13 @@ const MenProduct7 = () =>{
      const { wishlistItems, setWishlistItems } = useContext(MyContext);
       const [hover, setHover] = useState(false);
       const [isHovered, setIsHovered] = useState(false);
+      
+  const product = {
+    id:"mens 7",
+    name: "Casual wear Shirt ",
+    price: 949,
+    image: "https://m.media-amazon.com/images/I/51sawi-30SL._SX679_.jpg",
+  };
   return (
       <>
           <div

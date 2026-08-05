@@ -12,6 +12,12 @@ const MenProduct2 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
+  const product = {
+    id: "mens 2",
+    name: "Fit Casual Shirt",
+    price: 649,
+    image: "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg",
+  };
   return (
     <>
       <div
@@ -161,7 +167,10 @@ const MenProduct2 = () => {
           )}
         </div>
 
-        <Link to="/MenProductDetails2" style={{ textDecoration: "none", color: "#777" }}>
+        <Link
+          to="/MenProductDetails2"
+          style={{ textDecoration: "none", color: "#777" }}
+        >
           <div
             style={{
               width: "100%",
@@ -176,7 +185,11 @@ const MenProduct2 = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? "https://m.media-amazon.com/images/I/81v5iVPdONL._SY741_.jpg" : "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg"}
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/81v5iVPdONL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/81epRpV+jxL._SY741_.jpg"
+              }
               alt="product"
               style={{
                 width: "70%",
@@ -196,7 +209,7 @@ const MenProduct2 = () => {
               marginTop: "10px",
             }}
           >
-          Highlander Men HLSH015266
+            Highlander Men HLSH015266
           </h4>
 
           <p
@@ -272,4 +285,4 @@ const MenProduct2 = () => {
   );
 };
 
-export default MenProduct2
+export default MenProduct2;

@@ -34,11 +34,12 @@ const MenProductDetails12 = () => {
   const sizes = ["S", "M", "L", "XL", "2XL"];
 
   const product = {
-    id: "GRECIILOOKS Men's1",
+    id: "mens 12",
     name: "GRECIILOOKS Men's",
     price: 549,
     image: "https://m.media-amazon.com/images/I/81zFP+zIIuL._SX679_.jpg",
   };
+
   return (
     <>
       {" "}
@@ -306,14 +307,12 @@ const MenProductDetails12 = () => {
                 <span>Classic Fit</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>length</span>
-                <span>Standard Length
-</span>
+                <span>Standard Length</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Collar style
+                  Collar style
                 </span>
-                <span>Camp Collar
-</span>
+                <span>Camp Collar</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Sleeve type
@@ -365,20 +364,26 @@ const MenProductDetails12 = () => {
                 }}
               >
                 <li>
-                  <strong>Effortless Impressions:</strong>  Stand out, and leave a mark. This casual shirt for men can also used in office wear men's shirts
+                  <strong>Effortless Impressions:</strong> Stand out, and leave
+                  a mark. This casual shirt for men can also used in office wear
+                  men's shirts
                 </li>
 
                 <li>
-                  <strong></strong> Versatile Style, Anywhere: Work casually; always do your best. This black shirt for men will boost your confidence for your outing.
+                  <strong></strong> Versatile Style, Anywhere: Work casually;
+                  always do your best. This black shirt for men will boost your
+                  confidence for your outing.
                 </li>
 
                 {expanded && (
                   <>
                     <li>
-                      <strong>Confident Style: </strong> feel confident in our premium textured full-sleeve shirt for men
+                      <strong>Confident Style: </strong> feel confident in our
+                      premium textured full-sleeve shirt for men
                     </li>
                     <li>
-                      <strong>Discover Your Fit:</strong> Use our infographic size chart for the perfect men's shirt measurements.
+                      <strong>Discover Your Fit:</strong> Use our infographic
+                      size chart for the perfect men's shirt measurements.
                     </li>
 
                     <li>

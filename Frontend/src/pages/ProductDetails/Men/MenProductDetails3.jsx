@@ -30,14 +30,14 @@ const MenProductDetails3 = () => {
   const [selectedSize, setSelectedSize] = useState("40");
   const [expanded, setExpanded] = useState(false);
 
-  const sizes = ["28", "30", "32", "34","36"];
-    const product = {
-  id: 7,
-  name: "Mide Rise Strachable Jeans",
-  price: 420,
-  image: "https://m.media-amazon.com/images/I/81+cFoDdC2L._SY741_.jpg"
+  const sizes = ["28", "30", "32", "34", "36"];
 
-};
+  const product = {
+    id: "mens 3",
+    name: "Mide Rise Strachable Jeans",
+    price: 420,
+    image: "https://m.media-amazon.com/images/I/81+cFoDdC2L._SY741_.jpg",
+  };
   return (
     <>
       {" "}
@@ -205,8 +205,7 @@ const MenProductDetails3 = () => {
             </p>
             <div className="flex item-center">
               <div className="qtyBox ">
-                                <Qtybox product={product} />
-
+                <Qtybox product={product} />
               </div>
             </div>
 
@@ -295,7 +294,7 @@ const MenProductDetails3 = () => {
                   color: "#1a1a1a",
                 }}
               >
-               Top highlights
+                Top highlights
               </h3>
 
               <div
@@ -312,14 +311,10 @@ const MenProductDetails3 = () => {
                 </span>
                 <span>Cotton Blend</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  length
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>length</span>
                 <span>Standard Length</span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>
-                  Style
-                </span>
+                <span style={{ fontWeight: "500", color: "#555" }}>Style</span>
                 <span>Modern</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
@@ -328,13 +323,16 @@ const MenProductDetails3 = () => {
                 <span>Button</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
-                 Occasion type
+                  Occasion type
                 </span>
-                <span>Wedding, Christmas, Anniversary, Birthday, Valentine's Day</span>
+                <span>
+                  Wedding, Christmas, Anniversary, Birthday, Valentine's Day
+                </span>
 
-                <span style={{ fontWeight: "500", color: "#555" }}>Care instructions</span>
-                <span>Machine Wash
-</span>
+                <span style={{ fontWeight: "500", color: "#555" }}>
+                  Care instructions
+                </span>
+                <span>Machine Wash</span>
 
                 <span style={{ fontWeight: "500", color: "#555" }}>
                   Country of Origin
