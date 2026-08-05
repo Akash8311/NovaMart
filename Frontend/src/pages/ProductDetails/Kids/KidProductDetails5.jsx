@@ -39,7 +39,7 @@ const KidProductDetails5 = () => {
   const sizes = ["0-6", "1-2", "2-3", "3-4", "4-5", "5-6", "6-7", "6-12"];
 
   const product = {
-    id: "Boys Co-Ord Set",
+    id: "16",
     name: "Boys Co-Ord Set",
     price: 349,
     image: "https://m.media-amazon.com/images/I/31zq8wtG19L.jpg",

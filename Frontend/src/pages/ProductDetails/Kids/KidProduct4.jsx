@@ -12,6 +12,12 @@ const KidProduct4 = () =>  {
    const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+    const product = {
+    id: "15",
+    name: "Girls Floral Dress with Shrug",
+    price: 375,
+    image: "https://m.media-amazon.com/images/I/71We4HJVvPL._SX679_.jpg",
+  };
   return (
       <>
         <div

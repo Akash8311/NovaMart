@@ -11,6 +11,15 @@ const KidProduct3 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+
+
+  
+  const product = {
+    id: "kids 14",
+    name: "POLKA TOTS",
+    price: 799,
+    image: "https://m.media-amazon.com/images/I/61qC+hTlZCL._SY741_.jpg",
+  };
   return (
     <>
       <div
