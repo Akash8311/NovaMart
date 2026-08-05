@@ -164,7 +164,7 @@ const ProductItems2 = () => {
           )}
         </div>
 
-        <Link to="/product/847" style={{ textDecoration: "none", color: "#777" }}>
+        <Link to="/productDrtails2" style={{ textDecoration: "none", color: "#777" }}>
           <div
             style={{
               width: "100%",
@@ -213,7 +213,7 @@ const ProductItems2 = () => {
               margin: "0",
             }}
           >
-           Stylish party wear bodycon dress · birthday special · retro collection
+           Stylish party wear bodycon dress 
 
           </p>
 
