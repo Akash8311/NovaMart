@@ -12,7 +12,7 @@ const KidProduct8 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-    const product = {
+  const product = {
     id: "kids 8",
     name: "Coords Set for Girls",
     price: 719,
@@ -54,7 +54,17 @@ const KidProduct8 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -206,10 +216,7 @@ const KidProduct8 = () => {
               marginTop: "10px",
             }}
           >
-            Girls - Casual Outfit 
-            
-            
-            {" "}
+            Girls - Casual Outfit{" "}
           </h4>
           <p
             style={{
@@ -220,7 +227,8 @@ const KidProduct8 = () => {
               margin: "0",
             }}
           >
-        AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls Casual Outfit {" "}
+            AJ DEZINES Kids Cotton Sleeveless Co-ords Set for Girls Casual
+            Outfit{" "}
           </p>
           <div
             style={{
@@ -280,4 +288,4 @@ const KidProduct8 = () => {
   );
 };
 
-export default KidProduct8
+export default KidProduct8;
