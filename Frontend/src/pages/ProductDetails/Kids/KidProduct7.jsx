@@ -12,7 +12,7 @@ const KidProduct7 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-    const product = {
+  const product = {
     id: "kids 7",
     name: "AJ DEZINES Kids Ethnic Wear Silk Blend",
     price: 399,
@@ -54,7 +54,17 @@ const KidProduct7 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
