@@ -50,21 +50,20 @@ const kidsProduct1 = () => {
             gap: "12px",
             zIndex: 1000,
           }}
-          onClick={() => {
-            if (!wishlist) {
-              setWishlistItems([...wishlistItems, product]);
-            } else {
-              setWishlistItems(
-                wishlistItems.filter((item) => item.id !== product.id),
-              );
-            }
-
-            setWishlist(!wishlist);
-          }}
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",

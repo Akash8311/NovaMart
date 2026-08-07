@@ -52,7 +52,7 @@ const KidProduct2 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              
               onClick={() => {
                 if (!wishlist) {
                   setWishlistItems([...wishlistItems, product]);
