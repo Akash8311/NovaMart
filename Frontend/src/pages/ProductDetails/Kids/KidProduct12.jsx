@@ -6,14 +6,13 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-
-const KidProduct12 = () =>{
+const KidProduct12 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-  
-    const product = {
+
+  const product = {
     id: "kids 12",
     name: " Indian Bollywood Style",
     price: 949,
@@ -54,7 +53,17 @@ const KidProduct12 = () =>{
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -217,7 +226,7 @@ const KidProduct12 = () =>{
               margin: "0",
             }}
           >
-           AHHAAAA Kids Ethnic Silk Indian Bollywood Style {" "}
+            AHHAAAA Kids Ethnic Silk Indian Bollywood Style{" "}
           </p>
           <div
             style={{
@@ -277,5 +286,4 @@ const KidProduct12 = () =>{
   );
 };
 
-
-export default KidProduct12
+export default KidProduct12;

@@ -6,14 +6,13 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-
-const KidProduct11 = () =>{
+const KidProduct11 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-    const product = {
+  const product = {
     id: "kids 11",
     name: "Boys Printed Denim Halfsleeve",
     price: current.price,
@@ -54,7 +53,17 @@ const KidProduct11 = () =>{
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -206,9 +215,7 @@ const KidProduct11 = () =>{
               marginTop: "10px",
             }}
           >
-           superminis Boys Printed Denim Halfsleeve Co-ord Set
-           
-           {" "}
+            superminis Boys Printed Denim Halfsleeve Co-ord Set{" "}
           </h4>
           <p
             style={{
@@ -219,9 +226,7 @@ const KidProduct11 = () =>{
               margin: "0",
             }}
           >
-           Printed Denim Halfsleeve
-            
-            {" "}
+            Printed Denim Halfsleeve{" "}
           </p>
           <div
             style={{
@@ -281,5 +286,4 @@ const KidProduct11 = () =>{
   );
 };
 
-
-export default KidProduct11
+export default KidProduct11;
