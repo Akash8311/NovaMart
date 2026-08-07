@@ -11,7 +11,7 @@ const KidProduct9 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-    const product = {
+  const product = {
     id: "kids 9",
     name: "Kids Cotton Half Sleeve ",
     price: 449,
@@ -52,7 +52,17 @@ const KidProduct9 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -204,7 +214,7 @@ const KidProduct9 = () => {
               marginTop: "10px",
             }}
           >
-        Kids Cotton Half Sleeve{" "}
+            Kids Cotton Half Sleeve{" "}
           </h4>
           <p
             style={{
