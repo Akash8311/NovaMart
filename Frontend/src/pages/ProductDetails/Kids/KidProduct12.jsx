@@ -269,7 +269,7 @@ const KidProduct12 = () => {
             <span style={{ fontSize: "13px", color: "#555" }}>(202)</span>
           </div>
 
-          {/* Delivery */}
+          
           <p
             style={{
               marginTop: "6px",
