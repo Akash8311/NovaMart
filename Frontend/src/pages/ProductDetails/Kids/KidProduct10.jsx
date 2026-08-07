@@ -12,7 +12,7 @@ const KidProduct10 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-    const product = {
+  const product = {
     id: "kids 10",
     name: "BODYCARE Girls Shorts Pack of 2",
     price: 764,
@@ -53,7 +53,17 @@ const KidProduct10 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -205,7 +215,7 @@ const KidProduct10 = () => {
               marginTop: "10px",
             }}
           >
-          Kids Clothing Shirt Short Set For Boys{" "}
+            Kids Clothing Shirt Short Set For Boys{" "}
           </h4>
           <p
             style={{
@@ -276,5 +286,4 @@ const KidProduct10 = () => {
   );
 };
 
-
-export default KidProduct10
+export default KidProduct10;
