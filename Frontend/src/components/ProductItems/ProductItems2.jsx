@@ -12,12 +12,12 @@ const ProductItems2 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-    const product = {
-  id: 2,
-  name: "GRECIILOOKS Women's V-Neck Slit Maxi",
-  price: 529,
+  const product = {
+    id: 2,
+    name: "GRECIILOOKS Women's V-Neck Slit Maxi",
+    price: 529,
     image: "https://m.media-amazon.com/images/I/81YpN1V3L8L._SY741_.jpg",
-};
+  };
 
   return (
     <>
@@ -56,7 +56,17 @@ const ProductItems2 = () => {
           {/* Wishlist Button */}
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -134,7 +144,6 @@ const ProductItems2 = () => {
 
           {/*  Zoom Button */}
           {hover && (
-            
             <button
               style={{
                 width: "42px",
@@ -163,14 +172,16 @@ const ProductItems2 = () => {
                 e.target.style.color = "#444";
                 e.target.style.transform = "scale(1)";
               }}
-            
             >
               <MdZoomOutMap />
             </button>
           )}
         </div>
 
-        <Link to="/productDrtails2" style={{ textDecoration: "none", color: "#777" }}>
+        <Link
+          to="/productDrtails2"
+          style={{ textDecoration: "none", color: "#777" }}
+        >
           <div
             style={{
               width: "100%",
@@ -185,7 +196,11 @@ const ProductItems2 = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src={isHovered ? "https://m.media-amazon.com/images/I/71CA3N8eVKL._SY741_.jpg" : "https://m.media-amazon.com/images/I/71u12JbdNVL._SY741_.jpg"}
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/71CA3N8eVKL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/71u12JbdNVL._SY741_.jpg"
+              }
               alt="product"
               style={{
                 width: "70%",
@@ -207,7 +222,6 @@ const ProductItems2 = () => {
             }}
           >
             Fancy Retro Women Dresses
-
           </h4>
 
           <p
@@ -219,8 +233,7 @@ const ProductItems2 = () => {
               margin: "0",
             }}
           >
-           Stylish party wear bodycon dress 
-
+            Stylish party wear bodycon dress
           </p>
 
           <div
@@ -244,7 +257,6 @@ const ProductItems2 = () => {
               }}
             >
               ₹328
-
             </span>
             <span
               style={{ color: "blue", fontSize: "14px", fontWeight: "600" }}
@@ -284,5 +296,4 @@ const ProductItems2 = () => {
   );
 };
 
-
-export default ProductItems2
+export default ProductItems2;

@@ -7,18 +7,17 @@ import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 import { MyContext } from "../../App";
 
-
-const ProductItems8 = () =>{
+const ProductItems8 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-const product = {
-  id: "8",
-  name: "Woven Soft Silk Saree",
-  price: 1699,
-  image: "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"
-};
+  const product = {
+    id: "8",
+    name: "Woven Soft Silk Saree",
+    price: 1699,
+    image: "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg",
+  };
   return (
     <>
       <div
@@ -56,7 +55,17 @@ const product = {
           {/* ❤️ Wishlist Button */}
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -177,32 +186,35 @@ const product = {
         >
           {/* Product Image */}
 
-      <div
-           style={{
-             width: "100%",
-             height: "200px",
-             overflow: "hidden",
-             borderRadius: "10px",
-             display: "flex",
-             justifyContent: "center",
-             alignItems: "center",
-           }}
-           onMouseEnter={() => setIsHovered(true)}
-           onMouseLeave={() => setIsHovered(false)}
-         >
-           <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/71NH88lDtfL._SY741_.jpg" : "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"}
-             alt="product"
-             style={{
-               width: "70%",
-               height: "100%",
-               objectFit: "cover",
-               transition: "0.4s",
-               transform: isHovered ? "scale(1.1)" : "scale(1)",
-             }}
-           />
-         </div>
-     
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              overflow: "hidden",
+              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/71NH88lDtfL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/713P-zukTvL._SY741_.jpg"
+              }
+              alt="product"
+              style={{
+                width: "70%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "0.4s",
+                transform: isHovered ? "scale(1.1)" : "scale(1)",
+              }}
+            />
+          </div>
 
           {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
@@ -230,7 +242,8 @@ const product = {
                 margin: "0",
               }}
             >
-              AKHILAM Women's Viscose Ethnic Motif Printed Saree With Unstitched Blouse Piece
+              AKHILAM Women's Viscose Ethnic Motif Printed Saree With Unstitched
+              Blouse Piece
             </p>
 
             {/* Price Section */}
@@ -299,4 +312,4 @@ const product = {
   );
 };
 
-export default ProductItems8
+export default ProductItems8;
