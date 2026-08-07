@@ -6,7 +6,6 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 
-
 const KidProduct6 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
@@ -14,7 +13,7 @@ const KidProduct6 = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const product = {
-    id:"kids 6",
+    id: "kids 6",
     name: "AJ DEZINES Boys Cotton ",
     price: 424,
     image: "https://m.media-amazon.com/images/I/61gZOmei98L._SY550_.jpg",
@@ -54,7 +53,17 @@ const KidProduct6 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -217,7 +226,8 @@ const KidProduct6 = () => {
               margin: "0",
             }}
           >
-            AJ DEZINES Boys Cotton Full Sleeve Printed Kurta Pajama Set for Kids - Ethnic wear 
+            AJ DEZINES Boys Cotton Full Sleeve Printed Kurta Pajama Set for Kids
+            - Ethnic wear
           </p>
           <div
             style={{
@@ -277,4 +287,4 @@ const KidProduct6 = () => {
   );
 };
 
-export default KidProduct6
+export default KidProduct6;
