@@ -52,7 +52,17 @@ const MenProduct1 = () => {
         >
           {hover && (
             <button
-              onClick={() => setWishlist(!wishlist)}
+                onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
+
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
