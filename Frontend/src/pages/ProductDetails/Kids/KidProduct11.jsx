@@ -15,7 +15,7 @@ const KidProduct11 = () => {
   const product = {
     id: "kids 11",
     name: "Boys Printed Denim Halfsleeve",
-    price: current.price,
+    price: 899,
     image: "https://m.media-amazon.com/images/I/61GYuAjxm9L._SX679_.jpg",
   };
   return (
