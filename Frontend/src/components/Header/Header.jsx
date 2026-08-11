@@ -23,24 +23,14 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
-const {
-  setOpenCartPanel,
-  isLogin,
-  setIsLogin,
-  cartItems,
-  wishlistItems,
-} = useContext(MyContext);
-
+  const { setOpenCartPanel, isLogin, setIsLogin, cartItems, wishlistItems } =
+    useContext(MyContext);
 
   const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
   const wishlistCount = wishlistItems.length;
 
   const [showDropdown, setShowDropdown] = useState(false);
   const navigate = useNavigate();
-
-
-
-  
 
   const handleLogout = () => {
     // Remove saved login
@@ -217,22 +207,18 @@ const {
                 </Tooltip>
               </li>
 
-
-
-{/* wishlist */}
+              {/* wishlist */}
               <li className="list-none">
                 <Tooltip title="Wishlist">
                   <IconButton>
-                 <StyledBadge badgeContent={wishlistCount} color="secondary">
-  <CiHeart />
-</StyledBadge>
+                    <StyledBadge badgeContent={wishlistCount} color="secondary">
+                      <CiHeart />
+                    </StyledBadge>
                   </IconButton>
                 </Tooltip>
               </li>
 
-{/* wishlist end */}
-
-
+              {/* wishlist end */}
 
               <li className="list-none">
                 <Tooltip title="Cart">
