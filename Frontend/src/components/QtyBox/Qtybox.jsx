@@ -1,5 +1,5 @@
-import React, { useState, useContext, } from "react";
-// import { Link } from "react-router-dom";
+import React, { useState, useContext } from "react";
+import { MyContext } from "../../App";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { MyContext } from "../../App";
@@ -23,7 +23,7 @@ const btnBase = {
 const Qtybox = ({ product }) => {
   const [qty, setQty] = useState(1);
   const { setCartItems, setOpenCartPanel } = useContext(MyContext);
-
+  const [wishlist, setWishlist] = useState(false);
   const increase = () => qty < 10 && setQty(qty + 1);
   const decrease = () => qty > 1 && setQty(qty - 1);
 
@@ -38,9 +38,7 @@ const Qtybox = ({ product }) => {
 
       if (exist) {
         return prev.map((item) =>
-          item.id === product.id
-            ? { ...item, qty: item.qty + qty }
-            : item
+          item.id === product.id ? { ...item, qty: item.qty + qty } : item,
         );
       }
 
@@ -50,7 +48,7 @@ const Qtybox = ({ product }) => {
           id: product.id,
           name: product.name,
           price: product.price,
-          image: product.image, 
+          image: product.image,
           qty: qty,
         },
       ];
@@ -61,9 +59,7 @@ const Qtybox = ({ product }) => {
 
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-
       <div style={{ display: "flex", gap: "10px", alignItems: "center" }}>
-
         <div
           style={{
             display: "inline-flex",
@@ -128,7 +124,7 @@ const Qtybox = ({ product }) => {
         >
           <MdOutlineShoppingCart />
           Buy Now
-        </button> 
+        </button>
       </div>
 
       <button
@@ -145,6 +141,7 @@ const Qtybox = ({ product }) => {
 
       {/* Wishlist */}
       <button
+        onClick={() => setWishlist(!wishlist)}
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -152,17 +149,16 @@ const Qtybox = ({ product }) => {
           gap: "8px",
           width: "100%",
           height: "44px",
-          background: "transparent",
-          color: "#555",
-          border: "1.5px solid #B5D4F4",
+          background: wishlist ? "#ffe5e5" : "transparent",
+          color: wishlist ? "red" : "#555",
+          border: wishlist ? "1.9px solid red" : "1.5px solid #B5D4F4",
           borderRadius: "10px",
           cursor: "pointer",
         }}
       >
         <FaRegHeart />
-        Add to Wishlist
+        {wishlist ? "Added to Wishlist" : "Add to Wishlist"}
       </button>
-      
     </div>
   );
 };
