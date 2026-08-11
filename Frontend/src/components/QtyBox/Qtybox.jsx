@@ -1,5 +1,4 @@
 import React, { useState, useContext } from "react";
-import { MyContext } from "../../App";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa";
 import { MyContext } from "../../App";
@@ -22,8 +21,15 @@ const btnBase = {
 
 const Qtybox = ({ product }) => {
   const [qty, setQty] = useState(1);
-  const { setCartItems, setOpenCartPanel } = useContext(MyContext);
-  const [wishlist, setWishlist] = useState(false);
+  const {
+  setCartItems,
+  setOpenCartPanel,
+  wishlistItems,
+  setWishlistItems,
+} = useContext(MyContext);
+const isWishlisted = wishlistItems.some(
+  (item) => item.id === product.id
+);
   const increase = () => qty < 10 && setQty(qty + 1);
   const decrease = () => qty > 1 && setQty(qty - 1);
 
@@ -140,25 +146,38 @@ const Qtybox = ({ product }) => {
       </button>
 
       {/* Wishlist */}
-      <button
-        onClick={() => setWishlist(!wishlist)}
-        style={{
-          display: "inline-flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: "8px",
-          width: "100%",
-          height: "44px",
-          background: wishlist ? "#ffe5e5" : "transparent",
-          color: wishlist ? "red" : "#555",
-          border: wishlist ? "1.9px solid red" : "1.5px solid #B5D4F4",
-          borderRadius: "10px",
-          cursor: "pointer",
-        }}
-      >
-        <FaRegHeart />
-        {wishlist ? "Added to Wishlist" : "Add to Wishlist"}
-      </button>
+   <button
+  onClick={() => {
+    if (isWishlisted) {
+      setWishlistItems(
+        wishlistItems.filter((item) => item.id !== productId)
+      );
+    } else {
+      setWishlistItems([
+        ...wishlistItems,
+        { id: productId }
+      ]);
+    }
+  }}
+  style={{
+    display: "inline-flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: "8px",
+    width: "100%",
+    height: "44px",
+    background: isWishlisted ? "#ffe5e5" : "transparent",
+    color: isWishlisted ? "red" : "#555",
+    border: isWishlisted
+      ? "1.5px solid red"
+      : "1.5px solid #B5D4F4",
+    borderRadius: "10px",
+    cursor: "pointer",
+  }}
+>
+  <FaRegHeart />
+  {isWishlisted ? "Added to Wishlist" : "Add to Wishlist"}
+</button>
     </div>
   );
 };
