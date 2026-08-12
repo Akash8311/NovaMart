@@ -197,6 +197,7 @@ const Header = () => {
                 </>
               )}
 
+              {/* hide the compare button */}
               {/* <li className="list-none">
                 <Tooltip title="Compare">
                   <IconButton>
