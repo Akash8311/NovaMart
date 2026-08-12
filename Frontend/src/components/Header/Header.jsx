@@ -197,7 +197,7 @@ const Header = () => {
                 </>
               )}
 
-              <li className="list-none">
+              {/* <li className="list-none">
                 <Tooltip title="Compare">
                   <IconButton>
                     <StyledBadge badgeContent={4} color="secondary">
@@ -205,7 +205,7 @@ const Header = () => {
                     </StyledBadge>
                   </IconButton>
                 </Tooltip>
-              </li>
+              </li> */}
 
               {/* wishlist */}
               <li className="list-none">
