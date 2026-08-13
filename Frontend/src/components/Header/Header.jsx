@@ -197,16 +197,7 @@ const Header = () => {
                 </>
               )}
 
-              {/* hide the compare button */}
-              {/* <li className="list-none">
-                <Tooltip title="Compare">
-                  <IconButton>
-                    <StyledBadge badgeContent={4} color="secondary">
-                      <BiGitCompare />
-                    </StyledBadge>
-                  </IconButton>
-                </Tooltip>
-              </li> */}
+          
 
               {/* wishlist */}
               <li className="list-none">
