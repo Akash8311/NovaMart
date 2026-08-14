@@ -12,13 +12,12 @@ const ProductItems2 = () => {
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
-const product = {
-  id: "7",
-  name: "GRECIILOOKS Summer Dress for Woman",
-  price: 479,
-  image: "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY741_.jpg"
-};
-
+  const product = {
+    id: "7",
+    name: "GRECIILOOKS Summer Dress for Woman",
+    price: 479,
+    image: "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY741_.jpg",
+  };
 
   return (
     <>
@@ -58,16 +57,16 @@ const product = {
           {hover && (
             <button
               onClick={() => {
-  if (!wishlist) {
-    setWishlistItems([...wishlistItems, product]);
-  } else {
-    setWishlistItems(
-      wishlistItems.filter((item) => item.id !== product.id)
-    );
-  }
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
 
-  setWishlist(!wishlist);
-}}
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -109,39 +108,7 @@ const product = {
           )}
 
           {/* 🔁 Compare Button */}
-          {hover && (
-            <button
-              style={{
-                width: "42px",
-                height: "42px",
-                borderRadius: "50%",
-                border: "1px solid #e6e6e6",
-                backgroundColor: "white",
-                color: "#444",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: "20px",
-                cursor: "pointer",
-                transition: "all .35s ease",
-                boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-                opacity: hover ? 1 : 0,
-                animation: "fadeButtons .55s ease forwards",
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = "#B3E5FC";
-                e.target.style.color = "#1976D2";
-                e.target.style.transform = "scale(1.12)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = "white";
-                e.target.style.color = "#444";
-                e.target.style.transform = "scale(1)";
-              }}
-            >
-              <IoIosGitCompare />
-            </button>
-          )}
+          
 
           {/* 🔍 Zoom Button */}
           {hover && (
@@ -188,32 +155,35 @@ const product = {
         >
           {/* Product Image */}
 
-      <div
-           style={{
-             width: "100%",
-             height: "200px",
-             overflow: "hidden",
-             borderRadius: "10px",
-             display: "flex",
-             justifyContent: "center",
-             alignItems: "center",
-           }}
-           onMouseEnter={() => setIsHovered(true)}
-           onMouseLeave={() => setIsHovered(false)}
-         >
-           <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/81P8nElYHFL._SY741_.jpg" : "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY879_.jpg"}
-             alt="product"
-             style={{
-               width: "70%",
-               height: "100%",
-               objectFit: "cover",
-               transition: "0.4s",
-               transform: isHovered ? "scale(1.1)" : "scale(1)",
-             }}
-           />
-         </div>
-     
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              overflow: "hidden",
+              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/81P8nElYHFL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/61lhkTJ7pPL._SY879_.jpg"
+              }
+              alt="product"
+              style={{
+                width: "70%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "0.4s",
+                transform: isHovered ? "scale(1.1)" : "scale(1)",
+              }}
+            />
+          </div>
 
           {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
@@ -241,7 +211,8 @@ const product = {
                 margin: "0",
               }}
             >
-              GRECIILOOKS Women Dress | Summer Dress | Women's Puff Sleeve Floral Printed A Line Maxi |
+              GRECIILOOKS Women Dress | Summer Dress | Women's Puff Sleeve
+              Floral Printed A Line Maxi |
             </p>
 
             {/* Price Section */}
