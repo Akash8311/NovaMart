@@ -7,18 +7,17 @@ import { IoIosGitCompare } from "react-icons/io";
 import { MdZoomOutMap } from "react-icons/md";
 import "./Product.css";
 
-
-const ProductItems9 =  () =>{
+const ProductItems9 = () => {
   const [wishlist, setWishlist] = useState(false);
   const { wishlistItems, setWishlistItems } = useContext(MyContext);
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const product = {
-  id: "9",
-  name: "Woven Soft Silk Saree",
-  price: 949,
-  image: "https://m.media-amazon.com/images/I/51NgQWs-VyL.jpg"
-};
+    id: "9",
+    name: "Woven Soft Silk Saree",
+    price: 949,
+    image: "https://m.media-amazon.com/images/I/51NgQWs-VyL.jpg",
+  };
   return (
     <>
       <div
@@ -57,16 +56,16 @@ const ProductItems9 =  () =>{
           {hover && (
             <button
               onClick={() => {
-  if (!wishlist) {
-    setWishlistItems([...wishlistItems, product]);
-  } else {
-    setWishlistItems(
-      wishlistItems.filter((item) => item.id !== product.id)
-    );
-  }
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
 
-  setWishlist(!wishlist);
-}}
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -107,40 +106,7 @@ const ProductItems9 =  () =>{
             </button>
           )}
 
-          {/* 🔁 Compare Button */}
-          {hover && (
-            <button
-              style={{
-                width: "42px",
-                height: "42px",
-                borderRadius: "50%",
-                border: "1px solid #e6e6e6",
-                backgroundColor: "white",
-                color: "#444",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: "20px",
-                cursor: "pointer",
-                transition: "all .35s ease",
-                boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-                opacity: hover ? 1 : 0,
-                animation: "fadeButtons .55s ease forwards",
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = "#B3E5FC";
-                e.target.style.color = "#1976D2";
-                e.target.style.transform = "scale(1.12)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = "white";
-                e.target.style.color = "#444";
-                e.target.style.transform = "scale(1)";
-              }}
-            >
-              <IoIosGitCompare />
-            </button>
-          )}
+          
 
           {/* 🔍 Zoom Button */}
           {hover && (
@@ -187,32 +153,35 @@ const ProductItems9 =  () =>{
         >
           {/* Product Image */}
 
-      <div
-           style={{
-             width: "100%",
-             height: "200px",
-             overflow: "hidden",
-             borderRadius: "10px",
-             display: "flex",
-             justifyContent: "center",
-             alignItems: "center",
-           }}
-           onMouseEnter={() => setIsHovered(true)}
-           onMouseLeave={() => setIsHovered(false)}
-         >
-           <img
-             src={isHovered ? "https://m.media-amazon.com/images/I/51GKJyiJfHL._SY741_.jpg" : "https://m.media-amazon.com/images/I/51NgQWs-VyL._SY741_.jpg"}
-             alt="product"
-             style={{
-               width: "70%",
-               height: "100%",
-               objectFit: "cover",
-               transition: "0.4s",
-               transform: isHovered ? "scale(1.1)" : "scale(1)",
-             }}
-           />
-         </div>
-     
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              overflow: "hidden",
+              borderRadius: "10px",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img
+              src={
+                isHovered
+                  ? "https://m.media-amazon.com/images/I/51GKJyiJfHL._SY741_.jpg"
+                  : "https://m.media-amazon.com/images/I/51NgQWs-VyL._SY741_.jpg"
+              }
+              alt="product"
+              style={{
+                width: "70%",
+                height: "100%",
+                objectFit: "cover",
+                transition: "0.4s",
+                transform: isHovered ? "scale(1.1)" : "scale(1)",
+              }}
+            />
+          </div>
 
           {/* Product Details */}
           <div style={{ marginTop: "10px", lineHeight: "19px" }}>
@@ -240,7 +209,8 @@ const ProductItems9 =  () =>{
                 margin: "0",
               }}
             >
-              HELLA FASHIONS Ready to Wear Chiffon Ombre Saree for Women with Blouse Piece
+              HELLA FASHIONS Ready to Wear Chiffon Ombre Saree for Women with
+              Blouse Piece
             </p>
 
             {/* Price Section */}
@@ -309,5 +279,4 @@ const ProductItems9 =  () =>{
   );
 };
 
-
-export default ProductItems9
+export default ProductItems9;
