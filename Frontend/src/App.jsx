@@ -63,6 +63,61 @@ import Forgot from "./pages/auth/Forgot";
 import Payment from "./pages/cart/Payment";
 import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
 
+  <style>{`
+  @keyframes aw-aurora-shift {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  @keyframes aw-glow-pulse {
+    0%, 100% { opacity: 0.55; transform: scale(1); }
+    50%      { opacity: 1;    transform: scale(1.04); }
+  }
+  .aw-scroll::-webkit-scrollbar { width: 6px; }
+  .aw-scroll::-webkit-scrollbar-track { background: transparent; }
+  .aw-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #6b5b95, #d4568f);
+    border-radius: 999px;
+  }
+  .aw-close-btn { transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
+  .aw-close-btn:hover { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.25); transform: rotate(90deg); }
+  .aw-item-card { transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease; }
+  .aw-item-card:hover {
+    border-color: rgba(212,86,143,0.3);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1), 0 0 0 1px rgba(107,91,149,0.1);
+  }
+  .aw-remove-link { transition: color 0.2s ease, opacity 0.2s ease; opacity: 0.85; }
+  .aw-remove-link:hover { color: #9b2c2c; opacity: 1; }
+  .aw-clear-btn { transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
+  .aw-clear-btn:hover { background: rgba(197,48,48,0.06); border-color: #c53030; color: #9b2c2c; }
+
+  .aw-buy-btn {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .aw-buy-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -60%;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.55), transparent);
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+    z-index: 1;
+  }
+  .aw-buy-btn:hover::before { left: 130%; }
+  .aw-buy-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(107,91,149,0.35);
+  }
+  .aw-buy-btn:active { transform: translateY(0); }
+`}</style>
+
 export const MyContext = createContext();
 
 const styleTag = `
@@ -817,365 +872,341 @@ const App = () => {
             </div>
           )}
         </Drawer>
-{/* ============================================================
-   Wishlist Drawer — light boutique theme
-   Palette: base #ffffff, surface #faf9f7, text #111111,
-            aurora violet #6b5b95, aurora rose #d4568f,
-            gold (price) #b8863f, destructive #c53030
-   ============================================================ */}
+  
+      
 
-<style>{`
-  @keyframes aw-aurora-shift {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  @keyframes aw-glow-pulse {
-    0%, 100% { opacity: 0.55; transform: scale(1); }
-    50%      { opacity: 1;    transform: scale(1.04); }
-  }
-  .aw-scroll::-webkit-scrollbar { width: 6px; }
-  .aw-scroll::-webkit-scrollbar-track { background: transparent; }
-  .aw-scroll::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #6b5b95, #d4568f);
-    border-radius: 999px;
-  }
-  .aw-close-btn { transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
-  .aw-close-btn:hover { background: rgba(0,0,0,0.05); border-color: rgba(0,0,0,0.25); transform: rotate(90deg); }
-  .aw-item-card { transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease; }
-  .aw-item-card:hover {
-    border-color: rgba(212,86,143,0.3);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.1), 0 0 0 1px rgba(107,91,149,0.1);
-  }
-  .aw-remove-link { transition: color 0.2s ease, opacity 0.2s ease; opacity: 0.85; }
-  .aw-remove-link:hover { color: #9b2c2c; opacity: 1; }
-  .aw-clear-btn { transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease; }
-  .aw-clear-btn:hover { background: rgba(197,48,48,0.06); border-color: #c53030; color: #9b2c2c; }
-`}</style>
-
-<Drawer
-  anchor="right"
-  open={openWishlistPanel}
-  onClose={() => setOpenWishlistPanel(false)}
-  PaperProps={{
-    style: {
-      width: 400,
-      background: "#ffffff",
-      boxShadow: "-12px 0 48px rgba(0,0,0,0.12)",
-      fontFamily: "'DM Sans', sans-serif",
-      border: "none",
-      borderLeft: "1px solid rgba(0,0,0,0.06)",
-      display: "flex",
-      flexDirection: "column",
-    },
-  }}
-  sx={{
-    // Forces the white background even if a theme's default
-    // Paper background-color is winning over the inline style above.
-    "& .MuiDrawer-paper": {
-      backgroundColor: "#ffffff !important",
-      backgroundImage: "none !important",
-    },
-  }}
->
-  {/* Aurora shimmer top line — signature element */}
-  <div
-    style={{
-      height: 4,
-      background:
-        "linear-gradient(90deg, #0f0c29, #6b5b95, #d4568f, #302b63, #24243e)",
-      backgroundSize: "300% 100%",
-      animation: "aw-aurora-shift 8s ease-in-out infinite",
-    }}
-  />
-
-  {/* Header */}
-  <div
-    style={{
-      padding: "26px 28px 20px",
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      borderBottom: "1px solid rgba(0,0,0,0.06)",
-      background:
-        "radial-gradient(120% 100% at 100% 0%, rgba(107,91,149,0.06) 0%, rgba(255,255,255,0) 60%)",
-    }}
-  >
-    <div>
-      <h2
-        style={{
-          margin: 0,
-          fontFamily: "'Cormorant Garamond', serif",
-          fontSize: 28,
-          fontWeight: 600,
-          fontStyle: "italic",
-          color: "#111111",
-          letterSpacing: "0.3px",
-        }}
-      >
-        My Wishlist{" "}
-        <span
-          style={{
-            background: "linear-gradient(135deg, #b8863f, #d4568f)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontStyle: "normal",
-          }}
-        >
-          ♡
-        </span>
-      </h2>
-
-      {wishlistItems.length > 0 && (
-        <p
-          style={{
-            margin: "6px 0 0",
-            fontSize: 11,
-            letterSpacing: "1.2px",
-            textTransform: "uppercase",
-            color: "#777777",
-          }}
-        >
-          {wishlistItems.length}{" "}
-          {wishlistItems.length === 1 ? "item" : "items"} saved
-        </p>
-      )}
-    </div>
-
-    <button
-      className="aw-close-btn"
-      onClick={() => setOpenWishlistPanel(false)}
-      style={{
-        width: 36,
-        height: 36,
-        borderRadius: "50%",
-        border: "1.5px solid rgba(0,0,0,0.14)",
-        background: "rgba(0,0,0,0.02)",
-        cursor: "pointer",
-        fontSize: 14,
-        color: "#333333",
-      }}
-    >
-      ✕
-    </button>
-  </div>
-
-  {/* Wishlist Products */}
-  <div
-    className="aw-scroll"
-    style={{
-      flex: 1,
-      overflowY: "auto",
-      padding: "16px",
-    }}
-  >
-    {wishlistItems.length === 0 ? (
-      /* Empty Wishlist */
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100%",
-          minHeight: 320,
-          textAlign: "center",
-        }}
-      >
-        <div
-          style={{
-            fontSize: 62,
-            lineHeight: 1,
-            marginBottom: 20,
-            background: "linear-gradient(135deg, #6b5b95, #d4568f, #b8863f)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            filter: "drop-shadow(0 0 14px rgba(212,86,143,0.2))",
-            animation: "aw-glow-pulse 3.5s ease-in-out infinite",
-          }}
-        >
-          ♡
-        </div>
-
-        <p
-          style={{
-            margin: 0,
-            fontFamily: "'Cormorant Garamond', serif",
-            fontSize: 23,
-            color: "#111111",
-            fontWeight: 600,
-            fontStyle: "italic",
-          }}
-        >
-          Your wishlist is empty
-        </p>
-
-        <p
-          style={{
-            margin: "10px 0 0",
-            fontSize: 13,
-            color: "#888888",
-            maxWidth: 220,
-            lineHeight: 1.5,
-          }}
-        >
-          Add products you love to see them here.
-        </p>
-      </div>
-    ) : (
-      /* Wishlist Items */
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 12,
-        }}
-      >
-        {wishlistItems.map((item, index) => (
-          <div
-            key={item.id}
-            className="aw-item-card"
-            style={{
+        <Drawer
+          anchor="right"
+          open={openWishlistPanel}
+          onClose={() => setOpenWishlistPanel(false)}
+          PaperProps={{
+            style: {
+              width: 400,
+              background: "#ffffff",
+              boxShadow: "-12px 0 48px rgba(0,0,0,0.12)",
+              fontFamily: "'DM Sans', sans-serif",
+              border: "none",
+              borderLeft: "1px solid rgba(0,0,0,0.06)",
               display: "flex",
+              flexDirection: "column",
+            },
+          }}
+          sx={{
+            // Forces the white background even if a theme's default
+            // Paper background-color is winning over the inline style above.
+            "& .MuiDrawer-paper": {
+              backgroundColor: "#ffffff !important",
+              backgroundImage: "none !important",
+            },
+          }}
+        >
+          {/* Aurora shimmer top line — signature element */}
+          <div
+            style={{
+              height: 4,
+              background:
+                "linear-gradient(90deg, #0f0c29, #6b5b95, #d4568f, #302b63, #24243e)",
+              backgroundSize: "300% 100%",
+              animation: "aw-aurora-shift 8s ease-in-out infinite",
+            }}
+          />
+
+          {/* Header */}
+          <div
+            style={{
+              padding: "26px 28px 20px",
+              display: "flex",
+              justifyContent: "space-between",
               alignItems: "center",
-              gap: 14,
-              padding: "12px 14px",
-              background: "#faf9f7",
-              borderRadius: 14,
-              border: "1px solid rgba(0,0,0,0.06)",
-              boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+              borderBottom: "1px solid rgba(0,0,0,0.06)",
+              background:
+                "radial-gradient(120% 100% at 100% 0%, rgba(107,91,149,0.06) 0%, rgba(255,255,255,0) 60%)",
             }}
           >
-            {/* Product Image */}
-            <div
+            <div>
+              <h2
+                style={{
+                  margin: 0,
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: 28,
+                  fontWeight: 600,
+                  fontStyle: "italic",
+                  color: "#111111",
+                  letterSpacing: "0.3px",
+                }}
+              >
+                My Wishlist{" "}
+                <span
+                  style={{
+                    background: "linear-gradient(135deg, #b8863f, #d4568f)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    fontStyle: "normal",
+                  }}
+                >
+                  ♡
+                </span>
+              </h2>
+
+              {wishlistItems.length > 0 && (
+                <p
+                  style={{
+                    margin: "6px 0 0",
+                    fontSize: 11,
+                    letterSpacing: "1.2px",
+                    textTransform: "uppercase",
+                    color: "#777777",
+                  }}
+                >
+                  {wishlistItems.length}{" "}
+                  {wishlistItems.length === 1 ? "item" : "items"} saved
+                </p>
+              )}
+            </div>
+
+            <button
+              className="aw-close-btn"
+              onClick={() => setOpenWishlistPanel(false)}
               style={{
-                width: 75,
-                height: 90,
-                borderRadius: 10,
-                overflow: "hidden",
-                flexShrink: 0,
-                background: "#eeece8",
-                border: "1px solid rgba(0,0,0,0.05)",
+                width: 36,
+                height: 36,
+                borderRadius: "50%",
+                border: "1.5px solid rgba(0,0,0,0.14)",
+                background: "rgba(0,0,0,0.02)",
+                cursor: "pointer",
+                fontSize: 14,
+                color: "#333333",
               }}
             >
-              <img
-                src={item.image}
-                alt={item.name}
+              ✕
+            </button>
+          </div>
+
+          {/* Wishlist Products */}
+          <div
+            className="aw-scroll"
+            style={{
+              flex: 1,
+              overflowY: "auto",
+              padding: "16px",
+            }}
+          >
+            {wishlistItems.length === 0 ? (
+              /* Empty Wishlist */
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "100%",
+                  minHeight: 320,
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 62,
+                    lineHeight: 1,
+                    marginBottom: 20,
+                    background:
+                      "linear-gradient(135deg, #6b5b95, #d4568f, #b8863f)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    filter: "drop-shadow(0 0 14px rgba(212,86,143,0.2))",
+                    animation: "aw-glow-pulse 3.5s ease-in-out infinite",
+                  }}
+                >
+                  ♡
+                </div>
+
+                <p
+                  style={{
+                    margin: 0,
+                    fontFamily: "'Cormorant Garamond', serif",
+                    fontSize: 23,
+                    color: "#111111",
+                    fontWeight: 600,
+                    fontStyle: "italic",
+                  }}
+                >
+                  Your wishlist is empty
+                </p>
+
+                <p
+                  style={{
+                    margin: "10px 0 0",
+                    fontSize: 13,
+                    color: "#888888",
+                    maxWidth: 220,
+                    lineHeight: 1.5,
+                  }}
+                >
+                  Add products you love to see them here.
+                </p>
+              </div>
+            ) : (
+              /* Wishlist Items */
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 12,
+                }}
+              >
+                {wishlistItems.map((item, index) => (
+                  <div
+                    key={item.id}
+                    className="aw-item-card"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 14,
+                      padding: "12px 14px",
+                      background: "#faf9f7",
+                      borderRadius: 14,
+                      border: "1px solid rgba(0,0,0,0.06)",
+                      boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
+                    }}
+                  >
+                    {/* Product Image */}
+                    <div
+                      style={{
+                        width: 75,
+                        height: 90,
+                        borderRadius: 10,
+                        overflow: "hidden",
+                        flexShrink: 0,
+                        background: "#eeece8",
+                        border: "1px solid rgba(0,0,0,0.05)",
+                      }}
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+
+                    {/* Product Info */}
+                    <div
+                      style={{
+                        flex: 1,
+                        minWidth: 0,
+                      }}
+                    >
+                      <p
+                        style={{
+                          margin: "0 0 7px",
+                          fontSize: 13.5,
+                          fontWeight: 500,
+                          color: "#111111",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {item.name}
+                      </p>
+
+                      <p
+                        style={{
+                          margin: "0 0 10px",
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#b8863f",
+                          letterSpacing: "0.2px",
+                        }}
+                      >
+                        ₹{item.price?.toLocaleString("en-IN")}
+                      </p>
+
+                      <button
+                        className="aw-remove-link"
+                        onClick={() => {
+                          setWishlistItems((prev) =>
+                            prev.filter(
+                              (wishlistItem) => wishlistItem.id !== item.id,
+                            ),
+                          );
+                        }}
+                        style={{
+                          border: "none",
+                          background: "transparent",
+                          padding: 0,
+                          color: "#c53030",
+                          fontSize: 12,
+                          cursor: "pointer",
+                          marginBottom: 10,
+                          display: "block",
+                        }}
+                      >
+                        Remove from Wishlist
+                      </button>
+
+                      <Link
+                        to="/Payment"
+                        state={{ item }}
+                        className="aw-buy-btn"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          gap: 6,
+                          width: "100%",
+                          padding: "8px 12px",
+                          background:
+                            "linear-gradient(135deg, #6b5b95, #d4568f 55%, #b8863f)",
+                          color: "#ffffff",
+                          borderRadius: 7,
+                          textDecoration: "none",
+                          fontSize: 11.5,
+                          fontWeight: 600,
+                          letterSpacing: "0.6px",
+                          textTransform: "uppercase",
+                          boxSizing: "border-box",
+                        }}
+                      >
+                        Buy Now
+                        <span style={{ fontSize: 13, lineHeight: 1 }}>→</span>
+                      </Link>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Bottom */}
+          {wishlistItems.length > 0 && (
+            <div
+              style={{
+                borderTop: "1px solid rgba(0,0,0,0.06)",
+                padding: "16px 20px",
+              }}
+            >
+              <button
+                className="aw-clear-btn"
+                onClick={() => setWishlistItems([])}
                 style={{
                   width: "100%",
-                  height: "100%",
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-
-            {/* Product Info */}
-            <div
-              style={{
-                flex: 1,
-                minWidth: 0,
-              }}
-            >
-              <p
-                style={{
-                  margin: "0 0 7px",
-                  fontSize: 13.5,
-                  fontWeight: 500,
-                  color: "#111111",
-                  lineHeight: 1.4,
-                }}
-              >
-                {item.name}
-              </p>
-
-              <p
-                style={{
-                  margin: "0 0 10px",
-                  fontSize: 16,
-                  fontWeight: 700,
-                  color: "#b8863f",
-                  letterSpacing: "0.2px",
-                }}
-              >
-                ₹{item.price?.toLocaleString("en-IN")}
-              </p>
-
-              <button
-                className="aw-remove-link"
-                onClick={() => {
-                  setWishlistItems((prev) =>
-                    prev.filter(
-                      (wishlistItem) => wishlistItem.id !== item.id,
-                    ),
-                  );
-                }}
-                style={{
-                  border: "none",
+                  padding: "12px",
                   background: "transparent",
-                  padding: 0,
                   color: "#c53030",
-                  fontSize: 12,
+                  border: "1px solid rgba(197,48,48,0.35)",
+                  borderRadius: 8,
                   cursor: "pointer",
+                  fontSize: 12,
+                  letterSpacing: "1px",
                 }}
               >
-                Remove from Wishlist
+                CLEAR WISHLIST
               </button>
             </div>
-          </div>
-        ))}
-      </div>
-    )}
-  </div>
-<Link
-  to="/Payment"
-  style={{
-    display: "inline-flex",
-    alignItems: "center",
-    justifyContent: "center",
-    width: "100%",
-    marginTop: "10px",
-    padding: "9px 12px",
-    background: "#111",
-    color: "#fff",
-    borderRadius: "7px",
-    textDecoration: "none",
-    fontSize: "12px",
-    fontWeight: 500,
-    letterSpacing: "0.8px",
-    transition: "all 0.2s ease",
-  }}
->
-  Buy Now
-</Link>
-  {/* Bottom */}
-  {wishlistItems.length > 0 && (
-    <div
-      style={{
-        borderTop: "1px solid rgba(0,0,0,0.06)",
-        padding: "16px 20px",
-      }}
-    >
-      <button
-        className="aw-clear-btn"
-        onClick={() => setWishlistItems([])}
-        style={{
-          width: "100%",
-          padding: "12px",
-          background: "transparent",
-          color: "#c53030",
-          border: "1px solid rgba(197,48,48,0.35)",
-          borderRadius: 8,
-          cursor: "pointer",
-          fontSize: 12,
-          letterSpacing: "1px",
-        }}
-      >
-        CLEAR WISHLIST
-      </button>
-    </div>
-  )}
-</Drawer>
+          )}
+        </Drawer>
       </BrowserRouter>
     </MyContext.Provider>
   );
