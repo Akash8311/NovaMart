@@ -7,7 +7,6 @@ import Footer from "./components/Footer/Footer";
 
 import Home from "./pages/home/Home";
 
-
 // productlisting pages here
 import Productlisting from "./pages/Productlisting/Productlisting";
 import Men_productListing from "./pages/Productlisting/Men_productListing";
@@ -41,7 +40,6 @@ import ProductDetails10 from "./pages/ProductDetails/ProductReaview/girlsProduct
 import ProductDetails11 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails11";
 import ProductDetails12 from "./pages/ProductDetails/ProductReaview/girlsProductDetails/productDetails12";
 
-
 // kid product
 import KidProductDetails1 from "./pages/ProductDetails/Kids/KidProductDetails1";
 import KidProductDetails2 from "./pages/ProductDetails/Kids/KidProductDetails2";
@@ -56,7 +54,6 @@ import KidProductDetails10 from "./pages/ProductDetails/Kids/KidProductDetails10
 import KidProductDetails11 from "./pages/ProductDetails/Kids/KidProductDetails11";
 import KidProductDetails12 from "./pages/ProductDetails/Kids/KidProductDetails12";
 
-
 import LogIn from "./pages/auth/logIn";
 import Register from "./pages/auth/Register";
 
@@ -65,7 +62,6 @@ import CartPage from "./pages/cart/CartPage";
 import Forgot from "./pages/auth/Forgot";
 import Payment from "./pages/cart/Payment";
 import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
-
 
 export const MyContext = createContext();
 
@@ -129,34 +125,30 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
   const [isLogin, setIsLogin] = useState(
-  localStorage.getItem("isLogin") === "true"
-);
+    localStorage.getItem("isLogin") === "true",
+  );
 
-const itemCount = cartItems.reduce(
-  (sum, item) => sum + item.qty,
-  0
-);
+  const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
 
+  // add wishlist section
+  const values = {
+    openCartPanel,
+    setOpenCartPanel,
 
-// add wishlist section
-const values = {
-  openCartPanel,
-  setOpenCartPanel,
+    cartItems,
+    setCartItems,
 
-  cartItems,
-  setCartItems,
+    wishlistItems,
+    setWishlistItems,
 
-  wishlistItems,
-  setWishlistItems,
+    itemCount,
 
-  itemCount,
+    isLogin,
+    setIsLogin,
 
-  isLogin,
-  setIsLogin,
-
-  openWishlistPanel,
-setOpenWishlistPanel,
-};
+    openWishlistPanel,
+    setOpenWishlistPanel,
+  };
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.qty,
     0,
@@ -176,7 +168,6 @@ setOpenWishlistPanel,
     setCartItems((prev) => prev.filter((item) => item.id !== id));
   };
 
-
   return (
     <MyContext.Provider value={values}>
       <style>{styleTag}</style>
@@ -188,14 +179,16 @@ setOpenWishlistPanel,
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />
-          <Route path="/Kids_ProductListing" element={<Kids_ProductListing/>}/>
+          <Route
+            path="/Kids_ProductListing"
+            element={<Kids_ProductListing />}
+          />
           <Route path="/Product/:id" element={<ProductDetails />} />
           <Route path="/logIn" element={<LogIn />} />
           <Route path="/Register" element={<Register />} />
-          <Route path="/Forgot" element={<Forgot/>}/>
+          <Route path="/Forgot" element={<Forgot />} />
           <Route path="/CartPage" element={<CartPage />} />
-          <Route path="/Payment" element={<Payment/>}/>
-
+          <Route path="/Payment" element={<Payment />} />
 
           {/* Men product details */}
           <Route path="/MenproductDetails1" element={<MenProductDetails1 />} />
@@ -207,10 +200,18 @@ setOpenWishlistPanel,
           <Route path="/menproductDetails7" element={<MenProductDetails7 />} />
           <Route path="/menproductDetails8" element={<MenProductDetails8 />} />
           <Route path="/menproductDetails9" element={<MenProductDetails9 />} />
-          <Route path="/menproductDetails10" element={<MenProductDetails10 />} />
-          <Route path="/menproductDetails11" element={<MenProductDetails11 />} />
-          <Route path="/menproductDetails12" element={<MenProductDetails12 />} />
-
+          <Route
+            path="/menproductDetails10"
+            element={<MenProductDetails10 />}
+          />
+          <Route
+            path="/menproductDetails11"
+            element={<MenProductDetails11 />}
+          />
+          <Route
+            path="/menproductDetails12"
+            element={<MenProductDetails12 />}
+          />
 
           {/* girks product */}
           <Route path="/productDrtails2" element={<ProductDrtails2 />} />
@@ -225,21 +226,28 @@ setOpenWishlistPanel,
           <Route path="/ProductDetails11" element={<ProductDetails11 />} />
           <Route path="/ProductDetails12" element={<ProductDetails12 />} />
 
-
-        {/* kids product */}
-         <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
-         <Route path="/kidProductDetails2" element={<KidProductDetails2 />} />
-         <Route path="/kidProductDetails3" element={<KidProductDetails3 />} />
-         <Route path="/kidProductDetails4" element={<KidProductDetails4 />} />
-         <Route path="/kidProductDetails5" element={<KidProductDetails5 />} />
-         <Route path="/kidProductDetails6" element={<KidProductDetails6 />} />
-         <Route path="/kidProductDetails7" element={<KidProductDetails7 />} />
-         <Route path="/kidProductDetails8" element={<KidProductDetails8 />} />
-         <Route path="/kidProductDetails9" element={<KidProductDetails9 />} />
-         <Route path="/kidProductDetails10" element={<KidProductDetails10 />} />
-         <Route path="/kidProductDetails11" element={<KidProductDetails11 />} />
-         <Route path="/kidProductDetails12" element={<KidProductDetails12 />} />
-
+          {/* kids product */}
+          <Route path="/kidProductDetails1" element={<KidProductDetails1 />} />
+          <Route path="/kidProductDetails2" element={<KidProductDetails2 />} />
+          <Route path="/kidProductDetails3" element={<KidProductDetails3 />} />
+          <Route path="/kidProductDetails4" element={<KidProductDetails4 />} />
+          <Route path="/kidProductDetails5" element={<KidProductDetails5 />} />
+          <Route path="/kidProductDetails6" element={<KidProductDetails6 />} />
+          <Route path="/kidProductDetails7" element={<KidProductDetails7 />} />
+          <Route path="/kidProductDetails8" element={<KidProductDetails8 />} />
+          <Route path="/kidProductDetails9" element={<KidProductDetails9 />} />
+          <Route
+            path="/kidProductDetails10"
+            element={<KidProductDetails10 />}
+          />
+          <Route
+            path="/kidProductDetails11"
+            element={<KidProductDetails11 />}
+          />
+          <Route
+            path="/kidProductDetails12"
+            element={<KidProductDetails12 />}
+          />
         </Routes>
 
         <Footer />
@@ -629,7 +637,6 @@ setOpenWishlistPanel,
             )}
           </div>
 
-         
           {cartItems.length > 0 && (
             <div
               style={{
@@ -807,6 +814,267 @@ setOpenWishlistPanel,
                   ),
                 )}
               </div>
+            </div>
+          )}
+        </Drawer>
+
+        <Drawer
+          anchor="right"
+          open={openWishlistPanel}
+          onClose={() => setOpenWishlistPanel(false)}
+          PaperProps={{
+            style: {
+              width: 400,
+              background: "#fff",
+              boxShadow: "-8px 0 40px rgba(0,0,0,0.12)",
+              fontFamily: "'DM Sans', sans-serif",
+              border: "none",
+              display: "flex",
+              flexDirection: "column",
+            },
+          }}
+        >
+          {/* Top Line */}
+          <div
+            style={{
+              height: 4,
+              background: "linear-gradient(90deg, #0f0c29, #302b63, #24243e)",
+            }}
+          />
+
+          {/* Header */}
+          <div
+            style={{
+              padding: "22px 24px 18px",
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              borderBottom: "1px solid #f0f0f0",
+            }}
+          >
+            <div>
+              <h2
+                style={{
+                  margin: 0,
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: 26,
+                  fontWeight: 700,
+                  color: "#111",
+                }}
+              >
+                My Wishlist ♡
+              </h2>
+
+              {wishlistItems.length > 0 && (
+                <p
+                  style={{
+                    margin: "5px 0 0",
+                    fontSize: 12,
+                    color: "#888",
+                  }}
+                >
+                  {wishlistItems.length}{" "}
+                  {wishlistItems.length === 1 ? "item" : "items"} saved
+                </p>
+              )}
+            </div>
+
+            <button
+              onClick={() => setOpenWishlistPanel(false)}
+              style={{
+                width: 36,
+                height: 36,
+                borderRadius: "50%",
+                border: "1.5px solid #e5e5e5",
+                background: "#fff",
+                cursor: "pointer",
+                fontSize: 14,
+                color: "#555",
+              }}
+            >
+              ✕
+            </button>
+          </div>
+
+          {/* Wishlist Products */}
+          <div
+            style={{
+              flex: 1,
+              overflowY: "auto",
+              padding: "16px",
+            }}
+          >
+            {wishlistItems.length === 0 ? (
+              /* Empty Wishlist */
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  height: "100%",
+                  minHeight: 320,
+                  color: "#aaa",
+                  textAlign: "center",
+                }}
+              >
+                <div
+                  style={{
+                    fontSize: 65,
+                    lineHeight: 1,
+                    marginBottom: 18,
+                  }}
+                >
+                  ♡
+                </div>
+
+                <p
+                  style={{
+                    margin: 0,
+                    fontFamily: "'Cormorant Garamond', serif",
+                    fontSize: 23,
+                    color: "#333",
+                    fontWeight: 600,
+                  }}
+                >
+                  Your wishlist is empty
+                </p>
+
+                <p
+                  style={{
+                    margin: "8px 0 0",
+                    fontSize: 13,
+                    color: "#aaa",
+                  }}
+                >
+                  Add products you love to see them here.
+                </p>
+              </div>
+            ) : (
+              /* Wishlist Items */
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: 12,
+                }}
+              >
+                {wishlistItems.map((item, index) => (
+                  <div
+                    key={item.id}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 14,
+                      padding: "12px 14px",
+                      background: "#fff",
+                      borderRadius: 12,
+                      border: "1px solid #f0f0f0",
+                      boxShadow: "0 2px 10px rgba(0,0,0,0.04)",
+                    }}
+                  >
+                    {/* Product Image */}
+                    <div
+                      style={{
+                        width: 75,
+                        height: 90,
+                        borderRadius: 8,
+                        overflow: "hidden",
+                        flexShrink: 0,
+                        background: "#f5f5f5",
+                      }}
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+
+                    {/* Product Info */}
+                    <div
+                      style={{
+                        flex: 1,
+                        minWidth: 0,
+                      }}
+                    >
+                      <p
+                        style={{
+                          margin: "0 0 7px",
+                          fontSize: 13.5,
+                          fontWeight: 500,
+                          color: "#1a1a1a",
+                          lineHeight: 1.4,
+                        }}
+                      >
+                        {item.name}
+                      </p>
+
+                      <p
+                        style={{
+                          margin: "0 0 10px",
+                          fontSize: 16,
+                          fontWeight: 700,
+                          color: "#B12704",
+                        }}
+                      >
+                        ₹{item.price?.toLocaleString("en-IN")}
+                      </p>
+
+                      <button
+                        onClick={() => {
+                          setWishlistItems((prev) =>
+                            prev.filter(
+                              (wishlistItem) => wishlistItem.id !== item.id,
+                            ),
+                          );
+                        }}
+                        style={{
+                          border: "none",
+                          background: "transparent",
+                          padding: 0,
+                          color: "#dc2626",
+                          fontSize: 12,
+                          cursor: "pointer",
+                        }}
+                      >
+                        Remove from Wishlist
+                      </button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* Bottom */}
+          {wishlistItems.length > 0 && (
+            <div
+              style={{
+                borderTop: "1px solid #f0f0f0",
+                padding: "16px 20px",
+              }}
+            >
+              <button
+                onClick={() => setWishlistItems([])}
+                style={{
+                  width: "100%",
+                  padding: "12px",
+                  background: "#fff",
+                  color: "#dc2626",
+                  border: "1px solid #f1b5b5",
+                  borderRadius: 8,
+                  cursor: "pointer",
+                  fontSize: 12,
+                  letterSpacing: "1px",
+                }}
+              >
+                CLEAR WISHLIST
+              </button>
             </div>
           )}
         </Drawer>

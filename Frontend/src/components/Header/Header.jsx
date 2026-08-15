@@ -23,8 +23,14 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
 }));
 
 const Header = () => {
-  const { setOpenCartPanel, isLogin, setIsLogin, cartItems, wishlistItems } =
-    useContext(MyContext);
+  const {
+    setOpenCartPanel,
+    setOpenWishlistPanel,
+    isLogin,
+    setIsLogin,
+    cartItems,
+    wishlistItems,
+  } = useContext(MyContext);
 
   const itemCount = cartItems.reduce((sum, item) => sum + item.qty, 0);
   const wishlistCount = wishlistItems.length;
@@ -197,12 +203,12 @@ const Header = () => {
                 </>
               )}
 
-                {/* delete compare button */}
+              {/* delete compare button */}
 
               {/* wishlist */}
               <li className="list-none">
                 <Tooltip title="Wishlist">
-                  <IconButton>
+                  <IconButton onClick={() => setOpenWishlistPanel(true)}>
                     <StyledBadge badgeContent={wishlistCount} color="secondary">
                       <CiHeart />
                     </StyledBadge>
