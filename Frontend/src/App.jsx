@@ -125,6 +125,7 @@ const styleTag = `
 
 const App = () => {
   const [openCartPanel, setOpenCartPanel] = useState(false);
+  const [openWishlistPanel, setOpenWishlistPanel] = useState(false);
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
   const [isLogin, setIsLogin] = useState(
@@ -152,6 +153,9 @@ const values = {
 
   isLogin,
   setIsLogin,
+
+  openWishlistPanel,
+setOpenWishlistPanel,
 };
   const totalPrice = cartItems.reduce(
     (total, item) => total + item.price * item.qty,
