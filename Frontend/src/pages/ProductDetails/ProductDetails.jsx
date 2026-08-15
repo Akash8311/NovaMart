@@ -36,8 +36,12 @@ import { MyContext } from "../../App";
 const ProductDetails = (props) => {
   const [selectedSize, setSelectedSize] = useState("M");
   const [expanded, setExpanded] = useState(false);
-  const { cartItems, setCartItems } = useContext(MyContext);
-  const sizes = ["S", "M", "L", "XL", "XXL"];
+const {
+  cartItems,
+  setCartItems,
+  wishlistItems,
+  setWishlistItems,
+} = useContext(MyContext);  const sizes = ["S", "M", "L", "XL", "XXL"];
 
 
 
@@ -67,6 +71,18 @@ const addToCart = () => {
         qty: 1,
         size: selectedSize,
       },
+    ]);
+  }
+};
+const addToWishlist = () => {
+  const exists = wishlistItems.some(
+    (item) => item.id === product.id
+  );
+
+  if (!exists) {
+    setWishlistItems((prev) => [
+      ...prev,
+      product,
     ]);
   }
 };
