@@ -104,39 +104,7 @@ const KidProduct4 = () => {
             </button>
           )}
 
-          {hover && (
-            <button
-              style={{
-                width: "42px",
-                height: "42px",
-                borderRadius: "50%",
-                border: "1px solid #e6e6e6",
-                backgroundColor: "white",
-                color: "#444",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: "20px",
-                cursor: "pointer",
-                transition: "all .35s ease",
-                boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-                opacity: hover ? 1 : 0,
-                animation: "fadeButtons .55s ease forwards",
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = "#B3E5FC";
-                e.target.style.color = "#1976D2";
-                e.target.style.transform = "scale(1.12)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = "white";
-                e.target.style.color = "#444";
-                e.target.style.transform = "scale(1)";
-              }}
-            >
-              <IoIosGitCompare />
-            </button>
-          )}
+         
 
           {hover && (
             <button

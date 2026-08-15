@@ -12,8 +12,6 @@ const KidProduct3 = () => {
   const [hover, setHover] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
-
-  
   const product = {
     id: "kids 3",
     name: "POLKA TOTS",
@@ -55,17 +53,17 @@ const KidProduct3 = () => {
         >
           {hover && (
             <button
-             onClick={() => {
-  if (!wishlist) {
-    setWishlistItems([...wishlistItems, product]);
-  } else {
-    setWishlistItems(
-      wishlistItems.filter((item) => item.id !== product.id)
-    );
-  }
+              onClick={() => {
+                if (!wishlist) {
+                  setWishlistItems([...wishlistItems, product]);
+                } else {
+                  setWishlistItems(
+                    wishlistItems.filter((item) => item.id !== product.id),
+                  );
+                }
 
-  setWishlist(!wishlist);
-}}
+                setWishlist(!wishlist);
+              }}
               style={{
                 width: "42px",
                 height: "42px",
@@ -106,39 +104,6 @@ const KidProduct3 = () => {
             </button>
           )}
 
-          {hover && (
-            <button
-              style={{
-                width: "42px",
-                height: "42px",
-                borderRadius: "50%",
-                border: "1px solid #e6e6e6",
-                backgroundColor: "white",
-                color: "#444",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                fontSize: "20px",
-                cursor: "pointer",
-                transition: "all .35s ease",
-                boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-                opacity: hover ? 1 : 0,
-                animation: "fadeButtons .55s ease forwards",
-              }}
-              onMouseEnter={(e) => {
-                e.target.style.backgroundColor = "#B3E5FC";
-                e.target.style.color = "#1976D2";
-                e.target.style.transform = "scale(1.12)";
-              }}
-              onMouseLeave={(e) => {
-                e.target.style.backgroundColor = "white";
-                e.target.style.color = "#444";
-                e.target.style.transform = "scale(1)";
-              }}
-            >
-              <IoIosGitCompare />
-            </button>
-          )}
 
           {hover && (
             <button
@@ -228,8 +193,8 @@ const KidProduct3 = () => {
               margin: "0",
             }}
           >
-           Co-Ord Set for Boys | Half Sleeve Shirt &
-            Shorts Beach Outfit for Kids
+            Co-Ord Set for Boys | Half Sleeve Shirt & Shorts Beach Outfit for
+            Kids
           </p>
           <div
             style={{
