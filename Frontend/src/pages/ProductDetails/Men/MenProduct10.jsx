@@ -128,43 +128,7 @@ const MenProduct10 = () => {
         )}
 
         {/* Compare Button */}
-        {hover && (
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            style={{
-              width: "42px",
-              height: "42px",
-              borderRadius: "50%",
-              border: "1px solid #e6e6e6",
-              backgroundColor: "white",
-              color: "#444",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              fontSize: "20px",
-              cursor: "pointer",
-              transition: "all .35s ease",
-              boxShadow: "0px 4px 12px rgba(0,0,0,0.1)",
-              animation: "fadeButtons .55s ease forwards",
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.backgroundColor = "#B3E5FC";
-              e.currentTarget.style.color = "#1976D2";
-              e.currentTarget.style.transform = "scale(1.12)";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.backgroundColor = "white";
-              e.currentTarget.style.color = "#444";
-              e.currentTarget.style.transform = "scale(1)";
-            }}
-          >
-            <IoIosGitCompare />
-          </button>
-        )}
-
+        
         {/* Zoom Button */}
         {hover && (
           <button
