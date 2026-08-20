@@ -10,13 +10,3 @@ const order_tracking = () => {
 }
 
 export default order_tracking
-
-
-
-const order_tracking = () => {
-  return (
-    <div>order_tracking</div>
-  )
-}
-
-export default order_tracking
