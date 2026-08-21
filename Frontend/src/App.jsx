@@ -5,6 +5,9 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
+
+import HelpCenter from "./pages/product_related_issue_help/help_center";
+
 import Home from "./pages/home/Home";
 
 // productlisting pages here
@@ -231,6 +234,8 @@ const App = () => {
         <Header />
 
         <Routes>
+
+          <Route path="/" element={<HelpCenter/>}/>
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />
