@@ -1,16 +1,24 @@
 import React, { useState } from 'react'
 
-// ---- Design tokens (Novamart Help Center) --------------------------------
-// Background   #F5F6FA  soft cool neutral
-// Surface      #FFFFFF
-// Ink          #14162B  near-navy-black
-// Ink muted    #5C5F7A
-// Accent       #5B4FE9  electric indigo ("nova" violet)
-// Accent warm  #FF6B4A  coral (CTA / highlights)
-// Line         #E4E5F0
-// Display font: 'Sora' — geometric, a little cosmic, used only for headings
-// Body font:    'Inter' — quiet workhorse for everything else
+ <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
 
+        * { box-sizing: border-box; }
+
+        .nm-chip:hover { background: #EFEDFF; border-color: #5B4FE9; color: #5B4FE9; }
+        .nm-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(20,22,43,0.08); border-color: #C9C4FF; }
+        .nm-faq-btn:hover { color: #5B4FE9; }
+        .nm-contact:hover { border-color: #5B4FE9; box-shadow: 0 14px 30px rgba(91,79,233,0.12); }
+        .nm-search:focus { outline: none; border-color: #5B4FE9; box-shadow: 0 0 0 4px rgba(91,79,233,0.15); }
+        .nm-faq-btn:focus-visible, .nm-chip:focus-visible, .nm-card:focus-visible, .nm-contact:focus-visible {
+          outline: 3px solid #5B4FE9; outline-offset: 2px;
+        }
+        @media (max-width: 720px) {
+          .nm-grid { grid-template-columns: 1fr !important; }
+          .nm-contact-row { grid-template-columns: 1fr !important; }
+          .nm-hero-title { font-size: 34px !important; }
+        }
+      `}</style>
 const faqs = [
   {
     q: 'Where is my order right now?',
@@ -69,35 +77,7 @@ const HelpCenter = () => {
 
   return (
     <div style={styles.page}>
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600&display=swap');
-
-        * { box-sizing: border-box; }
-
-        .nm-chip:hover { background: #EFEDFF; border-color: #5B4FE9; color: #5B4FE9; }
-        .nm-card:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(20,22,43,0.08); border-color: #C9C4FF; }
-        .nm-faq-btn:hover { color: #5B4FE9; }
-        .nm-contact:hover { border-color: #5B4FE9; box-shadow: 0 14px 30px rgba(91,79,233,0.12); }
-        .nm-search:focus { outline: none; border-color: #5B4FE9; box-shadow: 0 0 0 4px rgba(91,79,233,0.15); }
-        .nm-faq-btn:focus-visible, .nm-chip:focus-visible, .nm-card:focus-visible, .nm-contact:focus-visible {
-          outline: 3px solid #5B4FE9; outline-offset: 2px;
-        }
-        @media (max-width: 720px) {
-          .nm-grid { grid-template-columns: 1fr !important; }
-          .nm-contact-row { grid-template-columns: 1fr !important; }
-          .nm-hero-title { font-size: 34px !important; }
-        }
-      `}</style>
-
-      {/* Header */}
-      <header style={styles.header}>
-        <div style={styles.headerInner}>
-          <div style={styles.logo}>
-            Nova<span style={{ color: '#5B4FE9' }}>mart</span>
-          </div>
-          <a href="#" style={styles.backLink}>← Back to store</a>
-        </div>
-      </header>
+     
 
       {/* Hero */}
       <section style={styles.hero}>
