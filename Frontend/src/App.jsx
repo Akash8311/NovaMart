@@ -942,14 +942,9 @@ const App = () => {
               >
                 My Wishlist{" "}
                 <span
-                  style={{
-                    background: "linear-gradient(135deg, #b8863f, #d4568f)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    fontStyle: "normal",
-                  }}
+                 
                 >
-                  ♡
+                  ❤️  
                 </span>
               </h2>
 
@@ -1015,14 +1010,14 @@ const App = () => {
                     lineHeight: 1,
                     marginBottom: 20,
                     background:
-                      "linear-gradient(135deg, #6b5b95, #d4568f, #b8863f)",
+                      "linear-gradient(135deg, #fa0a0a, #eb271d, #f90707)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     filter: "drop-shadow(0 0 14px rgba(212,86,143,0.2))",
                     animation: "aw-glow-pulse 3.5s ease-in-out infinite",
                   }}
                 >
-                  ♡
+                  ❤️
                 </div>
 
                 <p
