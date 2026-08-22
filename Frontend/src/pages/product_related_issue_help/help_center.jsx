@@ -151,17 +151,6 @@ const HelpCenter = () => {
           .nm-card, .nm-faq-chevron { transition: none !important; }
         }
       `}</style>
-
-      {/* Header */}
-      <header style={styles.header}>
-        <div style={styles.headerInner}>
-          <div style={styles.logo}>
-            Nova<span style={{ color: '#5B4FE9' }}>mart</span>
-          </div>
-          <a href="#" style={styles.backLink}>← Back to store</a>
-        </div>
-      </header>
-
       {/* Hero */}
       <section style={styles.hero}>
         <div style={styles.heroGlow} aria-hidden="true" />
