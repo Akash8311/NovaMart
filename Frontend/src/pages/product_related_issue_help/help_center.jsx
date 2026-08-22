@@ -5,9 +5,9 @@ const tokens = {
   paperDim: "#F1EBDB",
   surface: "#FFFFFF",
   ink: "#182620",
-  inkSoft: "#3E4A41",
+  inkSoft: "#cbdacf",
   muted: "#7A7565",
-  forest: "#1F3A2E",
+  forest: "#1a15b5",
   forestDeep: "#0F1D16",
   gold: "#C98A2B",
   goldDeep: "#8B5E14",
@@ -212,28 +212,7 @@ export default function NovamartHelpCenter() {
 
 function Header({ query, setQuery }) {
   return (
-    <header style={styles.header}>
-      <div style={styles.headerInner}>
-        <div style={styles.logo}>
-          <span style={styles.logoSeal}>N</span>
-          <span>
-            Nova<span style={{ color: tokens.gold }}>mart</span>
-          </span>
-        </div>
-        <div style={styles.headerSearchWrap}>
-          <span style={styles.headerSearchIcon} aria-hidden="true">⌕</span>
-          <input
-            type="text"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search help articles"
-            aria-label="Search help articles"
-            style={styles.headerSearchInput}
-          />
-        </div>
-        <a href="#" style={styles.backLink}>← Back to store</a>
-      </div>
-    </header>
+    <div>     </div>
   );
 }
 
