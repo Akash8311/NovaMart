@@ -30,8 +30,6 @@ function useGoogleFonts() {
   }, []);
 }
 
-/* ---------------- data ---------------- */
-
 const CATEGORIES = [
   { id: "orders", icon: "📦", title: "Orders & tracking", desc: "Find a package, edit an address, or see delivery windows." },
   { id: "returns", icon: "↩️", title: "Returns & refunds", desc: "30-day returns on most items. Start one in a few taps." },
@@ -80,8 +78,6 @@ const QUICK_CHIPS = [
 ];
 
 const TRACK_STEPS = ["Order placed", "Processing", "In transit", "Out for delivery", "Delivered"];
-
-/* ---------------- small helpers ---------------- */
 
 function catMeta(id) {
   return CATEGORIES.find((c) => c.id === id) || null;
