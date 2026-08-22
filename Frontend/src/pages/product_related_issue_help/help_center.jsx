@@ -195,7 +195,6 @@ const HelpCenter = () => {
         </div>
       </section>
 
-      {/* Category grid */}
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Browse by topic</h2>
         <div className="nm-grid" style={styles.grid}>
