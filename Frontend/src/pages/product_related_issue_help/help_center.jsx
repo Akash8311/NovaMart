@@ -214,7 +214,7 @@ const HelpCenter = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+
       <section ref={faqRef} style={{ ...styles.section, background: '#FFFFFF' }}>
         <div style={styles.faqHeaderRow}>
           <h2 style={{ ...styles.sectionTitle, marginBottom: 0 }}>
@@ -265,7 +265,6 @@ const HelpCenter = () => {
         )}
       </section>
 
-      {/* Contact strip */}
       <section style={styles.section}>
         <h2 style={styles.sectionTitle}>Still stuck? Talk to us</h2>
         <div className="nm-contact-row" style={styles.contactRow}>
