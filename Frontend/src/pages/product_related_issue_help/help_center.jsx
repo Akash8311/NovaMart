@@ -290,7 +290,7 @@ const HelpCenter = () => {
       </section>
 
       <footer style={styles.footer}>
-        © {new Date().getFullYear()} Novamart. Here to help, always.
+        © {new Date().getFullYear()}Novamart. Here to help, always.
       </footer>
     </div>
   )
