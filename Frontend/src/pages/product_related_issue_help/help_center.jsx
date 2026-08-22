@@ -100,7 +100,6 @@ function tornEdgeClipPath(teeth = 26, depth = 10) {
   return `polygon(${pts.join(",")})`;
 }
 
-/* ---------------- root component ---------------- */
 
 export default function NovamartHelpCenter() {
   useGoogleFonts();
