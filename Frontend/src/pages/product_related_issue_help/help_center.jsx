@@ -1,13 +1,5 @@
 import React, { useState, useMemo, useEffect, useRef } from "react";
 
-/* ============================================================
-   NOVAMART HELP CENTER — "Receipt & Seal" design language
-   A help center reimagined around the one artifact every
-   Novamart customer already trusts: the paper receipt.
-   Ticket-stub categories, wax-seal status stamps, a torn
-   receipt edge, and a live order-tracker built into the hero.
-   ============================================================ */
-
 const tokens = {
   paper: "#FAF6EC",
   paperDim: "#F1EBDB",
@@ -503,15 +495,12 @@ function ArticleDetail({ article, helpful, setHelpful, onBack, onOpen }) {
 
 function ContactSection() {
   const cards = [
-    { icon: "💬", title: "Live chat", desc: "Avg. reply time: 2 minutes", cta: "Start chat →", href: "#chat" },
-    { icon: "✉️", title: "Email support", desc: "help@novamart.com", cta: "Send a message →", href: "mailto:help@novamart.com" },
-    { icon: "📞", title: "Call us", desc: "Mon–Sat, 9am–7pm ET", cta: "1-800-555-0199 →", href: "tel:18005550199" },
+   
   ];
   return (
     <section style={styles.contactSection}>
       <div style={styles.contactInner}>
-        <h2 style={styles.contactH2}>Still stuck? Talk to us</h2>
-        <p style={styles.contactSub}>A real person, every time — no bots in the loop.</p>
+       
         <div style={styles.contactRow}>
           {cards.map((c, i) => (
             <ContactCard key={i} {...c} />
@@ -542,7 +531,7 @@ function ContactCard({ icon, title, desc, cta, href }) {
 function Footer() {
   return (
     <footer style={styles.footer}>
-      © {new Date().getFullYear()} Novamart. Here to help, always.
+   
     </footer>
   );
 }
@@ -565,41 +554,7 @@ function ChatWidget({ open, setOpen }) {
 
   return (
     <>
-      {open && (
-        <div style={styles.chatPanel} role="dialog" aria-label="Live chat preview">
-          <div style={styles.chatPanelHead}>
-            <span style={styles.trackSealMini}>N</span>
-            <div>
-              <div style={{ fontWeight: 700, fontSize: 14 }}>Novamart guide</div>
-              <div style={{ fontSize: 12, color: tokens.muted }}>Usually replies in 2 min</div>
-            </div>
-            <button onClick={() => setOpen(false)} aria-label="Close chat" style={styles.chatClose}>✕</button>
-          </div>
-          <div style={styles.chatBody}>
-            {messages.map((m, i) => (
-              <div key={i} style={styles.chatBubbleAgent}>{m.text}</div>
-            ))}
-            {sent.map((t, i) => (
-              <div key={i} style={styles.chatBubbleUser}>{t}</div>
-            ))}
-            {sent.length > 0 && (
-              <div style={styles.chatBubbleAgent}>
-                Got it — for a faster answer, search the help center above, or email help@novamart.com and we'll pick this up.
-              </div>
-            )}
-          </div>
-          <form onSubmit={send} style={styles.chatForm}>
-            <input
-              value={draft}
-              onChange={(e) => setDraft(e.target.value)}
-              placeholder="Type a message…"
-              style={styles.chatInput}
-              aria-label="Message"
-            />
-            <button type="submit" style={styles.chatSend}>Send</button>
-          </form>
-        </div>
-      )}
+      
       <button
         onClick={() => setOpen((o) => !o)}
         style={styles.chatFab}
@@ -970,7 +925,6 @@ const styles = {
   contactDesc: { fontSize: 13.5, color: tokens.muted, marginBottom: 16 },
   contactCta: { fontSize: 13.5, fontWeight: 700, color: tokens.goldDeep },
 
-  footer: { textAlign: "center", padding: "36px 24px 52px", fontSize: 13, color: tokens.muted },
 
   /* chat widget */
   chatFab: {
