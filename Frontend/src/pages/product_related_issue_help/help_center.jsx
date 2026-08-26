@@ -88,7 +88,7 @@ function countFor(id) {
 function stripTags(html) {
   return html.replace(/<[^>]+>/g, "");
 }
-gasjsjbx
+
 function tornEdgeClipPath(teeth = 26, depth = 10) {
   const pts = ["0% 0%", "100% 0%", "100% 100%"];
   for (let i = teeth; i >= 0; i--) {
