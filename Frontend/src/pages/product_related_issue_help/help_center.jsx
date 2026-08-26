@@ -89,7 +89,6 @@ function stripTags(html) {
   return html.replace(/<[^>]+>/g, "");
 }
 
-/* zigzag "torn receipt" edge as a clip-path polygon */
 function tornEdgeClipPath(teeth = 26, depth = 10) {
   const pts = ["0% 0%", "100% 0%", "100% 100%"];
   for (let i = teeth; i >= 0; i--) {
