@@ -338,7 +338,7 @@ const Home = () => {
           }
           .brand-name:hover { color: ${TOKENS.wine}; transform: scale(1.1); }
 
-          .blog-desc { color: ${TOKENS.muted}; font-size: 15px; max-width: 520px; line-height: 1.6; }
+          .blog-desc { co or: ${TOKENS.muted}; font-size: 15px; max-width: 520px; line-height: 1.6; }
           .blog-grid-item { transition: transform 0.5s ease, box-shadow 0.5s ease; border-radius: 10px; }
           .blog-grid-item:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(20,17,15,0.12); }
 

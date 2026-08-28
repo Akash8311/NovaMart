@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 
-import HelpCenter from "./pages/product_related_issue_help/help_center";
+// import HelpCenter from "./pages/product_related_issue_help/help_center";
 
 import Home from "./pages/home/Home";
 
