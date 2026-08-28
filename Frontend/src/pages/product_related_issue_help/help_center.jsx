@@ -100,7 +100,7 @@ function tornEdgeClipPath(teeth = 26, depth = 10) {
 }
 
 
-export default function NovamartHelpCenter() {
+export default function HelpCenter() {
   useGoogleFonts();
 
   const [query, setQuery] = useState("");

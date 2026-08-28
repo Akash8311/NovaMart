@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 
-// import HelpCenter from "./pages/product_related_issue_help/help_center";
+import HelpCenter from "./pages/product_related_issue_help/help_center";
 
 import Home from "./pages/home/Home";
 
@@ -235,7 +235,7 @@ const App = () => {
 
         <Routes>
 
-          <Route path="/" element={<HelpCenter/>}/>
+          <Route path="/HelpCenter" element={<HelpCenter />} />
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />

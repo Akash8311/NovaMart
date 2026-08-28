@@ -67,7 +67,7 @@ const Header = () => {
             >
               <li className="list-none">
                 <Link
-                  to="/help_Center"
+                  to="/HelpCenter"
                   className="text-[14px] Link no-underline transition"
                 >
                   Help Center
