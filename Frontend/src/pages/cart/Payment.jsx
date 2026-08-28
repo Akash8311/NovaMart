@@ -655,7 +655,6 @@ f           <div className="pay-card">
             </div>
           </div>
 
-          {/* ── RIGHT COLUMN — live cart from context ── */}
           <div className="pay-right">
             <div className="pay-summary-card">
               <div className="pay-summary-top">
@@ -666,7 +665,6 @@ f           <div className="pay-card">
               </div>
               <div className="pay-summary-body">
 
-                {/* ── live cart items from MyContext ── */}
                 {!cartItems?.length ? (
                   <div className="pay-empty-notice">
                     Your cart is empty. Go back and add items.

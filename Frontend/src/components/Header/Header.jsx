@@ -200,7 +200,7 @@ const Header = () => {
                       Register
                     </Link>
                   </li>
-                </>
+                </> 
               )}
 
               {/* delete compare button */}

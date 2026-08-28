@@ -5,7 +5,6 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
-
 import HelpCenter from "./pages/product_related_issue_help/help_center";
 
 import Home from "./pages/home/Home";
@@ -66,7 +65,7 @@ import Forgot from "./pages/auth/Forgot";
 import Payment from "./pages/cart/Payment";
 import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
 
-  <style>{`
+<style>{`
   @keyframes aw-aurora-shift {
     0%   { background-position: 0% 50%; }
     50%  { background-position: 100% 50%; }
@@ -119,7 +118,7 @@ import Kids_ProductListing from "./pages/Productlisting/Kids_ProductListing";
     box-shadow: 0 6px 16px rgba(107,91,149,0.35);
   }
   .aw-buy-btn:active { transform: translateY(0); }
-`}</style>
+`}</style>;
 
 export const MyContext = createContext();
 
@@ -234,7 +233,6 @@ const App = () => {
         <Header />
 
         <Routes>
-
           <Route path="/HelpCenter" element={<HelpCenter />} />
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
@@ -877,8 +875,6 @@ const App = () => {
             </div>
           )}
         </Drawer>
-  
-      
 
         <Drawer
           anchor="right"
@@ -940,12 +936,7 @@ const App = () => {
                   letterSpacing: "0.3px",
                 }}
               >
-                My Wishlist{" "}
-                <span
-                 
-                >
-                  ❤️  
-                </span>
+                My Wishlist <span>❤️</span>
               </h2>
 
               {wishlistItems.length > 0 && (
@@ -992,7 +983,6 @@ const App = () => {
             }}
           >
             {wishlistItems.length === 0 ? (
-              /* Empty Wishlist */
               <div
                 style={{
                   display: "flex",
@@ -1069,7 +1059,6 @@ const App = () => {
                       boxShadow: "0 2px 10px rgba(0,0,0,0.05)",
                     }}
                   >
-                    {/* Product Image */}
                     <div
                       style={{
                         width: 75,
@@ -1116,13 +1105,12 @@ const App = () => {
                           margin: "0 0 10px",
                           fontSize: 16,
                           fontWeight: 700,
-                          color: "#b8863f",
+                          color: "#0e0801",
                           letterSpacing: "0.2px",
                         }}
                       >
                         ₹{item.price?.toLocaleString("en-IN")}
                       </p>
-
                       <button
                         className="aw-remove-link"
                         onClick={() => {
@@ -1146,10 +1134,28 @@ const App = () => {
                         Remove from Wishlist
                       </button>
 
-                      <Link
-                        to="/Payment"
-                        state={{ item }}
+                      <button
                         className="aw-buy-btn"
+                        onClick={() => {
+                          setCartItems((prev) => {
+                            const existingItem = prev.find(
+                              (cartItem) => cartItem.id === item.id,
+                            );
+
+                            if (existingItem) {
+                              return prev.map((cartItem) =>
+                                cartItem.id === item.id
+                                  ? { ...cartItem, qty: cartItem.qty + 1 }
+                                  : cartItem,
+                              );
+                            }
+
+                            return [...prev, { ...item, qty: 1 }];
+                          });
+
+                          setOpenWishlistPanel(false);
+                          setOpenCartPanel(true);
+                        }}
                         style={{
                           display: "flex",
                           alignItems: "center",
@@ -1158,10 +1164,11 @@ const App = () => {
                           width: "100%",
                           padding: "8px 12px",
                           background:
-                            "linear-gradient(135deg, #6b5b95, #d4568f 55%, #b8863f)",
+                            "linear-gradient(135deg, #845ee2, #2337ba 55%, #0f4196)",
                           color: "#ffffff",
+                          border: "none",
                           borderRadius: 7,
-                          textDecoration: "none",
+                          cursor: "pointer",
                           fontSize: 11.5,
                           fontWeight: 600,
                           letterSpacing: "0.6px",
@@ -1171,7 +1178,7 @@ const App = () => {
                       >
                         Buy Now
                         <span style={{ fontSize: 13, lineHeight: 1 }}>→</span>
-                      </Link>
+                      </button>
                     </div>
                   </div>
                 ))}
