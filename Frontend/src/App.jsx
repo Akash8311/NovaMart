@@ -9,6 +9,9 @@ import HelpCenter from "./pages/product_related_issue_help/help_center";
 
 import Home from "./pages/home/Home";
 
+
+import odertracking from "./pages/product_related_issue_help/odertracking";
+
 // productlisting pages here
 import Productlisting from "./pages/Productlisting/Productlisting";
 import Men_productListing from "./pages/Productlisting/Men_productListing";
@@ -234,6 +237,7 @@ const App = () => {
 
         <Routes>
           <Route path="/HelpCenter" element={<HelpCenter />} />
+          <Route path="/odertracking" element={< odertracking />} />
           <Route path="/" element={<Home />} />
           <Route path="/Productlisting" element={<Productlisting />} />
           <Route path="/Men_productListing" element={<Men_productListing />} />

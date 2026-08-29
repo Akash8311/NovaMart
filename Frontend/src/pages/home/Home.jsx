@@ -496,7 +496,7 @@ const Home = () => {
                     maxWidth: "260px",
                   }}
                 >
-                  Free delivery on your first order and on all orders over ₹199
+                  Free delivery on your first x`and on all orders over ₹199
                 </span>
 
                 <div
