@@ -792,10 +792,13 @@ const Home = () => {
             </div>
           </Reveal>
           <div className="brand-wrapper">
-            <div className="brand-slider">
+                
+            <div className="brand-slider" style={{ display: "flex",
+  gap: "80vh ",
+}}>
               {[
                 [
-                  "ALLEN SOLLY",
+                  "ALLEN SOLLY"   ,   
                   "LOUIS PHILIPPE",
                   "PETER ENGLAND",
                   "VAN HEUSEN",
@@ -803,18 +806,7 @@ const Home = () => {
                   "WRANGLER",
                   "LEE",
                   "SPYKAR",
-                  "FLYING MACHINE",
-                  "WROGN",
-                  "BEWAKOOF",
-                  "MAX",
-                  "BIBA",
-                  "FABINDIA",
-                  "MANYAVAR",
-                  "AURELIA",
-                  "GLOBAL DESI",
-                  "US POLO ASSN",
-                  "ROADSTER",
-                  "HRX",
+                 
                 ],
               ].map((brand, i) => (
                 <span className="brand-name" key={`${brand}-${i}`}>
