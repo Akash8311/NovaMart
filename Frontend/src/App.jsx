@@ -231,7 +231,7 @@ const App = () => {
   return (
     <MyContext.Provider value={values}>
       <style>{styleTag}</style>
-1ddddddddddd
+
       <BrowserRouter>
         <Header />
 
