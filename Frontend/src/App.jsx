@@ -454,7 +454,6 @@ const App = () => {
             }}
           >
             {cartItems.length === 0 ? (
-              /* Empty State */
               <div
                 style={{
                   display: "flex",

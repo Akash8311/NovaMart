@@ -22,6 +22,7 @@ import "swiper/css/pagination";
 import BlogItems from "../../components/BlogItems/BlogItems";
 import BlogItems2 from "../../components/BlogItems/BlogItems2";
 import BlogItems4 from "../../components/BlogItems/BlogItems4";
+import { LiaCompactDiscSolid } from "react-icons/lia";
 
 const TOKENS = {
   ink: "#14110F",
@@ -780,6 +781,9 @@ const Home = () => {
               >
                 Trusted Brands
               </h2>
+              <div>
+                
+              </div>
               <p
                 style={{
                   color: TOKENS.muted,
@@ -806,7 +810,7 @@ const Home = () => {
                   "WRANGLER",
                   "LEE",
                   "SPYKAR",
-                 
+                  "FLYING MACHINE",
                 ],
               ].map((brand, i) => (
                 <span className="brand-name" key={`${brand}-${i}`}>
