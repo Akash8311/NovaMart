@@ -781,8 +781,7 @@ const Home = () => {
               >
                 Trusted Brands
               </h2>
-      yoooooooooooo
-              <p
+ek dino hoche na code kora chiii bhai              <p
                 style={{
                   color: TOKENS.muted,
                   fontSize: "14px",
