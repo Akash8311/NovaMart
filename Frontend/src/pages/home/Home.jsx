@@ -782,7 +782,6 @@ const Home = () => {
                 Trusted Brands
               </h2>
   <p
-  fahhhh wait and watch
                 style={{
                   color: TOKENS.muted,
                   fontSize: "14px",
