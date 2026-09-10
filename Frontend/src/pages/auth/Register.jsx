@@ -515,21 +515,36 @@ setIsLogin(true);
             <button
               type="button"
               onClick={handleGoogle}
-              style={{
-                
-                width:"100%",padding:"13px 16px",marginBottom:22,
-                background:gLoading?"rgba(255,255,255,.7)":"rgba(255,255,255,.85)",
-                border:"1px solid rgba(180,165,148,.4)",
-                display:"flex",alignItems:"center",justifyContent:"center",gap:10,
-                cursor:"pointer",fontFamily:"'DM Sans',sans-serif",
-                fontSize:15,fontWeight:500,color:"#1A1310",
-                letterSpacing:1.5,textTransform:"uppercase",
-                position:"relative",overflow:"hidden",borderRadius:0,
-                transition:"all .25s",
-                color:"blue",borderRadius:"25px"
-              
+            style={{
+  width: "100%",
+  padding: "13px 16px",
+  marginBottom: 22,
+  background: gLoading
+    ? "rgba(255,255,255,.7)"
+    : "rgba(255,255,255,.85)",
+  border: "1px solid rgba(180,165,148,.4)",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: 10,
+  cursor: "pointer",
+  fontFamily: "'DM Sans',sans-serif",
+  fontSize: 15,
+  fontWeight: 500,
 
-              }}
+  /* Keep only ONE color */
+  color: "blue",
+
+  letterSpacing: 1.5,
+  textTransform: "uppercase",
+  position: "relative",
+  overflow: "hidden",
+
+  /* Keep only ONE borderRadius */
+  borderRadius: "25px",
+
+  transition: "all .25s",
+}}
               onMouseEnter={e=>{ e.currentTarget.style.background="rgba(255,255,255,.98)"; e.currentTarget.style.borderColor="rgba(200,133,106,.45)"; e.currentTarget.style.transform="translateY(-2px)"; e.currentTarget.style.boxShadow="0 8px 24px rgba(200,133,106,.15)"; }}
               onMouseLeave={e=>{ e.currentTarget.style.background="rgba(255,255,255,.85)"; e.currentTarget.style.borderColor="rgba(180,165,148,.4)"; e.currentTarget.style.transform=""; e.currentTarget.style.boxShadow=""; }}
             >
