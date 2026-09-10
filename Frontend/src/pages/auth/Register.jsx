@@ -1,10 +1,5 @@
-import React, {
-  useState,
-  useEffect,
-  useRef,
-  useCallback,
-  useContext,
-} from "react";import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import React, {useState,useEffect,useRef,useCallback,useContext,} from "react";
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../../firebase";
 import { MyContext } from "../../App";
 
@@ -326,7 +321,6 @@ setIsLogin(true);
 
     alert("Account Created Successfully!");
 
-    // ✅ Redirect Home
     window.location.href = "/";
   }, 1500);
 };
