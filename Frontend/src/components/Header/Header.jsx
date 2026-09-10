@@ -75,7 +75,7 @@ const Header = () => {
               </li>
               <li className="list-none">
                 <Link
-                  to="/odertracking"
+                  to="/OrderTracking"
                   className="text-[14px] Link no-underline transition"
                 >
                   Order Tracking
