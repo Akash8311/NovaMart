@@ -10,8 +10,7 @@ import HelpCenter from "./pages/product_related_issue_help/help_center";
 import Home from "./pages/home/Home";
 
 
-import odertracking from "./pages/product_related_issue_help/odertracking";
-
+import OrderTracking from "./pages/product_related_issue_help/odertracking";
 // productlisting pages here
 import Productlisting from "./pages/Productlisting/Productlisting";
 import Men_productListing from "./pages/Productlisting/Men_productListing";
