@@ -779,7 +779,7 @@ const Home = () => {
                   color: TOKENS.ink,
                 }}
               >
-                ioio
+                
                 Trusted Brands
               </h2>
   <p
