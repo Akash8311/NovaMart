@@ -552,7 +552,7 @@ export default function Payment() {
                   </button>
                 ))}
               </div>
-
+sss
               {payMethod === "card" && (
                 <>
                   <div className="pay-card-preview">
