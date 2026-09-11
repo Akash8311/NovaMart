@@ -709,7 +709,7 @@ export default function Payment() {
                         />
                       </div>
                       <div className="pay-qr-caption">
-                        Or scan with any UPI app (PhonePe, GPay, Paytm) to pay<br />
+                        Or scan with any UPI app (PhonePe,GPay,Paytm) to pay<br />
                         <strong>{fmt(grandTotal)}</strong>
                       </div>
                     </div>
