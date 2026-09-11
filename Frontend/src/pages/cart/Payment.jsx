@@ -424,25 +424,36 @@ export default function Payment() {
   // animation), this does NOT reset after the timeout.
   const [addressConfirmed, setAddressConfirmed] = useState(false);
   const [form, setForm] = useState({
-    firstName: "", lastName: "", email: "", phone: "",
-    address: "", city: "", state: "", zip: "", company: ""
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    houseNo: "",
+    street: "",
+    area: "",
+    landmark: "",
+    city: "",
+    state: "",
+    zip: "",
+    company: ""
   });
 
   const setF = k => val => setForm(p => ({ ...p, [k]: val }));
   const foc = k => setFocus(p => ({ ...p, [k]: true }));
   const blur = k => setFocus(p => ({ ...p, [k]: false }));
 
-  // Every required billing field must be filled before the address can be
-  // saved and the payment section unlocked. Company is optional; Country is fixed.
+
   const isAddressComplete =
-    form.firstName.trim() !== "" &&
-    form.lastName.trim() !== "" &&
-    form.email.trim() !== "" &&
-    form.phone.trim() !== "" &&
-    form.address.trim() !== "" &&
-    form.city.trim() !== "" &&
+    /^[A-Za-zÀ-ÿ\s]{2,}$/.test(form.firstName.trim()) &&
+    /^[A-Za-zÀ-ÿ\s]{2,}$/.test(form.lastName.trim()) &&
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email.trim()) &&
+    /^[6-9]\d{9}$/.test(form.phone.replace(/\D/g, "")) &&
+    form.houseNo.trim().length >= 1 &&
+    form.street.trim().length >= 3 &&
+    form.area.trim().length >= 2 &&
+    form.city.trim().length >= 2 &&
     form.state.trim() !== "" &&
-    form.zip.trim().length === 6;
+    /^[1-9][0-9]{5}$/.test(form.zip.trim());
 
   const formatCard = v => v.replace(/\D/g, "").slice(0, 16).replace(/(.{4})/g, "$1 ").trim();
   const formatExp = v => {
@@ -542,53 +553,164 @@ export default function Payment() {
                   <Field label="Phone Number" focused={focus.phone} icon={
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.09 4.17 2 2 0 0 1 5.09 2h3a2 2 0 0 1 2 1.72c.13 1 .37 1.97.72 2.9a2 2 0 0 1-.45 2.11L9 10.09a16 16 0 0 0 6.92 6.92l1.36-1.36a2 2 0 0 1 2.11-.45c.93.35 1.9.59 2.9.72A2 2 0 0 1 22 17.92z" /></svg>
                   }>
-                    <input className="pay-input" type="tel" placeholder="+91 12345 67890" value={form.phone}
-                      onChange={e => handleFieldChange("phone")(e.target.value)}
-                      onFocus={() => foc("phone")} onBlur={() => blur("phone")} />
+                    <input
+                      className="pay-input"
+                      type="tel"
+                      inputMode="numeric"
+                      placeholder="9876543210"
+                      maxLength={10}
+                      value={form.phone}
+                      onChange={e =>
+                        handleFieldChange("phone")(
+                          e.target.value.replace(/\D/g, "").slice(0, 10)
+                        )
+                      }
+                      onFocus={() => foc("phone")}
+                      onBlur={() => blur("phone")}
+                    />
                   </Field>
                 </div>
 
-                <Field label="Street Address" focused={focus.address} icon={
-                  <svg viewBox="0 0 24 22" fill="none" stroke="currentColor" strokeWidth="1.8" ><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" /></svg>
-                }>
-                  <textarea className="pay-textarea" rows={2} placeholder="House no., Street, Area..." value={form.address}
-                    onChange={e => handleFieldChange("address")(e.target.value)}
-                    onFocus={() => foc("address")} onBlur={() => blur("address")} />
+                <div className="pay-grid-2">
+                  <Field label="House / Flat No." focused={focus.houseNo}>
+                    <input
+                      className="pay-input"
+                      placeholder="Flat 204 / House 12"
+                      value={form.houseNo}
+                      maxLength={50}
+                      onChange={e =>
+                        handleFieldChange("houseNo")(e.target.value)
+                      }
+                      onFocus={() => foc("houseNo")}
+                      onBlur={() => blur("houseNo")}
+                    />
+                  </Field>
+
+                  <Field label="Street / Road" focused={focus.street}>
+                    <input
+                      className="pay-input"
+                      placeholder="MG Road"
+                      value={form.street}
+                      maxLength={100}
+                      onChange={e =>
+                        handleFieldChange("street")(e.target.value)
+                      }
+                      onFocus={() => foc("street")}
+                      onBlur={() => blur("street")}
+                    />
+                  </Field>
+                </div>
+
+                <Field label="Area / Locality" focused={focus.area}>
+                  <input
+                    className="pay-input"
+                    placeholder="Patia / Saheed Nagar"
+                    value={form.area}
+                    maxLength={100}
+                    onChange={e =>
+                      handleFieldChange("area")(e.target.value)
+                    }
+                    onFocus={() => foc("area")}
+                    onBlur={() => blur("area")}
+                  />
+                </Field>
+
+                <Field label="Landmark (Optional)" focused={focus.landmark}>
+                  <input
+                    className="pay-input"
+                    placeholder="Near City Mall"
+                    value={form.landmark}
+                    maxLength={100}
+                    onChange={e =>
+                      handleFieldChange("landmark")(e.target.value)
+                    }
+                    onFocus={() => foc("landmark")}
+                    onBlur={() => blur("landmark")}
+                  />
                 </Field>
 
                 <div className="pay-grid-2">
                   <Field label="City" focused={focus.city}>
-                    <input className="pay-input" placeholder="Mumbai" value={form.city}
-                      onChange={e => handleFieldChange("city")(e.target.value)}
-                      onFocus={() => foc("city")} onBlur={() => blur("city")} />
+                    <input
+                      className="pay-input"
+                      placeholder="Bhubaneswar"
+                      value={form.city}
+                      maxLength={50}
+                      onChange={e =>
+                        handleFieldChange("city")(
+                          e.target.value.replace(/[^A-Za-zÀ-ÿ\s.-]/g, "")
+                        )
+                      }
+                      onFocus={() => foc("city")}
+                      onBlur={() => blur("city")}
+                    />
                   </Field>
+
                   <Field label="State" focused={focus.state}>
-                    <select className="pay-select" value={form.state}
-                      onChange={e => handleFieldChange("state")(e.target.value)}
-                      onFocus={() => foc("state")} onBlur={() => blur("state")}>
+                    <select
+                      className="pay-select"
+                      value={form.state}
+                      onChange={e =>
+                        handleFieldChange("state")(e.target.value)
+                      }
+                      onFocus={() => foc("state")}
+                      onBlur={() => blur("state")}
+                    >
                       <option value="">Select state</option>
-                      {STATES.map(s => <option key={s} value={s}>{s}</option>)}
+
+                      {STATES.map(s => (
+                        <option key={s} value={s}>
+                          {s}
+                        </option>
+                      ))}
                     </select>
                   </Field>
                 </div>
 
                 <div className="pay-grid-2">
-                  <Field label="Zip Code" focused={focus.zip}>
-                    <input className="pay-input" type="text" inputMode="numeric" placeholder="******" maxLength={6}
+                  <Field label="PIN Code" focused={focus.zip}>
+                    <input
+                      className="pay-input"
+                      type="text"
+                      inputMode="numeric"
+                      placeholder="753001"
+                      maxLength={6}
                       value={form.zip}
-                      onChange={e => handleFieldChange("zip")(e.target.value.replace(/\D/g, ""))}
-                      onFocus={() => foc("zip")} onBlur={() => blur("zip")} />
+                      onChange={e =>
+                        handleFieldChange("zip")(
+                          e.target.value.replace(/\D/g, "").slice(0, 6)
+                        )
+                      }
+                      onFocus={() => foc("zip")}
+                      onBlur={() => blur("zip")}
+                    />
                   </Field>
-                  <Field label="Country" focused={focus.country}>
-                    <input className="pay-input" defaultValue="India" readOnly
-                      style={{ color: "var(--warm-gray)", cursor: "default" }} />
+
+                  <Field label="Country" focused={false}>
+                    <input
+                      className="pay-input"
+                      value="India"
+                      readOnly
+                      style={{
+                        color: "var(--warm-gray)",
+                        cursor: "default"
+                      }}
+                    />
                   </Field>
                 </div>
 
                 <Field label="Company (Optional)" focused={focus.company}>
-                  <input className="pay-input" placeholder="Your company name" value={form.company}
-                    onChange={e => setF("company")(e.target.value)}
-                    onFocus={() => foc("company")} onBlur={() => blur("company")} />
+                  <input
+                    className="pay-input"
+                    placeholder="Your company name"
+                    value={form.company}
+                    maxLength={100}
+                    onChange={e =>
+                      setF("company")(e.target.value)
+                    }
+                    onFocus={() => foc("company")}
+                    onBlur={() => blur("company")}
+                  />
                 </Field>
                 <button
                   className={`pay-save-addr${addrSaved ? " saved" : ""}`}

@@ -817,6 +817,7 @@ const App = () => {
                     fontSize: "12px",
                     letterSpacing: "2px",
                   }}
+                  onClick={() => setOpenCartPanel(false)}
                 >
                   Proceed to Pay→
                 </Link>
