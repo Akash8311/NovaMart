@@ -17,6 +17,10 @@ import Men_productListing from "./pages/Productlisting/Men_productListing";
 
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 
+
+//my account profile page
+import Profile from "./components/Header/Account/profile";
+
 // Men Products
 import MenProductDetails1 from "./pages/ProductDetails/Men/MenProductDetails1";
 import MenProductDetails2 from "./pages/ProductDetails/Men/MenProductDetails2";
@@ -235,6 +239,7 @@ const App = () => {
         <Header />
 
         <Routes>
+          <Route path="/profile" element={<Profile />} />
           <Route path="/HelpCenter" element={<HelpCenter />} />
           <Route path="/OrderTracking" element={<OrderTracking />} />
           <Route path="/" element={<Home />} />

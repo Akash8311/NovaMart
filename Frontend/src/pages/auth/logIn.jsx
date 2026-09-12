@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { app } from "../../firebase";
+import { useContext } from "react";
+import { MyContext } from "../../App";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -11,6 +13,7 @@ const Login = () => {
   const [mounted, setMounted] = useState(false);
   const [focusedField, setFocusedField] = useState(null);
   const [gLoading, setGLoading] = useState(false);
+  const { setIsLogin } = useContext(MyContext);
 
   const navigate = useNavigate();
 
@@ -22,7 +25,10 @@ const Login = () => {
       const result = await signInWithPopup(auth, provider);
       const user = result.user;
       localStorage.setItem("user", JSON.stringify(user));
-      navigate("/");          // ← redirect to home
+      localStorage.setItem("isLogin", "true");
+      setIsLogin(true);
+
+      navigate("/");
     } catch (error) {
       console.error(error);
       alert("Google login failed");
@@ -44,9 +50,12 @@ const Login = () => {
     setTimeout(() => {
       // Replace this block with your real email/password auth
       const fakeUser = { email, displayName: email.split("@")[0], photoURL: null };
-      localStorage.setItem("user", JSON.stringify(fakeUser));
+      localStorage.setItem("user", JSON.stringify(fakeUser)); 
+      localStorage.setItem("isLogin", "true");
+      setIsLogin(true);
+
       setLoading(false);
-      navigate("/");          // ← redirect to home
+      navigate("/");
     }, 2000);
   };
 
