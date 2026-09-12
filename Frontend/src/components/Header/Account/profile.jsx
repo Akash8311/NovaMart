@@ -1,5 +1,6 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { MyContext } from "../../../App";
 import {
   FiEdit2,
   FiCamera,
@@ -19,11 +20,6 @@ import {
   FiX,
 } from "react-icons/fi";
 
-// ─────────────────────────────────────────────────────────────────────────
-// Scoped styles (kept in one template string, same pattern used elsewhere
-// in this project) — colors match the site's existing espresso/caramel
-// palette so this page feels native rather than bolted-on.
-// ─────────────────────────────────────────────────────────────────────────
 const PROFILE_STYLES = `
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
@@ -246,8 +242,6 @@ const PROFILE_STYLES = `
   }
 `;
 
-// Counts a number up from 0 to `target` over `duration` ms — used for the
-// stat cards so they feel alive on first load instead of just appearing.
 function useCountUp(target, duration = 900) {
   const [value, setValue] = useState(0);
   useEffect(() => {
@@ -299,6 +293,8 @@ const Toggle = ({ checked, onChange }) => (
 const Profile = () => {
   const navigate = useNavigate();
   const fileInputRef = useRef(null);
+
+  const { wishlist } = useContext(MyContext);
 
   const [avatar, setAvatar] = useState(null);
   const [activeTab, setActiveTab] = useState("overview");
