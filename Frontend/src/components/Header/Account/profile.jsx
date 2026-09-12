@@ -2,22 +2,22 @@ import React, { useState, useEffect, useRef, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { MyContext } from "../../../App";
 import {
-  FiEdit2,
-  FiCamera,
-  FiMail,
-  FiPhone,
-  FiMapPin,
-  FiCalendar,
-  FiPackage,
-  FiHeart,
-  FiStar,
-  FiAward,
-  FiSettings,
-  FiLogOut,
-  FiCheck,
-  FiBell,
-  FiShield,
-  FiX,
+    FiEdit2,
+    FiCamera,
+    FiMail,
+    FiPhone,
+    FiMapPin,
+    FiCalendar,
+    FiPackage,
+    FiHeart,
+    FiStar,
+    FiAward,
+    FiSettings,
+    FiLogOut,
+    FiCheck,
+    FiBell,
+    FiShield,
+    FiX,
 } from "react-icons/fi";
 
 const PROFILE_STYLES = `
@@ -243,318 +243,321 @@ const PROFILE_STYLES = `
 `;
 
 function useCountUp(target, duration = 900) {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    let raf;
-    const start = performance.now();
-    const tick = (now) => {
-      const progress = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-      setValue(Math.round(eased * target));
-      if (progress < 1) raf = requestAnimationFrame(tick);
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [target, duration]);
-  return value;
+    const [value, setValue] = useState(0);
+    useEffect(() => {
+        let raf;
+        const start = performance.now();
+        const tick = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+            setValue(Math.round(eased * target));
+            if (progress < 1) raf = requestAnimationFrame(tick);
+        };
+        raf = requestAnimationFrame(tick);
+        return () => cancelAnimationFrame(raf);
+    }, [target, duration]);
+    return value;
 }
 
 const TABS = [
-  { id: "overview", label: "Overview", icon: <FiShield /> },
-  { id: "orders", label: "My Orders", icon: <FiPackage /> },
-  { id: "wishlist", label: "Wishlist", icon: <FiHeart /> },
-  { id: "settings", label: "Settings", icon: <FiSettings /> },
+    { id: "overview", label: "Overview", icon: <FiShield /> },
+    { id: "orders", label: "My Orders", icon: <FiPackage /> },
+    { id: "wishlist", label: "Wishlist", icon: <FiHeart /> },
+    { id: "settings", label: "Settings", icon: <FiSettings /> },
 ];
 
 const StatCard = ({ icon, value, label }) => {
-  const count = useCountUp(value);
-  return (
-    <div className="pf-stat">
-      <div className="pf-stat-icon">{icon}</div>
-      <div>
-        <div className="pf-stat-num">{count}</div>
-        <div className="pf-stat-label">{label}</div>
-      </div>
-    </div>
-  );
+    const count = useCountUp(value);
+    return (
+        <div className="pf-stat">
+            <div className="pf-stat-icon">{icon}</div>
+            <div>
+                <div className="pf-stat-num">{count}</div>
+                <div className="pf-stat-label">{label}</div>
+            </div>
+        </div>
+    );
 };
 
 const Toggle = ({ checked, onChange }) => (
-  <button
-    type="button"
-    className={`pf-switch${checked ? " on" : ""}`}
-    onClick={() => onChange(!checked)}
-    aria-pressed={checked}
-  >
-    <span className="pf-switch-knob" />
-  </button>
+    <button
+        type="button"
+        className={`pf-switch${checked ? " on" : ""}`}
+        onClick={() => onChange(!checked)}
+        aria-pressed={checked}
+    >
+        <span className="pf-switch-knob" />
+    </button>
 );
 
 const Profile = () => {
-  const navigate = useNavigate();
-  const fileInputRef = useRef(null);
+    const navigate = useNavigate();
+    const fileInputRef = useRef(null);
 
-  const { wishlist } = useContext(MyContext);
+    const { wishlistItems } = useContext(MyContext);
 
-  const [avatar, setAvatar] = useState(null);
-  const [activeTab, setActiveTab] = useState("overview");
-  const [toast, setToast] = useState("");
+    const [avatar, setAvatar] = useState(null);
+    const [activeTab, setActiveTab] = useState("overview");
+    const [toast, setToast] = useState("");
 
-const savedUser = JSON.parse(localStorage.getItem("user") || "{}");
+    const savedUser = JSON.parse(localStorage.getItem("user") || "{}");
 
-const [user, setUser] = useState({
-  name: savedUser.displayName || savedUser.name || "User",
-  email: savedUser.email || "",
-  phone: savedUser.phone || "+91 1111 111 111",
-  address: savedUser.address || "Add your delivery address",
-  joined: savedUser.joined || "September 2026",
-});
+    const [user, setUser] = useState({
+        name: savedUser.displayName || savedUser.name || "User",
+        email: savedUser.email || "",
+        phone: savedUser.phone || "+91 1111 111 111",
+        address: savedUser.address || "Add your delivery address",
+        joined: savedUser.joined || "September 2026",
+    });
 
-  const [editingField, setEditingField] = useState(null);
-  const [draft, setDraft] = useState("");
+    const [editingField, setEditingField] = useState(null);
+    const [draft, setDraft] = useState("");
 
-  const [settings, setSettings] = useState({
-    emailNotifs: true,
-    smsAlerts: false,
-    twoFactor: false,
-  });
+    const [settings, setSettings] = useState({
+        emailNotifs: true,
+        smsAlerts: false,
+        twoFactor: false,
+    });
 
-  const showToast = (msg) => {
-    setToast(msg);
-    setTimeout(() => setToast(""), 2200);
-  };
+    const showToast = (msg) => {
+        setToast(msg);
+        setTimeout(() => setToast(""), 2200);
+    };
 
-  const handleAvatarClick = () => fileInputRef.current?.click();
+    const handleAvatarClick = () => fileInputRef.current?.click();
 
-  const handleAvatarChange = (e) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = () => setAvatar(reader.result);
-    reader.readAsDataURL(file);
-  };
+    const handleAvatarChange = (e) => {
+        const file = e.target.files?.[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => setAvatar(reader.result);
+        reader.readAsDataURL(file);
+    };
 
-  const startEdit = (field) => {
-    setEditingField(field);
-    setDraft(user[field]);
-  };
+    const startEdit = (field) => {
+        setEditingField(field);
+        setDraft(user[field]);
+    };
 
-  const saveEdit = (field) => {
-    setUser((prev) => ({ ...prev, [field]: draft }));
-    setEditingField(null);
-    showToast("Profile updated");
-  };
+    const saveEdit = (field) => {
+        setUser((prev) => ({ ...prev, [field]: draft }));
+        setEditingField(null);
+        showToast("Profile updated");
+    };
 
-  const handleLogout = () => {
-    localStorage.removeItem("isLogin");
-    localStorage.removeItem("user");
-    navigate("/");
-  };
+    const handleLogout = () => {
+        localStorage.removeItem("isLogin");
+        localStorage.removeItem("user");
+        navigate("/");
+    };
 
-  const activeIndex = TABS.findIndex((t) => t.id === activeTab);
+    const activeIndex = TABS.findIndex((t) => t.id === activeTab);
 
-  const infoRow = (field, icon, label) => (
-    <div className="pf-info-row">
-      <div className="pf-info-icon">{icon}</div>
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div className="pf-info-label">{label}</div>
-        {editingField === field ? (
-          <div style={{ display: "flex", gap: 8, marginTop: 4, flexWrap: "wrap" }}>
-            <input
-              className="pf-input"
-              value={draft}
-              autoFocus
-              onChange={(e) => setDraft(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && saveEdit(field)}
-            />
-            <button className="pf-btn pf-btn-dark" style={{ padding: "8px 14px" }} onClick={() => saveEdit(field)}>
-              <FiCheck /> Save
-            </button>
-            <button
-              className="pf-btn pf-btn-outline"
-              style={{ padding: "8px 14px" }}
-              onClick={() => setEditingField(null)}
-            >
-              <FiX /> Cancel
-            </button>
-          </div>
-        ) : (
-          <div className="pf-info-val">{user[field]}</div>
-        )}
-      </div>
-      {editingField !== field && (
-        <button className="pf-info-edit" onClick={() => startEdit(field)} aria-label={`Edit ${label}`}>
-          <FiEdit2 size={15} />
-        </button>
-      )}
-    </div>
-  );
-
-  return (
-    <div className="pf-root">
-      <style>{PROFILE_STYLES}</style>
-
-      <div className="pf-shell">
-        {/* ── banner + avatar/header ── */}
-        <div className="pf-banner" />
-        <div className="pf-headrow">
-          <div className="pf-avatar-wrap">
-            <img
-              className="pf-avatar"
-              src={
-                avatar ||
-                "https://api.dicebear.com/7.x/initials/svg?seed=" +
-                  encodeURIComponent(user.name)
-              }
-              alt={user.name}
-            />
-            <span className="pf-avatar-status" title="Online" />
-            <button className="pf-avatar-edit" onClick={handleAvatarClick} aria-label="Change photo">
-              <FiCamera size={14} />
-            </button>
-            <input
-              ref={fileInputRef}
-              type="file"
-              accept="image/*"
-              hidden
-              onChange={handleAvatarChange}
-            />
-          </div>
-
-          <div className="pf-headinfo">
-            <div className="pf-name">
-              {user.name}
-              <span className="pf-badge">Gold Member</span>
+    const infoRow = (field, icon, label) => (
+        <div className="pf-info-row">
+            <div className="pf-info-icon">{icon}</div>
+            <div style={{ flex: 1, minWidth: 0 }}>
+                <div className="pf-info-label">{label}</div>
+                {editingField === field ? (
+                    <div style={{ display: "flex", gap: 8, marginTop: 4, flexWrap: "wrap" }}>
+                        <input
+                            className="pf-input"
+                            value={draft}
+                            autoFocus
+                            onChange={(e) => setDraft(e.target.value)}
+                            onKeyDown={(e) => e.key === "Enter" && saveEdit(field)}
+                        />
+                        <button className="pf-btn pf-btn-dark" style={{ padding: "8px 14px" }} onClick={() => saveEdit(field)}>
+                            <FiCheck /> Save
+                        </button>
+                        <button
+                            className="pf-btn pf-btn-outline"
+                            style={{ padding: "8px 14px" }}
+                            onClick={() => setEditingField(null)}
+                        >
+                            <FiX /> Cancel
+                        </button>
+                    </div>
+                ) : (
+                    <div className="pf-info-val">{user[field]}</div>
+                )}
             </div>
-            <div className="pf-sub">Member since {user.joined} · {user.email}</div>
-          </div>
-
-          <div className="pf-headactions">
-            <button className="pf-btn pf-btn-outline" onClick={() => setActiveTab("settings")}>
-              <FiSettings size={15} /> Settings
-            </button>
-            <button className="pf-btn pf-btn-danger" onClick={handleLogout}>
-              <FiLogOut size={15} /> Logout
-            </button>
-          </div>
-        </div>
-
-        {/* ── stats ── */}
-        <div className="pf-stats">
-          <StatCard icon={<FiPackage />} value={18} label="Orders placed" />
-          <StatCard icon={<FiHeart />} value={7} label="Wishlist items" />
-          <StatCard icon={<FiStar />} value={5} label="Reviews written" />
-          <StatCard icon={<FiAward />} value={1240} label="Loyalty points" />
-        </div>
-
-        {/* ── tabs ── */}
-        <div className="pf-tabs" style={{ position: "relative" }}>
-          {TABS.map((tab) => (
-            <button
-              key={tab.id}
-              className={`pf-tab${activeTab === tab.id ? " active" : ""}`}
-              onClick={() => setActiveTab(tab.id)}
-            >
-              {tab.icon} {tab.label}
-            </button>
-          ))}
-          <span
-            className="pf-tab-underline"
-            style={{
-              width: `${100 / TABS.length}%`,
-              transform: `translateX(${activeIndex * 100}%)`,
-            }}
-          />
-        </div>
-
-        {/* ── tab panels ── */}
-        <div className="pf-panel" key={activeTab}>
-          {activeTab === "overview" && (
-            <div className="pf-card">
-              <div className="pf-card-title">Personal Information</div>
-              {infoRow("email", <FiMail size={16} />, "Email address")}
-              {infoRow("phone", <FiPhone size={16} />, "Phone number")}
-              {infoRow("address", <FiMapPin size={16} />, "Delivery address")}
-              <div className="pf-info-row">
-                <div className="pf-info-icon"><FiCalendar size={16} /></div>
-                <div>
-                  <div className="pf-info-label">Member since</div>
-                  <div className="pf-info-val">{user.joined}</div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeTab === "orders" && (
-            <div className="pf-card">
-              <div className="pf-card-title">Recent Orders</div>
-              <div className="pf-empty">
-                <div className="pf-empty-icon"><FiPackage size={22} /></div>
-                <p>No recent orders to show here yet — once you place an order, it'll show up in this tab.</p>
-              </div>
-            </div>
-          )}
-
-          {activeTab === "wishlist" && (
-            <div className="pf-card">
-              <div className="pf-card-title">Saved Items</div>
-              <div className="pf-empty">
-                <div className="pf-empty-icon"><FiHeart size={22} /></div>
-                <p>Items you save will appear here so you can find them again easily.</p>
-              </div>
-            </div>
-          )}
-
-          {activeTab === "settings" && (
-            <div className="pf-card">
-              <div className="pf-card-title">Notification Preferences</div>
-              <div className="pf-toggle-row">
-                <div className="pf-toggle-text">
-                  <strong>Email notifications</strong>
-                  <span>Order updates and offers via email</span>
-                </div>
-                <Toggle
-                  checked={settings.emailNotifs}
-                  onChange={(v) => setSettings((p) => ({ ...p, emailNotifs: v }))}
-                />
-              </div>
-              <div className="pf-toggle-row">
-                <div className="pf-toggle-text">
-                  <strong>SMS alerts</strong>
-                  <span>Delivery updates via text message</span>
-                </div>
-                <Toggle
-                  checked={settings.smsAlerts}
-                  onChange={(v) => setSettings((p) => ({ ...p, smsAlerts: v }))}
-                />
-              </div>
-              <div className="pf-toggle-row">
-                <div className="pf-toggle-text">
-                  <strong>Two-factor authentication</strong>
-                  <span>Extra security when signing in</span>
-                </div>
-                <Toggle
-                  checked={settings.twoFactor}
-                  onChange={(v) => setSettings((p) => ({ ...p, twoFactor: v }))}
-                />
-              </div>
-              <div className="pf-save-bar">
-                <button className="pf-btn pf-btn-dark" onClick={() => showToast("Settings saved")}>
-                  <FiCheck size={15} /> Save changes
+            {editingField !== field && (
+                <button className="pf-info-edit" onClick={() => startEdit(field)} aria-label={`Edit ${label}`}>
+                    <FiEdit2 size={15} />
                 </button>
-              </div>
-            </div>
-          )}
+            )}
         </div>
-      </div>
+    );
 
-      {toast && (
-        <div className="pf-toast">
-          <FiCheck /> {toast}
+    return (
+        <div className="pf-root">
+            <style>{PROFILE_STYLES}</style>
+
+            <div className="pf-shell">
+                {/* ── banner + avatar/header ── */}
+                <div className="pf-banner" />
+                <div className="pf-headrow">
+                    <div className="pf-avatar-wrap">
+                        <img
+                            className="pf-avatar"
+                            src={
+                                avatar ||
+                                "https://api.dicebear.com/7.x/initials/svg?seed=" +
+                                encodeURIComponent(user.name)
+                            }
+                            alt={user.name}
+                        />
+                        <span className="pf-avatar-status" title="Online" />
+                        <button className="pf-avatar-edit" onClick={handleAvatarClick} aria-label="Change photo">
+                            <FiCamera size={14} />
+                        </button>
+                        <input
+                            ref={fileInputRef}
+                            type="file"
+                            accept="image/*"
+                            hidden
+                            onChange={handleAvatarChange}
+                        />
+                    </div>
+
+                    <div className="pf-headinfo">
+                        <div className="pf-name">
+                            {user.name}
+                            <span className="pf-badge">Gold Member</span>
+                        </div>
+                        <div className="pf-sub">Member since {user.joined} · {user.email}</div>
+                    </div>
+
+                    <div className="pf-headactions">
+                        <button className="pf-btn pf-btn-outline" onClick={() => setActiveTab("settings")}>
+                            <FiSettings size={15} /> Settings
+                        </button>
+                        <button className="pf-btn pf-btn-danger" onClick={handleLogout}>
+                            <FiLogOut size={15} /> Logout
+                        </button>
+                    </div>
+                </div>
+
+                {/* ── stats ── */}
+                <div className="pf-stats">
+                    <StatCard icon={<FiPackage />} value={18} label="Orders placed" />
+                    <StatCard
+                        icon={<FiHeart />}
+                        value={wishlistItems.length}
+                        label="Wishlist items"
+                    />          <StatCard icon={<FiStar />} value={5} label="Reviews written" />
+                    <StatCard icon={<FiAward />} value={1240} label="Loyalty points" />
+                </div>
+
+                {/* ── tabs ── */}
+                <div className="pf-tabs" style={{ position: "relative" }}>
+                    {TABS.map((tab) => (
+                        <button
+                            key={tab.id}
+                            className={`pf-tab${activeTab === tab.id ? " active" : ""}`}
+                            onClick={() => setActiveTab(tab.id)}
+                        >
+                            {tab.icon} {tab.label}
+                        </button>
+                    ))}
+                    <span
+                        className="pf-tab-underline"
+                        style={{
+                            width: `${100 / TABS.length}%`,
+                            transform: `translateX(${activeIndex * 100}%)`,
+                        }}
+                    />
+                </div>
+
+                {/* ── tab panels ── */}
+                <div className="pf-panel" key={activeTab}>
+                    {activeTab === "overview" && (
+                        <div className="pf-card">
+                            <div className="pf-card-title">Personal Information</div>
+                            {infoRow("email", <FiMail size={16} />, "Email address")}
+                            {infoRow("phone", <FiPhone size={16} />, "Phone number")}
+                            {infoRow("address", <FiMapPin size={16} />, "Delivery address")}
+                            <div className="pf-info-row">
+                                <div className="pf-info-icon"><FiCalendar size={16} /></div>
+                                <div>
+                                    <div className="pf-info-label">Member since</div>
+                                    <div className="pf-info-val">{user.joined}</div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {activeTab === "orders" && (
+                        <div className="pf-card">
+                            <div className="pf-card-title">Recent Orders</div>
+                            <div className="pf-empty">
+                                <div className="pf-empty-icon"><FiPackage size={22} /></div>
+                                <p>No recent orders to show here yet — once you place an order, it'll show up in this tab.</p>
+                            </div>
+                        </div>
+                    )}
+
+                    {activeTab === "wishlist" && (
+                        <div className="pf-card">
+                            <div className="pf-card-title">Saved Items</div>
+                            <div className="pf-empty">
+                                <div className="pf-empty-icon"><FiHeart size={22} /></div>
+                                <p>Items you save will appear here so you can find them again easily.</p>
+                            </div>
+                        </div>
+                    )}
+
+                    {activeTab === "settings" && (
+                        <div className="pf-card">
+                            <div className="pf-card-title">Notification Preferences</div>
+                            <div className="pf-toggle-row">
+                                <div className="pf-toggle-text">
+                                    <strong>Email notifications</strong>
+                                    <span>Order updates and offers via email</span>
+                                </div>
+                                <Toggle
+                                    checked={settings.emailNotifs}
+                                    onChange={(v) => setSettings((p) => ({ ...p, emailNotifs: v }))}
+                                />
+                            </div>
+                            <div className="pf-toggle-row">
+                                <div className="pf-toggle-text">
+                                    <strong>SMS alerts</strong>
+                                    <span>Delivery updates via text message</span>
+                                </div>
+                                <Toggle
+                                    checked={settings.smsAlerts}
+                                    onChange={(v) => setSettings((p) => ({ ...p, smsAlerts: v }))}
+                                />
+                            </div>
+                            <div className="pf-toggle-row">
+                                <div className="pf-toggle-text">
+                                    <strong>Two-factor authentication</strong>
+                                    <span>Extra security when signing in</span>
+                                </div>
+                                <Toggle
+                                    checked={settings.twoFactor}
+                                    onChange={(v) => setSettings((p) => ({ ...p, twoFactor: v }))}
+                                />
+                            </div>
+                            <div className="pf-save-bar">
+                                <button className="pf-btn pf-btn-dark" onClick={() => showToast("Settings saved")}>
+                                    <FiCheck size={15} /> Save changes
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            {toast && (
+                <div className="pf-toast">
+                    <FiCheck /> {toast}
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 };
 
 export default Profile;
