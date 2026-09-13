@@ -468,7 +468,6 @@ const Profile = () => {
                     />
                 </div>
 
-                {/* ── tab panels ── */}
                 <div className="pf-panel" key={activeTab}>
                     {activeTab === "overview" && (
                         <div className="pf-card">
