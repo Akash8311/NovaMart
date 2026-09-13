@@ -449,7 +449,6 @@ const Profile = () => {
                     <StatCard icon={<FiAward />} value={1240} label="Loyalty points" />
                 </div>
 
-                {/* ── tabs ── */}
                 <div className="pf-tabs" style={{ position: "relative" }}>
                     {TABS.map((tab) => (
                         <button
