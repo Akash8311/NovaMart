@@ -439,7 +439,6 @@ const Profile = () => {
                     </div>
                 </div>
 
-                {/* ── stats ── */}
                 <div className="pf-stats">
                     <StatCard icon={<FiPackage />} value={18} label="Orders placed" />
                     <StatCard
