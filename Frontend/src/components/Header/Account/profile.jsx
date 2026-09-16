@@ -466,7 +466,6 @@ const Profile = () => {
                             transform: `translateX(${activeIndex * 100}%)`,
                         }}
                     />
-                    2jii
                 </div>
                 <div className="pf-panel" key={activeTab}>
                     {activeTab === "overview" && (
