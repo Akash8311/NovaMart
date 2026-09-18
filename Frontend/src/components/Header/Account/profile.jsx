@@ -466,7 +466,6 @@ const Profile = () => {
                             transform: `translateX(${activeIndex * 100}%)`,
                         }}
                     />
-                    hauba
                 </div>
                 <div className="pf-panel" key={activeTab}>
                     {activeTab === "overview" && (
