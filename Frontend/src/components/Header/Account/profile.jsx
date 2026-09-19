@@ -465,7 +465,7 @@ const Profile = () => {
                             width: `${100 / TABS.length}%`,
                             transform: `translateX(${activeIndex * 100}%)`,
                         }}
-                    />
+                        />
                 </div>
                 <div className="pf-panel" key={activeTab}>
                     {activeTab === "overview" && (
