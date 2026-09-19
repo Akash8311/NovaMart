@@ -350,7 +350,7 @@ const Profile = () => {
         localStorage.removeItem("user");
         navigate("/");
     };
-
+fahhhhhhhh
     const activeIndex = TABS.findIndex((t) => t.id === activeTab);
 
     const infoRow = (field, icon, label) => (
