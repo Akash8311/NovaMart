@@ -344,14 +344,14 @@ const Profile = () => {
         setEditingField(null);
         showToast("Profile updated");
     };
-    fahhhh
+    
     const handleLogout = () => {
         localStorage.removeItem("isLogin");
         localStorage.removeItem("user");
         navigate("/");
     };
     const activeIndex = TABS.findIndex((t) => t.id === activeTab);
-jsjjsj
+
     const infoRow = (field, icon, label) => (
         <div className="pf-info-row">
             <div className="pf-info-icon">{icon}</div>
@@ -380,9 +380,6 @@ jsjjsj
                 ) : (
                     <div className="pf-info-val">{user[field]}</div>
                 )}
-                <div>
-                    
-                </div>
             </div>
             {editingField !== field && (
                 <button className="pf-info-edit" onClick={() => startEdit(field)} aria-label={`Edit ${label}`}>
