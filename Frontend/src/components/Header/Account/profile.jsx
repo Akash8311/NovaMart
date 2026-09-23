@@ -344,7 +344,6 @@ const Profile = () => {
         setEditingField(null);
         showToast("Profile updated");
     };
-    fdass
     const handleLogout = () => {
         localStorage.removeItem("isLogin");
         localStorage.removeItem("user");
