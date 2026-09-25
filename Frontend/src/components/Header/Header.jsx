@@ -334,7 +334,6 @@ const Header = () => {
                   </>
                 )}
 
-                {/* delete compare button */}
 
                 {/* wishlist */}
                 <li className="list-none">
@@ -346,7 +345,7 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
                 </li>
-                {/* wishlist end */}
+          
 
                 <li className="list-none">
                   <Tooltip title="Cart">
