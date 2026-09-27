@@ -345,7 +345,6 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
                 </li>
-          ghuuk
 
                 <li className="list-none">
                   <Tooltip title="Cart">
