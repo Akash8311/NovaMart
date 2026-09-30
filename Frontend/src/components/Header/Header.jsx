@@ -345,8 +345,6 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
                 </li>
-                jdidi
-
                 <li className="list-none">
                   <Tooltip title="Cart">
                     <IconButton onClick={() => setOpenCartPanel(true)}>
