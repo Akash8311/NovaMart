@@ -333,8 +333,6 @@ const Header = () => {
                     </li>
                   </>
                 )}
-
-vvg
                 {/* wishlist */}
                 <li className="list-none">
                   <Tooltip title="Wishlist">
