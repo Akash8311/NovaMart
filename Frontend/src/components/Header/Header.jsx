@@ -353,7 +353,6 @@ const Header = () => {
                     </IconButton>
                   </Tooltip>
                 </li>
-asdds
                 {/* mobile-only: toggles the collapsible search bar below */}
                 <li className="list-none">
                   <Tooltip title="Search">
